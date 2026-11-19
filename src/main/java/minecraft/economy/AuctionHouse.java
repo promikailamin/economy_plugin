@@ -189,6 +189,12 @@ public final class AuctionHouse {
 
         buyer.sendMessage(ChatColor.GREEN + "Bought " + l.item.getAmount() + "x " + prettyName(l.item) + " for "
                 + ChatColor.GOLD + EconomyData.formatMoney(l.price) + ChatColor.GREEN + ".");
+        if (SpecialItems.isSpecial(l.item)) {
+            Bukkit.broadcastMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + buyer.getName()
+                    + ChatColor.RESET + ChatColor.LIGHT_PURPLE + " claimed the relic " + prettyName(l.item)
+                    + ChatColor.LIGHT_PURPLE + " for " + ChatColor.GOLD + EconomyData.formatMoney(l.price)
+                    + ChatColor.LIGHT_PURPLE + "!");
+        }
 
         if (l.synthetic) {
             AuctionAi ai = EconomyPlugin.get().ai();

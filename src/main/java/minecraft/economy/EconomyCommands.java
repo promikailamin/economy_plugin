@@ -125,25 +125,32 @@ public class EconomyCommands implements CommandExecutor, TabCompleter {
         }
         UUID targetId = playerOrError(sender, args[0]);
         if (targetId == null) return;
-        if (targetId.equals(payer.getUniqueId())) {
+        boolean admin = sender.hasPermission(ADMIN);
+        if (targetId.equals(payer.getUniqueId()) && !admin) {
             err(sender, "You can't pay yourself.");
             return;
         }
         long amount = amountOrError(sender, args[1], false);
         if (amount < 0) return;
 
-        if (!EconomyData.withdraw(payer.getUniqueId(), amount)) {
-            err(sender, "Not enough money! Need " + EconomyData.formatMoney(amount)
-                    + ", have " + EconomyData.formatMoney(EconomyData.getBalance(payer)) + ".");
-            return;
-        }
-        EconomyData.deposit(targetId, amount);
-
         String targetName = EconomyData.nameOf(targetId);
-        payer.sendMessage(ChatColor.GRAY + "Sent " + ChatColor.GOLD + EconomyData.formatMoney(amount)
-                + ChatColor.GRAY + " to " + ChatColor.AQUA + targetName + ChatColor.GRAY + ".");
+        if (admin) {
+            EconomyData.deposit(targetId, amount);
+            payer.sendMessage(ChatColor.GRAY + "Admin payment: gave " + ChatColor.GOLD
+                    + EconomyData.formatMoney(amount) + ChatColor.GRAY + " to " + ChatColor.AQUA
+                    + targetName + ChatColor.GRAY + ".");
+        } else {
+            if (!EconomyData.withdraw(payer.getUniqueId(), amount)) {
+                err(sender, "Not enough money! Need " + EconomyData.formatMoney(amount)
+                        + ", have " + EconomyData.formatMoney(EconomyData.getBalance(payer)) + ".");
+                return;
+            }
+            EconomyData.deposit(targetId, amount);
+            payer.sendMessage(ChatColor.GRAY + "Sent " + ChatColor.GOLD + EconomyData.formatMoney(amount)
+                    + ChatColor.GRAY + " to " + ChatColor.AQUA + targetName + ChatColor.GRAY + ".");
+        }
         Player target = Bukkit.getPlayer(targetId);
-        if (target != null) {
+        if (target != null && !target.equals(payer)) {
             target.sendMessage(ChatColor.GRAY + "Received " + ChatColor.GOLD + EconomyData.formatMoney(amount)
                     + ChatColor.GRAY + " from " + ChatColor.AQUA + payer.getName() + ChatColor.GRAY + ".");
         }

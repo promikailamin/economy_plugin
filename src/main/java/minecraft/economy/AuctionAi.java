@@ -39,7 +39,8 @@ public final class AuctionAi {
             new Spec("weapons", "Weapons", Material.TRIDENT, AiItemFactory.Quality.EPIC, 8, 6),
             new Spec("crates", "Supply Crates", Material.SHULKER_BOX, AiItemFactory.Quality.RARE, 9, 7),
             new Spec("books", "Enchanted Books", Material.ENCHANTED_BOOK, AiItemFactory.Quality.EPIC, 7, 5),
-            new Spec("treasures", "Rare Treasures", Material.TOTEM_OF_UNDYING, AiItemFactory.Quality.LEGENDARY, 5, 4)
+            new Spec("treasures", "Rare Treasures", Material.TOTEM_OF_UNDYING, AiItemFactory.Quality.LEGENDARY, 5, 4),
+            new Spec("special", "Special Relics", Material.NETHERITE_PICKAXE, AiItemFactory.Quality.LEGENDARY, 3, 1)
     );
 
     private static final String[] SELLERS = {
@@ -71,6 +72,9 @@ public final class AuctionAi {
     private long restockMillis = 12L * 60_000L;
     private long seed = 1337;
     private double heat = 0.35;
+    private boolean specialRelicsEnabled = true;
+    private int maxSpecialRelics = 24;
+    private int specialMinted = 0;
 
     private static final class Stock {
         final Spec spec;
@@ -131,6 +135,8 @@ public final class AuctionAi {
 
     private void seedInitial(long now) {
         for (Spec spec : SPECS) {
+            if (spec.id().equals("special")
+                    && (!specialRelicsEnabled || specialMinted >= maxSpecialRelics)) continue;
             Stock stock = stocks.get(spec.id());
             if (stock.stock > 0 && house.syntheticCount(spec.id()) == 0) generate(stock, now);
         }
@@ -144,6 +150,8 @@ public final class AuctionAi {
         durationMillis = Math.max(1, cfg.getLong("auction.ai.duration-hours", 48)) * 3_600_000L;
         restockMillis = Math.max(1, cfg.getLong("auction.ai.restock-minutes", 12)) * 60_000L;
         seed = cfg.getLong("auction.ai.seed", 1337L);
+        specialRelicsEnabled = cfg.getBoolean("auction.ai.special-relics-enabled", true);
+        maxSpecialRelics = Math.max(0, cfg.getInt("auction.ai.max-special-relics", 24));
     }
 
     public void tick() {
@@ -194,6 +202,8 @@ public final class AuctionAi {
         List<Double> weights = new ArrayList<>();
         for (Stock stock : stocks.values()) {
             if (stock.stock <= 0) continue;
+            if (stock.spec.id().equals("special")
+                    && (!specialRelicsEnabled || specialMinted >= maxSpecialRelics)) continue;
             double weight = stock.spec.weight() * (0.55 + stock.demand * 1.45);
             if (weight <= 0) continue;
             total += weight;
@@ -215,12 +225,14 @@ public final class AuctionAi {
             quality = AiItemFactory.Quality.byRank(quality.rank() + 1);
         }
         var item = AiItemFactory.generate(rng, stock.spec.id(), quality);
+        boolean relic = SpecialItems.isSpecial(item);
         long value = AiItemFactory.value(item);
         double[] input = features(stock, quality, now);
         double[] output = brain.forward(input);
         double factor = 0.72 + output[0] * 1.05;
         double noise = 0.94 + rng.nextDouble() * 0.12;
         long price = roundPrice(Math.max(50, Math.round(value * factor * stock.priceIndex * noise)));
+        if (relic) price = roundPrice(Math.round(price * 1.10));
         price = Math.min(price, house.maxPrice());
 
         String seller = SELLERS[rng.nextInt(SELLERS.length)];
@@ -230,6 +242,7 @@ public final class AuctionAi {
         stock.listed++;
         stock.priceIndex = Math.min(1.30, stock.priceIndex + 0.004);
         heat = Math.min(1.0, heat + 0.01);
+        if (relic) specialMinted++;
     }
 
     private double[] features(Stock stock, AiItemFactory.Quality quality, long now) {
@@ -314,6 +327,18 @@ public final class AuctionAi {
         return brain.trained();
     }
 
+    public boolean specialRelicsEnabled() {
+        return specialRelicsEnabled;
+    }
+
+    public int maxSpecialRelics() {
+        return maxSpecialRelics;
+    }
+
+    public int specialMinted() {
+        return specialMinted;
+    }
+
     public long totalSold() {
         long total = 0;
         for (Stock stock : stocks.values()) total += stock.sold;
@@ -371,6 +396,7 @@ public final class AuctionAi {
             }
         }
         heat = NeuralNetwork.clamp01(cfg.getDouble("heat", heat));
+        specialMinted = Math.max(0, cfg.getInt("special-minted", 0));
     }
 
     public void save() {
@@ -381,6 +407,7 @@ public final class AuctionAi {
         cfg.set("brain.weights", weights);
         cfg.set("brain.trained", brain.trained());
         cfg.set("heat", heat);
+        cfg.set("special-minted", specialMinted);
         for (Stock stock : stocks.values()) {
             String base = "stocks." + stock.spec.id();
             cfg.set(base + ".stock", stock.stock);

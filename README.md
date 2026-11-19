@@ -12,6 +12,9 @@ Server-side economy plugin. No client mod needed.
   damage, stacks and shulker-box supply crates; per-category stock, restock timers,
   demand and a small neural network that learns from sales and reprices listings
 - `/ah stock` market overview with live stock/demand/price information
+- Limited special relics in the AI market: 3x3/4x4/5x5 area miners (pickaxe and
+  shovel), vein miner, tree miner, level 10-15 enchanted books and gear, and eternal
+  armour with one random slot-bound good or bad potion effect
 - Mystery shop (`/mystery`, `/ah mystery`): crate tiers with stock/restock, a neural
   luck model, dry-streak compensation and weighted loot that can be better or worse
 - Sell Axe: blocks broken with it are sold automatically (`/sellaxe`)
@@ -60,7 +63,22 @@ python3 .agent-work/tools/generate_gui_docs.py \
   --prices src/main/resources/prices.tsv --docs docs
 ```
 
+## Special relics
+The AI market keeps at most a couple of special relics listed, and the total number it
+may ever mint is capped by `auction.ai.max-special-relics` (default 24). Relics are
+priced from a much higher base value than normal gear and cannot be sold back to the
+server shop, so they only change hands through the auction house.
+
+Area miners break a plane around the mined block based on where the player is looking;
+vein miners break connected ores (up to 64) and tree miners fell connected logs (up to
+128). Sneak while breaking to disable the extra effect. Eternal armour never loses
+durability and grants its stored effect while worn; each piece has exactly one effect
+matched to its slot (speed on boots, resistance/regeneration on chestplates and
+leggings, and so on). Some relics carry a bad effect instead.
+
 ## Permissions
 `economy.bal`, `economy.bal.others`, `economy.pay`, `economy.shop`, `economy.scoreboard`,
 `economy.auction`, `economy.mystery` (all default true); `economy.admin` (default op):
-`/eco`, `/fine`, `/sellaxe`.
+`/eco`, `/fine`, `/sellaxe`, admin `/pay` grants (including self-payments) that ignore
+the payer's balance. Shop, auction and mystery purchases still use normal prices and
+balance checks for operators.

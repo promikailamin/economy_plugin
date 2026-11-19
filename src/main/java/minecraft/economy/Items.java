@@ -31,6 +31,7 @@ public final class Items {
         EconomyData.ShopEntry e = EconomyData.get(stack.getType().name());
         if (e == null || !e.sellable()) return null;
         if (SellAxe.isSellAxe(stack)) return null;
+        if (SpecialItems.isSpecial(stack)) return null;
 
         ItemMeta meta = stack.getItemMeta();
         if (meta instanceof BlockStateMeta bsm && bsm.hasBlockState()

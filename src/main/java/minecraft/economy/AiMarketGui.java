@@ -34,6 +34,9 @@ public final class AiMarketGui {
                         "§7Synthetic listings: §f" + engine.activeListings() + "§8/§f" + engine.targetListings(),
                         "§7Market heat: §e" + percent(engine.heat()),
                         "§7Sales learned: §f" + engine.totalSold() + " §8(" + engine.trainedSamples() + " samples)",
+                        engine.specialRelicsEnabled()
+                                ? "§7Special relics minted: §d" + engine.specialMinted() + "§8/§d" + engine.maxSpecialRelics()
+                                : "§7Special relics: §cdisabled",
                         "§7The engine restocks and reprices itself.",
                         "§8Stock can run out and come back later."));
             }

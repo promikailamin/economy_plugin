@@ -193,6 +193,7 @@ public final class AiItemFactory {
             case "treasures" -> treasure(rng, quality);
             case "books" -> enchantedBook(rng, quality);
             case "supplies" -> supplies(rng, quality);
+            case "special" -> SpecialItems.random(rng);
             default -> randomItem(rng, quality);
         };
     }
@@ -547,6 +548,8 @@ public final class AiItemFactory {
 
     private static long value(ItemStack item, int depth) {
         if (item == null || item.getType().isAir()) return 0;
+        long relicValue = SpecialItems.value(item);
+        if (relicValue > 0) return relicValue * Math.max(1, item.getAmount());
         Material type = item.getType();
         EconomyData.ShopEntry entry = EconomyData.get(type.name());
         long base;

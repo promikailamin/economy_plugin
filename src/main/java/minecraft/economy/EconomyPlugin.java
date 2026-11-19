@@ -60,6 +60,10 @@ public class EconomyPlugin extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new GuiListener(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
         Bukkit.getPluginManager().registerEvents(new SellAxeListener(), this);
+        Bukkit.getPluginManager().registerEvents(new SpecialToolListener(), this);
+        Bukkit.getScheduler().runTaskTimer(this, () -> {
+            for (Player p : Bukkit.getOnlinePlayers()) SpecialItems.tickArmor(p);
+        }, 20L, 20L);
 
         // Players already online (e.g. after /reload) need an account and their sidebar.
         for (Player p : Bukkit.getOnlinePlayers()) {

@@ -33,6 +33,13 @@ auction:
     # Change this for a different but repeatable item/price pattern.
     seed: 1337
 
+    # Special relics are unique, very expensive listings with abilities such as
+    # area mining, vein mining, tree felling, level 10-15 enchantments and
+    # eternal armour with a random slot-bound potion effect.
+    special-relics-enabled: true
+    # Total number of relics the market may ever mint. Set 0 to disable.
+    max-special-relics: 24
+
 mystery:
   enabled: true
   # Crates available per tier before they sell out and need a restock.
