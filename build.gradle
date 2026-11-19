@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.economy.plugin'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compileOnly name: 'paper-api-1.21.4-R0.1-SNAPSHOT'
+    compileOnly name: 'adventure-api-4.20.0'
+    compileOnly name: 'adventure-key-4.20.0'
+    compileOnly name: 'annotations-26.0.2'
+    compileOnly name: 'guava-33.6.0-jre'
+    compileOnly name: 'bungeecord-chat-1.20-R0.2-deprecated+build.19'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.named('jar') {
+    archiveBaseName = 'Economy'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

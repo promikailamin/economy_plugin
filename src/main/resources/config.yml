@@ -1,0 +1,19 @@
+# Economy plugin configuration.
+# Prices live in prices.tsv (same folder) - edit it and run /eco reload.
+
+# Balance new players start with.
+starting-balance: 1000
+
+# Highest balance (and highest single payment) allowed.
+max-balance: 1000000000000000
+
+# How often balances are written to disk (minutes). They are also saved on shutdown.
+autosave-minutes: 5
+
+auction:
+  # How long a listing stays up before the item goes to the seller's /ah collect box.
+  duration-hours: 48
+  max-listings-per-player: 10
+  # Percentage of the sale price removed from the economy when an auction sells.
+  tax-percent: 5
+  max-price: 1000000000000

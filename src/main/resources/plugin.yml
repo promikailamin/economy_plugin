@@ -1,0 +1,78 @@
+name: Economy
+version: 1.0.0
+api-version: '1.21'
+main: minecraft.economy.EconomyPlugin
+description: Server-side economy with balances, shop GUI, buy catalog, sell chest, auction house, Sell Axe and scoreboard. No client mod required.
+author: OpenCode
+
+commands:
+  bal:
+    description: Check your balance (or another player's)
+    usage: /bal [player]
+    aliases: [balance, money]
+    permission: economy.bal
+  baltop:
+    description: Show the richest players
+    usage: /baltop
+    aliases: [balancetop]
+    permission: economy.bal
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+    permission: economy.pay
+  fine:
+    description: Fine a player (may push them into debt)
+    usage: /fine <player> <amount> [reason]
+    permission: economy.admin
+  shop:
+    description: Open the shop GUI
+    usage: /shop [category] [page]
+    permission: economy.shop
+  buy:
+    description: Buy items from the shop
+    usage: /buy [item] [amount]
+    permission: economy.shop
+  sell:
+    description: Sell items to the shop (chest, hand, all, or a specific item)
+    usage: /sell [hand|all|<item> [amount|all]]
+    permission: economy.shop
+  ecosb:
+    description: Toggle the balance scoreboard
+    usage: /ecosb
+    permission: economy.scoreboard
+  ah:
+    description: Open the auction house, list the item in your hand, or collect items
+    usage: /ah [open|sell <price>|collect]
+    aliases: [auction]
+    permission: economy.auction
+  eco:
+    description: Admin economy commands
+    usage: /eco <give|take|set|reset|reload> [player] [amount]
+    permission: economy.admin
+  sellaxe:
+    description: Turn your axe into a Sell Axe, or give one to a player
+    usage: /sellaxe [apply|give [player]]
+    permission: economy.admin
+
+permissions:
+  economy.bal:
+    description: Check your own balance and the leaderboard
+    default: true
+  economy.bal.others:
+    description: Check other players' balances
+    default: true
+  economy.pay:
+    description: Pay other players
+    default: true
+  economy.shop:
+    description: Use the shop, buy and sell commands
+    default: true
+  economy.scoreboard:
+    description: Toggle the balance scoreboard
+    default: true
+  economy.auction:
+    description: Use the auction house
+    default: true
+  economy.admin:
+    description: Admin commands (/eco, /fine, /sellaxe) and removing other players' auctions
+    default: op

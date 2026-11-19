@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        maven {
+            name = 'PaperMC'
+            url = 'https://papermc.io/repo/repository/maven-public/'
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'Economy'
