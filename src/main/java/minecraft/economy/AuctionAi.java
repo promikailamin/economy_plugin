@@ -1,5 +1,6 @@
 package minecraft.economy;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -242,7 +243,12 @@ public final class AuctionAi {
         stock.listed++;
         stock.priceIndex = Math.min(1.30, stock.priceIndex + 0.004);
         heat = Math.min(1.0, heat + 0.01);
-        if (relic) specialMinted++;
+        if (relic) {
+            specialMinted++;
+            plugin.getServer().broadcastMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD
+                    + "A special relic appeared in the auction house: " + ChatColor.RESET
+                    + AuctionHouse.prettyName(item));
+        }
     }
 
     private double[] features(Stock stock, AiItemFactory.Quality quality, long now) {
