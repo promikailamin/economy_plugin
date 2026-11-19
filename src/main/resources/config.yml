@@ -22,10 +22,11 @@ auction:
     # Synthetic listings make a small server feel busy. They are ordinary
     # auction listings with realistic gear, damage and enchantments.
     enabled: true
-    # How many AI listings the engine tries to keep live.
-    target-listings: 36
+    # How many AI listings the engine tries to keep live. The AI market scales
+    # its per-category stock so even 1000+ listings stay supplied.
+    target-listings: 1000
     # Maximum new AI listings per 30 second market tick.
-    max-new-per-tick: 5
+    max-new-per-tick: 50
     # How long AI listings last before they are recycled.
     duration-hours: 48
     # Base time between stock restocks (each category gets a random +/-40%).

@@ -92,7 +92,7 @@ Category pages show 45 shop entries. This sample is the first page of **Blocks**
 
 <img src="assets/gui/buy-catalog.png" alt="Buy Catalog | All Items (1/43) GUI">
 
-The tabbed catalog. Tabs occupy the top row and 36 buyable entries fill slots 9-44 (1545 buyable items, 43 pages).
+The tabbed catalog. Tabs occupy the top row and 36 buyable entries fill slots 9-44 (1539 buyable items, 43 pages).
 
 | Icon | Slot | Item / control | Lore / action |
 |:---:|:---:|:--|:--|

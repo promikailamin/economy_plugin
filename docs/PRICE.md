@@ -15,7 +15,7 @@ Every price is read directly from [`src/main/resources/prices.tsv`](../src/main/
 | Metric | Value |
 |:--|--:|
 | Items documented | **1,657** |
-| Buyable from `/shop` | **1,545** |
+| Buyable from `/shop` | **1,539** |
 | Sellable to the server | **1,656** |
 | Item icons extracted | **1,657 / 1,657** |
 | Categories | **12** |
@@ -61,7 +61,7 @@ Every price is read directly from [`src/main/resources/prices.tsv`](../src/main/
 
 ## Blocks
 
-_970 items, 970 buyable, 970 sellable._
+_970 items, 965 buyable, 970 sellable._
 
 | Icon | Item | ID | Buy | Sell | Trade | Notes |
 |:---:|:--|:--|--:|--:|:--:|:--|
@@ -273,7 +273,7 @@ _970 items, 970 buyable, 970 sellable._
 | <img src="assets/icons/crafter.png" width="32" height="32" alt="Crafter" title="Crafter"> | **Crafter** | `crafter` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/crafting_table.png" width="32" height="32" alt="Crafting Table" title="Crafting Table"> | **Crafting Table** | `crafting_table` | 3,200 | 800 | Buy / Sell | - |
 | <img src="assets/icons/creaking_heart.png" width="32" height="32" alt="Creaking Heart" title="Creaking Heart"> | **Creaking Heart** | `creaking_heart` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/creeper_head.png" width="32" height="32" alt="Creeper Head" title="Creeper Head"> | **Creeper Head** | `creeper_head` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/creeper_head.png" width="32" height="32" alt="Creeper Head" title="Creeper Head"> | **Creeper Head** | `creeper_head` | - | 80,000 | Sell only | Mob head - not sold by shop |
 | <img src="assets/icons/crimson_door.png" width="32" height="32" alt="Crimson Door" title="Crimson Door"> | **Crimson Door** | `crimson_door` | 1,600 | 400 | Buy / Sell | - |
 | <img src="assets/icons/crimson_fence.png" width="32" height="32" alt="Crimson Fence" title="Crimson Fence"> | **Crimson Fence** | `crimson_fence` | 1,200 | 300 | Buy / Sell | - |
 | <img src="assets/icons/crimson_fence_gate.png" width="32" height="32" alt="Crimson Fence Gate" title="Crimson Fence Gate"> | **Crimson Fence Gate** | `crimson_fence_gate` | 1,200 | 800 | Buy / Sell | - |
@@ -653,7 +653,7 @@ _970 items, 970 buyable, 970 sellable._
 | <img src="assets/icons/pale_oak_wood.png" width="32" height="32" alt="Pale Oak Wood" title="Pale Oak Wood"> | **Pale Oak Wood** | `pale_oak_wood` | 1,100 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pearlescent_froglight.png" width="32" height="32" alt="Pearlescent Froglight" title="Pearlescent Froglight"> | **Pearlescent Froglight** | `pearlescent_froglight` | 10,000 | 8,000 | Buy / Sell | - |
 | <img src="assets/icons/peony.png" width="32" height="32" alt="Peony" title="Peony"> | **Peony** | `peony` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/piglin_head.png" width="32" height="32" alt="Piglin Head" title="Piglin Head"> | **Piglin Head** | `piglin_head` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/piglin_head.png" width="32" height="32" alt="Piglin Head" title="Piglin Head"> | **Piglin Head** | `piglin_head` | - | 80,000 | Sell only | Mob head - not sold by shop |
 | <img src="assets/icons/pink_banner.png" width="32" height="32" alt="Pink Banner" title="Pink Banner"> | **Pink Banner** | `pink_banner` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/pink_bed.png" width="32" height="32" alt="Pink Bed" title="Pink Bed"> | **Pink Bed** | `pink_bed` | 5,000 | 3,600 | Buy / Sell | - |
 | <img src="assets/icons/pink_candle.png" width="32" height="32" alt="Pink Candle" title="Pink Candle"> | **Pink Candle** | `pink_candle` | 2,000 | 1,500 | Buy / Sell | - |
@@ -673,7 +673,7 @@ _970 items, 970 buyable, 970 sellable._
 | <img src="assets/icons/pink_wool_stairs.png" width="32" height="32" alt="Pink Wool Stairs" title="Pink Wool Stairs"> | **Pink Wool Stairs** | `pink_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/pitcher_plant.png" width="32" height="32" alt="Pitcher Plant" title="Pitcher Plant"> | **Pitcher Plant** | `pitcher_plant` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pitcher_pod.png" width="32" height="32" alt="Pitcher Pod" title="Pitcher Pod"> | **Pitcher Pod** | `pitcher_pod` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/player_head.png" width="32" height="32" alt="Player Head" title="Player Head"> | **Player Head** | `player_head` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/player_head.png" width="32" height="32" alt="Player Head" title="Player Head"> | **Player Head** | `player_head` | - | 80,000 | Sell only | Player head - not sold by shop |
 | <img src="assets/icons/podzol.png" width="32" height="32" alt="Podzol" title="Podzol"> | **Podzol** | `podzol` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pointed_dripstone.png" width="32" height="32" alt="Pointed Dripstone" title="Pointed Dripstone"> | **Pointed Dripstone** | `pointed_dripstone` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/polished_andesite.png" width="32" height="32" alt="Polished Andesite" title="Polished Andesite"> | **Polished Andesite** | `polished_andesite` | 1,000 | 505 | Buy / Sell | - |
@@ -801,7 +801,7 @@ _970 items, 970 buyable, 970 sellable._
 | <img src="assets/icons/short_dry_grass.png" width="32" height="32" alt="Short Dry Grass" title="Short Dry Grass"> | **Short Dry Grass** | `short_dry_grass` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/short_grass.png" width="32" height="32" alt="Short Grass" title="Short Grass"> | **Short Grass** | `short_grass` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/shroomlight.png" width="32" height="32" alt="Shroomlight" title="Shroomlight"> | **Shroomlight** | `shroomlight` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/skeleton_skull.png" width="32" height="32" alt="Skeleton Skull" title="Skeleton Skull"> | **Skeleton Skull** | `skeleton_skull` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/skeleton_skull.png" width="32" height="32" alt="Skeleton Skull" title="Skeleton Skull"> | **Skeleton Skull** | `skeleton_skull` | - | 80,000 | Sell only | Mob head - not sold by shop |
 | <img src="assets/icons/slime_block.png" width="32" height="32" alt="Slime Block" title="Slime Block"> | **Slime Block** | `slime_block` | 22,500 | 18,000 | Buy / Sell | - |
 | <img src="assets/icons/small_amethyst_bud.png" width="32" height="32" alt="Small Amethyst Bud" title="Small Amethyst Bud"> | **Small Amethyst Bud** | `small_amethyst_bud` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/small_dripleaf.png" width="32" height="32" alt="Small Dripleaf" title="Small Dripleaf"> | **Small Dripleaf** | `small_dripleaf` | 1,000 | 800 | Buy / Sell | - |
@@ -1034,7 +1034,7 @@ _970 items, 970 buyable, 970 sellable._
 | <img src="assets/icons/yellow_wool.png" width="32" height="32" alt="Yellow Wool" title="Yellow Wool"> | **Yellow Wool** | `yellow_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/yellow_wool_slab.png" width="32" height="32" alt="Yellow Wool Slab" title="Yellow Wool Slab"> | **Yellow Wool Slab** | `yellow_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/yellow_wool_stairs.png" width="32" height="32" alt="Yellow Wool Stairs" title="Yellow Wool Stairs"> | **Yellow Wool Stairs** | `yellow_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
-| <img src="assets/icons/zombie_head.png" width="32" height="32" alt="Zombie Head" title="Zombie Head"> | **Zombie Head** | `zombie_head` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/zombie_head.png" width="32" height="32" alt="Zombie Head" title="Zombie Head"> | **Zombie Head** | `zombie_head` | - | 80,000 | Sell only | Mob head - not sold by shop |
 
 ## Ores & Metals
 
@@ -1089,7 +1089,7 @@ _44 items, 44 buyable, 44 sellable._
 
 ## The Nether
 
-_45 items, 45 buyable, 45 sellable._
+_45 items, 44 buyable, 45 sellable._
 
 | Icon | Item | ID | Buy | Sell | Trade | Notes |
 |:---:|:--|:--|--:|--:|:--:|:--|
@@ -1137,7 +1137,7 @@ _45 items, 45 buyable, 45 sellable._
 | <img src="assets/icons/soul_soil.png" width="32" height="32" alt="Soul Soil" title="Soul Soil"> | **Soul Soil** | `soul_soil` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/soul_torch.png" width="32" height="32" alt="Soul Torch" title="Soul Torch"> | **Soul Torch** | `soul_torch` | 500 | 400 | Buy / Sell | - |
 | <img src="assets/icons/wither_rose.png" width="32" height="32" alt="Wither Rose" title="Wither Rose"> | **Wither Rose** | `wither_rose` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/wither_skeleton_skull.png" width="32" height="32" alt="Wither Skeleton Skull" title="Wither Skeleton Skull"> | **Wither Skeleton Skull** | `wither_skeleton_skull` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/wither_skeleton_skull.png" width="32" height="32" alt="Wither Skeleton Skull" title="Wither Skeleton Skull"> | **Wither Skeleton Skull** | `wither_skeleton_skull` | - | 80,000 | Sell only | Mob head - not sold by shop |
 
 ## The End
 

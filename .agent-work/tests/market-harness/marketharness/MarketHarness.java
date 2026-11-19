@@ -1,6 +1,8 @@
 package marketharness;
 
 import minecraft.economy.AiItemFactory;
+import minecraft.economy.AuctionAi;
+import minecraft.economy.EconomyData;
 import minecraft.economy.EconomyPlugin;
 import minecraft.economy.MysteryShop;
 import minecraft.economy.SpecialItems;
@@ -26,6 +28,30 @@ public final class MarketHarness extends JavaPlugin {
         StringBuilder report = new StringBuilder();
         int failures = 0;
         Random rng = new Random(20261119);
+
+        report.append("ai market scale checks\n");
+        AuctionAi ai = EconomyPlugin.get().ai();
+        if (ai == null) {
+            failures++;
+            report.append("AI market missing\n");
+        } else {
+            report.append("target=").append(ai.targetListings())
+                    .append(" active=").append(ai.activeListings()).append('\n');
+            if (ai.targetListings() < 1000) failures++;
+            if (ai.activeListings() < Math.min(ai.targetListings(), 1000)) failures++;
+        }
+
+        report.append("\nhead trade checks\n");
+        for (String id : List.of("player_head", "creeper_head", "piglin_head",
+                "skeleton_skull", "wither_skeleton_skull", "zombie_head")) {
+            EconomyData.ShopEntry entry = EconomyData.get(id);
+            boolean ok = entry != null && !entry.buyable && entry.sellable();
+            if (!ok) failures++;
+            report.append(id).append(" buyable=").append(entry != null && entry.buyable)
+                    .append(" sellable=").append(entry != null && entry.sellable())
+                    .append('\n');
+        }
+        report.append('\n');
         report.append("generation checks\n");
         for (AiItemFactory.Quality quality : AiItemFactory.Quality.values()) {
             for (String archetype : ARCHETYPES) {

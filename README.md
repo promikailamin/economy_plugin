@@ -5,12 +5,13 @@ Server-side economy plugin. No client mod needed.
 ## Features
 - Balances saved per-UUID in `plugins/Economy/balances.yml` (autosave + on shutdown)
 - `/shop` GUI (categories), `/buy` catalog + search, quantity picker
+- Player heads and mob heads can be sold to the server but are **not buyable** from the shop
 - Sell chest (`/sell`): drop items in, close, get paid; unsellable items are returned
 - `/sell hand | all | <item> [amount|all]`
 - Auction house (`/ah`, `/ah sell <price>`, `/ah collect`) with expiry and sale tax
-- Smart AI market: synthetic listings with realistic random tools, armour, enchantments,
-  damage, stacks and shulker-box supply crates; per-category stock, restock timers,
-  demand and a small neural network that learns from sales and reprices listings
+- Smart AI market: up to 1000 synthetic listings by default with realistic random tools,
+  armour, enchantments, damage, stacks and shulker-box supply crates; per-category stock,
+  restock timers, demand and a small neural network that learns from sales and reprices listings
 - `/ah stock` market overview with live stock/demand/price information
 - Limited special relics in the AI market: 3x3/4x4/5x5 area miners (pickaxe and
   shovel), vein miner, tree miner, level 10-15 enchanted books and gear, eternal
@@ -29,7 +30,9 @@ Server-side economy plugin. No client mod needed.
 
 ## AI market and mystery shop
 Configure them under `auction.ai` and `mystery` in `config.yml`. The AI market keeps a
-target number of realistic listings live and restocks categories on a randomized timer.
+target number of realistic listings live (1000 by default) and restocks categories on a
+randomized timer. Per-category stock capacity scales with the target, so the market stays
+supplied even with 1000+ listings.
 The mystery shop uses weighted payout bands; its neural model gradually adjusts luck for
 long dry streaks, while the configured payout factors keep long-term returns below 100%.
 Use `/eco reload` after changing market settings. `/ah stock` shows stock, demand, price

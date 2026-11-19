@@ -58,6 +58,7 @@ public final class AuctionAi {
     private static final int INPUTS = 6;
     private static final int HIDDEN = 9;
     private static final int OUTPUTS = 3;
+    private static final int BASE_CAPACITY_TOTAL = 85;
 
     private final EconomyPlugin plugin;
     private final AuctionHouse house;
@@ -77,6 +78,7 @@ public final class AuctionAi {
     private int maxSpecialRelics = 24;
     private int specialMinted = 0;
     private double keepInventoryHelmetChance = 0.02;
+    private double stockScale = 1.0;
 
     private static final class Stock {
         final Spec spec;
@@ -88,10 +90,10 @@ public final class AuctionAi {
         long sold;
         long listed;
 
-        Stock(Spec spec) {
+        Stock(Spec spec, int capacity) {
             this.spec = spec;
-            this.capacity = spec.capacity();
-            this.stock = spec.capacity();
+            this.capacity = capacity;
+            this.stock = capacity;
         }
     }
 
@@ -104,7 +106,7 @@ public final class AuctionAi {
     public void load() {
         applySettings();
         rng = new Random(seed);
-        for (Spec spec : SPECS) stocks.put(spec.id(), new Stock(spec));
+        for (Spec spec : SPECS) stocks.put(spec.id(), new Stock(spec, capacityFor(spec)));
 
         boolean fresh = !file.exists();
         if (!fresh) read();
@@ -115,11 +117,13 @@ public final class AuctionAi {
                 Stock stock = stocks.get(SPECS.get(i).id());
                 stock.nextRestock = now + restock + (long) (rng.nextDouble() * restock);
             }
-            for (int index : new int[]{4, 9}) {
-                Stock stock = stocks.get(SPECS.get(index).id());
-                stock.stock = 1;
-                stock.demand = 0.70;
-                stock.nextRestock = now + restock / 2 + (long) (rng.nextDouble() * restock);
+            if (targetListings <= BASE_CAPACITY_TOTAL) {
+                for (int index : new int[]{4, 9}) {
+                    Stock stock = stocks.get(SPECS.get(index).id());
+                    stock.stock = 1;
+                    stock.demand = 0.70;
+                    stock.nextRestock = now + restock / 2 + (long) (rng.nextDouble() * restock);
+                }
             }
         }
         ensureStockTimers(now);
@@ -147,8 +151,8 @@ public final class AuctionAi {
     private void applySettings() {
         ConfigurationSection cfg = plugin.getConfig();
         enabled = cfg.getBoolean("auction.ai.enabled", true);
-        targetListings = Math.max(1, Math.min(120, cfg.getInt("auction.ai.target-listings", 36)));
-        maxNewPerTick = Math.max(1, Math.min(24, cfg.getInt("auction.ai.max-new-per-tick", 5)));
+        targetListings = Math.max(1, Math.min(5000, cfg.getInt("auction.ai.target-listings", 1000)));
+        maxNewPerTick = Math.max(1, Math.min(500, cfg.getInt("auction.ai.max-new-per-tick", 50)));
         durationMillis = Math.max(1, cfg.getLong("auction.ai.duration-hours", 48)) * 3_600_000L;
         restockMillis = Math.max(1, cfg.getLong("auction.ai.restock-minutes", 12)) * 60_000L;
         seed = cfg.getLong("auction.ai.seed", 1337L);
@@ -156,6 +160,25 @@ public final class AuctionAi {
         maxSpecialRelics = Math.max(0, cfg.getInt("auction.ai.max-special-relics", 24));
         keepInventoryHelmetChance = Math.max(0, Math.min(1,
                 cfg.getDouble("auction.ai.keep-inventory-helmet-chance", 0.02)));
+        stockScale = Math.max(1.0, (double) targetListings / BASE_CAPACITY_TOTAL);
+        resizeStocks();
+    }
+
+    private int capacityFor(Spec spec) {
+        return Math.max(1, (int) Math.ceil(spec.capacity() * stockScale));
+    }
+
+    private void resizeStocks() {
+        for (Stock stock : stocks.values()) {
+            int capacity = capacityFor(stock.spec);
+            if (capacity == stock.capacity) continue;
+            if (capacity > stock.capacity) {
+                stock.stock = Math.min(capacity, stock.stock + (capacity - stock.capacity));
+            } else {
+                stock.stock = Math.min(capacity, stock.stock);
+            }
+            stock.capacity = capacity;
+        }
     }
 
     public void tick() {
@@ -396,7 +419,11 @@ public final class AuctionAi {
                 ConfigurationSection s = stockSection.getConfigurationSection(spec.id());
                 if (s == null) continue;
                 Stock stock = stocks.get(spec.id());
+                int savedCapacity = s.contains("capacity") ? s.getInt("capacity", stock.capacity) : spec.capacity();
                 stock.stock = Math.max(0, Math.min(stock.capacity, s.getInt("stock", stock.capacity)));
+                if (stock.capacity > savedCapacity) {
+                    stock.stock = Math.min(stock.capacity, stock.stock + (stock.capacity - savedCapacity));
+                }
                 stock.demand = NeuralNetwork.clamp01(s.getDouble("demand", stock.demand));
                 stock.priceIndex = Math.max(0.7, Math.min(1.4, s.getDouble("price-index", stock.priceIndex)));
                 stock.nextRestock = s.getLong("next-restock", 0);
@@ -420,6 +447,7 @@ public final class AuctionAi {
         for (Stock stock : stocks.values()) {
             String base = "stocks." + stock.spec.id();
             cfg.set(base + ".stock", stock.stock);
+            cfg.set(base + ".capacity", stock.capacity);
             cfg.set(base + ".demand", stock.demand);
             cfg.set(base + ".price-index", stock.priceIndex);
             cfg.set(base + ".next-restock", stock.nextRestock);

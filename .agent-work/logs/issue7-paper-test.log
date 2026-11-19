@@ -1,0 +1,119 @@
+Downloading mojang_1.21.4.jar
+Applying patches
+Starting org.bukkit.craftbukkit.Main
+*** Warning, you've not updated in a while! ***
+*** Please download a new build from https://papermc.io/downloads/paper ***
+2026-11-19T11:31:38.286008353Z ServerMain WARN Advanced terminal features are not available in this environment
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/home/runner/work/economy_plugin/economy_plugin/.agent-work/tmp/paper-test/server/libraries/io/netty/netty-common/4.1.115.Final/netty-common-4.1.115.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+[11:31:38 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.5+8-LTS; Eclipse Adoptium Temurin-25.0.5+8) on Linux 7.0.0-1019-azure (amd64)
+[11:31:38 INFO]: [bootstrap] Loading Paper 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) for Minecraft 1.21.4
+[11:31:39 INFO]: [PluginInitializerManager] Initializing plugins...
+[11:31:39 INFO]: [ReobfServer] Remapping server...
+[11:31:44 INFO]: [ReobfServer] Done remapping server in 5544ms.
+[11:31:44 INFO]: [PluginRemapper] Remapping plugin 'plugins/Economy-1.0.0.jar'...
+[11:31:44 INFO]: [PluginRemapper] Remapping plugin 'plugins/MarketHarness.jar'...
+[11:31:45 INFO]: [PluginRemapper] Done remapping plugin 'plugins/MarketHarness.jar' in 170ms.
+[11:31:45 INFO]: [PluginRemapper] Done remapping plugin 'plugins/Economy-1.0.0.jar' in 193ms.
+[11:31:45 INFO]: [PluginInitializerManager] Initialized 2 plugins
+[11:31:45 INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - Economy (1.0.0), MarketHarness (1.0.0)
+[11:31:49 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11:31:49 INFO]: Found new data pack file/bukkit, loading it automatically
+[11:31:49 INFO]: Found new data pack paper, loading it automatically
+[11:31:49 INFO]: No existing world data, creating new world
+[11:31:49 ERROR]: No key layers in MapLike[{}]
+[11:31:50 INFO]: Loaded 1370 recipes
+[11:31:50 INFO]: Loaded 1481 advancements
+[11:31:50 INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[11:31:50 INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 231.6ms
+[11:31:51 INFO]: Starting minecraft server version 1.21.4
+[11:31:51 INFO]: Loading properties
+[11:31:51 INFO]: This server is running Paper version 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[11:31:51 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[11:31:51 INFO]: Server Ping Player Sample Count: 12
+[11:31:51 INFO]: Using 4 threads for Netty based IO
+[11:31:51 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[11:31:51 INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[11:31:52 INFO]: Default game type: SURVIVAL
+[11:31:52 INFO]: Generating keypair
+[11:31:52 INFO]: Starting Minecraft server on *:25565
+[11:31:52 INFO]: Using epoll channel type
+[11:31:52 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[11:31:52 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[11:31:52 INFO]: [Economy] Loading server plugin Economy v1.0.0
+[11:31:52 INFO]: [MarketHarness] Loading server plugin MarketHarness v1.0.0
+[11:31:52 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:31:52 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:31:52 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:31:52 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:31:52 INFO]: Preparing level "world"
+[11:31:52 ERROR]: No key layers in MapLike[{}]
+[11:31:53 ERROR]: No key layers in MapLike[{}]
+[11:31:54 ERROR]: No key layers in MapLike[{}]
+[11:31:54 INFO]: Preparing start region for dimension minecraft:overworld
+[11:31:54 INFO]: Preparing spawn area: 2%
+[11:31:55 INFO]: Preparing spawn area: 14%
+[11:31:55 INFO]: Time elapsed: 888 ms
+[11:31:55 INFO]: Preparing start region for dimension minecraft:the_nether
+[11:31:55 INFO]: Preparing spawn area: 2%
+[11:31:56 INFO]: Preparing spawn area: 2%
+[11:31:56 INFO]: Preparing spawn area: 18%
+[11:31:57 INFO]: Preparing spawn area: 51%
+[11:31:57 INFO]: Preparing spawn area: 73%
+[11:31:57 INFO]: Time elapsed: 2065 ms
+[11:31:57 INFO]: Preparing start region for dimension minecraft:the_end
+[11:31:57 INFO]: Preparing spawn area: 2%
+[11:31:58 INFO]: Time elapsed: 421 ms
+[11:31:58 INFO]: [Economy] Enabling Economy v1.0.0
+[11:31:58 INFO]: [Economy] Loaded 1284 price entries (1274 buyable). Skipped 265 ids unknown to this server version.
+[11:31:59 INFO]: [Economy] AI auction market ready: 1000 synthetic listings.
+[11:31:59 INFO]: [Economy] Economy enabled.
+[11:31:59 INFO]: [MarketHarness] Enabling MarketHarness v1.0.0
+[11:32:04 INFO]: [MarketHarness] MarketHarness report written, failures=0
+[11:32:04 INFO]: [spark] Starting background profiler...
+[11:32:04 INFO]: Done preparing level "world" (12.251s)
+[11:32:04 INFO]: Running delayed init tasks
+[11:32:04 INFO]: Done (26.692s)! For help, type "help"
+[11:32:04 INFO]: *************************************************************************************
+[11:32:04 INFO]: This is the first time you're starting this server.
+[11:32:04 INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+[11:32:04 INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+[11:32:04 INFO]: *************************************************************************************
+[11:32:07 INFO]: Stopping server
+[11:32:07 INFO]: [MarketHarness] Disabling MarketHarness v1.0.0
+[11:32:07 INFO]: [Economy] Disabling Economy v1.0.0
+[11:32:07 INFO]: [Economy] Economy disabled.
+[11:32:07 INFO]: Saving players
+[11:32:07 INFO]: Saving worlds
+[11:32:07 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[11:32:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[11:32:07 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[11:32:07 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[11:32:08 INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 9 poi chunks in world 'world' in 0.72s
+[11:32:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[11:32:08 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[11:32:08 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[11:32:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[11:32:08 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[11:32:08 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[11:32:09 INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.41s
+[11:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[11:32:09 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[11:32:09 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[11:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.28s
+[11:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[11:32:09 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:32:09 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:32:09 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:32:09 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11:32:09 INFO]: Waiting for I/O tasks to complete...
+[11:32:09 INFO]: All I/O tasks to complete
+[11:32:09 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[11:32:09 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

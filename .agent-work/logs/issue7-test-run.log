@@ -1,0 +1,211 @@
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:284: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        lore.add("§7Stored enchantment: §d" + pretty(enchantment.getName()) + " " + level);
+                                                                ^
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:290: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        mark(meta, Kind.HIGH_ENCHANT_BOOK, "book_" + enchantment.getName() + "_" + level, value, rng);
+                                                                ^
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:291: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        meta.setDisplayName("§5§lAncient Tome of " + pretty(enchantment.getName()));
+                                                                       ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+Downloading mojang_1.21.4.jar
+Applying patches
+Starting org.bukkit.craftbukkit.Main
+*** Warning, you've not updated in a while! ***
+*** Please download a new build from https://papermc.io/downloads/paper ***
+2026-11-19T11:31:38.286008353Z ServerMain WARN Advanced terminal features are not available in this environment
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/home/runner/work/economy_plugin/economy_plugin/.agent-work/tmp/paper-test/server/libraries/io/netty/netty-common/4.1.115.Final/netty-common-4.1.115.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+[11:31:38 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.5+8-LTS; Eclipse Adoptium Temurin-25.0.5+8) on Linux 7.0.0-1019-azure (amd64)
+[11:31:38 INFO]: [bootstrap] Loading Paper 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) for Minecraft 1.21.4
+[11:31:39 INFO]: [PluginInitializerManager] Initializing plugins...
+[11:31:39 INFO]: [ReobfServer] Remapping server...
+[11:31:44 INFO]: [ReobfServer] Done remapping server in 5544ms.
+[11:31:44 INFO]: [PluginRemapper] Remapping plugin 'plugins/Economy-1.0.0.jar'...
+[11:31:44 INFO]: [PluginRemapper] Remapping plugin 'plugins/MarketHarness.jar'...
+[11:31:45 INFO]: [PluginRemapper] Done remapping plugin 'plugins/MarketHarness.jar' in 170ms.
+[11:31:45 INFO]: [PluginRemapper] Done remapping plugin 'plugins/Economy-1.0.0.jar' in 193ms.
+[11:31:45 INFO]: [PluginInitializerManager] Initialized 2 plugins
+[11:31:45 INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - Economy (1.0.0), MarketHarness (1.0.0)
+[11:31:49 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11:31:49 INFO]: Found new data pack file/bukkit, loading it automatically
+[11:31:49 INFO]: Found new data pack paper, loading it automatically
+[11:31:49 INFO]: No existing world data, creating new world
+[11:31:49 ERROR]: No key layers in MapLike[{}]
+[11:31:50 INFO]: Loaded 1370 recipes
+[11:31:50 INFO]: Loaded 1481 advancements
+[11:31:50 INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[11:31:50 INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 231.6ms
+[11:31:51 INFO]: Starting minecraft server version 1.21.4
+[11:31:51 INFO]: Loading properties
+[11:31:51 INFO]: This server is running Paper version 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[11:31:51 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[11:31:51 INFO]: Server Ping Player Sample Count: 12
+[11:31:51 INFO]: Using 4 threads for Netty based IO
+[11:31:51 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[11:31:51 INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[11:31:52 INFO]: Default game type: SURVIVAL
+[11:31:52 INFO]: Generating keypair
+[11:31:52 INFO]: Starting Minecraft server on *:25565
+[11:31:52 INFO]: Using epoll channel type
+[11:31:52 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[11:31:52 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[11:31:52 INFO]: [Economy] Loading server plugin Economy v1.0.0
+[11:31:52 INFO]: [MarketHarness] Loading server plugin MarketHarness v1.0.0
+[11:31:52 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:31:52 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:31:52 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:31:52 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:31:52 INFO]: Preparing level "world"
+[11:31:52 ERROR]: No key layers in MapLike[{}]
+[11:31:53 ERROR]: No key layers in MapLike[{}]
+[11:31:54 ERROR]: No key layers in MapLike[{}]
+[11:31:54 INFO]: Preparing start region for dimension minecraft:overworld
+[11:31:54 INFO]: Preparing spawn area: 2%
+[11:31:55 INFO]: Preparing spawn area: 14%
+[11:31:55 INFO]: Time elapsed: 888 ms
+[11:31:55 INFO]: Preparing start region for dimension minecraft:the_nether
+[11:31:55 INFO]: Preparing spawn area: 2%
+[11:31:56 INFO]: Preparing spawn area: 2%
+[11:31:56 INFO]: Preparing spawn area: 18%
+[11:31:57 INFO]: Preparing spawn area: 51%
+[11:31:57 INFO]: Preparing spawn area: 73%
+[11:31:57 INFO]: Time elapsed: 2065 ms
+[11:31:57 INFO]: Preparing start region for dimension minecraft:the_end
+[11:31:57 INFO]: Preparing spawn area: 2%
+[11:31:58 INFO]: Time elapsed: 421 ms
+[11:31:58 INFO]: [Economy] Enabling Economy v1.0.0
+[11:31:58 INFO]: [Economy] Loaded 1284 price entries (1274 buyable). Skipped 265 ids unknown to this server version.
+[11:31:59 INFO]: [Economy] AI auction market ready: 1000 synthetic listings.
+[11:31:59 INFO]: [Economy] Economy enabled.
+[11:31:59 INFO]: [MarketHarness] Enabling MarketHarness v1.0.0
+[11:32:04 INFO]: [MarketHarness] MarketHarness report written, failures=0
+[11:32:04 INFO]: [spark] Starting background profiler...
+[11:32:04 INFO]: Done preparing level "world" (12.251s)
+[11:32:04 INFO]: Running delayed init tasks
+[11:32:04 INFO]: Done (26.692s)! For help, type "help"
+[11:32:04 INFO]: *************************************************************************************
+[11:32:04 INFO]: This is the first time you're starting this server.
+[11:32:04 INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+[11:32:04 INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+[11:32:04 INFO]: *************************************************************************************
+[11:32:07 INFO]: Stopping server
+[11:32:07 INFO]: [MarketHarness] Disabling MarketHarness v1.0.0
+[11:32:07 INFO]: [Economy] Disabling Economy v1.0.0
+[11:32:07 INFO]: [Economy] Economy disabled.
+[11:32:07 INFO]: Saving players
+[11:32:07 INFO]: Saving worlds
+[11:32:07 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[11:32:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[11:32:07 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[11:32:07 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[11:32:08 INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 9 poi chunks in world 'world' in 0.72s
+[11:32:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[11:32:08 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[11:32:08 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[11:32:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[11:32:08 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[11:32:08 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[11:32:09 INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.41s
+[11:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[11:32:09 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[11:32:09 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[11:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.28s
+[11:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[11:32:09 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[11:32:09 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:32:09 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:32:09 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:32:09 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11:32:09 INFO]: Waiting for I/O tasks to complete...
+[11:32:09 INFO]: All I/O tasks to complete
+[11:32:09 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[11:32:09 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+ai market scale checks
+target=1000 active=1000
+
+head trade checks
+player_head buyable=false sellable=true
+creeper_head buyable=false sellable=true
+piglin_head buyable=false sellable=true
+skeleton_skull buyable=false sellable=true
+wither_skeleton_skull buyable=false sellable=true
+zombie_head buyable=false sellable=true
+
+generation checks
+junk COMMON avgValue=35371 amount=1-32
+supplies COMMON avgValue=83351 amount=4-35
+tools COMMON avgValue=1735 amount=1-1
+armor COMMON avgValue=31072 amount=1-1
+enchanted_tools COMMON avgValue=1834 amount=1-1
+enchanted_armor COMMON avgValue=31014 amount=1-1
+weapons COMMON avgValue=1685 amount=1-1
+crates COMMON avgValue=472550 amount=1-1
+books COMMON avgValue=62025 amount=1-1
+treasures COMMON avgValue=234100 amount=1-20
+special COMMON avgValue=24829814 amount=1-1
+junk UNCOMMON avgValue=85978 amount=1-39
+supplies UNCOMMON avgValue=195463 amount=4-45
+tools UNCOMMON avgValue=3680 amount=1-1
+armor UNCOMMON avgValue=29273 amount=1-1
+enchanted_tools UNCOMMON avgValue=3823 amount=1-1
+enchanted_armor UNCOMMON avgValue=28361 amount=1-1
+weapons UNCOMMON avgValue=1962 amount=1-1
+crates UNCOMMON avgValue=482932 amount=1-1
+books UNCOMMON avgValue=73887 amount=1-1
+treasures UNCOMMON avgValue=233800 amount=1-21
+special UNCOMMON avgValue=23354328 amount=1-1
+junk RARE avgValue=309924 amount=1-28
+supplies RARE avgValue=87463 amount=4-41
+tools RARE avgValue=8121 amount=1-1
+armor RARE avgValue=32905 amount=1-1
+enchanted_tools RARE avgValue=6796 amount=1-1
+enchanted_armor RARE avgValue=33001 amount=1-1
+weapons RARE avgValue=80448 amount=1-1
+crates RARE avgValue=892488 amount=1-1
+books RARE avgValue=83150 amount=1-1
+treasures RARE avgValue=508950 amount=1-19
+special RARE avgValue=34202094 amount=1-1
+junk EPIC avgValue=127325 amount=1-26
+supplies EPIC avgValue=72713 amount=4-41
+tools EPIC avgValue=19356 amount=1-1
+armor EPIC avgValue=58345 amount=1-1
+enchanted_tools EPIC avgValue=24097 amount=1-1
+enchanted_armor EPIC avgValue=76739 amount=1-1
+weapons EPIC avgValue=183059 amount=1-1
+crates EPIC avgValue=915889 amount=1-1
+books EPIC avgValue=92737 amount=1-1
+treasures EPIC avgValue=581450 amount=1-23
+special EPIC avgValue=34172065 amount=1-1
+junk LEGENDARY avgValue=136481 amount=1-32
+supplies LEGENDARY avgValue=155837 amount=4-38
+tools LEGENDARY avgValue=33955 amount=1-1
+armor LEGENDARY avgValue=124449 amount=1-1
+enchanted_tools LEGENDARY avgValue=33412 amount=1-1
+enchanted_armor LEGENDARY avgValue=98066 amount=1-1
+weapons LEGENDARY avgValue=278080 amount=1-1
+crates LEGENDARY avgValue=1336267 amount=1-1
+books LEGENDARY avgValue=97125 amount=1-1
+treasures LEGENDARY avgValue=885750 amount=1-22
+special LEGENDARY avgValue=19099485 amount=1-1
+
+keep inventory helmet checks
+generated 50 helmets, failures so far=0
+
+crate payout checks
+scrap cost=1000 rolls=4000 jackpots=91 avg=913 return=91.3% min=296 max=7687
+adventurer cost=10000 rolls=4000 jackpots=111 avg=8713 return=87.1% min=800 max=115000
+treasure cost=50000 rolls=4000 jackpots=101 avg=41789 return=83.6% min=5038 max=625914
+relic cost=200000 rolls=4000 jackpots=126 avg=162213 return=81.1% min=20308 max=1411729
+neural cost=1000000 rolls=4000 jackpots=136 avg=774542 return=77.5% min=177483 max=10129370
+
+failures=0
+MarketHarness: PASS

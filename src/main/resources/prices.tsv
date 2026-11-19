@@ -691,7 +691,7 @@ creaking_spawn_egg	Creaking Spawn Egg	0	100000	no	no	creative	spawn egg (creativ
 
 creeper_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-creeper_head	Creeper Head	100000	80000	yes	yes	blocks	
+creeper_head	Creeper Head	0	80000	yes	no	blocks	Mob head - not sold by shop
 
 creeper_spawn_egg	Creeper Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -2050,7 +2050,7 @@ piglin_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc
 
 piglin_brute_spawn_egg	Piglin Brute Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-piglin_head	Piglin Head	100000	80000	yes	yes	blocks	
+piglin_head	Piglin Head	0	80000	yes	no	blocks	Mob head - not sold by shop
 
 piglin_spawn_egg	Piglin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -2108,7 +2108,7 @@ pitcher_pod	Pitcher Pod	1000	800	yes	yes	blocks
 
 plains_village_map	Plains Village Map	2500	2000	yes	yes	misc	
 
-player_head	Player Head	100000	80000	yes	yes	blocks	
+player_head	Player Head	0	80000	yes	no	blocks	Player head - not sold by shop
 
 plenty_pottery_sherd	Plenty Pottery Sherd	50000	40000	yes	yes	misc	
 
@@ -2542,7 +2542,7 @@ silverfish_spawn_egg	Silverfish Spawn Egg	0	100000	no	no	creative	spawn egg (cre
 
 skeleton_horse_spawn_egg	Skeleton Horse Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-skeleton_skull	Skeleton Skull	100000	80000	yes	yes	blocks	
+skeleton_skull	Skeleton Skull	0	80000	yes	no	blocks	Mob head - not sold by shop
 
 skeleton_spawn_egg	Skeleton Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -3168,7 +3168,7 @@ witch_spawn_egg	Witch Spawn Egg	0	100000	no	no	creative	spawn egg (creative only
 
 wither_rose	Wither Rose	1000	800	yes	yes	nether	
 
-wither_skeleton_skull	Wither Skeleton Skull	100000	80000	yes	yes	nether	
+wither_skeleton_skull	Wither Skeleton Skull	0	80000	yes	no	nether	Mob head - not sold by shop
 
 wither_skeleton_spawn_egg	Wither Skeleton Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -3240,7 +3240,7 @@ yellow_wool_stairs	Yellow Wool Stairs	1200	900	yes	yes	blocks
 
 zoglin_spawn_egg	Zoglin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-zombie_head	Zombie Head	100000	80000	yes	yes	blocks	
+zombie_head	Zombie Head	0	80000	yes	no	blocks	Mob head - not sold by shop
 
 zombie_horse_spawn_egg	Zombie Horse Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
