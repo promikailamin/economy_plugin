@@ -59,6 +59,7 @@ public class EconomyPlugin extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new GuiListener(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
+        Bukkit.getPluginManager().registerEvents(new KeepInventoryListener(this), this);
         Bukkit.getPluginManager().registerEvents(new SellAxeListener(), this);
         Bukkit.getPluginManager().registerEvents(new SpecialToolListener(), this);
         Bukkit.getScheduler().runTaskTimer(this, () -> {

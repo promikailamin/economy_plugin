@@ -13,8 +13,9 @@ Server-side economy plugin. No client mod needed.
   demand and a small neural network that learns from sales and reprices listings
 - `/ah stock` market overview with live stock/demand/price information
 - Limited special relics in the AI market: 3x3/4x4/5x5 area miners (pickaxe and
-  shovel), vein miner, tree miner, level 10-15 enchanted books and gear, and eternal
-  armour with one random slot-bound good or bad potion effect
+  shovel), vein miner, tree miner, level 10-15 enchanted books and gear, eternal
+  armour with one random slot-bound good or bad potion effect, and an extremely rare
+  Keep Inventory Helmet
 - Mystery shop (`/mystery`, `/ah mystery`): crate tiers with stock/restock, a neural
   luck model, dry-streak compensation and weighted loot that can be better or worse
 - Sell Axe: blocks broken with it are sold automatically (`/sellaxe`)
@@ -75,6 +76,11 @@ vein miners break connected ores (up to 64) and tree miners fell connected logs 
 durability and grants its stored effect while worn; each piece has exactly one effect
 matched to its slot (speed on boots, resistance/regeneration on chestplates and
 leggings, and so on). Some relics carry a bad effect instead.
+
+The Keep Inventory Helmet is much rarer than other relics (`auction.ai.keep-inventory-helmet-chance`,
+2% by default) and costs hundreds of millions. While worn it keeps the player's entire
+inventory on death, but experience is still lost normally and the helmet shatters when
+the player respawns.
 
 ## Permissions
 `economy.bal`, `economy.bal.others`, `economy.pay`, `economy.shop`, `economy.scoreboard`,

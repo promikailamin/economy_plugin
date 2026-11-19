@@ -24,7 +24,8 @@ import java.util.Set;
 public final class SpecialItems {
 
     public enum Kind {
-        AREA_MINER, VEIN_MINER, TREE_MINER, HIGH_ENCHANT_BOOK, HIGH_ENCHANT_GEAR, ETERNAL_ARMOR
+        AREA_MINER, VEIN_MINER, TREE_MINER, HIGH_ENCHANT_BOOK, HIGH_ENCHANT_GEAR, ETERNAL_ARMOR,
+        KEEP_INVENTORY_HELMET
     }
 
     private enum ArmorSlot {
@@ -147,7 +148,24 @@ public final class SpecialItems {
         return size == null ? 0 : size;
     }
 
+    public static int serial(ItemStack item) {
+        if (!isSpecial(item)) return 0;
+        Integer serial = item.getItemMeta().getPersistentDataContainer().get(key(SERIAL), PersistentDataType.INTEGER);
+        return serial == null ? 0 : serial;
+    }
+
+    public static boolean isKeepInventoryHelmet(ItemStack item) {
+        return kind(item) == Kind.KEEP_INVENTORY_HELMET;
+    }
+
     public static ItemStack random(Random rng) {
+        return random(rng, 0.02);
+    }
+
+    public static ItemStack random(Random rng, double keepInventoryHelmetChance) {
+        if (keepInventoryHelmetChance > 0 && rng.nextDouble() < keepInventoryHelmetChance) {
+            return keepInventoryHelmet(rng);
+        }
         int roll = rng.nextInt(100);
         if (roll < 18) return areaMiner(rng, 3, false);
         if (roll < 30) return areaMiner(rng, 3, true);
@@ -301,6 +319,33 @@ public final class SpecialItems {
         String id = "gear_" + material.name().toLowerCase(Locale.ROOT) + "_" + value;
         mark(meta, Kind.HIGH_ENCHANT_GEAR, id, value, rng);
         meta.setDisplayName("§5§lGodforged " + pretty(material.name()));
+        meta.setLore(lore);
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    public static ItemStack keepInventoryHelmet(Random rng) {
+        ItemStack item = new ItemStack(Material.NETHERITE_HELMET);
+        ItemMeta meta = item.getItemMeta();
+        if (meta == null) return item;
+
+        meta.addEnchant(Enchantment.PROTECTION, 4, true);
+        meta.addEnchant(Enchantment.UNBREAKING, 5, true);
+        meta.addEnchant(Enchantment.MENDING, 1, true);
+        meta.addEnchant(Enchantment.RESPIRATION, 3, true);
+        meta.addEnchant(Enchantment.AQUA_AFFINITY, 1, true);
+
+        long value = 500_000_000L + rng.nextInt(250_000_001);
+        List<String> lore = new ArrayList<>();
+        lore.add("§7Passive: §aKeeps your entire inventory on death");
+        lore.add("§7Experience is still lost like a normal death.");
+        lore.add("§7The helmet shatters when you respawn.");
+        lore.add("§8-------------------------");
+        lore.add("§8Mythic relic • extremely rare");
+        lore.add("§5Relic value: §d" + Money.format(value));
+
+        mark(meta, Kind.KEEP_INVENTORY_HELMET, "keep_inventory_helmet", value, rng);
+        meta.setDisplayName("§d§lHelm of Preservation");
         meta.setLore(lore);
         item.setItemMeta(meta);
         return item;

@@ -181,6 +181,11 @@ public final class AiItemFactory {
     }
 
     public static ItemStack generate(Random rng, String archetype, Quality quality) {
+        return generate(rng, archetype, quality, 0.02);
+    }
+
+    public static ItemStack generate(Random rng, String archetype, Quality quality,
+                                     double keepInventoryHelmetChance) {
         String id = archetype == null ? "random" : archetype.toLowerCase(Locale.ROOT);
         return switch (id) {
             case "junk" -> randomItem(rng, quality);
@@ -193,7 +198,7 @@ public final class AiItemFactory {
             case "treasures" -> treasure(rng, quality);
             case "books" -> enchantedBook(rng, quality);
             case "supplies" -> supplies(rng, quality);
-            case "special" -> SpecialItems.random(rng);
+            case "special" -> SpecialItems.random(rng, keepInventoryHelmetChance);
             default -> randomItem(rng, quality);
         };
     }

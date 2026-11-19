@@ -39,6 +39,9 @@ auction:
     special-relics-enabled: true
     # Total number of relics the market may ever mint. Set 0 to disable.
     max-special-relics: 24
+    # Chance that a newly minted relic is the extremely rare Keep Inventory Helmet.
+    # 0.02 means 2 in 100 relics. Set 0 to make it unobtainable from the market.
+    keep-inventory-helmet-chance: 0.02
 
 mystery:
   enabled: true

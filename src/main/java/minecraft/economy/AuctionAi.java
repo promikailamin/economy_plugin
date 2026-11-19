@@ -76,6 +76,7 @@ public final class AuctionAi {
     private boolean specialRelicsEnabled = true;
     private int maxSpecialRelics = 24;
     private int specialMinted = 0;
+    private double keepInventoryHelmetChance = 0.02;
 
     private static final class Stock {
         final Spec spec;
@@ -153,6 +154,8 @@ public final class AuctionAi {
         seed = cfg.getLong("auction.ai.seed", 1337L);
         specialRelicsEnabled = cfg.getBoolean("auction.ai.special-relics-enabled", true);
         maxSpecialRelics = Math.max(0, cfg.getInt("auction.ai.max-special-relics", 24));
+        keepInventoryHelmetChance = Math.max(0, Math.min(1,
+                cfg.getDouble("auction.ai.keep-inventory-helmet-chance", 0.02)));
     }
 
     public void tick() {
@@ -225,7 +228,7 @@ public final class AuctionAi {
         if (rng.nextDouble() < Math.max(0, stock.demand - 0.55) * 0.45) {
             quality = AiItemFactory.Quality.byRank(quality.rank() + 1);
         }
-        var item = AiItemFactory.generate(rng, stock.spec.id(), quality);
+        var item = AiItemFactory.generate(rng, stock.spec.id(), quality, keepInventoryHelmetChance);
         boolean relic = SpecialItems.isSpecial(item);
         long value = AiItemFactory.value(item);
         double[] input = features(stock, quality, now);

@@ -3,6 +3,7 @@ package marketharness;
 import minecraft.economy.AiItemFactory;
 import minecraft.economy.EconomyPlugin;
 import minecraft.economy.MysteryShop;
+import minecraft.economy.SpecialItems;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,7 +18,7 @@ public final class MarketHarness extends JavaPlugin {
 
     private static final List<String> ARCHETYPES = List.of(
             "junk", "supplies", "tools", "armor", "enchanted_tools",
-            "enchanted_armor", "weapons", "crates", "books", "treasures"
+            "enchanted_armor", "weapons", "crates", "books", "treasures", "special"
     );
 
     @Override
@@ -48,6 +49,15 @@ public final class MarketHarness extends JavaPlugin {
                         .append(" amount=").append(min).append('-').append(max).append('\n');
             }
         }
+
+        report.append("\nkeep inventory helmet checks\n");
+        for (int i = 0; i < 50; i++) {
+            ItemStack helmet = SpecialItems.keepInventoryHelmet(rng);
+            if (!SpecialItems.isKeepInventoryHelmet(helmet)) failures++;
+            if (SpecialItems.value(helmet) < 500_000_000L) failures++;
+            if (SpecialItems.serial(helmet) <= 0) failures++;
+        }
+        report.append("generated 50 helmets, failures so far=").append(failures).append('\n');
 
         report.append("\ncrate payout checks\n");
         MysteryShop shop = EconomyPlugin.get().mystery();
