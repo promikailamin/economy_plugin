@@ -1,202 +1,202 @@
-abandoned_camp_map	Abandoned Camp Map	25	20	yes	yes	misc	
+abandoned_camp_map	Abandoned Camp Map	2500	2000	yes	yes	misc	
 
-acacia_boat	Acacia Boat	40	10	yes	yes	misc	
+acacia_boat	Acacia Boat	4000	1000	yes	yes	misc	
 
-acacia_button	Acacia Button	12	2	yes	yes	redstone	
+acacia_button	Acacia Button	1200	200	yes	yes	redstone	
 
-acacia_chest_boat	Acacia Boat with Chest	30	24	yes	yes	misc	
+acacia_chest_boat	Acacia Boat with Chest	3000	2400	yes	yes	misc	
 
-acacia_door	Acacia Door	16	4	yes	yes	blocks	
+acacia_door	Acacia Door	1600	400	yes	yes	blocks	
 
-acacia_fence	Acacia Fence	12	3	yes	yes	blocks	
+acacia_fence	Acacia Fence	1200	300	yes	yes	blocks	
 
-acacia_fence_gate	Acacia Fence Gate	12	8	yes	yes	blocks	
+acacia_fence_gate	Acacia Fence Gate	1200	800	yes	yes	blocks	
 
-acacia_hanging_sign	Acacia Hanging Sign	20	16	yes	yes	blocks	
+acacia_hanging_sign	Acacia Hanging Sign	2000	1600	yes	yes	blocks	
 
-acacia_leaves	Acacia Leaves	5	4	yes	yes	blocks	
+acacia_leaves	Acacia Leaves	500	400	yes	yes	blocks	
 
-acacia_log	Acacia Log	8	6	yes	yes	blocks	
+acacia_log	Acacia Log	800	600	yes	yes	blocks	
 
-acacia_planks	Acacia Planks	8	2	yes	yes	blocks	
+acacia_planks	Acacia Planks	800	200	yes	yes	blocks	
 
-acacia_pressure_plate	Acacia Pressure Plate	16	4	yes	yes	redstone	
+acacia_pressure_plate	Acacia Pressure Plate	1600	400	yes	yes	redstone	
 
-acacia_sapling	Acacia Sapling	5	4	yes	yes	blocks	
+acacia_sapling	Acacia Sapling	500	400	yes	yes	blocks	
 
-acacia_shelf	Acacia Shelf	20	16	yes	yes	blocks	
+acacia_shelf	Acacia Shelf	2000	1600	yes	yes	blocks	
 
-acacia_sign	Acacia Sign	20	4	yes	yes	blocks	
+acacia_sign	Acacia Sign	2000	400	yes	yes	blocks	
 
-acacia_slab	Acacia Slab	12	1	yes	yes	blocks	
+acacia_slab	Acacia Slab	1200	100	yes	yes	blocks	
 
-acacia_stairs	Acacia Stairs	12	3	yes	yes	blocks	
+acacia_stairs	Acacia Stairs	1200	300	yes	yes	blocks	
 
-acacia_trapdoor	Acacia Trapdoor	24	6	yes	yes	blocks	
+acacia_trapdoor	Acacia Trapdoor	2400	600	yes	yes	blocks	
 
-acacia_wood	Acacia Wood	11	8	yes	yes	blocks	
+acacia_wood	Acacia Wood	1100	800	yes	yes	blocks	
 
 activator_rail	Activator Rail	8	6	yes	yes	redstone	
-allay_spawn_egg	Allay Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+allay_spawn_egg	Allay Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-allium	Allium	10	8	yes	yes	blocks	
+allium	Allium	1000	800	yes	yes	blocks	
 
-amethyst_block	Block of Amethyst	120	96	yes	yes	ores	
-amethyst_cluster	Amethyst Cluster	50	40	yes	yes	blocks	
+amethyst_block	Block of Amethyst	12000	9600	yes	yes	ores	
+amethyst_cluster	Amethyst Cluster	5000	4000	yes	yes	blocks	
 
-amethyst_shard	Amethyst Shard	30	24	yes	yes	misc	
+amethyst_shard	Amethyst Shard	3000	2400	yes	yes	misc	
 
-ancient_debris	Ancient Debris	500	400	yes	yes	nether	
+ancient_debris	Ancient Debris	50000	40000	yes	yes	nether	
 
-andesite	Andesite	10	8	yes	yes	blocks	
+andesite	Andesite	1000	505	yes	yes	blocks	
 
-andesite_slab	Andesite Slab	12	5	yes	yes	blocks	
+andesite_slab	Andesite Slab	1200	252	yes	yes	blocks	
 
-andesite_stairs	Andesite Stairs	12	9	yes	yes	blocks	
+andesite_stairs	Andesite Stairs	1200	505	yes	yes	blocks	
 
-andesite_wall	Andesite Wall	12	9	yes	yes	blocks	
+andesite_wall	Andesite Wall	1200	505	yes	yes	blocks	
 
-angler_pottery_sherd	Angler Pottery Sherd	500	400	yes	yes	misc	
+angler_pottery_sherd	Angler Pottery Sherd	50000	40000	yes	yes	misc	
 
-anvil	Anvil	10	8	yes	yes	blocks	
+anvil	Anvil	1000	800	yes	yes	blocks	
 
-apple	Apple	8	6	yes	yes	food	
+apple	Apple	800	600	yes	yes	food	
 
-archer_pottery_sherd	Archer Pottery Sherd	500	400	yes	yes	misc	
+archer_pottery_sherd	Archer Pottery Sherd	50000	40000	yes	yes	misc	
 
-armadillo_scute	Armadillo Scute	25	20	yes	yes	misc	
+armadillo_scute	Armadillo Scute	2500	2000	yes	yes	misc	
 
-armadillo_spawn_egg	Armadillo Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+armadillo_spawn_egg	Armadillo Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-armor_stand	Armor Stand	25	11	yes	yes	misc	
+armor_stand	Armor Stand	2500	605	yes	yes	misc	
 
-arms_up_pottery_sherd	Arms Up Pottery Sherd	500	400	yes	yes	misc	
+arms_up_pottery_sherd	Arms Up Pottery Sherd	50000	40000	yes	yes	misc	
 
-arrow	Arrow	25	12	yes	yes	misc	
+arrow	Arrow	2500	1200	yes	yes	misc	
 
-axolotl_bucket	Bucket of Axolotl	50	40	yes	yes	misc	
+axolotl_bucket	Bucket of Axolotl	5000	4000	yes	yes	misc	
 
-axolotl_spawn_egg	Axolotl Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+axolotl_spawn_egg	Axolotl Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-azalea	Azalea	10	8	yes	yes	blocks	
+azalea	Azalea	1000	800	yes	yes	blocks	
 
-azalea_leaves	Azalea Leaves	5	4	yes	yes	blocks	
+azalea_leaves	Azalea Leaves	500	400	yes	yes	blocks	
 
-azure_bluet	Azure Bluet	10	8	yes	yes	blocks	
+azure_bluet	Azure Bluet	1000	800	yes	yes	blocks	
 
-baked_potato	Baked Potato	8	6	yes	yes	food	
+baked_potato	Baked Potato	800	600	yes	yes	food	
 
-bamboo	Bamboo	10	8	yes	yes	blocks	
+bamboo	Bamboo	1000	800	yes	yes	blocks	
 
-bamboo_block	Block of Bamboo	90	72	yes	yes	blocks	
+bamboo_block	Block of Bamboo	9000	7200	yes	yes	blocks	
 
-bamboo_button	Bamboo Button	12	9	yes	yes	redstone	
+bamboo_button	Bamboo Button	1200	900	yes	yes	redstone	
 
-bamboo_chest_raft	Bamboo Raft with Chest	30	24	yes	yes	misc	
+bamboo_chest_raft	Bamboo Raft with Chest	3000	2400	yes	yes	misc	
 
-bamboo_door	Bamboo Door	20	16	yes	yes	blocks	
+bamboo_door	Bamboo Door	2000	1600	yes	yes	blocks	
 
-bamboo_fence	Bamboo Fence	12	9	yes	yes	blocks	
+bamboo_fence	Bamboo Fence	1200	900	yes	yes	blocks	
 
-bamboo_fence_gate	Bamboo Fence Gate	12	9	yes	yes	blocks	
+bamboo_fence_gate	Bamboo Fence Gate	1200	900	yes	yes	blocks	
 
-bamboo_hanging_sign	Bamboo Hanging Sign	20	16	yes	yes	blocks	
+bamboo_hanging_sign	Bamboo Hanging Sign	2000	1600	yes	yes	blocks	
 
-bamboo_mosaic	Bamboo Mosaic	24	10	yes	yes	blocks	
+bamboo_mosaic	Bamboo Mosaic	2400	1000	yes	yes	blocks	
 
-bamboo_mosaic_slab	Bamboo Mosaic Slab	12	5	yes	yes	blocks	
+bamboo_mosaic_slab	Bamboo Mosaic Slab	1200	500	yes	yes	blocks	
 
-bamboo_mosaic_stairs	Bamboo Mosaic Stairs	36	15	yes	yes	blocks	
+bamboo_mosaic_stairs	Bamboo Mosaic Stairs	3600	1500	yes	yes	blocks	
 
-bamboo_planks	Bamboo Planks	10	8	yes	yes	blocks	
+bamboo_planks	Bamboo Planks	1000	800	yes	yes	blocks	
 
-bamboo_pressure_plate	Bamboo Pressure Plate	20	16	yes	yes	redstone	
+bamboo_pressure_plate	Bamboo Pressure Plate	2000	1600	yes	yes	redstone	
 
-bamboo_raft	Bamboo Raft	50	40	yes	yes	misc	
+bamboo_raft	Bamboo Raft	5000	4000	yes	yes	misc	
 
-bamboo_shelf	Bamboo Shelf	20	16	yes	yes	blocks	
+bamboo_shelf	Bamboo Shelf	2000	1600	yes	yes	blocks	
 
-bamboo_sign	Bamboo Sign	20	16	yes	yes	blocks	
+bamboo_sign	Bamboo Sign	2000	1600	yes	yes	blocks	
 
-bamboo_slab	Bamboo Slab	12	5	yes	yes	blocks	
+bamboo_slab	Bamboo Slab	1200	500	yes	yes	blocks	
 
-bamboo_stairs	Bamboo Stairs	15	12	yes	yes	blocks	
+bamboo_stairs	Bamboo Stairs	1500	1200	yes	yes	blocks	
 
-bamboo_trapdoor	Bamboo Trapdoor	30	24	yes	yes	blocks	
+bamboo_trapdoor	Bamboo Trapdoor	3000	2400	yes	yes	blocks	
 
-barrel	Barrel	10	8	yes	yes	blocks	
+barrel	Barrel	1000	800	yes	yes	blocks	
 
-barrier	Barrier	0	5000	no	no	creative	creative only
+barrier	Barrier	0	500000	no	no	creative	creative only
 
-basalt	Basalt	10	8	yes	yes	blocks	
+basalt	Basalt	1000	800	yes	yes	blocks	
 
-bat_spawn_egg	Bat Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+bat_spawn_egg	Bat Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-beacon	Beacon	5000	4000	yes	yes	blocks	
+beacon	Beacon	500000	400000	yes	yes	blocks	
 
-bedrock	Bedrock	0	5000	no	no	creative	creative only
+bedrock	Bedrock	0	500000	no	no	creative	creative only
 
-bee_nest	Bee Nest	10	8	yes	yes	blocks	
+bee_nest	Bee Nest	1000	800	yes	yes	blocks	
 
-bee_spawn_egg	Bee Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+bee_spawn_egg	Bee Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-beef	Raw Beef	8	6	yes	yes	food	
+beef	Raw Beef	800	600	yes	yes	food	
 
-beehive	Beehive	10	8	yes	yes	blocks	
+beehive	Beehive	1000	800	yes	yes	blocks	
 
-beetroot	Beetroot	8	6	yes	yes	food	
+beetroot	Beetroot	800	600	yes	yes	food	
 
-beetroot_seeds	Beetroot Seeds	5	4	yes	yes	food	
+beetroot_seeds	Beetroot Seeds	500	400	yes	yes	food	
 
-beetroot_soup	Beetroot Soup	8	6	yes	yes	food	
+beetroot_soup	Beetroot Soup	800	600	yes	yes	food	
 
-bell	Bell	10	8	yes	yes	blocks	
+bell	Bell	1000	800	yes	yes	blocks	
 
-big_dripleaf	Big Dripleaf	10	8	yes	yes	blocks	
+big_dripleaf	Big Dripleaf	1000	800	yes	yes	blocks	
 
-birch_boat	Birch Boat	40	10	yes	yes	misc	
+birch_boat	Birch Boat	4000	1000	yes	yes	misc	
 
-birch_button	Birch Button	12	2	yes	yes	redstone	
+birch_button	Birch Button	1200	200	yes	yes	redstone	
 
-birch_chest_boat	Birch Boat with Chest	30	24	yes	yes	misc	
+birch_chest_boat	Birch Boat with Chest	3000	2400	yes	yes	misc	
 
-birch_door	Birch Door	16	4	yes	yes	blocks	
+birch_door	Birch Door	1600	400	yes	yes	blocks	
 
-birch_fence	Birch Fence	12	3	yes	yes	blocks	
+birch_fence	Birch Fence	1200	300	yes	yes	blocks	
 
-birch_fence_gate	Birch Fence Gate	12	8	yes	yes	blocks	
+birch_fence_gate	Birch Fence Gate	1200	800	yes	yes	blocks	
 
-birch_hanging_sign	Birch Hanging Sign	20	16	yes	yes	blocks	
+birch_hanging_sign	Birch Hanging Sign	2000	1600	yes	yes	blocks	
 
-birch_leaves	Birch Leaves	5	4	yes	yes	blocks	
+birch_leaves	Birch Leaves	500	400	yes	yes	blocks	
 
-birch_log	Birch Log	8	6	yes	yes	blocks	
+birch_log	Birch Log	800	600	yes	yes	blocks	
 
-birch_planks	Birch Planks	8	2	yes	yes	blocks	
+birch_planks	Birch Planks	800	200	yes	yes	blocks	
 
-birch_pressure_plate	Birch Pressure Plate	16	4	yes	yes	redstone	
+birch_pressure_plate	Birch Pressure Plate	1600	400	yes	yes	redstone	
 
-birch_sapling	Birch Sapling	5	4	yes	yes	blocks	
+birch_sapling	Birch Sapling	500	400	yes	yes	blocks	
 
-birch_shelf	Birch Shelf	20	16	yes	yes	blocks	
+birch_shelf	Birch Shelf	2000	1600	yes	yes	blocks	
 
-birch_sign	Birch Sign	20	4	yes	yes	blocks	
+birch_sign	Birch Sign	2000	400	yes	yes	blocks	
 
-birch_slab	Birch Slab	12	1	yes	yes	blocks	
+birch_slab	Birch Slab	1200	100	yes	yes	blocks	
 
-birch_stairs	Birch Stairs	12	3	yes	yes	blocks	
+birch_stairs	Birch Stairs	1200	300	yes	yes	blocks	
 
-birch_trapdoor	Birch Trapdoor	24	6	yes	yes	blocks	
+birch_trapdoor	Birch Trapdoor	2400	600	yes	yes	blocks	
 
-birch_wood	Birch Wood	11	8	yes	yes	blocks	
+birch_wood	Birch Wood	1100	800	yes	yes	blocks	
 
-black_banner	Black Banner	30	24	yes	yes	blocks	
+black_banner	Black Banner	3000	2400	yes	yes	blocks	
 
-black_bed	Black Bed	50	36	yes	yes	blocks	
+black_bed	Black Bed	5000	3600	yes	yes	blocks	
 
-black_bundle	Black Bundle	50	35	yes	yes	misc	
+black_bundle	Black Bundle	5000	3500	yes	yes	misc	
 
-black_candle	Black Candle	20	16	yes	yes	blocks	
+black_candle	Black Candle	2000	1600	yes	yes	blocks	
 
 black_carpet	Black Carpet	7	5	yes	yes	blocks	
 
@@ -208,53 +208,53 @@ black_concrete_slab	Black Concrete Slab	12	9	yes	yes	blocks
 
 black_concrete_stairs	Black Concrete Stairs	12	9	yes	yes	blocks	
 
-black_cushion	Black Cushion	30	24	yes	yes	misc	
+black_cushion	Black Cushion	3000	2400	yes	yes	misc	
 
-black_dye	Black Dye	25	10	yes	yes	misc	
+black_dye	Black Dye	2500	1000	yes	yes	misc	
 
-black_glazed_terracotta	Black Glazed Terracotta	15	12	yes	yes	blocks	
+black_glazed_terracotta	Black Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-black_harness	Black Harness	100	80	yes	yes	misc	
+black_harness	Black Harness	10000	8000	yes	yes	misc	
 
-black_shulker_box	Black Shulker Box	1000	800	yes	yes	end	
+black_shulker_box	Black Shulker Box	100000	80000	yes	yes	end	
 
-black_stained_glass	Black Stained Glass	10	8	yes	yes	blocks	
+black_stained_glass	Black Stained Glass	1000	135	yes	yes	blocks	
 
-black_stained_glass_pane	Black Stained Glass Pane	10	3	yes	yes	blocks	
+black_stained_glass_pane	Black Stained Glass Pane	1000	50	yes	yes	blocks	
 
-black_terracotta	Black Terracotta	15	12	yes	yes	blocks	
+black_terracotta	Black Terracotta	1500	1200	yes	yes	blocks	
 
-black_wool	Black Wool	10	8	yes	yes	blocks	
+black_wool	Black Wool	1000	800	yes	yes	blocks	
 
-black_wool_slab	Black Wool Slab	12	9	yes	yes	blocks	
+black_wool_slab	Black Wool Slab	1200	900	yes	yes	blocks	
 
-black_wool_stairs	Black Wool Stairs	12	9	yes	yes	blocks	
+black_wool_stairs	Black Wool Stairs	1200	900	yes	yes	blocks	
 
-blackstone	Blackstone	10	8	yes	yes	blocks	
+blackstone	Blackstone	1000	800	yes	yes	blocks	
 
-blackstone_slab	Blackstone Slab	12	5	yes	yes	blocks	
+blackstone_slab	Blackstone Slab	1200	500	yes	yes	blocks	
 
-blackstone_stairs	Blackstone Stairs	12	9	yes	yes	blocks	
+blackstone_stairs	Blackstone Stairs	1200	900	yes	yes	blocks	
 
-blackstone_wall	Blackstone Wall	12	9	yes	yes	blocks	
+blackstone_wall	Blackstone Wall	1200	900	yes	yes	blocks	
 
-blade_pottery_sherd	Blade Pottery Sherd	500	400	yes	yes	misc	
+blade_pottery_sherd	Blade Pottery Sherd	50000	40000	yes	yes	misc	
 
-blast_furnace	Blast Furnace	30	24	yes	yes	blocks	
+blast_furnace	Blast Furnace	3000	2400	yes	yes	blocks	
 
-blaze_powder	Blaze Powder	25	12	yes	yes	nether	
+blaze_powder	Blaze Powder	2500	1200	yes	yes	nether	
 
-blaze_rod	Blaze Rod	25	20	yes	yes	nether	
+blaze_rod	Blaze Rod	2500	2000	yes	yes	nether	
 
-blaze_spawn_egg	Blaze Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+blaze_spawn_egg	Blaze Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-blue_banner	Blue Banner	30	24	yes	yes	blocks	
+blue_banner	Blue Banner	3000	2400	yes	yes	blocks	
 
-blue_bed	Blue Bed	50	36	yes	yes	blocks	
+blue_bed	Blue Bed	5000	3600	yes	yes	blocks	
 
-blue_bundle	Blue Bundle	50	35	yes	yes	misc	
+blue_bundle	Blue Bundle	5000	3500	yes	yes	misc	
 
-blue_candle	Blue Candle	20	16	yes	yes	blocks	
+blue_candle	Blue Candle	2000	1600	yes	yes	blocks	
 
 blue_carpet	Blue Carpet	7	5	yes	yes	blocks	
 
@@ -266,87 +266,87 @@ blue_concrete_slab	Blue Concrete Slab	12	9	yes	yes	blocks
 
 blue_concrete_stairs	Blue Concrete Stairs	12	9	yes	yes	blocks	
 
-blue_cushion	Blue Cushion	30	24	yes	yes	misc	
+blue_cushion	Blue Cushion	3000	2400	yes	yes	misc	
 
-blue_dye	Blue Dye	25	10	yes	yes	misc	
+blue_dye	Blue Dye	2500	1000	yes	yes	misc	
 
-blue_egg	Blue Egg	25	20	yes	yes	misc	
+blue_egg	Blue Egg	2500	2000	yes	yes	misc	
 
-blue_glazed_terracotta	Blue Glazed Terracotta	15	12	yes	yes	blocks	
+blue_glazed_terracotta	Blue Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-blue_harness	Blue Harness	100	80	yes	yes	misc	
+blue_harness	Blue Harness	10000	8000	yes	yes	misc	
 
-blue_ice	Blue Ice	810	648	yes	yes	blocks	
+blue_ice	Blue Ice	81000	64800	yes	yes	blocks	
 
-blue_orchid	Blue Orchid	10	8	yes	yes	blocks	
+blue_orchid	Blue Orchid	1000	800	yes	yes	blocks	
 
-blue_shulker_box	Blue Shulker Box	1000	800	yes	yes	end	
+blue_shulker_box	Blue Shulker Box	100000	80000	yes	yes	end	
 
-blue_stained_glass	Blue Stained Glass	10	8	yes	yes	blocks	
+blue_stained_glass	Blue Stained Glass	1000	135	yes	yes	blocks	
 
-blue_stained_glass_pane	Blue Stained Glass Pane	10	3	yes	yes	blocks	
+blue_stained_glass_pane	Blue Stained Glass Pane	1000	50	yes	yes	blocks	
 
-blue_terracotta	Blue Terracotta	15	12	yes	yes	blocks	
+blue_terracotta	Blue Terracotta	1500	1200	yes	yes	blocks	
 
-blue_wool	Blue Wool	10	8	yes	yes	blocks	
+blue_wool	Blue Wool	1000	800	yes	yes	blocks	
 
-blue_wool_slab	Blue Wool Slab	12	9	yes	yes	blocks	
+blue_wool_slab	Blue Wool Slab	1200	900	yes	yes	blocks	
 
-blue_wool_stairs	Blue Wool Stairs	12	9	yes	yes	blocks	
+blue_wool_stairs	Blue Wool Stairs	1200	900	yes	yes	blocks	
 
-bogged_spawn_egg	Bogged Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+bogged_spawn_egg	Bogged Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-bolt_armor_trim_smithing_template	Smithing Template	3000	2370	yes	yes	misc	
+bolt_armor_trim_smithing_template	Smithing Template	300000	237000	yes	yes	misc	
 
-bone	Bone	25	20	yes	yes	misc	
+bone	Bone	2500	2000	yes	yes	misc	
 
-bone_block	Bone Block	225	75	yes	yes	blocks	
+bone_block	Bone Block	22500	7500	yes	yes	blocks	
 
-bone_meal	Bone Meal	25	8	yes	yes	misc	
+bone_meal	Bone Meal	2500	800	yes	yes	misc	
 
-book	Book	25	20	yes	yes	misc	
+book	Book	2500	2000	yes	yes	misc	
 
-bookshelf	Bookshelf	10	8	yes	yes	blocks	
+bookshelf	Bookshelf	1000	800	yes	yes	blocks	
 
-bordure_indented_banner_pattern	Bordure Indented Banner Pattern	1000	20	yes	yes	misc	
+bordure_indented_banner_pattern	Bordure Indented Banner Pattern	100000	2000	yes	yes	misc	
 
-bow	Bow	25	20	yes	yes	misc	
+bow	Bow	2500	2000	yes	yes	misc	
 
-bowl	Bowl	25	1	yes	yes	misc	
+bowl	Bowl	2500	100	yes	yes	misc	
 
-brain_coral	Brain Coral	20	16	yes	yes	blocks	
+brain_coral	Brain Coral	2000	1600	yes	yes	blocks	
 
-brain_coral_block	Brain Coral Block	20	16	yes	yes	blocks	
+brain_coral_block	Brain Coral Block	2000	1600	yes	yes	blocks	
 
-brain_coral_fan	Brain Coral Fan	10	8	yes	yes	blocks	
+brain_coral_fan	Brain Coral Fan	1000	800	yes	yes	blocks	
 
-bread	Bread	75	60	yes	yes	food	
+bread	Bread	7500	6000	yes	yes	food	
 
-breeze_rod	Breeze Rod	500	400	yes	yes	misc	
+breeze_rod	Breeze Rod	50000	40000	yes	yes	misc	
 
-breeze_spawn_egg	Breeze Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+breeze_spawn_egg	Breeze Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-brewer_pottery_sherd	Brewer Pottery Sherd	500	400	yes	yes	misc	
+brewer_pottery_sherd	Brewer Pottery Sherd	50000	40000	yes	yes	misc	
 
-brewing_stand	Brewing Stand	10	8	yes	yes	blocks	
+brewing_stand	Brewing Stand	1000	800	yes	yes	blocks	
 
-brick	Brick	25	20	yes	yes	misc	
+brick	Brick	2500	2000	yes	yes	misc	
 
-brick_slab	Brick Slab	50	40	yes	yes	blocks	
+brick_slab	Brick Slab	5000	4000	yes	yes	blocks	
 
-brick_stairs	Brick Stairs	100	80	yes	yes	blocks	
+brick_stairs	Brick Stairs	10000	8000	yes	yes	blocks	
 
-brick_wall	Brick Wall	100	80	yes	yes	blocks	
+brick_wall	Brick Wall	10000	8000	yes	yes	blocks	
 
-bricks	Bricks	100	80	yes	yes	blocks	
+bricks	Bricks	10000	8000	yes	yes	blocks	
 
-brown_banner	Brown Banner	30	24	yes	yes	blocks	
+brown_banner	Brown Banner	3000	2400	yes	yes	blocks	
 
-brown_bed	Brown Bed	50	36	yes	yes	blocks	
+brown_bed	Brown Bed	5000	3600	yes	yes	blocks	
 
-brown_bundle	Brown Bundle	50	35	yes	yes	misc	
+brown_bundle	Brown Bundle	5000	3500	yes	yes	misc	
 
-brown_candle	Brown Candle	20	16	yes	yes	blocks	
+brown_candle	Brown Candle	2000	1600	yes	yes	blocks	
 
 brown_carpet	Brown Carpet	7	5	yes	yes	blocks	
 
@@ -358,224 +358,224 @@ brown_concrete_slab	Brown Concrete Slab	12	9	yes	yes	blocks
 
 brown_concrete_stairs	Brown Concrete Stairs	12	9	yes	yes	blocks	
 
-brown_cushion	Brown Cushion	30	24	yes	yes	misc	
+brown_cushion	Brown Cushion	3000	2400	yes	yes	misc	
 
-brown_dye	Brown Dye	25	10	yes	yes	misc	
+brown_dye	Brown Dye	2500	1000	yes	yes	misc	
 
-brown_egg	Brown Egg	25	20	yes	yes	misc	
+brown_egg	Brown Egg	2500	2000	yes	yes	misc	
 
-brown_glazed_terracotta	Brown Glazed Terracotta	15	12	yes	yes	blocks	
+brown_glazed_terracotta	Brown Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-brown_harness	Brown Harness	100	80	yes	yes	misc	
+brown_harness	Brown Harness	10000	8000	yes	yes	misc	
 
-brown_mushroom	Brown Mushroom	10	8	yes	yes	blocks	
+brown_mushroom	Brown Mushroom	1000	800	yes	yes	blocks	
 
-brown_mushroom_block	Brown Mushroom Block	20	16	yes	yes	blocks	
+brown_mushroom_block	Brown Mushroom Block	2000	1600	yes	yes	blocks	
 
-brown_shulker_box	Brown Shulker Box	1000	800	yes	yes	end	
+brown_shulker_box	Brown Shulker Box	100000	80000	yes	yes	end	
 
-brown_stained_glass	Brown Stained Glass	10	8	yes	yes	blocks	
+brown_stained_glass	Brown Stained Glass	1000	135	yes	yes	blocks	
 
-brown_stained_glass_pane	Brown Stained Glass Pane	10	3	yes	yes	blocks	
+brown_stained_glass_pane	Brown Stained Glass Pane	1000	50	yes	yes	blocks	
 
-brown_terracotta	Brown Terracotta	15	12	yes	yes	blocks	
+brown_terracotta	Brown Terracotta	1500	1200	yes	yes	blocks	
 
-brown_wool	Brown Wool	10	8	yes	yes	blocks	
+brown_wool	Brown Wool	1000	800	yes	yes	blocks	
 
-brown_wool_slab	Brown Wool Slab	12	9	yes	yes	blocks	
+brown_wool_slab	Brown Wool Slab	1200	900	yes	yes	blocks	
 
-brown_wool_stairs	Brown Wool Stairs	12	9	yes	yes	blocks	
+brown_wool_stairs	Brown Wool Stairs	1200	900	yes	yes	blocks	
 
-brush	Brush	25	20	yes	yes	misc	
+brush	Brush	2500	2000	yes	yes	misc	
 
-bubble_coral	Bubble Coral	20	16	yes	yes	blocks	
+bubble_coral	Bubble Coral	2000	1600	yes	yes	blocks	
 
-bubble_coral_block	Bubble Coral Block	20	16	yes	yes	blocks	
+bubble_coral_block	Bubble Coral Block	2000	1600	yes	yes	blocks	
 
-bubble_coral_fan	Bubble Coral Fan	10	8	yes	yes	blocks	
+bubble_coral_fan	Bubble Coral Fan	1000	800	yes	yes	blocks	
 
-bucket	Bucket	120	96	yes	yes	misc	
+bucket	Bucket	12000	9600	yes	yes	misc	
 
-budding_amethyst	Budding Amethyst	0	5000	no	no	creative	creative only
+budding_amethyst	Budding Amethyst	0	500000	no	no	creative	creative only
 
-bundle	Bundle	25	20	yes	yes	misc	
+bundle	Bundle	2500	2000	yes	yes	misc	
 
-buried_ancient_city_map	Buried Ancient City Map	25	20	yes	yes	misc	
+buried_ancient_city_map	Buried Ancient City Map	2500	2000	yes	yes	misc	
 
-buried_mineshaft_map	Buried Mineshaft Map	25	20	yes	yes	misc	
+buried_mineshaft_map	Buried Mineshaft Map	2500	2000	yes	yes	misc	
 
-buried_treasure_map	Buried Treasure Map	25	20	yes	yes	misc	
+buried_treasure_map	Buried Treasure Map	2500	2000	yes	yes	misc	
 
-buried_trial_chambers_map	Buried Trial Chambers Map	25	20	yes	yes	misc	
+buried_trial_chambers_map	Buried Trial Chambers Map	2500	2000	yes	yes	misc	
 
-burn_pottery_sherd	Burn Pottery Sherd	500	400	yes	yes	misc	
+burn_pottery_sherd	Burn Pottery Sherd	50000	40000	yes	yes	misc	
 
-bush	Bush	10	8	yes	yes	blocks	
+bush	Bush	1000	800	yes	yes	blocks	
 
-cactus	Cactus	10	8	yes	yes	blocks	
+cactus	Cactus	1000	800	yes	yes	blocks	
 
-cactus_flower	Cactus Flower	10	8	yes	yes	blocks	
+cactus_flower	Cactus Flower	1000	800	yes	yes	blocks	
 
-cake	Cake	30	24	yes	yes	food	
+cake	Cake	3000	2400	yes	yes	food	
 
-calcite	Calcite	10	8	yes	yes	blocks	
+calcite	Calcite	1000	800	yes	yes	blocks	
 
-calibrated_sculk_sensor	Calibrated Sculk Sensor	200	100	yes	yes	blocks	
+calibrated_sculk_sensor	Calibrated Sculk Sensor	20000	10000	yes	yes	blocks	
 
-camel_husk_spawn_egg	Camel Husk Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+camel_husk_spawn_egg	Camel Husk Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-camel_spawn_egg	Camel Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+camel_spawn_egg	Camel Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-campfire	Campfire	10	8	yes	yes	blocks	
+campfire	Campfire	1000	800	yes	yes	blocks	
 
-candle	Candle	10	8	yes	yes	blocks	
+candle	Candle	1000	800	yes	yes	blocks	
 
-carrot	Carrot	8	6	yes	yes	food	
+carrot	Carrot	800	600	yes	yes	food	
 
-carrot_on_a_stick	Carrot on a Stick	25	20	yes	yes	food	
+carrot_on_a_stick	Carrot on a Stick	2500	2000	yes	yes	food	
 
-cartography_table	Cartography Table	10	8	yes	yes	blocks	
+cartography_table	Cartography Table	1000	800	yes	yes	blocks	
 
-carved_pumpkin	Carved Pumpkin	10	8	yes	yes	blocks	
+carved_pumpkin	Carved Pumpkin	1000	800	yes	yes	blocks	
 
-cat_spawn_egg	Cat Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+cat_spawn_egg	Cat Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-cauldron	Cauldron	280	224	yes	yes	blocks	
+cauldron	Cauldron	28000	22400	yes	yes	blocks	
 
-cave_spider_spawn_egg	Cave Spider Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+cave_spider_spawn_egg	Cave Spider Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-chain_command_block	Chain Command Block	0	5000	no	no	creative	creative only
+chain_command_block	Chain Command Block	0	500000	no	no	creative	creative only
 
-chainmail_boots	Chainmail Boots	250	200	yes	yes	armor	
+chainmail_boots	Chainmail Boots	25000	20000	yes	yes	armor	
 
-chainmail_chestplate	Chainmail Chestplate	250	200	yes	yes	armor	
+chainmail_chestplate	Chainmail Chestplate	25000	20000	yes	yes	armor	
 
-chainmail_helmet	Chainmail Helmet	250	200	yes	yes	armor	
+chainmail_helmet	Chainmail Helmet	25000	20000	yes	yes	armor	
 
-chainmail_leggings	Chainmail Leggings	250	200	yes	yes	armor	
+chainmail_leggings	Chainmail Leggings	25000	20000	yes	yes	armor	
 
-charcoal	Charcoal	25	8	yes	yes	misc	
+charcoal	Charcoal	2500	800	yes	yes	misc	
 
-cherry_boat	Cherry Boat	40	10	yes	yes	misc	
+cherry_boat	Cherry Boat	4000	1000	yes	yes	misc	
 
-cherry_button	Cherry Button	12	2	yes	yes	redstone	
+cherry_button	Cherry Button	1200	200	yes	yes	redstone	
 
-cherry_chest_boat	Cherry Boat with Chest	30	24	yes	yes	misc	
+cherry_chest_boat	Cherry Boat with Chest	3000	2400	yes	yes	misc	
 
-cherry_door	Cherry Door	16	4	yes	yes	blocks	
+cherry_door	Cherry Door	1600	400	yes	yes	blocks	
 
-cherry_fence	Cherry Fence	12	3	yes	yes	blocks	
+cherry_fence	Cherry Fence	1200	300	yes	yes	blocks	
 
-cherry_fence_gate	Cherry Fence Gate	12	8	yes	yes	blocks	
+cherry_fence_gate	Cherry Fence Gate	1200	800	yes	yes	blocks	
 
-cherry_hanging_sign	Cherry Hanging Sign	20	16	yes	yes	blocks	
+cherry_hanging_sign	Cherry Hanging Sign	2000	1600	yes	yes	blocks	
 
-cherry_leaves	Cherry Leaves	5	4	yes	yes	blocks	
+cherry_leaves	Cherry Leaves	500	400	yes	yes	blocks	
 
-cherry_log	Cherry Log	8	6	yes	yes	blocks	
+cherry_log	Cherry Log	800	600	yes	yes	blocks	
 
-cherry_planks	Cherry Planks	8	2	yes	yes	blocks	
+cherry_planks	Cherry Planks	800	200	yes	yes	blocks	
 
-cherry_pressure_plate	Cherry Pressure Plate	16	4	yes	yes	redstone	
+cherry_pressure_plate	Cherry Pressure Plate	1600	400	yes	yes	redstone	
 
-cherry_sapling	Cherry Sapling	5	4	yes	yes	blocks	
+cherry_sapling	Cherry Sapling	500	400	yes	yes	blocks	
 
-cherry_shelf	Cherry Shelf	20	16	yes	yes	blocks	
+cherry_shelf	Cherry Shelf	2000	1600	yes	yes	blocks	
 
-cherry_sign	Cherry Sign	20	4	yes	yes	blocks	
+cherry_sign	Cherry Sign	2000	400	yes	yes	blocks	
 
-cherry_slab	Cherry Slab	12	1	yes	yes	blocks	
+cherry_slab	Cherry Slab	1200	100	yes	yes	blocks	
 
-cherry_stairs	Cherry Stairs	12	3	yes	yes	blocks	
+cherry_stairs	Cherry Stairs	1200	300	yes	yes	blocks	
 
-cherry_trapdoor	Cherry Trapdoor	24	6	yes	yes	blocks	
+cherry_trapdoor	Cherry Trapdoor	2400	600	yes	yes	blocks	
 
-cherry_wood	Cherry Wood	11	8	yes	yes	blocks	
+cherry_wood	Cherry Wood	1100	800	yes	yes	blocks	
 
-chest	Chest	64	16	yes	yes	blocks	
+chest	Chest	6400	1600	yes	yes	blocks	
 
-chest_minecart	Minecart with Chest	100	80	yes	yes	misc	
+chest_minecart	Minecart with Chest	10000	8000	yes	yes	misc	
 
-chicken	Raw Chicken	8	6	yes	yes	food	
+chicken	Raw Chicken	800	600	yes	yes	food	
 
-chicken_spawn_egg	Chicken Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+chicken_spawn_egg	Chicken Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-chipped_anvil	Chipped Anvil	300	240	yes	yes	blocks	
+chipped_anvil	Chipped Anvil	30000	24000	yes	yes	blocks	
 
-chiseled_bookshelf	Chiseled Bookshelf	100	15	yes	yes	blocks	
+chiseled_bookshelf	Chiseled Bookshelf	10000	1500	yes	yes	blocks	
 
-chiseled_cinnabar	Chiseled Cinnabar	10	8	yes	yes	blocks	
+chiseled_cinnabar	Chiseled Cinnabar	1000	800	yes	yes	blocks	
 
-chiseled_copper	Chiseled Copper	50	33	yes	yes	blocks	
+chiseled_copper	Chiseled Copper	5000	3300	yes	yes	blocks	
 
-chiseled_deepslate	Chiseled Deepslate	10	8	yes	yes	blocks	
+chiseled_deepslate	Chiseled Deepslate	1000	800	yes	yes	blocks	
 
-chiseled_nether_bricks	Chiseled Nether Bricks	100	40	yes	yes	nether	
+chiseled_nether_bricks	Chiseled Nether Bricks	10000	4000	yes	yes	nether	
 
-chiseled_polished_blackstone	Chiseled Polished Blackstone	10	8	yes	yes	blocks	
+chiseled_polished_blackstone	Chiseled Polished Blackstone	1000	800	yes	yes	blocks	
 
-chiseled_quartz_block	Chiseled Quartz Block	120	96	yes	yes	ores	
+chiseled_quartz_block	Chiseled Quartz Block	12000	9600	yes	yes	ores	
 
 chiseled_red_sandstone	Chiseled Red Sandstone	40	32	yes	yes	blocks	
 
-chiseled_resin_bricks	Chiseled Resin Bricks	48	38	yes	yes	blocks	
+chiseled_resin_bricks	Chiseled Resin Bricks	4800	3800	yes	yes	blocks	
 
 chiseled_sandstone	Chiseled Sandstone	40	32	yes	yes	blocks	
 
-chiseled_stone_bricks	Chiseled Stone Bricks	10	8	yes	yes	blocks	
+chiseled_stone_bricks	Chiseled Stone Bricks	1000	10	yes	yes	blocks	
 
-chiseled_sulfur	Chiseled Sulfur	50	40	yes	yes	blocks	
+chiseled_sulfur	Chiseled Sulfur	5000	4000	yes	yes	blocks	
 
-chiseled_tuff	Chiseled Tuff	10	8	yes	yes	blocks	
+chiseled_tuff	Chiseled Tuff	1000	800	yes	yes	blocks	
 
-chiseled_tuff_bricks	Chiseled Tuff Bricks	10	8	yes	yes	blocks	
+chiseled_tuff_bricks	Chiseled Tuff Bricks	1000	800	yes	yes	blocks	
 
-chorus_flower	Chorus Flower	10	8	yes	yes	end	
+chorus_flower	Chorus Flower	1000	800	yes	yes	end	
 
-chorus_fruit	Chorus Fruit	8	6	yes	yes	end	
+chorus_fruit	Chorus Fruit	800	600	yes	yes	end	
 
-chorus_plant	Chorus Plant	10	8	yes	yes	end	
+chorus_plant	Chorus Plant	1000	800	yes	yes	end	
 
-cinnabar	Cinnabar	10	8	yes	yes	blocks	
+cinnabar	Cinnabar	1000	800	yes	yes	blocks	
 
-cinnabar_brick_slab	Cinnabar Brick Slab	12	9	yes	yes	blocks	
+cinnabar_brick_slab	Cinnabar Brick Slab	1200	900	yes	yes	blocks	
 
-cinnabar_brick_stairs	Cinnabar Brick Stairs	12	9	yes	yes	blocks	
+cinnabar_brick_stairs	Cinnabar Brick Stairs	1200	900	yes	yes	blocks	
 
-cinnabar_brick_wall	Cinnabar Brick Wall	12	9	yes	yes	blocks	
+cinnabar_brick_wall	Cinnabar Brick Wall	1200	900	yes	yes	blocks	
 
-cinnabar_bricks	Cinnabar Bricks	10	8	yes	yes	blocks	
+cinnabar_bricks	Cinnabar Bricks	1000	800	yes	yes	blocks	
 
-cinnabar_slab	Cinnabar Slab	12	9	yes	yes	blocks	
+cinnabar_slab	Cinnabar Slab	1200	900	yes	yes	blocks	
 
-cinnabar_stairs	Cinnabar Stairs	12	9	yes	yes	blocks	
+cinnabar_stairs	Cinnabar Stairs	1200	900	yes	yes	blocks	
 
-cinnabar_wall	Cinnabar Wall	12	9	yes	yes	blocks	
+cinnabar_wall	Cinnabar Wall	1200	900	yes	yes	blocks	
 
-clay	Clay	100	80	yes	yes	blocks	
+clay	Clay	10000	8000	yes	yes	blocks	
 
-clay_ball	Clay Ball	25	20	yes	yes	misc	
+clay_ball	Clay Ball	2500	2000	yes	yes	misc	
 
-clock	Clock	25	20	yes	yes	misc	
+clock	Clock	2500	2000	yes	yes	misc	
 
-closed_eyeblossom	Closed Eyeblossom	10	8	yes	yes	blocks	
+closed_eyeblossom	Closed Eyeblossom	1000	800	yes	yes	blocks	
 
-coal	Coal	10	8	yes	yes	misc	
+coal	Coal	1000	800	yes	yes	misc	
 
-coal_block	Block of Coal	90	72	yes	yes	ores	
-coal_ore	Coal Ore	20	16	yes	yes	ores	
+coal_block	Block of Coal	9000	7200	yes	yes	ores	
+coal_ore	Coal Ore	2000	1600	yes	yes	ores	
 
-coarse_dirt	Coarse Dirt	10	8	yes	yes	blocks	
+coarse_dirt	Coarse Dirt	1000	505	yes	yes	blocks	
 
-coast_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+coast_armor_trim_smithing_template	Smithing Template	300000	210010	yes	yes	misc	
 
-cobbled_deepslate	Cobbled Deepslate	10	8	yes	yes	blocks	
+cobbled_deepslate	Cobbled Deepslate	1000	800	yes	yes	blocks	
 
-cobbled_deepslate_slab	Cobbled Deepslate Slab	12	5	yes	yes	blocks	
+cobbled_deepslate_slab	Cobbled Deepslate Slab	1200	500	yes	yes	blocks	
 
-cobbled_deepslate_stairs	Cobbled Deepslate Stairs	12	9	yes	yes	blocks	
+cobbled_deepslate_stairs	Cobbled Deepslate Stairs	1200	900	yes	yes	blocks	
 
-cobbled_deepslate_wall	Cobbled Deepslate Wall	12	9	yes	yes	blocks	
+cobbled_deepslate_wall	Cobbled Deepslate Wall	1200	900	yes	yes	blocks	
 
 cobblestone	Cobblestone	10	8	yes	yes	blocks	
 
@@ -585,159 +585,159 @@ cobblestone_stairs	Cobblestone Stairs	12	9	yes	yes	blocks
 
 cobblestone_wall	Cobblestone Wall	12	9	yes	yes	blocks	
 
-cobweb	Cobweb	10	8	yes	yes	blocks	
+cobweb	Cobweb	1000	800	yes	yes	blocks	
 
-cocoa_beans	Cocoa Beans	10	8	yes	yes	blocks	
+cocoa_beans	Cocoa Beans	1000	800	yes	yes	blocks	
 
-cod	Raw Cod	8	6	yes	yes	food	
+cod	Raw Cod	800	600	yes	yes	food	
 
-cod_bucket	Bucket of Cod	50	40	yes	yes	food	
+cod_bucket	Bucket of Cod	5000	4000	yes	yes	food	
 
-cod_spawn_egg	Cod Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+cod_spawn_egg	Cod Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-command_block	Command Block	0	5000	no	no	creative	creative only
+command_block	Command Block	0	500000	no	no	creative	creative only
 
-command_block_minecart	Minecart with Command Block	0	5000	no	no	creative	creative only
+command_block_minecart	Minecart with Command Block	0	500000	no	no	creative	creative only
 
-comparator	Redstone Comparator	10	8	yes	yes	redstone	
+comparator	Redstone Comparator	1000	800	yes	yes	redstone	
 
-compass	Compass	25	20	yes	yes	misc	
+compass	Compass	2500	2000	yes	yes	misc	
 
-composter	Composter	84	7	yes	yes	blocks	
+composter	Composter	8400	700	yes	yes	blocks	
 
-conduit	Conduit	3000	2400	yes	yes	blocks	
+conduit	Conduit	300000	240000	yes	yes	blocks	
 
-cooked_beef	Steak	8	6	yes	yes	food	
+cooked_beef	Steak	800	600	yes	yes	food	
 
-cooked_chicken	Cooked Chicken	8	6	yes	yes	food	
+cooked_chicken	Cooked Chicken	800	600	yes	yes	food	
 
-cooked_cod	Cooked Cod	8	6	yes	yes	food	
+cooked_cod	Cooked Cod	800	600	yes	yes	food	
 
-cooked_mutton	Cooked Mutton	8	6	yes	yes	food	
+cooked_mutton	Cooked Mutton	800	600	yes	yes	food	
 
-cooked_porkchop	Cooked Porkchop	8	6	yes	yes	food	
+cooked_porkchop	Cooked Porkchop	800	600	yes	yes	food	
 
-cooked_rabbit	Cooked Rabbit	8	6	yes	yes	food	
+cooked_rabbit	Cooked Rabbit	800	600	yes	yes	food	
 
-cooked_salmon	Cooked Salmon	8	6	yes	yes	food	
+cooked_salmon	Cooked Salmon	800	600	yes	yes	food	
 
-cookie	Cookie	8	6	yes	yes	food	
+cookie	Cookie	800	600	yes	yes	food	
 
-copper_axe	Copper Axe	30	24	yes	yes	tools	
-copper_bars	Copper Bars	10	8	yes	yes	blocks	
+copper_axe	Copper Axe	3000	2400	yes	yes	tools	
+copper_bars	Copper Bars	1000	800	yes	yes	blocks	
 
-copper_block	Block of Copper	135	108	yes	yes	ores	
-copper_boots	Copper Boots	30	24	yes	yes	armor	
-copper_bulb	Copper Bulb	10	8	yes	yes	blocks	
+copper_block	Block of Copper	13500	10800	yes	yes	ores	
+copper_boots	Copper Boots	3000	2400	yes	yes	armor	
+copper_bulb	Copper Bulb	1000	800	yes	yes	blocks	
 
-copper_chain	Copper Chain	10	8	yes	yes	blocks	
+copper_chain	Copper Chain	1000	800	yes	yes	blocks	
 
-copper_chest	Copper Chest	50	40	yes	yes	blocks	
+copper_chest	Copper Chest	5000	4000	yes	yes	blocks	
 
-copper_chestplate	Copper Chestplate	30	24	yes	yes	armor	
-copper_door	Copper Door	30	24	yes	yes	blocks	
+copper_chestplate	Copper Chestplate	3000	2400	yes	yes	armor	
+copper_door	Copper Door	3000	2400	yes	yes	blocks	
 
-copper_golem_spawn_egg	Copper Golem Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+copper_golem_spawn_egg	Copper Golem Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-copper_golem_statue	Copper Golem Statue	500	400	yes	yes	blocks	
+copper_golem_statue	Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-copper_grate	Copper Grate	34	27	yes	yes	blocks	
+copper_grate	Copper Grate	3400	2700	yes	yes	blocks	
 
-copper_helmet	Copper Helmet	30	24	yes	yes	armor	
-copper_hoe	Copper Hoe	30	24	yes	yes	tools	
-copper_horse_armor	Copper Horse Armor	500	400	yes	yes	misc	
+copper_helmet	Copper Helmet	3000	2400	yes	yes	armor	
+copper_hoe	Copper Hoe	3000	2400	yes	yes	tools	
+copper_horse_armor	Copper Horse Armor	50000	40000	yes	yes	misc	
 
-copper_ingot	Copper Ingot	15	12	yes	yes	ores	
+copper_ingot	Copper Ingot	1500	1200	yes	yes	ores	
 
-copper_lantern	Copper Lantern	5	4	yes	yes	blocks	
+copper_lantern	Copper Lantern	500	400	yes	yes	blocks	
 
-copper_leggings	Copper Leggings	30	24	yes	yes	armor	
-copper_nautilus_armor	Copper Nautilus Armor	25	20	yes	yes	misc	
+copper_leggings	Copper Leggings	3000	2400	yes	yes	armor	
+copper_nautilus_armor	Copper Nautilus Armor	2500	2000	yes	yes	misc	
 
-copper_nugget	Copper Nugget	5	4	yes	yes	ores	
+copper_nugget	Copper Nugget	500	400	yes	yes	ores	
 
-copper_ore	Copper Ore	30	24	yes	yes	ores	
+copper_ore	Copper Ore	3000	2400	yes	yes	ores	
 
-copper_pickaxe	Copper Pickaxe	30	24	yes	yes	tools	
-copper_shovel	Copper Shovel	30	24	yes	yes	tools	
-copper_spear	Copper Spear	150	120	yes	yes	tools	
+copper_pickaxe	Copper Pickaxe	3000	2400	yes	yes	tools	
+copper_shovel	Copper Shovel	3000	2400	yes	yes	tools	
+copper_spear	Copper Spear	15000	12000	yes	yes	tools	
 
-copper_sword	Copper Sword	30	24	yes	yes	tools	
-copper_torch	Copper Torch	5	4	yes	yes	blocks	
+copper_sword	Copper Sword	3000	2400	yes	yes	tools	
+copper_torch	Copper Torch	500	400	yes	yes	blocks	
 
-copper_trapdoor	Copper Trapdoor	45	36	yes	yes	blocks	
+copper_trapdoor	Copper Trapdoor	4500	3600	yes	yes	blocks	
 
-cornflower	Cornflower	10	8	yes	yes	blocks	
+cornflower	Cornflower	1000	800	yes	yes	blocks	
 
-cow_spawn_egg	Cow Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+cow_spawn_egg	Cow Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-cracked_deepslate_bricks	Cracked Deepslate Bricks	10	8	yes	yes	blocks	
+cracked_deepslate_bricks	Cracked Deepslate Bricks	1000	800	yes	yes	blocks	
 
-cracked_deepslate_tiles	Cracked Deepslate Tiles	10	8	yes	yes	blocks	
+cracked_deepslate_tiles	Cracked Deepslate Tiles	1000	800	yes	yes	blocks	
 
-cracked_nether_bricks	Cracked Nether Bricks	100	40	yes	yes	nether	
+cracked_nether_bricks	Cracked Nether Bricks	10000	4000	yes	yes	nether	
 
-cracked_polished_blackstone_bricks	Cracked Polished Blackstone Bricks	10	8	yes	yes	blocks	
+cracked_polished_blackstone_bricks	Cracked Polished Blackstone Bricks	1000	800	yes	yes	blocks	
 
-cracked_stone_bricks	Cracked Stone Bricks	10	8	yes	yes	blocks	
+cracked_stone_bricks	Cracked Stone Bricks	1000	10	yes	yes	blocks	
 
-crafter	Crafter	10	8	yes	yes	blocks	
+crafter	Crafter	1000	800	yes	yes	blocks	
 
-crafting_table	Crafting Table	32	8	yes	yes	blocks	
+crafting_table	Crafting Table	3200	800	yes	yes	blocks	
 
-creaking_heart	Creaking Heart	10	8	yes	yes	blocks	
+creaking_heart	Creaking Heart	1000	800	yes	yes	blocks	
 
-creaking_spawn_egg	Creaking Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+creaking_spawn_egg	Creaking Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-creeper_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+creeper_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-creeper_head	Creeper Head	1000	800	yes	yes	blocks	
+creeper_head	Creeper Head	100000	80000	yes	yes	blocks	
 
-creeper_spawn_egg	Creeper Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+creeper_spawn_egg	Creeper Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-crimson_button	Crimson Button	12	2	yes	yes	redstone	
+crimson_button	Crimson Button	1200	200	yes	yes	redstone	
 
-crimson_door	Crimson Door	16	4	yes	yes	blocks	
+crimson_door	Crimson Door	1600	400	yes	yes	blocks	
 
-crimson_fence	Crimson Fence	12	3	yes	yes	blocks	
+crimson_fence	Crimson Fence	1200	300	yes	yes	blocks	
 
-crimson_fence_gate	Crimson Fence Gate	12	8	yes	yes	blocks	
+crimson_fence_gate	Crimson Fence Gate	1200	800	yes	yes	blocks	
 
-crimson_fungus	Crimson Fungus	10	8	yes	yes	blocks	
+crimson_fungus	Crimson Fungus	1000	800	yes	yes	blocks	
 
-crimson_hanging_sign	Crimson Hanging Sign	20	16	yes	yes	blocks	
+crimson_hanging_sign	Crimson Hanging Sign	2000	1600	yes	yes	blocks	
 
-crimson_hyphae	Crimson Hyphae	11	8	yes	yes	blocks	
+crimson_hyphae	Crimson Hyphae	1100	800	yes	yes	blocks	
 
-crimson_nylium	Crimson Nylium	10	8	yes	yes	blocks	
+crimson_nylium	Crimson Nylium	1000	800	yes	yes	blocks	
 
-crimson_planks	Crimson Planks	8	2	yes	yes	blocks	
+crimson_planks	Crimson Planks	800	200	yes	yes	blocks	
 
-crimson_pressure_plate	Crimson Pressure Plate	16	4	yes	yes	redstone	
+crimson_pressure_plate	Crimson Pressure Plate	1600	400	yes	yes	redstone	
 
-crimson_roots	Crimson Roots	10	8	yes	yes	blocks	
+crimson_roots	Crimson Roots	1000	800	yes	yes	blocks	
 
-crimson_shelf	Crimson Shelf	20	16	yes	yes	blocks	
+crimson_shelf	Crimson Shelf	2000	1600	yes	yes	blocks	
 
-crimson_sign	Crimson Sign	20	4	yes	yes	blocks	
+crimson_sign	Crimson Sign	2000	400	yes	yes	blocks	
 
-crimson_slab	Crimson Slab	12	1	yes	yes	blocks	
+crimson_slab	Crimson Slab	1200	100	yes	yes	blocks	
 
-crimson_stairs	Crimson Stairs	12	3	yes	yes	blocks	
+crimson_stairs	Crimson Stairs	1200	300	yes	yes	blocks	
 
-crimson_stem	Crimson Stem	8	6	yes	yes	blocks	
+crimson_stem	Crimson Stem	800	600	yes	yes	blocks	
 
-crimson_trapdoor	Crimson Trapdoor	24	6	yes	yes	blocks	
+crimson_trapdoor	Crimson Trapdoor	2400	600	yes	yes	blocks	
 
-crossbow	Crossbow	25	20	yes	yes	misc	
+crossbow	Crossbow	2500	2000	yes	yes	misc	
 
-crying_obsidian	Crying Obsidian	10	8	yes	yes	blocks	
+crying_obsidian	Crying Obsidian	1000	800	yes	yes	blocks	
 
-cut_copper	Cut Copper	50	33	yes	yes	blocks	
+cut_copper	Cut Copper	5000	3300	yes	yes	blocks	
 
-cut_copper_slab	Cut Copper Slab	17	13	yes	yes	blocks	
+cut_copper_slab	Cut Copper Slab	1700	1300	yes	yes	blocks	
 
-cut_copper_stairs	Cut Copper Stairs	34	27	yes	yes	blocks	
+cut_copper_stairs	Cut Copper Stairs	3400	2700	yes	yes	blocks	
 
 cut_red_sandstone	Cut Red Sandstone	40	32	yes	yes	blocks	
 
@@ -747,13 +747,13 @@ cut_sandstone	Cut Sandstone	40	32	yes	yes	blocks
 
 cut_sandstone_slab	Cut Sandstone Slab	20	16	yes	yes	blocks	
 
-cyan_banner	Cyan Banner	30	24	yes	yes	blocks	
+cyan_banner	Cyan Banner	3000	2400	yes	yes	blocks	
 
-cyan_bed	Cyan Bed	50	36	yes	yes	blocks	
+cyan_bed	Cyan Bed	5000	3600	yes	yes	blocks	
 
-cyan_bundle	Cyan Bundle	50	30	yes	yes	misc	
+cyan_bundle	Cyan Bundle	5000	3000	yes	yes	misc	
 
-cyan_candle	Cyan Candle	20	15	yes	yes	blocks	
+cyan_candle	Cyan Candle	2000	1500	yes	yes	blocks	
 
 cyan_carpet	Cyan Carpet	7	5	yes	yes	blocks	
 
@@ -765,439 +765,439 @@ cyan_concrete_slab	Cyan Concrete Slab	12	9	yes	yes	blocks
 
 cyan_concrete_stairs	Cyan Concrete Stairs	12	9	yes	yes	blocks	
 
-cyan_cushion	Cyan Cushion	30	24	yes	yes	misc	
+cyan_cushion	Cyan Cushion	3000	2400	yes	yes	misc	
 
-cyan_dye	Cyan Dye	25	5	yes	yes	misc	
+cyan_dye	Cyan Dye	2500	500	yes	yes	misc	
 
-cyan_glazed_terracotta	Cyan Glazed Terracotta	15	12	yes	yes	blocks	
+cyan_glazed_terracotta	Cyan Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-cyan_harness	Cyan Harness	100	80	yes	yes	misc	
+cyan_harness	Cyan Harness	10000	8000	yes	yes	misc	
 
-cyan_shulker_box	Cyan Shulker Box	1000	800	yes	yes	end	
+cyan_shulker_box	Cyan Shulker Box	100000	80000	yes	yes	end	
 
-cyan_stained_glass	Cyan Stained Glass	10	8	yes	yes	blocks	
+cyan_stained_glass	Cyan Stained Glass	1000	72	yes	yes	blocks	
 
-cyan_stained_glass_pane	Cyan Stained Glass Pane	10	3	yes	yes	blocks	
+cyan_stained_glass_pane	Cyan Stained Glass Pane	1000	27	yes	yes	blocks	
 
-cyan_terracotta	Cyan Terracotta	15	12	yes	yes	blocks	
+cyan_terracotta	Cyan Terracotta	1500	1200	yes	yes	blocks	
 
-cyan_wool	Cyan Wool	10	8	yes	yes	blocks	
+cyan_wool	Cyan Wool	1000	800	yes	yes	blocks	
 
-cyan_wool_slab	Cyan Wool Slab	12	9	yes	yes	blocks	
+cyan_wool_slab	Cyan Wool Slab	1200	900	yes	yes	blocks	
 
-cyan_wool_stairs	Cyan Wool Stairs	12	9	yes	yes	blocks	
+cyan_wool_stairs	Cyan Wool Stairs	1200	900	yes	yes	blocks	
 
-damaged_anvil	Damaged Anvil	300	240	yes	yes	blocks	
+damaged_anvil	Damaged Anvil	30000	24000	yes	yes	blocks	
 
-dandelion	Dandelion	10	8	yes	yes	blocks	
+dandelion	Dandelion	1000	800	yes	yes	blocks	
 
-danger_pottery_sherd	Danger Pottery Sherd	500	400	yes	yes	misc	
+danger_pottery_sherd	Danger Pottery Sherd	50000	40000	yes	yes	misc	
 
-dark_oak_boat	Dark Oak Boat	40	10	yes	yes	misc	
+dark_oak_boat	Dark Oak Boat	4000	1000	yes	yes	misc	
 
-dark_oak_button	Dark Oak Button	12	2	yes	yes	redstone	
+dark_oak_button	Dark Oak Button	1200	200	yes	yes	redstone	
 
-dark_oak_chest_boat	Dark Oak Boat with Chest	30	24	yes	yes	misc	
+dark_oak_chest_boat	Dark Oak Boat with Chest	3000	2400	yes	yes	misc	
 
-dark_oak_door	Dark Oak Door	16	4	yes	yes	blocks	
+dark_oak_door	Dark Oak Door	1600	400	yes	yes	blocks	
 
-dark_oak_fence	Dark Oak Fence	12	3	yes	yes	blocks	
+dark_oak_fence	Dark Oak Fence	1200	300	yes	yes	blocks	
 
-dark_oak_fence_gate	Dark Oak Fence Gate	12	8	yes	yes	blocks	
+dark_oak_fence_gate	Dark Oak Fence Gate	1200	800	yes	yes	blocks	
 
-dark_oak_hanging_sign	Dark Oak Hanging Sign	20	16	yes	yes	blocks	
+dark_oak_hanging_sign	Dark Oak Hanging Sign	2000	1600	yes	yes	blocks	
 
-dark_oak_leaves	Dark Oak Leaves	5	4	yes	yes	blocks	
+dark_oak_leaves	Dark Oak Leaves	500	400	yes	yes	blocks	
 
-dark_oak_log	Dark Oak Log	8	6	yes	yes	blocks	
+dark_oak_log	Dark Oak Log	800	600	yes	yes	blocks	
 
-dark_oak_planks	Dark Oak Planks	8	2	yes	yes	blocks	
+dark_oak_planks	Dark Oak Planks	800	200	yes	yes	blocks	
 
-dark_oak_pressure_plate	Dark Oak Pressure Plate	16	4	yes	yes	redstone	
+dark_oak_pressure_plate	Dark Oak Pressure Plate	1600	400	yes	yes	redstone	
 
-dark_oak_sapling	Dark Oak Sapling	5	4	yes	yes	blocks	
+dark_oak_sapling	Dark Oak Sapling	500	400	yes	yes	blocks	
 
-dark_oak_shelf	Dark Oak Shelf	20	16	yes	yes	blocks	
+dark_oak_shelf	Dark Oak Shelf	2000	1600	yes	yes	blocks	
 
-dark_oak_sign	Dark Oak Sign	20	4	yes	yes	blocks	
+dark_oak_sign	Dark Oak Sign	2000	400	yes	yes	blocks	
 
-dark_oak_slab	Dark Oak Slab	12	1	yes	yes	blocks	
+dark_oak_slab	Dark Oak Slab	1200	100	yes	yes	blocks	
 
-dark_oak_stairs	Dark Oak Stairs	12	3	yes	yes	blocks	
+dark_oak_stairs	Dark Oak Stairs	1200	300	yes	yes	blocks	
 
-dark_oak_trapdoor	Dark Oak Trapdoor	24	6	yes	yes	blocks	
+dark_oak_trapdoor	Dark Oak Trapdoor	2400	600	yes	yes	blocks	
 
-dark_oak_wood	Dark Oak Wood	11	8	yes	yes	blocks	
+dark_oak_wood	Dark Oak Wood	1100	800	yes	yes	blocks	
 
-dark_prismarine	Dark Prismarine	20	16	yes	yes	blocks	
+dark_prismarine	Dark Prismarine	2000	1600	yes	yes	blocks	
 
-dark_prismarine_slab	Dark Prismarine Slab	12	9	yes	yes	blocks	
+dark_prismarine_slab	Dark Prismarine Slab	1200	900	yes	yes	blocks	
 
-dark_prismarine_stairs	Dark Prismarine Stairs	20	16	yes	yes	blocks	
+dark_prismarine_stairs	Dark Prismarine Stairs	2000	1600	yes	yes	blocks	
 
-daylight_detector	Daylight Detector	10	8	yes	yes	blocks	
+daylight_detector	Daylight Detector	1000	800	yes	yes	blocks	
 
-dead_brain_coral	Dead Brain Coral	20	16	yes	yes	blocks	
+dead_brain_coral	Dead Brain Coral	2000	1600	yes	yes	blocks	
 
-dead_brain_coral_block	Dead Brain Coral Block	20	16	yes	yes	blocks	
+dead_brain_coral_block	Dead Brain Coral Block	2000	1600	yes	yes	blocks	
 
-dead_brain_coral_fan	Dead Brain Coral Fan	10	8	yes	yes	blocks	
+dead_brain_coral_fan	Dead Brain Coral Fan	1000	800	yes	yes	blocks	
 
-dead_bubble_coral	Dead Bubble Coral	20	16	yes	yes	blocks	
+dead_bubble_coral	Dead Bubble Coral	2000	1600	yes	yes	blocks	
 
-dead_bubble_coral_block	Dead Bubble Coral Block	20	16	yes	yes	blocks	
+dead_bubble_coral_block	Dead Bubble Coral Block	2000	1600	yes	yes	blocks	
 
-dead_bubble_coral_fan	Dead Bubble Coral Fan	10	8	yes	yes	blocks	
+dead_bubble_coral_fan	Dead Bubble Coral Fan	1000	800	yes	yes	blocks	
 
-dead_bush	Dead Bush	10	8	yes	yes	blocks	
+dead_bush	Dead Bush	1000	800	yes	yes	blocks	
 
-dead_fire_coral	Dead Fire Coral	20	16	yes	yes	blocks	
+dead_fire_coral	Dead Fire Coral	2000	1600	yes	yes	blocks	
 
-dead_fire_coral_block	Dead Fire Coral Block	20	16	yes	yes	blocks	
+dead_fire_coral_block	Dead Fire Coral Block	2000	1600	yes	yes	blocks	
 
-dead_fire_coral_fan	Dead Fire Coral Fan	10	8	yes	yes	blocks	
+dead_fire_coral_fan	Dead Fire Coral Fan	1000	800	yes	yes	blocks	
 
-dead_horn_coral	Dead Horn Coral	20	16	yes	yes	blocks	
+dead_horn_coral	Dead Horn Coral	2000	1600	yes	yes	blocks	
 
-dead_horn_coral_block	Dead Horn Coral Block	20	16	yes	yes	blocks	
+dead_horn_coral_block	Dead Horn Coral Block	2000	1600	yes	yes	blocks	
 
-dead_horn_coral_fan	Dead Horn Coral Fan	10	8	yes	yes	blocks	
+dead_horn_coral_fan	Dead Horn Coral Fan	1000	800	yes	yes	blocks	
 
-dead_tube_coral	Dead Tube Coral	20	16	yes	yes	blocks	
+dead_tube_coral	Dead Tube Coral	2000	1600	yes	yes	blocks	
 
-dead_tube_coral_block	Dead Tube Coral Block	20	16	yes	yes	blocks	
+dead_tube_coral_block	Dead Tube Coral Block	2000	1600	yes	yes	blocks	
 
-dead_tube_coral_fan	Dead Tube Coral Fan	10	8	yes	yes	blocks	
+dead_tube_coral_fan	Dead Tube Coral Fan	1000	800	yes	yes	blocks	
 
-debug_stick	Debug Stick	0	5000	no	no	creative	creative only
+debug_stick	Debug Stick	0	500000	no	no	creative	creative only
 
-decorated_pot	Decorated Pot	100	80	yes	yes	blocks	
+decorated_pot	Decorated Pot	10000	8000	yes	yes	blocks	
 
-deepslate	Deepslate	10	8	yes	yes	blocks	
+deepslate	Deepslate	1000	800	yes	yes	blocks	
 
-deepslate_brick_slab	Deepslate Brick Slab	12	5	yes	yes	blocks	
+deepslate_brick_slab	Deepslate Brick Slab	1200	500	yes	yes	blocks	
 
-deepslate_brick_stairs	Deepslate Brick Stairs	12	9	yes	yes	blocks	
+deepslate_brick_stairs	Deepslate Brick Stairs	1200	900	yes	yes	blocks	
 
-deepslate_brick_wall	Deepslate Brick Wall	12	9	yes	yes	blocks	
+deepslate_brick_wall	Deepslate Brick Wall	1200	900	yes	yes	blocks	
 
-deepslate_bricks	Deepslate Bricks	10	8	yes	yes	blocks	
+deepslate_bricks	Deepslate Bricks	1000	800	yes	yes	blocks	
 
-deepslate_coal_ore	Deepslate Coal Ore	20	16	yes	yes	ores	
+deepslate_coal_ore	Deepslate Coal Ore	2000	1600	yes	yes	ores	
 
-deepslate_copper_ore	Deepslate Copper Ore	30	24	yes	yes	ores	
+deepslate_copper_ore	Deepslate Copper Ore	3000	2400	yes	yes	ores	
 
-deepslate_diamond_ore	Deepslate Diamond Ore	400	320	yes	yes	ores	
+deepslate_diamond_ore	Deepslate Diamond Ore	40000	32000	yes	yes	ores	
 
-deepslate_emerald_ore	Deepslate Emerald Ore	300	240	yes	yes	ores	
+deepslate_emerald_ore	Deepslate Emerald Ore	30000	24000	yes	yes	ores	
 
-deepslate_gold_ore	Deepslate Gold Ore	150	120	yes	yes	ores	
+deepslate_gold_ore	Deepslate Gold Ore	15000	12000	yes	yes	ores	
 
-deepslate_iron_ore	Deepslate Iron Ore	80	64	yes	yes	ores	
+deepslate_iron_ore	Deepslate Iron Ore	8000	6400	yes	yes	ores	
 
-deepslate_lapis_ore	Deepslate Lapis Lazuli Ore	50	40	yes	yes	ores	
+deepslate_lapis_ore	Deepslate Lapis Lazuli Ore	5000	4000	yes	yes	ores	
 
-deepslate_redstone_ore	Deepslate Redstone Ore	30	24	yes	yes	ores	
+deepslate_redstone_ore	Deepslate Redstone Ore	3000	2400	yes	yes	ores	
 
-deepslate_tile_slab	Deepslate Tile Slab	12	5	yes	yes	blocks	
+deepslate_tile_slab	Deepslate Tile Slab	1200	500	yes	yes	blocks	
 
-deepslate_tile_stairs	Deepslate Tile Stairs	12	9	yes	yes	blocks	
+deepslate_tile_stairs	Deepslate Tile Stairs	1200	900	yes	yes	blocks	
 
-deepslate_tile_wall	Deepslate Tile Wall	12	9	yes	yes	blocks	
+deepslate_tile_wall	Deepslate Tile Wall	1200	900	yes	yes	blocks	
 
-deepslate_tiles	Deepslate Tiles	10	8	yes	yes	blocks	
+deepslate_tiles	Deepslate Tiles	1000	800	yes	yes	blocks	
 
-desert_pyramid_map	Desert Pyramid Map	25	20	yes	yes	misc	
+desert_pyramid_map	Desert Pyramid Map	2500	2000	yes	yes	misc	
 
-desert_village_map	Desert Village Map	25	20	yes	yes	misc	
+desert_village_map	Desert Village Map	2500	2000	yes	yes	misc	
 
 detector_rail	Detector Rail	8	6	yes	yes	redstone	
-diamond	Diamond	300	240	yes	yes	misc	
+diamond	Diamond	30000	24000	yes	yes	misc	
 
-diamond_axe	Diamond Axe	400	320	yes	yes	tools	
-diamond_block	Block of Diamond	2700	2160	yes	yes	ores	
-diamond_boots	Diamond Boots	1200	960	yes	yes	armor	
-diamond_chestplate	Diamond Chestplate	2400	1920	yes	yes	armor	
-diamond_helmet	Diamond Helmet	1500	1200	yes	yes	armor	
-diamond_hoe	Diamond Hoe	400	320	yes	yes	tools	
-diamond_horse_armor	Diamond Horse Armor	500	400	yes	yes	misc	
+diamond_axe	Diamond Axe	40000	32000	yes	yes	tools	
+diamond_block	Block of Diamond	270000	216000	yes	yes	ores	
+diamond_boots	Diamond Boots	120000	96000	yes	yes	armor	
+diamond_chestplate	Diamond Chestplate	240000	192000	yes	yes	armor	
+diamond_helmet	Diamond Helmet	150000	120000	yes	yes	armor	
+diamond_hoe	Diamond Hoe	40000	32000	yes	yes	tools	
+diamond_horse_armor	Diamond Horse Armor	50000	40000	yes	yes	misc	
 
-diamond_leggings	Diamond Leggings	2100	1680	yes	yes	armor	
-diamond_nautilus_armor	Diamond Nautilus Armor	25	20	yes	yes	misc	
+diamond_leggings	Diamond Leggings	210000	168000	yes	yes	armor	
+diamond_nautilus_armor	Diamond Nautilus Armor	2500	2000	yes	yes	misc	
 
-diamond_ore	Diamond Ore	400	320	yes	yes	ores	
+diamond_ore	Diamond Ore	40000	32000	yes	yes	ores	
 
-diamond_pickaxe	Diamond Pickaxe	400	320	yes	yes	tools	
-diamond_shovel	Diamond Shovel	400	302	yes	yes	tools	
-diamond_spear	Diamond Spear	1500	1200	yes	yes	tools	
+diamond_pickaxe	Diamond Pickaxe	40000	32000	yes	yes	tools	
+diamond_shovel	Diamond Shovel	40000	30200	yes	yes	tools	
+diamond_spear	Diamond Spear	150000	120000	yes	yes	tools	
 
-diamond_sword	Diamond Sword	400	320	yes	yes	tools	
-diorite	Diorite	10	8	yes	yes	blocks	
+diamond_sword	Diamond Sword	40000	32000	yes	yes	tools	
+diorite	Diorite	1000	800	yes	yes	blocks	
 
-diorite_slab	Diorite Slab	12	5	yes	yes	blocks	
+diorite_slab	Diorite Slab	1200	500	yes	yes	blocks	
 
-diorite_stairs	Diorite Stairs	12	9	yes	yes	blocks	
+diorite_stairs	Diorite Stairs	1200	900	yes	yes	blocks	
 
-diorite_wall	Diorite Wall	12	9	yes	yes	blocks	
+diorite_wall	Diorite Wall	1200	900	yes	yes	blocks	
 
-dirt	Dirt	10	8	yes	yes	blocks	
+dirt	Dirt	1000	800	yes	yes	blocks	
 
-dirt_path	Dirt Path	10	8	yes	yes	blocks	
+dirt_path	Dirt Path	1000	800	yes	yes	blocks	
 
-disc_fragment_5	Disc Fragment	1000	800	yes	yes	misc	
+disc_fragment_5	Disc Fragment	100000	80000	yes	yes	misc	
 
-dispenser	Dispenser	10	8	yes	yes	redstone	
+dispenser	Dispenser	1000	800	yes	yes	redstone	
 
-dolphin_spawn_egg	Dolphin Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+dolphin_spawn_egg	Dolphin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-donkey_spawn_egg	Donkey Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+donkey_spawn_egg	Donkey Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-dragon_breath	Dragon's Breath	500	400	yes	yes	end	
+dragon_breath	Dragon's Breath	50000	40000	yes	yes	end	
 
 dragon_egg	Dragon Egg	0	0	yes	no	rare	unique / auction only
 
-dragon_head	Dragon Head	0	15000	yes	no	rare	unique / auction only
+dragon_head	Dragon Head	0	1500000	yes	no	rare	unique / auction only
 
-dried_ghast	Dried Ghast	10	8	yes	yes	nether	
+dried_ghast	Dried Ghast	1000	800	yes	yes	nether	
 
-dried_kelp	Dried Kelp	8	6	yes	yes	food	
+dried_kelp	Dried Kelp	800	600	yes	yes	food	
 
-dried_kelp_block	Dried Kelp Block	72	57	yes	yes	food	
+dried_kelp_block	Dried Kelp Block	7200	5700	yes	yes	food	
 
-dripstone_block	Dripstone Block	40	32	yes	yes	blocks	
+dripstone_block	Dripstone Block	4000	3200	yes	yes	blocks	
 
-dropper	Dropper	10	8	yes	yes	redstone	
+dropper	Dropper	1000	800	yes	yes	redstone	
 
-drowned_spawn_egg	Drowned Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+drowned_spawn_egg	Drowned Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-dune_armor_trim_smithing_template	Smithing Template	3000	2140	yes	yes	misc	
+dune_armor_trim_smithing_template	Smithing Template	300000	210040	yes	yes	misc	
 
-echo_shard	Echo Shard	500	400	yes	yes	misc	
+echo_shard	Echo Shard	50000	40000	yes	yes	misc	
 
-egg	Egg	25	20	yes	yes	misc	
+egg	Egg	2500	2000	yes	yes	misc	
 
-elder_guardian_spawn_egg	Elder Guardian Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+elder_guardian_spawn_egg	Elder Guardian Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-elytra	Elytra	0	25000	yes	no	rare	unique / auction only
+elytra	Elytra	0	2500000	yes	no	rare	unique / auction only
 
-emerald	Emerald	250	200	yes	yes	misc	
+emerald	Emerald	25000	20000	yes	yes	misc	
 
-emerald_block	Block of Emerald	2250	1800	yes	yes	ores	
-emerald_ore	Emerald Ore	300	240	yes	yes	ores	
+emerald_block	Block of Emerald	225000	180000	yes	yes	ores	
+emerald_ore	Emerald Ore	30000	24000	yes	yes	ores	
 
-enchanted_book	Enchanted Book	0	500	yes	no	auction	auction only
+enchanted_book	Enchanted Book	0	50000	yes	no	auction	auction only
 
-enchanted_golden_apple	Enchanted Golden Apple	2000	1600	yes	yes	food	
+enchanted_golden_apple	Enchanted Golden Apple	200000	160000	yes	yes	food	
 
-enchanting_table	Enchanting Table	10	8	yes	yes	blocks	
+enchanting_table	Enchanting Table	1000	800	yes	yes	blocks	
 
-end_crystal	End Crystal	25	20	yes	yes	end	
+end_crystal	End Crystal	2500	2000	yes	yes	end	
 
-end_portal_frame	End Portal Frame	0	5000	no	no	creative	creative only
+end_portal_frame	End Portal Frame	0	500000	no	no	creative	creative only
 
-end_rod	End Rod	10	8	yes	yes	end	
+end_rod	End Rod	1000	800	yes	yes	end	
 
-end_stone	End Stone	10	8	yes	yes	end	
+end_stone	End Stone	1000	800	yes	yes	end	
 
-end_stone_brick_slab	End Stone Brick Slab	12	5	yes	yes	end	
+end_stone_brick_slab	End Stone Brick Slab	1200	500	yes	yes	end	
 
-end_stone_brick_stairs	End Stone Brick Stairs	12	9	yes	yes	end	
+end_stone_brick_stairs	End Stone Brick Stairs	1200	900	yes	yes	end	
 
-end_stone_brick_wall	End Stone Brick Wall	12	9	yes	yes	end	
+end_stone_brick_wall	End Stone Brick Wall	1200	900	yes	yes	end	
 
-end_stone_bricks	End Stone Bricks	10	8	yes	yes	end	
+end_stone_bricks	End Stone Bricks	1000	800	yes	yes	end	
 
-ender_chest	Ender Chest	50	40	yes	yes	blocks	
+ender_chest	Ender Chest	5000	4000	yes	yes	blocks	
 
-ender_dragon_spawn_egg	Ender Dragon Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+ender_dragon_spawn_egg	Ender Dragon Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-ender_eye	Eye of Ender	25	20	yes	yes	misc	
+ender_eye	Eye of Ender	2500	2000	yes	yes	misc	
 
-ender_pearl	Ender Pearl	25	20	yes	yes	misc	
+ender_pearl	Ender Pearl	2500	2000	yes	yes	misc	
 
-enderman_spawn_egg	Enderman Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+enderman_spawn_egg	Enderman Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-endermite_spawn_egg	Endermite Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+endermite_spawn_egg	Endermite Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-evoker_spawn_egg	Evoker Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+evoker_spawn_egg	Evoker Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-experience_bottle	Bottle o' Enchanting	50	40	yes	yes	misc	
+experience_bottle	Bottle o' Enchanting	5000	4000	yes	yes	misc	
 
-explorer_pottery_sherd	Explorer Pottery Sherd	500	400	yes	yes	misc	
+explorer_pottery_sherd	Explorer Pottery Sherd	50000	40000	yes	yes	misc	
 
-exposed_chiseled_copper	Exposed Chiseled Copper	50	12	yes	yes	blocks	
+exposed_chiseled_copper	Exposed Chiseled Copper	5000	1200	yes	yes	blocks	
 
-exposed_copper	Exposed Copper	50	40	yes	yes	blocks	
+exposed_copper	Exposed Copper	5000	4000	yes	yes	blocks	
 
-exposed_copper_bars	Exposed Copper Bars	10	8	yes	yes	blocks	
+exposed_copper_bars	Exposed Copper Bars	1000	800	yes	yes	blocks	
 
-exposed_copper_bulb	Exposed Copper Bulb	10	8	yes	yes	blocks	
+exposed_copper_bulb	Exposed Copper Bulb	1000	800	yes	yes	blocks	
 
-exposed_copper_chain	Exposed Copper Chain	10	8	yes	yes	blocks	
+exposed_copper_chain	Exposed Copper Chain	1000	800	yes	yes	blocks	
 
-exposed_copper_chest	Exposed Copper Chest	50	40	yes	yes	blocks	
+exposed_copper_chest	Exposed Copper Chest	5000	4000	yes	yes	blocks	
 
-exposed_copper_door	Exposed Copper Door	12	9	yes	yes	blocks	
+exposed_copper_door	Exposed Copper Door	1200	900	yes	yes	blocks	
 
-exposed_copper_golem_statue	Exposed Copper Golem Statue	500	400	yes	yes	blocks	
+exposed_copper_golem_statue	Exposed Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-exposed_copper_grate	Exposed Copper Grate	13	10	yes	yes	blocks	
+exposed_copper_grate	Exposed Copper Grate	1300	1000	yes	yes	blocks	
 
-exposed_copper_lantern	Exposed Copper Lantern	5	4	yes	yes	blocks	
+exposed_copper_lantern	Exposed Copper Lantern	500	400	yes	yes	blocks	
 
-exposed_copper_trapdoor	Exposed Copper Trapdoor	12	9	yes	yes	blocks	
+exposed_copper_trapdoor	Exposed Copper Trapdoor	1200	900	yes	yes	blocks	
 
-exposed_cut_copper	Exposed Cut Copper	50	12	yes	yes	blocks	
+exposed_cut_copper	Exposed Cut Copper	5000	1200	yes	yes	blocks	
 
-exposed_cut_copper_slab	Exposed Cut Copper Slab	12	6	yes	yes	blocks	
+exposed_cut_copper_slab	Exposed Cut Copper Slab	1200	600	yes	yes	blocks	
 
-exposed_cut_copper_stairs	Exposed Cut Copper Stairs	13	10	yes	yes	blocks	
+exposed_cut_copper_stairs	Exposed Cut Copper Stairs	1300	1000	yes	yes	blocks	
 
-exposed_lightning_rod	Exposed Lightning Rod	10	8	yes	yes	blocks	
+exposed_lightning_rod	Exposed Lightning Rod	1000	800	yes	yes	blocks	
 
-eye_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+eye_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-farmland	Farmland	10	8	yes	yes	blocks	
+farmland	Farmland	1000	800	yes	yes	blocks	
 
-feather	Feather	25	20	yes	yes	misc	
+feather	Feather	2500	2000	yes	yes	misc	
 
-fermented_spider_eye	Fermented Spider Eye	25	20	yes	yes	misc	
+fermented_spider_eye	Fermented Spider Eye	2500	2000	yes	yes	misc	
 
-fern	Fern	10	8	yes	yes	blocks	
+fern	Fern	1000	800	yes	yes	blocks	
 
-field_masoned_banner_pattern	Field Masoned Banner Pattern	1000	110	yes	yes	misc	
+field_masoned_banner_pattern	Field Masoned Banner Pattern	100000	11000	yes	yes	misc	
 
-filled_map	Map	25	20	yes	yes	misc	
+filled_map	Map	2500	2000	yes	yes	misc	
 
-fire_charge	Fire Charge	25	18	yes	yes	misc	
+fire_charge	Fire Charge	2500	1800	yes	yes	misc	
 
-fire_coral	Fire Coral	20	16	yes	yes	blocks	
+fire_coral	Fire Coral	2000	1600	yes	yes	blocks	
 
-fire_coral_block	Fire Coral Block	20	16	yes	yes	blocks	
+fire_coral_block	Fire Coral Block	2000	1600	yes	yes	blocks	
 
-fire_coral_fan	Fire Coral Fan	10	8	yes	yes	blocks	
+fire_coral_fan	Fire Coral Fan	1000	800	yes	yes	blocks	
 
-firefly_bush	Firefly Bush	10	8	yes	yes	blocks	
+firefly_bush	Firefly Bush	1000	800	yes	yes	blocks	
 
-firework_rocket	Firework Rocket	25	11	yes	yes	misc	
+firework_rocket	Firework Rocket	2500	1100	yes	yes	misc	
 
-firework_star	Firework Star	25	20	yes	yes	misc	
+firework_star	Firework Star	2500	2000	yes	yes	misc	
 
-fishing_rod	Fishing Rod	25	20	yes	yes	food	
+fishing_rod	Fishing Rod	2500	2000	yes	yes	food	
 
-fletching_table	Fletching Table	10	8	yes	yes	blocks	
+fletching_table	Fletching Table	1000	800	yes	yes	blocks	
 
-flint	Flint	25	20	yes	yes	misc	
+flint	Flint	2500	2000	yes	yes	misc	
 
-flint_and_steel	Flint and Steel	25	20	yes	yes	misc	
+flint_and_steel	Flint and Steel	2500	2000	yes	yes	misc	
 
-flow_armor_trim_smithing_template	Smithing Template	3000	2400	yes	yes	misc	
+flow_armor_trim_smithing_template	Smithing Template	300000	240000	yes	yes	misc	
 
-flow_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+flow_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-flow_pottery_sherd	Flow Pottery Sherd	500	400	yes	yes	misc	
+flow_pottery_sherd	Flow Pottery Sherd	50000	40000	yes	yes	misc	
 
-flower_banner_pattern	Banner Pattern	1000	20	yes	yes	misc	
+flower_banner_pattern	Banner Pattern	100000	2000	yes	yes	misc	
 
-flower_pot	Flower Pot	75	60	yes	yes	blocks	
+flower_pot	Flower Pot	7500	6000	yes	yes	blocks	
 
-flowering_azalea	Flowering Azalea	10	8	yes	yes	blocks	
+flowering_azalea	Flowering Azalea	1000	800	yes	yes	blocks	
 
-flowering_azalea_leaves	Flowering Azalea Leaves	5	4	yes	yes	blocks	
+flowering_azalea_leaves	Flowering Azalea Leaves	500	400	yes	yes	blocks	
 
-fox_spawn_egg	Fox Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+fox_spawn_egg	Fox Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-friend_pottery_sherd	Friend Pottery Sherd	500	400	yes	yes	end	
+friend_pottery_sherd	Friend Pottery Sherd	50000	40000	yes	yes	end	
 
-frog_spawn_egg	Frog Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+frog_spawn_egg	Frog Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-frogspawn	Frogspawn	10	8	yes	yes	blocks	
+frogspawn	Frogspawn	1000	800	yes	yes	blocks	
 
-furnace	Furnace	80	64	yes	yes	blocks	
+furnace	Furnace	8000	80	yes	yes	blocks	
 
-furnace_minecart	Minecart with Furnace	100	80	yes	yes	misc	
+furnace_minecart	Minecart with Furnace	10000	8000	yes	yes	misc	
 
-ghast_spawn_egg	Ghast Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+ghast_spawn_egg	Ghast Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-ghast_tear	Ghast Tear	25	20	yes	yes	nether	
+ghast_tear	Ghast Tear	2500	2000	yes	yes	nether	
 
-gilded_blackstone	Gilded Blackstone	5	4	yes	yes	blocks	
+gilded_blackstone	Gilded Blackstone	500	400	yes	yes	blocks	
 
-glass	Glass	10	8	yes	yes	blocks	
+glass	Glass	1000	10	yes	yes	blocks	
 
-glass_bottle	Glass Bottle	25	10	yes	yes	misc	
+glass_bottle	Glass Bottle	2500	10	yes	yes	misc	
 
-glass_pane	Glass Pane	10	3	yes	yes	blocks	
+glass_pane	Glass Pane	1000	3	yes	yes	blocks	
 
-glistering_melon_slice	Glistering Melon Slice	25	20	yes	yes	food	
+glistering_melon_slice	Glistering Melon Slice	2500	2000	yes	yes	food	
 
-globe_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+globe_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-glow_berries	Glow Berries	8	6	yes	yes	food	
+glow_berries	Glow Berries	800	600	yes	yes	food	
 
-glow_ink_sac	Glow Ink Sac	25	20	yes	yes	misc	
+glow_ink_sac	Glow Ink Sac	2500	2000	yes	yes	misc	
 
-glow_item_frame	Glow Item Frame	25	20	yes	yes	misc	
+glow_item_frame	Glow Item Frame	2500	2000	yes	yes	misc	
 
-glow_lichen	Glow Lichen	10	8	yes	yes	blocks	
+glow_lichen	Glow Lichen	1000	800	yes	yes	blocks	
 
-glow_squid_spawn_egg	Glow Squid Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+glow_squid_spawn_egg	Glow Squid Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-glowstone	Glowstone	100	80	yes	yes	nether	
+glowstone	Glowstone	10000	8000	yes	yes	nether	
 
-glowstone_dust	Glowstone Dust	25	20	yes	yes	nether	
+glowstone_dust	Glowstone Dust	2500	2000	yes	yes	nether	
 
-goat_horn	Goat Horn	500	400	yes	yes	misc	
+goat_horn	Goat Horn	50000	40000	yes	yes	misc	
 
-goat_spawn_egg	Goat Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+goat_spawn_egg	Goat Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-gold_block	Block of Gold	720	576	yes	yes	ores	
-gold_ingot	Gold Ingot	80	64	yes	yes	ores	
+gold_block	Block of Gold	72000	57600	yes	yes	ores	
+gold_ingot	Gold Ingot	8000	6400	yes	yes	ores	
 
-gold_nugget	Gold Nugget	9	7	yes	yes	ores	
+gold_nugget	Gold Nugget	900	700	yes	yes	ores	
 
-gold_ore	Gold Ore	150	120	yes	yes	ores	
+gold_ore	Gold Ore	15000	12000	yes	yes	ores	
 
-golden_apple	Golden Apple	100	80	yes	yes	food	
+golden_apple	Golden Apple	10000	8000	yes	yes	food	
 
-golden_axe	Golden Axe	150	120	yes	yes	tools	
-golden_boots	Golden Boots	320	256	yes	yes	armor	
-golden_carrot	Golden Carrot	8	6	yes	yes	food	
+golden_axe	Golden Axe	15000	12000	yes	yes	tools	
+golden_boots	Golden Boots	32000	25600	yes	yes	armor	
+golden_carrot	Golden Carrot	800	600	yes	yes	food	
 
-golden_chestplate	Golden Chestplate	640	512	yes	yes	armor	
-golden_dandelion	Golden Dandelion	10	8	yes	yes	blocks	
+golden_chestplate	Golden Chestplate	64000	51200	yes	yes	armor	
+golden_dandelion	Golden Dandelion	1000	800	yes	yes	blocks	
 
-golden_helmet	Golden Helmet	400	320	yes	yes	armor	
-golden_hoe	Golden Hoe	150	120	yes	yes	tools	
-golden_horse_armor	Golden Horse Armor	500	400	yes	yes	misc	
+golden_helmet	Golden Helmet	40000	32000	yes	yes	armor	
+golden_hoe	Golden Hoe	15000	12000	yes	yes	tools	
+golden_horse_armor	Golden Horse Armor	50000	40000	yes	yes	misc	
 
-golden_leggings	Golden Leggings	560	448	yes	yes	armor	
-golden_nautilus_armor	Golden Nautilus Armor	25	20	yes	yes	misc	
+golden_leggings	Golden Leggings	56000	44800	yes	yes	armor	
+golden_nautilus_armor	Golden Nautilus Armor	2500	2000	yes	yes	misc	
 
-golden_pickaxe	Golden Pickaxe	150	120	yes	yes	tools	
-golden_shovel	Golden Shovel	150	82	yes	yes	tools	
-golden_spear	Golden Spear	500	400	yes	yes	tools	
+golden_pickaxe	Golden Pickaxe	15000	12000	yes	yes	tools	
+golden_shovel	Golden Shovel	15000	8200	yes	yes	tools	
+golden_spear	Golden Spear	50000	40000	yes	yes	tools	
 
-golden_sword	Golden Sword	150	120	yes	yes	tools	
-granite	Granite	10	8	yes	yes	blocks	
+golden_sword	Golden Sword	15000	12000	yes	yes	tools	
+granite	Granite	1000	800	yes	yes	blocks	
 
-granite_slab	Granite Slab	12	5	yes	yes	blocks	
+granite_slab	Granite Slab	1200	500	yes	yes	blocks	
 
-granite_stairs	Granite Stairs	12	9	yes	yes	blocks	
+granite_stairs	Granite Stairs	1200	900	yes	yes	blocks	
 
-granite_wall	Granite Wall	12	9	yes	yes	blocks	
+granite_wall	Granite Wall	1200	900	yes	yes	blocks	
 
-grass_block	Grass Block	20	16	yes	yes	blocks	
+grass_block	Grass Block	2000	1600	yes	yes	blocks	
 
 gravel	Gravel	10	8	yes	yes	blocks	
 
-gray_banner	Gray Banner	30	24	yes	yes	blocks	
+gray_banner	Gray Banner	3000	2400	yes	yes	blocks	
 
-gray_bed	Gray Bed	50	36	yes	yes	blocks	
+gray_bed	Gray Bed	5000	3600	yes	yes	blocks	
 
-gray_bundle	Gray Bundle	50	34	yes	yes	misc	
+gray_bundle	Gray Bundle	5000	3400	yes	yes	misc	
 
-gray_candle	Gray Candle	20	16	yes	yes	blocks	
+gray_candle	Gray Candle	2000	1600	yes	yes	blocks	
 
 gray_carpet	Gray Carpet	7	5	yes	yes	blocks	
 
@@ -1209,35 +1209,35 @@ gray_concrete_slab	Gray Concrete Slab	12	9	yes	yes	blocks
 
 gray_concrete_stairs	Gray Concrete Stairs	12	9	yes	yes	blocks	
 
-gray_cushion	Gray Cushion	30	24	yes	yes	misc	
+gray_cushion	Gray Cushion	3000	2400	yes	yes	misc	
 
-gray_dye	Gray Dye	25	9	yes	yes	misc	
+gray_dye	Gray Dye	2500	900	yes	yes	misc	
 
-gray_glazed_terracotta	Gray Glazed Terracotta	15	12	yes	yes	blocks	
+gray_glazed_terracotta	Gray Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-gray_harness	Gray Harness	100	80	yes	yes	misc	
+gray_harness	Gray Harness	10000	8000	yes	yes	misc	
 
-gray_shulker_box	Gray Shulker Box	1000	800	yes	yes	end	
+gray_shulker_box	Gray Shulker Box	100000	80000	yes	yes	end	
 
-gray_stained_glass	Gray Stained Glass	10	8	yes	yes	blocks	
+gray_stained_glass	Gray Stained Glass	1000	124	yes	yes	blocks	
 
-gray_stained_glass_pane	Gray Stained Glass Pane	10	3	yes	yes	blocks	
+gray_stained_glass_pane	Gray Stained Glass Pane	1000	46	yes	yes	blocks	
 
-gray_terracotta	Gray Terracotta	15	12	yes	yes	blocks	
+gray_terracotta	Gray Terracotta	1500	1200	yes	yes	blocks	
 
-gray_wool	Gray Wool	10	8	yes	yes	blocks	
+gray_wool	Gray Wool	1000	800	yes	yes	blocks	
 
-gray_wool_slab	Gray Wool Slab	12	9	yes	yes	blocks	
+gray_wool_slab	Gray Wool Slab	1200	900	yes	yes	blocks	
 
-gray_wool_stairs	Gray Wool Stairs	12	9	yes	yes	blocks	
+gray_wool_stairs	Gray Wool Stairs	1200	900	yes	yes	blocks	
 
-green_banner	Green Banner	30	24	yes	yes	blocks	
+green_banner	Green Banner	3000	2400	yes	yes	blocks	
 
-green_bed	Green Bed	50	36	yes	yes	blocks	
+green_bed	Green Bed	5000	3600	yes	yes	blocks	
 
-green_bundle	Green Bundle	50	35	yes	yes	misc	
+green_bundle	Green Bundle	5000	3500	yes	yes	misc	
 
-green_candle	Green Candle	20	16	yes	yes	blocks	
+green_candle	Green Candle	2000	1600	yes	yes	blocks	
 
 green_carpet	Green Carpet	7	5	yes	yes	blocks	
 
@@ -1249,226 +1249,226 @@ green_concrete_slab	Green Concrete Slab	12	9	yes	yes	blocks
 
 green_concrete_stairs	Green Concrete Stairs	12	9	yes	yes	blocks	
 
-green_cushion	Green Cushion	30	24	yes	yes	misc	
+green_cushion	Green Cushion	3000	2400	yes	yes	misc	
 
-green_dye	Green Dye	25	10	yes	yes	misc	
+green_dye	Green Dye	2500	1000	yes	yes	misc	
 
-green_glazed_terracotta	Green Glazed Terracotta	15	12	yes	yes	blocks	
+green_glazed_terracotta	Green Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-green_harness	Green Harness	100	80	yes	yes	misc	
+green_harness	Green Harness	10000	8000	yes	yes	misc	
 
-green_shulker_box	Green Shulker Box	1000	800	yes	yes	end	
+green_shulker_box	Green Shulker Box	100000	80000	yes	yes	end	
 
-green_stained_glass	Green Stained Glass	10	8	yes	yes	blocks	
+green_stained_glass	Green Stained Glass	1000	135	yes	yes	blocks	
 
-green_stained_glass_pane	Green Stained Glass Pane	10	3	yes	yes	blocks	
+green_stained_glass_pane	Green Stained Glass Pane	1000	50	yes	yes	blocks	
 
-green_terracotta	Green Terracotta	15	12	yes	yes	blocks	
+green_terracotta	Green Terracotta	1500	1200	yes	yes	blocks	
 
-green_wool	Green Wool	10	8	yes	yes	blocks	
+green_wool	Green Wool	1000	800	yes	yes	blocks	
 
-green_wool_slab	Green Wool Slab	12	9	yes	yes	blocks	
+green_wool_slab	Green Wool Slab	1200	900	yes	yes	blocks	
 
-green_wool_stairs	Green Wool Stairs	12	9	yes	yes	blocks	
+green_wool_stairs	Green Wool Stairs	1200	900	yes	yes	blocks	
 
-grindstone	Grindstone	10	8	yes	yes	blocks	
+grindstone	Grindstone	1000	605	yes	yes	blocks	
 
-guardian_spawn_egg	Guardian Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+guardian_spawn_egg	Guardian Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-gunpowder	Gunpowder	25	20	yes	yes	misc	
+gunpowder	Gunpowder	2500	2000	yes	yes	misc	
 
-guster_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+guster_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-guster_pottery_sherd	Guster Pottery Sherd	500	400	yes	yes	misc	
+guster_pottery_sherd	Guster Pottery Sherd	50000	40000	yes	yes	misc	
 
-hanging_roots	Hanging Roots	10	8	yes	yes	blocks	
+hanging_roots	Hanging Roots	1000	800	yes	yes	blocks	
 
-happy_ghast_spawn_egg	Happy Ghast Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+happy_ghast_spawn_egg	Happy Ghast Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-hay_block	Hay Bale	225	180	yes	yes	blocks	
+hay_block	Hay Bale	22500	18000	yes	yes	blocks	
 
-heart_of_the_sea	Heart of the Sea	2000	1600	yes	yes	misc	
+heart_of_the_sea	Heart of the Sea	200000	160000	yes	yes	misc	
 
-heart_pottery_sherd	Heart Pottery Sherd	500	400	yes	yes	misc	
+heart_pottery_sherd	Heart Pottery Sherd	50000	40000	yes	yes	misc	
 
-heartbreak_pottery_sherd	Heartbreak Pottery Sherd	500	400	yes	yes	misc	
+heartbreak_pottery_sherd	Heartbreak Pottery Sherd	50000	40000	yes	yes	misc	
 
-heavy_core	Heavy Core	5000	4000	yes	yes	blocks	
+heavy_core	Heavy Core	500000	400000	yes	yes	blocks	
 
-heavy_weighted_pressure_plate	Heavy Weighted Pressure Plate	80	64	yes	yes	redstone	
+heavy_weighted_pressure_plate	Heavy Weighted Pressure Plate	8000	6400	yes	yes	redstone	
 
-hoglin_spawn_egg	Hoglin Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+hoglin_spawn_egg	Hoglin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-honey_block	Honey Block	32	25	yes	yes	blocks	
+honey_block	Honey Block	3200	2500	yes	yes	blocks	
 
-honey_bottle	Honey Bottle	8	6	yes	yes	food	
+honey_bottle	Honey Bottle	800	600	yes	yes	food	
 
-honeycomb	Honeycomb	25	20	yes	yes	misc	
+honeycomb	Honeycomb	2500	2000	yes	yes	misc	
 
-honeycomb_block	Honeycomb Block	100	80	yes	yes	blocks	
+honeycomb_block	Honeycomb Block	10000	8000	yes	yes	blocks	
 
-hopper	Hopper	10	8	yes	yes	redstone	
+hopper	Hopper	1000	800	yes	yes	redstone	
 
-hopper_minecart	Minecart with Hopper	100	80	yes	yes	redstone	
+hopper_minecart	Minecart with Hopper	10000	8000	yes	yes	redstone	
 
-horn_coral	Horn Coral	20	16	yes	yes	blocks	
+horn_coral	Horn Coral	2000	1600	yes	yes	blocks	
 
-horn_coral_block	Horn Coral Block	20	16	yes	yes	blocks	
+horn_coral_block	Horn Coral Block	2000	1600	yes	yes	blocks	
 
-horn_coral_fan	Horn Coral Fan	10	8	yes	yes	blocks	
+horn_coral_fan	Horn Coral Fan	1000	800	yes	yes	blocks	
 
-horse_spawn_egg	Horse Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+horse_spawn_egg	Horse Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-host_armor_trim_smithing_template	Smithing Template	3000	2200	yes	yes	misc	
+host_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
 
-howl_pottery_sherd	Howl Pottery Sherd	500	400	yes	yes	misc	
+howl_pottery_sherd	Howl Pottery Sherd	50000	40000	yes	yes	misc	
 
-husk_spawn_egg	Husk Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+husk_spawn_egg	Husk Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-ice	Ice	10	8	yes	yes	blocks	
+ice	Ice	1000	800	yes	yes	blocks	
 
-infested_chiseled_stone_bricks	Infested Chiseled Stone Bricks	10	8	yes	yes	blocks	
+infested_chiseled_stone_bricks	Infested Chiseled Stone Bricks	1000	800	yes	yes	blocks	
 
 infested_cobblestone	Infested Cobblestone	10	8	yes	yes	blocks	
 
-infested_cracked_stone_bricks	Infested Cracked Stone Bricks	10	8	yes	yes	blocks	
+infested_cracked_stone_bricks	Infested Cracked Stone Bricks	1000	800	yes	yes	blocks	
 
-infested_deepslate	Infested Deepslate	10	8	yes	yes	blocks	
+infested_deepslate	Infested Deepslate	1000	800	yes	yes	blocks	
 
-infested_mossy_stone_bricks	Infested Mossy Stone Bricks	10	8	yes	yes	blocks	
+infested_mossy_stone_bricks	Infested Mossy Stone Bricks	1000	800	yes	yes	blocks	
 
-infested_stone	Infested Stone	10	8	yes	yes	blocks	
+infested_stone	Infested Stone	1000	800	yes	yes	blocks	
 
-infested_stone_bricks	Infested Stone Bricks	10	8	yes	yes	blocks	
+infested_stone_bricks	Infested Stone Bricks	1000	800	yes	yes	blocks	
 
-ink_sac	Ink Sac	25	20	yes	yes	misc	
+ink_sac	Ink Sac	2500	2000	yes	yes	misc	
 
-iron_axe	Iron Axe	80	64	yes	yes	tools	
-iron_bars	Iron Bars	15	12	yes	yes	blocks	
+iron_axe	Iron Axe	8000	6400	yes	yes	tools	
+iron_bars	Iron Bars	1500	1200	yes	yes	blocks	
 
-iron_block	Block of Iron	360	288	yes	yes	ores	
-iron_boots	Iron Boots	160	128	yes	yes	armor	
-iron_chain	Iron Chain	10	8	yes	yes	blocks	
+iron_block	Block of Iron	36000	28800	yes	yes	ores	
+iron_boots	Iron Boots	16000	12800	yes	yes	armor	
+iron_chain	Iron Chain	1000	800	yes	yes	blocks	
 
-iron_chestplate	Iron Chestplate	320	256	yes	yes	armor	
-iron_door	Iron Door	80	64	yes	yes	blocks	
+iron_chestplate	Iron Chestplate	32000	25600	yes	yes	armor	
+iron_door	Iron Door	8000	6400	yes	yes	blocks	
 
-iron_golem_spawn_egg	Iron Golem Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+iron_golem_spawn_egg	Iron Golem Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-iron_helmet	Iron Helmet	200	160	yes	yes	armor	
-iron_hoe	Iron Hoe	80	64	yes	yes	tools	
-iron_horse_armor	Iron Horse Armor	500	400	yes	yes	misc	
+iron_helmet	Iron Helmet	20000	16000	yes	yes	armor	
+iron_hoe	Iron Hoe	8000	6400	yes	yes	tools	
+iron_horse_armor	Iron Horse Armor	50000	40000	yes	yes	misc	
 
-iron_ingot	Iron Ingot	40	32	yes	yes	ores	
+iron_ingot	Iron Ingot	4000	3200	yes	yes	ores	
 
-iron_leggings	Iron Leggings	280	224	yes	yes	armor	
-iron_nautilus_armor	Iron Nautilus Armor	25	20	yes	yes	misc	
+iron_leggings	Iron Leggings	28000	22400	yes	yes	armor	
+iron_nautilus_armor	Iron Nautilus Armor	2500	2000	yes	yes	misc	
 
-iron_nugget	Iron Nugget	5	4	yes	yes	ores	
+iron_nugget	Iron Nugget	500	400	yes	yes	ores	
 
-iron_ore	Iron Ore	80	64	yes	yes	ores	
+iron_ore	Iron Ore	8000	6400	yes	yes	ores	
 
-iron_pickaxe	Iron Pickaxe	80	64	yes	yes	tools	
-iron_shovel	Iron Shovel	80	42	yes	yes	tools	
-iron_spear	Iron Spear	300	240	yes	yes	tools	
+iron_pickaxe	Iron Pickaxe	8000	6400	yes	yes	tools	
+iron_shovel	Iron Shovel	8000	4200	yes	yes	tools	
+iron_spear	Iron Spear	30000	24000	yes	yes	tools	
 
-iron_sword	Iron Sword	80	64	yes	yes	tools	
-iron_trapdoor	Iron Trapdoor	160	128	yes	yes	blocks	
+iron_sword	Iron Sword	8000	6400	yes	yes	tools	
+iron_trapdoor	Iron Trapdoor	16000	12800	yes	yes	blocks	
 
-item_frame	Item Frame	25	20	yes	yes	misc	
+item_frame	Item Frame	2500	2000	yes	yes	misc	
 
-jack_o_lantern	Jack o'Lantern	5	4	yes	yes	blocks	
+jack_o_lantern	Jack o'Lantern	500	400	yes	yes	blocks	
 
-jigsaw	Jigsaw Block	0	5000	no	no	creative	creative only
+jigsaw	Jigsaw Block	0	500000	no	no	creative	creative only
 
-jukebox	Jukebox	10	8	yes	yes	blocks	
+jukebox	Jukebox	1000	800	yes	yes	blocks	
 
-jungle_boat	Jungle Boat	40	10	yes	yes	misc	
+jungle_boat	Jungle Boat	4000	1000	yes	yes	misc	
 
-jungle_button	Jungle Button	12	2	yes	yes	redstone	
+jungle_button	Jungle Button	1200	200	yes	yes	redstone	
 
-jungle_chest_boat	Jungle Boat with Chest	30	24	yes	yes	misc	
+jungle_chest_boat	Jungle Boat with Chest	3000	2400	yes	yes	misc	
 
-jungle_door	Jungle Door	16	4	yes	yes	blocks	
+jungle_door	Jungle Door	1600	400	yes	yes	blocks	
 
-jungle_fence	Jungle Fence	12	3	yes	yes	blocks	
+jungle_fence	Jungle Fence	1200	300	yes	yes	blocks	
 
-jungle_fence_gate	Jungle Fence Gate	12	8	yes	yes	blocks	
+jungle_fence_gate	Jungle Fence Gate	1200	800	yes	yes	blocks	
 
-jungle_hanging_sign	Jungle Hanging Sign	20	16	yes	yes	blocks	
+jungle_hanging_sign	Jungle Hanging Sign	2000	1600	yes	yes	blocks	
 
-jungle_leaves	Jungle Leaves	5	4	yes	yes	blocks	
+jungle_leaves	Jungle Leaves	500	400	yes	yes	blocks	
 
-jungle_log	Jungle Log	8	6	yes	yes	blocks	
+jungle_log	Jungle Log	800	600	yes	yes	blocks	
 
-jungle_planks	Jungle Planks	8	2	yes	yes	blocks	
+jungle_planks	Jungle Planks	800	200	yes	yes	blocks	
 
-jungle_pressure_plate	Jungle Pressure Plate	16	4	yes	yes	redstone	
+jungle_pressure_plate	Jungle Pressure Plate	1600	400	yes	yes	redstone	
 
-jungle_pyramid_map	Jungle Pyramid Map	25	20	yes	yes	misc	
+jungle_pyramid_map	Jungle Pyramid Map	2500	2000	yes	yes	misc	
 
-jungle_sapling	Jungle Sapling	5	4	yes	yes	blocks	
+jungle_sapling	Jungle Sapling	500	400	yes	yes	blocks	
 
-jungle_shelf	Jungle Shelf	20	16	yes	yes	blocks	
+jungle_shelf	Jungle Shelf	2000	1600	yes	yes	blocks	
 
-jungle_sign	Jungle Sign	20	4	yes	yes	blocks	
+jungle_sign	Jungle Sign	2000	400	yes	yes	blocks	
 
-jungle_slab	Jungle Slab	12	1	yes	yes	blocks	
+jungle_slab	Jungle Slab	1200	100	yes	yes	blocks	
 
-jungle_stairs	Jungle Stairs	12	3	yes	yes	blocks	
+jungle_stairs	Jungle Stairs	1200	300	yes	yes	blocks	
 
-jungle_trapdoor	Jungle Trapdoor	24	6	yes	yes	blocks	
+jungle_trapdoor	Jungle Trapdoor	2400	600	yes	yes	blocks	
 
-jungle_wood	Jungle Wood	11	8	yes	yes	blocks	
+jungle_wood	Jungle Wood	1100	800	yes	yes	blocks	
 
-kelp	Kelp	10	8	yes	yes	food	
+kelp	Kelp	1000	800	yes	yes	food	
 
-knowledge_book	Knowledge Book	0	5000	no	no	creative	creative only
+knowledge_book	Knowledge Book	0	500000	no	no	creative	creative only
 
-ladder	Ladder	59	2	yes	yes	blocks	
+ladder	Ladder	5900	200	yes	yes	blocks	
 
-lantern	Lantern	10	8	yes	yes	blocks	
+lantern	Lantern	1000	800	yes	yes	blocks	
 
-lapis_block	Block of Lapis Lazuli	180	144	yes	yes	ores	
-lapis_lazuli	Lapis Lazuli	20	16	yes	yes	misc	
+lapis_block	Block of Lapis Lazuli	18000	14400	yes	yes	ores	
+lapis_lazuli	Lapis Lazuli	2000	1600	yes	yes	misc	
 
-lapis_ore	Lapis Lazuli Ore	50	40	yes	yes	ores	
+lapis_ore	Lapis Lazuli Ore	5000	4000	yes	yes	ores	
 
-large_amethyst_bud	Large Amethyst Bud	30	24	yes	yes	blocks	
+large_amethyst_bud	Large Amethyst Bud	3000	2400	yes	yes	blocks	
 
-large_fern	Large Fern	10	8	yes	yes	blocks	
+large_fern	Large Fern	1000	800	yes	yes	blocks	
 
-lava_bucket	Lava Bucket	50	40	yes	yes	misc	
+lava_bucket	Lava Bucket	5000	4000	yes	yes	misc	
 
-lead	Lead	25	20	yes	yes	misc	
+lead	Lead	2500	2000	yes	yes	misc	
 
-leaf_litter	Leaf Litter	10	8	yes	yes	blocks	
+leaf_litter	Leaf Litter	1000	800	yes	yes	blocks	
 
-leather	Leather	100	80	yes	yes	misc	
+leather	Leather	10000	8000	yes	yes	misc	
 
-leather_boots	Leather Boots	400	320	yes	yes	armor	
+leather_boots	Leather Boots	40000	32000	yes	yes	armor	
 
-leather_chestplate	Leather Tunic	800	640	yes	yes	armor	
+leather_chestplate	Leather Tunic	80000	64000	yes	yes	armor	
 
-leather_helmet	Leather Cap	500	400	yes	yes	armor	
+leather_helmet	Leather Cap	50000	40000	yes	yes	armor	
 
-leather_horse_armor	Leather Horse Armor	700	560	yes	yes	misc	
+leather_horse_armor	Leather Horse Armor	70000	56000	yes	yes	misc	
 
-leather_leggings	Leather Pants	700	560	yes	yes	armor	
+leather_leggings	Leather Pants	70000	56000	yes	yes	armor	
 
-lectern	Lectern	10	8	yes	yes	blocks	
+lectern	Lectern	1000	800	yes	yes	blocks	
 
-lever	Lever	10	8	yes	yes	redstone	
+lever	Lever	1000	110	yes	yes	redstone	
 
-light	Light	0	5000	no	no	creative	creative only
+light	Light	0	500000	no	no	creative	creative only
 
-light_blue_banner	Light Blue Banner	30	24	yes	yes	blocks	
+light_blue_banner	Light Blue Banner	3000	2400	yes	yes	blocks	
 
-light_blue_bed	Light Blue Bed	50	36	yes	yes	blocks	
+light_blue_bed	Light Blue Bed	5000	3600	yes	yes	blocks	
 
-light_blue_bundle	Light Blue Bundle	50	34	yes	yes	misc	
+light_blue_bundle	Light Blue Bundle	5000	3400	yes	yes	misc	
 
-light_blue_candle	Light Blue Candle	20	16	yes	yes	blocks	
+light_blue_candle	Light Blue Candle	2000	1600	yes	yes	blocks	
 
 light_blue_carpet	Light Blue Carpet	7	5	yes	yes	blocks	
 
@@ -1480,35 +1480,35 @@ light_blue_concrete_slab	Light Blue Concrete Slab	12	9	yes	yes	blocks
 
 light_blue_concrete_stairs	Light Blue Concrete Stairs	12	9	yes	yes	blocks	
 
-light_blue_cushion	Light Blue Cushion	30	24	yes	yes	misc	
+light_blue_cushion	Light Blue Cushion	3000	2400	yes	yes	misc	
 
-light_blue_dye	Light Blue Dye	25	9	yes	yes	misc	
+light_blue_dye	Light Blue Dye	2500	900	yes	yes	misc	
 
-light_blue_glazed_terracotta	Light Blue Glazed Terracotta	15	12	yes	yes	blocks	
+light_blue_glazed_terracotta	Light Blue Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-light_blue_harness	Light Blue Harness	100	80	yes	yes	misc	
+light_blue_harness	Light Blue Harness	10000	8000	yes	yes	misc	
 
-light_blue_shulker_box	Light Blue Shulker Box	1000	800	yes	yes	end	
+light_blue_shulker_box	Light Blue Shulker Box	100000	80000	yes	yes	end	
 
-light_blue_stained_glass	Light Blue Stained Glass	10	8	yes	yes	blocks	
+light_blue_stained_glass	Light Blue Stained Glass	1000	124	yes	yes	blocks	
 
-light_blue_stained_glass_pane	Light Blue Stained Glass Pane	10	3	yes	yes	blocks	
+light_blue_stained_glass_pane	Light Blue Stained Glass Pane	1000	46	yes	yes	blocks	
 
-light_blue_terracotta	Light Blue Terracotta	15	12	yes	yes	blocks	
+light_blue_terracotta	Light Blue Terracotta	1500	1200	yes	yes	blocks	
 
-light_blue_wool	Light Blue Wool	10	8	yes	yes	blocks	
+light_blue_wool	Light Blue Wool	1000	800	yes	yes	blocks	
 
-light_blue_wool_slab	Light Blue Wool Slab	12	9	yes	yes	blocks	
+light_blue_wool_slab	Light Blue Wool Slab	1200	900	yes	yes	blocks	
 
-light_blue_wool_stairs	Light Blue Wool Stairs	12	9	yes	yes	blocks	
+light_blue_wool_stairs	Light Blue Wool Stairs	1200	900	yes	yes	blocks	
 
-light_gray_banner	Light Gray Banner	30	24	yes	yes	blocks	
+light_gray_banner	Light Gray Banner	3000	2400	yes	yes	blocks	
 
-light_gray_bed	Light Gray Bed	50	36	yes	yes	blocks	
+light_gray_bed	Light Gray Bed	5000	3600	yes	yes	blocks	
 
-light_gray_bundle	Light Gray Bundle	50	33	yes	yes	misc	
+light_gray_bundle	Light Gray Bundle	5000	3300	yes	yes	misc	
 
-light_gray_candle	Light Gray Candle	20	16	yes	yes	blocks	
+light_gray_candle	Light Gray Candle	2000	1600	yes	yes	blocks	
 
 light_gray_carpet	Light Gray Carpet	7	5	yes	yes	blocks	
 
@@ -1520,45 +1520,45 @@ light_gray_concrete_slab	Light Gray Concrete Slab	12	9	yes	yes	blocks
 
 light_gray_concrete_stairs	Light Gray Concrete Stairs	12	9	yes	yes	blocks	
 
-light_gray_cushion	Light Gray Cushion	30	24	yes	yes	misc	
+light_gray_cushion	Light Gray Cushion	3000	2400	yes	yes	misc	
 
-light_gray_dye	Light Gray Dye	25	8	yes	yes	misc	
+light_gray_dye	Light Gray Dye	2500	800	yes	yes	misc	
 
-light_gray_glazed_terracotta	Light Gray Glazed Terracotta	15	12	yes	yes	blocks	
+light_gray_glazed_terracotta	Light Gray Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-light_gray_harness	Light Gray Harness	100	80	yes	yes	misc	
+light_gray_harness	Light Gray Harness	10000	8000	yes	yes	misc	
 
-light_gray_shulker_box	Light Gray Shulker Box	1000	800	yes	yes	end	
+light_gray_shulker_box	Light Gray Shulker Box	100000	80000	yes	yes	end	
 
-light_gray_stained_glass	Light Gray Stained Glass	10	8	yes	yes	blocks	
+light_gray_stained_glass	Light Gray Stained Glass	1000	119	yes	yes	blocks	
 
-light_gray_stained_glass_pane	Light Gray Stained Glass Pane	10	3	yes	yes	blocks	
+light_gray_stained_glass_pane	Light Gray Stained Glass Pane	1000	44	yes	yes	blocks	
 
-light_gray_terracotta	Light Gray Terracotta	15	12	yes	yes	blocks	
+light_gray_terracotta	Light Gray Terracotta	1500	1200	yes	yes	blocks	
 
-light_gray_wool	Light Gray Wool	10	8	yes	yes	blocks	
+light_gray_wool	Light Gray Wool	1000	800	yes	yes	blocks	
 
-light_gray_wool_slab	Light Gray Wool Slab	12	9	yes	yes	blocks	
+light_gray_wool_slab	Light Gray Wool Slab	1200	900	yes	yes	blocks	
 
-light_gray_wool_stairs	Light Gray Wool Stairs	12	9	yes	yes	blocks	
+light_gray_wool_stairs	Light Gray Wool Stairs	1200	900	yes	yes	blocks	
 
-light_weighted_pressure_plate	Light Weighted Pressure Plate	160	128	yes	yes	redstone	
+light_weighted_pressure_plate	Light Weighted Pressure Plate	16000	12800	yes	yes	redstone	
 
-lightning_rod	Lightning Rod	45	36	yes	yes	blocks	
+lightning_rod	Lightning Rod	4500	3600	yes	yes	blocks	
 
-lilac	Lilac	10	8	yes	yes	blocks	
+lilac	Lilac	1000	800	yes	yes	blocks	
 
-lily_of_the_valley	Lily of the Valley	10	8	yes	yes	blocks	
+lily_of_the_valley	Lily of the Valley	1000	800	yes	yes	blocks	
 
-lily_pad	Lily Pad	10	8	yes	yes	blocks	
+lily_pad	Lily Pad	1000	800	yes	yes	blocks	
 
-lime_banner	Lime Banner	30	24	yes	yes	blocks	
+lime_banner	Lime Banner	3000	2400	yes	yes	blocks	
 
-lime_bed	Lime Bed	50	36	yes	yes	blocks	
+lime_bed	Lime Bed	5000	3600	yes	yes	blocks	
 
-lime_bundle	Lime Bundle	50	34	yes	yes	misc	
+lime_bundle	Lime Bundle	5000	3400	yes	yes	misc	
 
-lime_candle	Lime Candle	20	16	yes	yes	blocks	
+lime_candle	Lime Candle	2000	1600	yes	yes	blocks	
 
 lime_carpet	Lime Carpet	7	5	yes	yes	blocks	
 
@@ -1570,45 +1570,45 @@ lime_concrete_slab	Lime Concrete Slab	12	9	yes	yes	blocks
 
 lime_concrete_stairs	Lime Concrete Stairs	12	9	yes	yes	blocks	
 
-lime_cushion	Lime Cushion	30	24	yes	yes	misc	
+lime_cushion	Lime Cushion	3000	2400	yes	yes	misc	
 
-lime_dye	Lime Dye	25	9	yes	yes	misc	
+lime_dye	Lime Dye	2500	900	yes	yes	misc	
 
-lime_glazed_terracotta	Lime Glazed Terracotta	15	12	yes	yes	blocks	
+lime_glazed_terracotta	Lime Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-lime_harness	Lime Harness	100	80	yes	yes	misc	
+lime_harness	Lime Harness	10000	8000	yes	yes	misc	
 
-lime_shulker_box	Lime Shulker Box	1000	800	yes	yes	end	
+lime_shulker_box	Lime Shulker Box	100000	80000	yes	yes	end	
 
-lime_stained_glass	Lime Stained Glass	10	8	yes	yes	blocks	
+lime_stained_glass	Lime Stained Glass	1000	124	yes	yes	blocks	
 
-lime_stained_glass_pane	Lime Stained Glass Pane	10	3	yes	yes	blocks	
+lime_stained_glass_pane	Lime Stained Glass Pane	1000	46	yes	yes	blocks	
 
-lime_terracotta	Lime Terracotta	15	12	yes	yes	blocks	
+lime_terracotta	Lime Terracotta	1500	1200	yes	yes	blocks	
 
-lime_wool	Lime Wool	10	8	yes	yes	blocks	
+lime_wool	Lime Wool	1000	800	yes	yes	blocks	
 
-lime_wool_slab	Lime Wool Slab	12	9	yes	yes	blocks	
+lime_wool_slab	Lime Wool Slab	1200	900	yes	yes	blocks	
 
-lime_wool_stairs	Lime Wool Stairs	12	9	yes	yes	blocks	
+lime_wool_stairs	Lime Wool Stairs	1200	900	yes	yes	blocks	
 
-lingering_potion	Lingering Potion	50	40	yes	yes	misc	
+lingering_potion	Lingering Potion	5000	4000	yes	yes	misc	
 
-llama_spawn_egg	Llama Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+llama_spawn_egg	Llama Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-lodestone	Lodestone	10	8	yes	yes	blocks	
+lodestone	Lodestone	1000	800	yes	yes	blocks	
 
-loom	Loom	10	8	yes	yes	blocks	
+loom	Loom	1000	800	yes	yes	blocks	
 
-mace	Mace	5000	4000	yes	yes	misc	
+mace	Mace	500000	400000	yes	yes	misc	
 
-magenta_banner	Magenta Banner	30	24	yes	yes	blocks	
+magenta_banner	Magenta Banner	3000	2400	yes	yes	blocks	
 
-magenta_bed	Magenta Bed	50	36	yes	yes	blocks	
+magenta_bed	Magenta Bed	5000	3600	yes	yes	blocks	
 
-magenta_bundle	Magenta Bundle	50	30	yes	yes	misc	
+magenta_bundle	Magenta Bundle	5000	3000	yes	yes	misc	
 
-magenta_candle	Magenta Candle	20	15	yes	yes	blocks	
+magenta_candle	Magenta Candle	2000	1500	yes	yes	blocks	
 
 magenta_carpet	Magenta Carpet	7	5	yes	yes	blocks	
 
@@ -1620,93 +1620,93 @@ magenta_concrete_slab	Magenta Concrete Slab	12	9	yes	yes	blocks
 
 magenta_concrete_stairs	Magenta Concrete Stairs	12	9	yes	yes	blocks	
 
-magenta_cushion	Magenta Cushion	30	24	yes	yes	misc	
+magenta_cushion	Magenta Cushion	3000	2400	yes	yes	misc	
 
-magenta_dye	Magenta Dye	25	5	yes	yes	misc	
+magenta_dye	Magenta Dye	2500	500	yes	yes	misc	
 
-magenta_glazed_terracotta	Magenta Glazed Terracotta	15	12	yes	yes	blocks	
+magenta_glazed_terracotta	Magenta Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-magenta_harness	Magenta Harness	100	80	yes	yes	misc	
+magenta_harness	Magenta Harness	10000	8000	yes	yes	misc	
 
-magenta_shulker_box	Magenta Shulker Box	1000	800	yes	yes	end	
+magenta_shulker_box	Magenta Shulker Box	100000	80000	yes	yes	end	
 
-magenta_stained_glass	Magenta Stained Glass	10	8	yes	yes	blocks	
+magenta_stained_glass	Magenta Stained Glass	1000	72	yes	yes	blocks	
 
-magenta_stained_glass_pane	Magenta Stained Glass Pane	10	3	yes	yes	blocks	
+magenta_stained_glass_pane	Magenta Stained Glass Pane	1000	27	yes	yes	blocks	
 
-magenta_terracotta	Magenta Terracotta	15	12	yes	yes	blocks	
+magenta_terracotta	Magenta Terracotta	1500	1200	yes	yes	blocks	
 
-magenta_wool	Magenta Wool	10	8	yes	yes	blocks	
+magenta_wool	Magenta Wool	1000	800	yes	yes	blocks	
 
-magenta_wool_slab	Magenta Wool Slab	12	9	yes	yes	blocks	
+magenta_wool_slab	Magenta Wool Slab	1200	900	yes	yes	blocks	
 
-magenta_wool_stairs	Magenta Wool Stairs	12	9	yes	yes	blocks	
+magenta_wool_stairs	Magenta Wool Stairs	1200	900	yes	yes	blocks	
 
-magma_block	Magma Block	100	80	yes	yes	nether	
+magma_block	Magma Block	10000	8000	yes	yes	nether	
 
-magma_cream	Magma Cream	25	20	yes	yes	nether	
+magma_cream	Magma Cream	2500	2000	yes	yes	nether	
 
-magma_cube_spawn_egg	Magma Cube Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+magma_cube_spawn_egg	Magma Cube Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-mangrove_boat	Mangrove Boat	40	10	yes	yes	misc	
+mangrove_boat	Mangrove Boat	4000	1000	yes	yes	misc	
 
-mangrove_button	Mangrove Button	12	2	yes	yes	redstone	
+mangrove_button	Mangrove Button	1200	200	yes	yes	redstone	
 
-mangrove_chest_boat	Mangrove Boat with Chest	30	24	yes	yes	misc	
+mangrove_chest_boat	Mangrove Boat with Chest	3000	2400	yes	yes	misc	
 
-mangrove_door	Mangrove Door	16	4	yes	yes	blocks	
+mangrove_door	Mangrove Door	1600	400	yes	yes	blocks	
 
-mangrove_fence	Mangrove Fence	12	3	yes	yes	blocks	
+mangrove_fence	Mangrove Fence	1200	300	yes	yes	blocks	
 
-mangrove_fence_gate	Mangrove Fence Gate	12	8	yes	yes	blocks	
+mangrove_fence_gate	Mangrove Fence Gate	1200	800	yes	yes	blocks	
 
-mangrove_hanging_sign	Mangrove Hanging Sign	20	16	yes	yes	blocks	
+mangrove_hanging_sign	Mangrove Hanging Sign	2000	1600	yes	yes	blocks	
 
-mangrove_leaves	Mangrove Leaves	5	4	yes	yes	blocks	
+mangrove_leaves	Mangrove Leaves	500	400	yes	yes	blocks	
 
-mangrove_log	Mangrove Log	8	6	yes	yes	blocks	
+mangrove_log	Mangrove Log	800	600	yes	yes	blocks	
 
-mangrove_planks	Mangrove Planks	8	2	yes	yes	blocks	
+mangrove_planks	Mangrove Planks	800	200	yes	yes	blocks	
 
-mangrove_pressure_plate	Mangrove Pressure Plate	16	4	yes	yes	redstone	
+mangrove_pressure_plate	Mangrove Pressure Plate	1600	400	yes	yes	redstone	
 
-mangrove_propagule	Mangrove Propagule	10	8	yes	yes	blocks	
+mangrove_propagule	Mangrove Propagule	1000	800	yes	yes	blocks	
 
-mangrove_roots	Mangrove Roots	10	8	yes	yes	blocks	
+mangrove_roots	Mangrove Roots	1000	800	yes	yes	blocks	
 
-mangrove_shelf	Mangrove Shelf	20	16	yes	yes	blocks	
+mangrove_shelf	Mangrove Shelf	2000	1600	yes	yes	blocks	
 
-mangrove_sign	Mangrove Sign	20	4	yes	yes	blocks	
+mangrove_sign	Mangrove Sign	2000	400	yes	yes	blocks	
 
-mangrove_slab	Mangrove Slab	12	1	yes	yes	blocks	
+mangrove_slab	Mangrove Slab	1200	100	yes	yes	blocks	
 
-mangrove_stairs	Mangrove Stairs	12	3	yes	yes	blocks	
+mangrove_stairs	Mangrove Stairs	1200	300	yes	yes	blocks	
 
-mangrove_trapdoor	Mangrove Trapdoor	24	6	yes	yes	blocks	
+mangrove_trapdoor	Mangrove Trapdoor	2400	600	yes	yes	blocks	
 
-mangrove_wood	Mangrove Wood	11	8	yes	yes	blocks	
+mangrove_wood	Mangrove Wood	1100	800	yes	yes	blocks	
 
-map	Empty Map	25	20	yes	yes	misc	
+map	Empty Map	2500	2000	yes	yes	misc	
 
-medium_amethyst_bud	Medium Amethyst Bud	20	16	yes	yes	blocks	
+medium_amethyst_bud	Medium Amethyst Bud	2000	1600	yes	yes	blocks	
 
-melon	Melon	72	57	yes	yes	blocks	
+melon	Melon	7200	5700	yes	yes	blocks	
 
-melon_seeds	Melon Seeds	8	6	yes	yes	blocks	
+melon_seeds	Melon Seeds	800	600	yes	yes	blocks	
 
-melon_slice	Melon Slice	8	6	yes	yes	food	
+melon_slice	Melon Slice	800	600	yes	yes	food	
 
-milk_bucket	Milk Bucket	50	40	yes	yes	food	
+milk_bucket	Milk Bucket	5000	4000	yes	yes	food	
 
-minecart	Minecart	200	160	yes	yes	misc	
+minecart	Minecart	20000	16000	yes	yes	misc	
 
-miner_pottery_sherd	Miner Pottery Sherd	500	400	yes	yes	misc	
+miner_pottery_sherd	Miner Pottery Sherd	50000	40000	yes	yes	misc	
 
-mojang_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+mojang_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-mooshroom_spawn_egg	Mooshroom Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+mooshroom_spawn_egg	Mooshroom Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-moss_block	Moss Block	20	16	yes	yes	blocks	
+moss_block	Moss Block	2000	1600	yes	yes	blocks	
 
 moss_carpet	Moss Carpet	14	11	yes	yes	blocks	
 
@@ -1718,197 +1718,197 @@ mossy_cobblestone_stairs	Mossy Cobblestone Stairs	12	9	yes	yes	blocks
 
 mossy_cobblestone_wall	Mossy Cobblestone Wall	12	9	yes	yes	blocks	
 
-mossy_stone_brick_slab	Mossy Stone Brick Slab	12	5	yes	yes	blocks	
+mossy_stone_brick_slab	Mossy Stone Brick Slab	1200	500	yes	yes	blocks	
 
-mossy_stone_brick_stairs	Mossy Stone Brick Stairs	12	9	yes	yes	blocks	
+mossy_stone_brick_stairs	Mossy Stone Brick Stairs	1200	900	yes	yes	blocks	
 
-mossy_stone_brick_wall	Mossy Stone Brick Wall	12	9	yes	yes	blocks	
+mossy_stone_brick_wall	Mossy Stone Brick Wall	1200	900	yes	yes	blocks	
 
-mossy_stone_bricks	Mossy Stone Bricks	10	8	yes	yes	blocks	
+mossy_stone_bricks	Mossy Stone Bricks	1000	800	yes	yes	blocks	
 
-mourner_pottery_sherd	Mourner Pottery Sherd	500	400	yes	yes	misc	
+mourner_pottery_sherd	Mourner Pottery Sherd	50000	40000	yes	yes	misc	
 
-mud	Mud	10	8	yes	yes	blocks	
+mud	Mud	1000	800	yes	yes	blocks	
 
-mud_brick_slab	Mud Brick Slab	12	5	yes	yes	blocks	
+mud_brick_slab	Mud Brick Slab	1200	500	yes	yes	blocks	
 
-mud_brick_stairs	Mud Brick Stairs	12	9	yes	yes	blocks	
+mud_brick_stairs	Mud Brick Stairs	1200	900	yes	yes	blocks	
 
-mud_brick_wall	Mud Brick Wall	12	9	yes	yes	blocks	
+mud_brick_wall	Mud Brick Wall	1200	900	yes	yes	blocks	
 
-mud_bricks	Mud Bricks	10	8	yes	yes	blocks	
+mud_bricks	Mud Bricks	1000	800	yes	yes	blocks	
 
-muddy_mangrove_roots	Muddy Mangrove Roots	10	8	yes	yes	blocks	
+muddy_mangrove_roots	Muddy Mangrove Roots	1000	800	yes	yes	blocks	
 
-mule_spawn_egg	Mule Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+mule_spawn_egg	Mule Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-mushroom_stem	Mushroom Stem	8	6	yes	yes	blocks	
+mushroom_stem	Mushroom Stem	800	600	yes	yes	blocks	
 
-mushroom_stew	Mushroom Stew	8	6	yes	yes	food	
+mushroom_stew	Mushroom Stew	800	600	yes	yes	food	
 
-music_disc_11	Music Disc	1500	1200	yes	yes	misc	
+music_disc_11	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_13	Music Disc	1500	1200	yes	yes	misc	
+music_disc_13	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_5	Music Disc	9000	7200	yes	yes	misc	
+music_disc_5	Music Disc	900000	720000	yes	yes	misc	
 
-music_disc_blocks	Music Disc	1500	1200	yes	yes	misc	
+music_disc_blocks	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_bounce	Music Disc	1500	1200	yes	yes	misc	
+music_disc_bounce	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_cat	Music Disc	1500	1200	yes	yes	misc	
+music_disc_cat	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_chirp	Music Disc	1500	1200	yes	yes	misc	
+music_disc_chirp	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_creator	Music Disc	1500	1200	yes	yes	misc	
+music_disc_creator	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_creator_music_box	Music Disc	1500	1200	yes	yes	misc	
+music_disc_creator_music_box	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_far	Music Disc	1500	1200	yes	yes	misc	
+music_disc_far	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_lava_chicken	Music Disc	1500	1200	yes	yes	food	
+music_disc_lava_chicken	Music Disc	150000	120000	yes	yes	food	
 
-music_disc_mall	Music Disc	1500	1200	yes	yes	misc	
+music_disc_mall	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_mellohi	Music Disc	1500	1200	yes	yes	misc	
+music_disc_mellohi	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_otherside	Music Disc	1500	1200	yes	yes	misc	
+music_disc_otherside	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_pigstep	Music Disc	1500	1200	yes	yes	misc	
+music_disc_pigstep	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_precipice	Music Disc	1500	1200	yes	yes	misc	
+music_disc_precipice	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_relic	Music Disc	1500	1200	yes	yes	misc	
+music_disc_relic	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_stal	Music Disc	1500	1200	yes	yes	misc	
+music_disc_stal	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_strad	Music Disc	1500	1200	yes	yes	misc	
+music_disc_strad	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_tears	Music Disc	1500	1200	yes	yes	misc	
+music_disc_tears	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_wait	Music Disc	1500	1200	yes	yes	misc	
+music_disc_wait	Music Disc	150000	120000	yes	yes	misc	
 
-music_disc_ward	Music Disc	1500	1200	yes	yes	misc	
+music_disc_ward	Music Disc	150000	120000	yes	yes	misc	
 
-mutton	Raw Mutton	8	6	yes	yes	food	
+mutton	Raw Mutton	800	600	yes	yes	food	
 
-mycelium	Mycelium	10	8	yes	yes	blocks	
+mycelium	Mycelium	1000	800	yes	yes	blocks	
 
-name_tag	Name Tag	100	80	yes	yes	misc	
+name_tag	Name Tag	10000	8000	yes	yes	misc	
 
-nautilus_shell	Nautilus Shell	500	400	yes	yes	misc	
+nautilus_shell	Nautilus Shell	50000	40000	yes	yes	misc	
 
-nautilus_spawn_egg	Nautilus Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+nautilus_spawn_egg	Nautilus Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-nether_brick	Nether Brick	25	10	yes	yes	nether	
+nether_brick	Nether Brick	2500	1000	yes	yes	nether	
 
-nether_brick_fence	Nether Brick Fence	12	9	yes	yes	nether	
+nether_brick_fence	Nether Brick Fence	1200	900	yes	yes	nether	
 
-nether_brick_slab	Nether Brick Slab	50	20	yes	yes	nether	
+nether_brick_slab	Nether Brick Slab	5000	2000	yes	yes	nether	
 
-nether_brick_stairs	Nether Brick Stairs	100	40	yes	yes	nether	
+nether_brick_stairs	Nether Brick Stairs	10000	4000	yes	yes	nether	
 
-nether_brick_wall	Nether Brick Wall	100	40	yes	yes	nether	
+nether_brick_wall	Nether Brick Wall	10000	4000	yes	yes	nether	
 
-nether_bricks	Nether Bricks	100	40	yes	yes	nether	
+nether_bricks	Nether Bricks	10000	4000	yes	yes	nether	
 
-nether_gold_ore	Nether Gold Ore	150	120	yes	yes	ores	
+nether_gold_ore	Nether Gold Ore	15000	12000	yes	yes	ores	
 
-nether_quartz_ore	Nether Quartz Ore	30	24	yes	yes	ores	
+nether_quartz_ore	Nether Quartz Ore	3000	2400	yes	yes	ores	
 
-nether_sprouts	Nether Sprouts	10	8	yes	yes	nether	
+nether_sprouts	Nether Sprouts	1000	800	yes	yes	nether	
 
-nether_star	Nether Star	10000	8000	yes	yes	nether	
+nether_star	Nether Star	1000000	800000	yes	yes	nether	
 
-nether_wart	Nether Wart	10	8	yes	yes	nether	
+nether_wart	Nether Wart	1000	800	yes	yes	nether	
 
-nether_wart_block	Nether Wart Block	90	72	yes	yes	nether	
+nether_wart_block	Nether Wart Block	9000	7200	yes	yes	nether	
 
-netherite_axe	Netherite Axe	500	400	yes	yes	tools	
-netherite_block	Block of Netherite	10800	8640	yes	yes	ores	
-netherite_boots	Netherite Boots	500	400	yes	yes	armor	
-netherite_chestplate	Netherite Chestplate	500	400	yes	yes	armor	
-netherite_helmet	Netherite Helmet	500	400	yes	yes	armor	
-netherite_hoe	Netherite Hoe	500	400	yes	yes	tools	
-netherite_horse_armor	Netherite Horse Armor	500	400	yes	yes	nether	
+netherite_axe	Netherite Axe	50000	40000	yes	yes	tools	
+netherite_block	Block of Netherite	1080000	864000	yes	yes	ores	
+netherite_boots	Netherite Boots	50000	40000	yes	yes	armor	
+netherite_chestplate	Netherite Chestplate	50000	40000	yes	yes	armor	
+netherite_helmet	Netherite Helmet	50000	40000	yes	yes	armor	
+netherite_hoe	Netherite Hoe	50000	40000	yes	yes	tools	
+netherite_horse_armor	Netherite Horse Armor	50000	40000	yes	yes	nether	
 
-netherite_ingot	Netherite Ingot	1200	960	yes	yes	ores	
+netherite_ingot	Netherite Ingot	120000	96000	yes	yes	ores	
 
-netherite_leggings	Netherite Leggings	500	400	yes	yes	armor	
-netherite_nautilus_armor	Netherite Nautilus Armor	25	20	yes	yes	nether	
+netherite_leggings	Netherite Leggings	50000	40000	yes	yes	armor	
+netherite_nautilus_armor	Netherite Nautilus Armor	2500	2000	yes	yes	nether	
 
-netherite_pickaxe	Netherite Pickaxe	500	400	yes	yes	tools	
-netherite_scrap	Netherite Scrap	600	480	yes	yes	nether	
+netherite_pickaxe	Netherite Pickaxe	50000	40000	yes	yes	tools	
+netherite_scrap	Netherite Scrap	60000	48000	yes	yes	nether	
 
-netherite_shovel	Netherite Shovel	500	400	yes	yes	tools	
-netherite_spear	Netherite Spear	4000	3200	yes	yes	tools	
+netherite_shovel	Netherite Shovel	50000	40000	yes	yes	tools	
+netherite_spear	Netherite Spear	400000	320000	yes	yes	tools	
 
-netherite_sword	Netherite Sword	500	400	yes	yes	tools	
-netherite_upgrade_smithing_template	Smithing Template	3000	2110	yes	yes	nether	
+netherite_sword	Netherite Sword	50000	40000	yes	yes	tools	
+netherite_upgrade_smithing_template	Smithing Template	300000	211000	yes	yes	nether	
 
-netherrack	Netherrack	10	8	yes	yes	nether	
+netherrack	Netherrack	1000	800	yes	yes	nether	
 
-note_block	Note Block	20	16	yes	yes	blocks	
+note_block	Note Block	2000	1600	yes	yes	blocks	
 
-oak_boat	Oak Boat	40	10	yes	yes	misc	
+oak_boat	Oak Boat	4000	1000	yes	yes	misc	
 
-oak_button	Oak Button	12	2	yes	yes	redstone	
+oak_button	Oak Button	1200	200	yes	yes	redstone	
 
-oak_chest_boat	Oak Boat with Chest	30	24	yes	yes	misc	
+oak_chest_boat	Oak Boat with Chest	3000	2400	yes	yes	misc	
 
-oak_door	Oak Door	16	4	yes	yes	blocks	
+oak_door	Oak Door	1600	400	yes	yes	blocks	
 
-oak_fence	Oak Fence	12	3	yes	yes	blocks	
+oak_fence	Oak Fence	1200	300	yes	yes	blocks	
 
-oak_fence_gate	Oak Fence Gate	12	8	yes	yes	blocks	
+oak_fence_gate	Oak Fence Gate	1200	800	yes	yes	blocks	
 
-oak_hanging_sign	Oak Hanging Sign	20	16	yes	yes	blocks	
+oak_hanging_sign	Oak Hanging Sign	2000	1600	yes	yes	blocks	
 
-oak_leaves	Oak Leaves	5	4	yes	yes	blocks	
+oak_leaves	Oak Leaves	500	400	yes	yes	blocks	
 
-oak_log	Oak Log	8	6	yes	yes	blocks	
+oak_log	Oak Log	800	600	yes	yes	blocks	
 
-oak_planks	Oak Planks	8	2	yes	yes	blocks	
+oak_planks	Oak Planks	800	200	yes	yes	blocks	
 
-oak_pressure_plate	Oak Pressure Plate	16	4	yes	yes	redstone	
+oak_pressure_plate	Oak Pressure Plate	1600	400	yes	yes	redstone	
 
-oak_sapling	Oak Sapling	5	4	yes	yes	blocks	
+oak_sapling	Oak Sapling	500	400	yes	yes	blocks	
 
-oak_shelf	Oak Shelf	20	16	yes	yes	blocks	
+oak_shelf	Oak Shelf	2000	1600	yes	yes	blocks	
 
-oak_sign	Oak Sign	20	4	yes	yes	blocks	
+oak_sign	Oak Sign	2000	400	yes	yes	blocks	
 
-oak_slab	Oak Slab	12	1	yes	yes	blocks	
+oak_slab	Oak Slab	1200	100	yes	yes	blocks	
 
-oak_stairs	Oak Stairs	12	3	yes	yes	blocks	
+oak_stairs	Oak Stairs	1200	300	yes	yes	blocks	
 
-oak_trapdoor	Oak Trapdoor	24	6	yes	yes	blocks	
+oak_trapdoor	Oak Trapdoor	2400	600	yes	yes	blocks	
 
-oak_wood	Oak Wood	11	8	yes	yes	blocks	
+oak_wood	Oak Wood	1100	800	yes	yes	blocks	
 
-observer	Observer	10	8	yes	yes	redstone	
+observer	Observer	1000	800	yes	yes	redstone	
 
-obsidian	Obsidian	10	8	yes	yes	blocks	
+obsidian	Obsidian	1000	800	yes	yes	blocks	
 
-ocean_monument_map	Ocean Monument Map	25	20	yes	yes	misc	
+ocean_monument_map	Ocean Monument Map	2500	2000	yes	yes	misc	
 
-ocelot_spawn_egg	Ocelot Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+ocelot_spawn_egg	Ocelot Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-ochre_froglight	Ochre Froglight	100	80	yes	yes	blocks	
+ochre_froglight	Ochre Froglight	10000	8000	yes	yes	blocks	
 
-ominous_bottle	Ominous Bottle	1000	800	yes	yes	misc	
+ominous_bottle	Ominous Bottle	100000	80000	yes	yes	misc	
 
-ominous_trial_key	Ominous Trial Key	1500	1200	yes	yes	misc	
+ominous_trial_key	Ominous Trial Key	150000	120000	yes	yes	misc	
 
-open_eyeblossom	Open Eyeblossom	10	8	yes	yes	blocks	
+open_eyeblossom	Open Eyeblossom	1000	800	yes	yes	blocks	
 
-orange_banner	Orange Banner	30	24	yes	yes	blocks	
+orange_banner	Orange Banner	3000	2400	yes	yes	blocks	
 
-orange_bed	Orange Bed	50	36	yes	yes	blocks	
+orange_bed	Orange Bed	5000	3600	yes	yes	blocks	
 
-orange_bundle	Orange Bundle	50	30	yes	yes	misc	
+orange_bundle	Orange Bundle	5000	3000	yes	yes	misc	
 
-orange_candle	Orange Candle	20	15	yes	yes	blocks	
+orange_candle	Orange Candle	2000	1500	yes	yes	blocks	
 
 orange_carpet	Orange Carpet	7	5	yes	yes	blocks	
 
@@ -1920,149 +1920,149 @@ orange_concrete_slab	Orange Concrete Slab	12	9	yes	yes	blocks
 
 orange_concrete_stairs	Orange Concrete Stairs	12	9	yes	yes	blocks	
 
-orange_cushion	Orange Cushion	30	24	yes	yes	misc	
+orange_cushion	Orange Cushion	3000	2400	yes	yes	misc	
 
-orange_dye	Orange Dye	25	5	yes	yes	misc	
+orange_dye	Orange Dye	2500	500	yes	yes	misc	
 
-orange_glazed_terracotta	Orange Glazed Terracotta	15	12	yes	yes	blocks	
+orange_glazed_terracotta	Orange Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-orange_harness	Orange Harness	100	80	yes	yes	misc	
+orange_harness	Orange Harness	10000	8000	yes	yes	misc	
 
-orange_poplar_leaves	Orange Poplar Leaves	5	4	yes	yes	blocks	
+orange_poplar_leaves	Orange Poplar Leaves	500	400	yes	yes	blocks	
 
-orange_shulker_box	Orange Shulker Box	1000	800	yes	yes	end	
+orange_shulker_box	Orange Shulker Box	100000	80000	yes	yes	end	
 
-orange_stained_glass	Orange Stained Glass	10	8	yes	yes	blocks	
+orange_stained_glass	Orange Stained Glass	1000	72	yes	yes	blocks	
 
-orange_stained_glass_pane	Orange Stained Glass Pane	10	3	yes	yes	blocks	
+orange_stained_glass_pane	Orange Stained Glass Pane	1000	27	yes	yes	blocks	
 
-orange_terracotta	Orange Terracotta	15	12	yes	yes	blocks	
+orange_terracotta	Orange Terracotta	1500	1200	yes	yes	blocks	
 
-orange_tulip	Orange Tulip	10	8	yes	yes	blocks	
+orange_tulip	Orange Tulip	1000	800	yes	yes	blocks	
 
-orange_wool	Orange Wool	10	8	yes	yes	blocks	
+orange_wool	Orange Wool	1000	800	yes	yes	blocks	
 
-orange_wool_slab	Orange Wool Slab	12	9	yes	yes	blocks	
+orange_wool_slab	Orange Wool Slab	1200	900	yes	yes	blocks	
 
-orange_wool_stairs	Orange Wool Stairs	12	9	yes	yes	blocks	
+orange_wool_stairs	Orange Wool Stairs	1200	900	yes	yes	blocks	
 
-oxeye_daisy	Oxeye Daisy	10	8	yes	yes	blocks	
+oxeye_daisy	Oxeye Daisy	1000	800	yes	yes	blocks	
 
-oxidized_chiseled_copper	Oxidized Chiseled Copper	50	12	yes	yes	blocks	
+oxidized_chiseled_copper	Oxidized Chiseled Copper	5000	1200	yes	yes	blocks	
 
-oxidized_copper	Oxidized Copper	50	40	yes	yes	blocks	
+oxidized_copper	Oxidized Copper	5000	4000	yes	yes	blocks	
 
-oxidized_copper_bars	Oxidized Copper Bars	10	8	yes	yes	blocks	
+oxidized_copper_bars	Oxidized Copper Bars	1000	800	yes	yes	blocks	
 
-oxidized_copper_bulb	Oxidized Copper Bulb	10	8	yes	yes	blocks	
+oxidized_copper_bulb	Oxidized Copper Bulb	1000	800	yes	yes	blocks	
 
-oxidized_copper_chain	Oxidized Copper Chain	10	8	yes	yes	blocks	
+oxidized_copper_chain	Oxidized Copper Chain	1000	800	yes	yes	blocks	
 
-oxidized_copper_chest	Oxidized Copper Chest	50	40	yes	yes	blocks	
+oxidized_copper_chest	Oxidized Copper Chest	5000	4000	yes	yes	blocks	
 
-oxidized_copper_door	Oxidized Copper Door	12	9	yes	yes	blocks	
+oxidized_copper_door	Oxidized Copper Door	1200	900	yes	yes	blocks	
 
-oxidized_copper_golem_statue	Oxidized Copper Golem Statue	500	400	yes	yes	blocks	
+oxidized_copper_golem_statue	Oxidized Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-oxidized_copper_grate	Oxidized Copper Grate	13	10	yes	yes	blocks	
+oxidized_copper_grate	Oxidized Copper Grate	1300	1000	yes	yes	blocks	
 
-oxidized_copper_lantern	Oxidized Copper Lantern	5	4	yes	yes	blocks	
+oxidized_copper_lantern	Oxidized Copper Lantern	500	400	yes	yes	blocks	
 
-oxidized_copper_trapdoor	Oxidized Copper Trapdoor	12	9	yes	yes	blocks	
+oxidized_copper_trapdoor	Oxidized Copper Trapdoor	1200	900	yes	yes	blocks	
 
-oxidized_cut_copper	Oxidized Cut Copper	50	12	yes	yes	blocks	
+oxidized_cut_copper	Oxidized Cut Copper	5000	1200	yes	yes	blocks	
 
-oxidized_cut_copper_slab	Oxidized Cut Copper Slab	12	6	yes	yes	blocks	
+oxidized_cut_copper_slab	Oxidized Cut Copper Slab	1200	600	yes	yes	blocks	
 
-oxidized_cut_copper_stairs	Oxidized Cut Copper Stairs	13	10	yes	yes	blocks	
+oxidized_cut_copper_stairs	Oxidized Cut Copper Stairs	1300	1000	yes	yes	blocks	
 
-oxidized_lightning_rod	Oxidized Lightning Rod	10	8	yes	yes	blocks	
+oxidized_lightning_rod	Oxidized Lightning Rod	1000	800	yes	yes	blocks	
 
-packed_ice	Packed Ice	90	72	yes	yes	blocks	
+packed_ice	Packed Ice	9000	7200	yes	yes	blocks	
 
-packed_mud	Packed Mud	10	8	yes	yes	blocks	
+packed_mud	Packed Mud	1000	800	yes	yes	blocks	
 
-painting	Painting	25	18	yes	yes	misc	
+painting	Painting	2500	1800	yes	yes	misc	
 
-pale_hanging_moss	Pale Hanging Moss	10	8	yes	yes	blocks	
+pale_hanging_moss	Pale Hanging Moss	1000	800	yes	yes	blocks	
 
-pale_moss_block	Pale Moss Block	20	16	yes	yes	blocks	
+pale_moss_block	Pale Moss Block	2000	1600	yes	yes	blocks	
 
 pale_moss_carpet	Pale Moss Carpet	14	11	yes	yes	blocks	
 
-pale_oak_boat	Pale Oak Boat	40	10	yes	yes	misc	
+pale_oak_boat	Pale Oak Boat	4000	1000	yes	yes	misc	
 
-pale_oak_button	Pale Oak Button	12	2	yes	yes	redstone	
+pale_oak_button	Pale Oak Button	1200	200	yes	yes	redstone	
 
-pale_oak_chest_boat	Pale Oak Boat with Chest	30	24	yes	yes	misc	
+pale_oak_chest_boat	Pale Oak Boat with Chest	3000	2400	yes	yes	misc	
 
-pale_oak_door	Pale Oak Door	16	4	yes	yes	blocks	
+pale_oak_door	Pale Oak Door	1600	400	yes	yes	blocks	
 
-pale_oak_fence	Pale Oak Fence	12	3	yes	yes	blocks	
+pale_oak_fence	Pale Oak Fence	1200	300	yes	yes	blocks	
 
-pale_oak_fence_gate	Pale Oak Fence Gate	12	8	yes	yes	blocks	
+pale_oak_fence_gate	Pale Oak Fence Gate	1200	800	yes	yes	blocks	
 
-pale_oak_hanging_sign	Pale Oak Hanging Sign	20	16	yes	yes	blocks	
+pale_oak_hanging_sign	Pale Oak Hanging Sign	2000	1600	yes	yes	blocks	
 
-pale_oak_leaves	Pale Oak Leaves	5	4	yes	yes	blocks	
+pale_oak_leaves	Pale Oak Leaves	500	400	yes	yes	blocks	
 
-pale_oak_log	Pale Oak Log	8	6	yes	yes	blocks	
+pale_oak_log	Pale Oak Log	800	600	yes	yes	blocks	
 
-pale_oak_planks	Pale Oak Planks	8	2	yes	yes	blocks	
+pale_oak_planks	Pale Oak Planks	800	200	yes	yes	blocks	
 
-pale_oak_pressure_plate	Pale Oak Pressure Plate	16	4	yes	yes	redstone	
+pale_oak_pressure_plate	Pale Oak Pressure Plate	1600	400	yes	yes	redstone	
 
-pale_oak_sapling	Pale Oak Sapling	5	4	yes	yes	blocks	
+pale_oak_sapling	Pale Oak Sapling	500	400	yes	yes	blocks	
 
-pale_oak_shelf	Pale Oak Shelf	20	16	yes	yes	blocks	
+pale_oak_shelf	Pale Oak Shelf	2000	1600	yes	yes	blocks	
 
-pale_oak_sign	Pale Oak Sign	20	4	yes	yes	blocks	
+pale_oak_sign	Pale Oak Sign	2000	400	yes	yes	blocks	
 
-pale_oak_slab	Pale Oak Slab	12	1	yes	yes	blocks	
+pale_oak_slab	Pale Oak Slab	1200	100	yes	yes	blocks	
 
-pale_oak_stairs	Pale Oak Stairs	12	3	yes	yes	blocks	
+pale_oak_stairs	Pale Oak Stairs	1200	300	yes	yes	blocks	
 
-pale_oak_trapdoor	Pale Oak Trapdoor	24	6	yes	yes	blocks	
+pale_oak_trapdoor	Pale Oak Trapdoor	2400	600	yes	yes	blocks	
 
-pale_oak_wood	Pale Oak Wood	11	8	yes	yes	blocks	
+pale_oak_wood	Pale Oak Wood	1100	800	yes	yes	blocks	
 
-panda_spawn_egg	Panda Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+panda_spawn_egg	Panda Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-paper	Paper	25	10	yes	yes	misc	
+paper	Paper	2500	1000	yes	yes	misc	
 
-parched_spawn_egg	Parched Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+parched_spawn_egg	Parched Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-parrot_spawn_egg	Parrot Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+parrot_spawn_egg	Parrot Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-pearlescent_froglight	Pearlescent Froglight	100	80	yes	yes	blocks	
+pearlescent_froglight	Pearlescent Froglight	10000	8000	yes	yes	blocks	
 
-peony	Peony	10	8	yes	yes	blocks	
+peony	Peony	1000	800	yes	yes	blocks	
 
-petrified_oak_slab	Petrified Oak Slab	0	5000	no	no	creative	creative only
+petrified_oak_slab	Petrified Oak Slab	0	500000	no	no	creative	creative only
 
-phantom_membrane	Phantom Membrane	25	20	yes	yes	misc	
+phantom_membrane	Phantom Membrane	2500	2000	yes	yes	misc	
 
-phantom_spawn_egg	Phantom Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+phantom_spawn_egg	Phantom Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-pig_spawn_egg	Pig Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+pig_spawn_egg	Pig Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-piglin_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+piglin_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-piglin_brute_spawn_egg	Piglin Brute Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+piglin_brute_spawn_egg	Piglin Brute Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-piglin_head	Piglin Head	1000	800	yes	yes	blocks	
+piglin_head	Piglin Head	100000	80000	yes	yes	blocks	
 
-piglin_spawn_egg	Piglin Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+piglin_spawn_egg	Piglin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-pillager_spawn_egg	Pillager Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+pillager_spawn_egg	Pillager Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-pink_banner	Pink Banner	30	24	yes	yes	blocks	
+pink_banner	Pink Banner	3000	2400	yes	yes	blocks	
 
-pink_bed	Pink Bed	50	36	yes	yes	blocks	
+pink_bed	Pink Bed	5000	3600	yes	yes	blocks	
 
-pink_bundle	Pink Bundle	50	30	yes	yes	misc	
+pink_bundle	Pink Bundle	5000	3000	yes	yes	misc	
 
-pink_candle	Pink Candle	20	15	yes	yes	blocks	
+pink_candle	Pink Candle	2000	1500	yes	yes	blocks	
 
 pink_carpet	Pink Carpet	7	5	yes	yes	blocks	
 
@@ -2074,212 +2074,212 @@ pink_concrete_slab	Pink Concrete Slab	12	9	yes	yes	blocks
 
 pink_concrete_stairs	Pink Concrete Stairs	12	9	yes	yes	blocks	
 
-pink_cushion	Pink Cushion	30	24	yes	yes	misc	
+pink_cushion	Pink Cushion	3000	2400	yes	yes	misc	
 
-pink_dye	Pink Dye	25	5	yes	yes	misc	
+pink_dye	Pink Dye	2500	500	yes	yes	misc	
 
-pink_glazed_terracotta	Pink Glazed Terracotta	15	12	yes	yes	blocks	
+pink_glazed_terracotta	Pink Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-pink_harness	Pink Harness	100	80	yes	yes	misc	
+pink_harness	Pink Harness	10000	8000	yes	yes	misc	
 
-pink_petals	Pink Petals	10	8	yes	yes	blocks	
+pink_petals	Pink Petals	1000	800	yes	yes	blocks	
 
-pink_shulker_box	Pink Shulker Box	1000	800	yes	yes	end	
+pink_shulker_box	Pink Shulker Box	100000	80000	yes	yes	end	
 
-pink_stained_glass	Pink Stained Glass	10	8	yes	yes	blocks	
+pink_stained_glass	Pink Stained Glass	1000	72	yes	yes	blocks	
 
-pink_stained_glass_pane	Pink Stained Glass Pane	10	3	yes	yes	blocks	
+pink_stained_glass_pane	Pink Stained Glass Pane	1000	27	yes	yes	blocks	
 
-pink_terracotta	Pink Terracotta	15	12	yes	yes	blocks	
+pink_terracotta	Pink Terracotta	1500	1200	yes	yes	blocks	
 
-pink_tulip	Pink Tulip	10	8	yes	yes	blocks	
+pink_tulip	Pink Tulip	1000	800	yes	yes	blocks	
 
-pink_wool	Pink Wool	10	8	yes	yes	blocks	
+pink_wool	Pink Wool	1000	800	yes	yes	blocks	
 
-pink_wool_slab	Pink Wool Slab	12	9	yes	yes	blocks	
+pink_wool_slab	Pink Wool Slab	1200	900	yes	yes	blocks	
 
-pink_wool_stairs	Pink Wool Stairs	12	9	yes	yes	blocks	
+pink_wool_stairs	Pink Wool Stairs	1200	900	yes	yes	blocks	
 
-piston	Piston	10	8	yes	yes	redstone	
+piston	Piston	1000	800	yes	yes	redstone	
 
-pitcher_plant	Pitcher Plant	10	8	yes	yes	blocks	
+pitcher_plant	Pitcher Plant	1000	800	yes	yes	blocks	
 
-pitcher_pod	Pitcher Pod	10	8	yes	yes	blocks	
+pitcher_pod	Pitcher Pod	1000	800	yes	yes	blocks	
 
-plains_village_map	Plains Village Map	25	20	yes	yes	misc	
+plains_village_map	Plains Village Map	2500	2000	yes	yes	misc	
 
-player_head	Player Head	1000	800	yes	yes	blocks	
+player_head	Player Head	100000	80000	yes	yes	blocks	
 
-plenty_pottery_sherd	Plenty Pottery Sherd	500	400	yes	yes	misc	
+plenty_pottery_sherd	Plenty Pottery Sherd	50000	40000	yes	yes	misc	
 
-podzol	Podzol	10	8	yes	yes	blocks	
+podzol	Podzol	1000	800	yes	yes	blocks	
 
-pointed_dripstone	Pointed Dripstone	10	8	yes	yes	blocks	
+pointed_dripstone	Pointed Dripstone	1000	800	yes	yes	blocks	
 
-poisonous_potato	Poisonous Potato	8	6	yes	yes	food	
+poisonous_potato	Poisonous Potato	800	600	yes	yes	food	
 
-polar_bear_spawn_egg	Polar Bear Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+polar_bear_spawn_egg	Polar Bear Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-polished_andesite	Polished Andesite	10	8	yes	yes	blocks	
+polished_andesite	Polished Andesite	1000	505	yes	yes	blocks	
 
-polished_andesite_slab	Polished Andesite Slab	12	5	yes	yes	blocks	
+polished_andesite_slab	Polished Andesite Slab	1200	252	yes	yes	blocks	
 
-polished_andesite_stairs	Polished Andesite Stairs	12	9	yes	yes	blocks	
+polished_andesite_stairs	Polished Andesite Stairs	1200	505	yes	yes	blocks	
 
-polished_basalt	Polished Basalt	10	8	yes	yes	blocks	
+polished_basalt	Polished Basalt	1000	800	yes	yes	blocks	
 
-polished_blackstone	Polished Blackstone	10	8	yes	yes	blocks	
+polished_blackstone	Polished Blackstone	1000	800	yes	yes	blocks	
 
-polished_blackstone_brick_slab	Polished Blackstone Brick Slab	12	5	yes	yes	blocks	
+polished_blackstone_brick_slab	Polished Blackstone Brick Slab	1200	500	yes	yes	blocks	
 
-polished_blackstone_brick_stairs	Polished Blackstone Brick Stairs	12	9	yes	yes	blocks	
+polished_blackstone_brick_stairs	Polished Blackstone Brick Stairs	1200	900	yes	yes	blocks	
 
-polished_blackstone_brick_wall	Polished Blackstone Brick Wall	12	9	yes	yes	blocks	
+polished_blackstone_brick_wall	Polished Blackstone Brick Wall	1200	900	yes	yes	blocks	
 
-polished_blackstone_bricks	Polished Blackstone Bricks	10	8	yes	yes	blocks	
+polished_blackstone_bricks	Polished Blackstone Bricks	1000	800	yes	yes	blocks	
 
-polished_blackstone_button	Polished Blackstone Button	12	9	yes	yes	redstone	
+polished_blackstone_button	Polished Blackstone Button	1200	900	yes	yes	redstone	
 
-polished_blackstone_pressure_plate	Polished Blackstone Pressure Plate	20	16	yes	yes	redstone	
+polished_blackstone_pressure_plate	Polished Blackstone Pressure Plate	2000	1600	yes	yes	redstone	
 
-polished_blackstone_slab	Polished Blackstone Slab	12	5	yes	yes	blocks	
+polished_blackstone_slab	Polished Blackstone Slab	1200	500	yes	yes	blocks	
 
-polished_blackstone_stairs	Polished Blackstone Stairs	12	9	yes	yes	blocks	
+polished_blackstone_stairs	Polished Blackstone Stairs	1200	900	yes	yes	blocks	
 
-polished_blackstone_wall	Polished Blackstone Wall	12	9	yes	yes	blocks	
+polished_blackstone_wall	Polished Blackstone Wall	1200	900	yes	yes	blocks	
 
-polished_cinnabar	Polished Cinnabar	10	8	yes	yes	blocks	
+polished_cinnabar	Polished Cinnabar	1000	800	yes	yes	blocks	
 
-polished_cinnabar_slab	Polished Cinnabar Slab	12	9	yes	yes	blocks	
+polished_cinnabar_slab	Polished Cinnabar Slab	1200	900	yes	yes	blocks	
 
-polished_cinnabar_stairs	Polished Cinnabar Stairs	12	9	yes	yes	blocks	
+polished_cinnabar_stairs	Polished Cinnabar Stairs	1200	900	yes	yes	blocks	
 
-polished_cinnabar_wall	Polished Cinnabar Wall	12	9	yes	yes	blocks	
+polished_cinnabar_wall	Polished Cinnabar Wall	1200	900	yes	yes	blocks	
 
-polished_deepslate	Polished Deepslate	10	8	yes	yes	blocks	
+polished_deepslate	Polished Deepslate	1000	800	yes	yes	blocks	
 
-polished_deepslate_slab	Polished Deepslate Slab	12	5	yes	yes	blocks	
+polished_deepslate_slab	Polished Deepslate Slab	1200	500	yes	yes	blocks	
 
-polished_deepslate_stairs	Polished Deepslate Stairs	12	9	yes	yes	blocks	
+polished_deepslate_stairs	Polished Deepslate Stairs	1200	900	yes	yes	blocks	
 
-polished_deepslate_wall	Polished Deepslate Wall	12	9	yes	yes	blocks	
+polished_deepslate_wall	Polished Deepslate Wall	1200	900	yes	yes	blocks	
 
-polished_diorite	Polished Diorite	10	8	yes	yes	blocks	
+polished_diorite	Polished Diorite	1000	800	yes	yes	blocks	
 
-polished_diorite_slab	Polished Diorite Slab	12	5	yes	yes	blocks	
+polished_diorite_slab	Polished Diorite Slab	1200	500	yes	yes	blocks	
 
-polished_diorite_stairs	Polished Diorite Stairs	12	9	yes	yes	blocks	
+polished_diorite_stairs	Polished Diorite Stairs	1200	900	yes	yes	blocks	
 
-polished_granite	Polished Granite	10	8	yes	yes	blocks	
+polished_granite	Polished Granite	1000	800	yes	yes	blocks	
 
-polished_granite_slab	Polished Granite Slab	12	5	yes	yes	blocks	
+polished_granite_slab	Polished Granite Slab	1200	500	yes	yes	blocks	
 
-polished_granite_stairs	Polished Granite Stairs	12	9	yes	yes	blocks	
+polished_granite_stairs	Polished Granite Stairs	1200	900	yes	yes	blocks	
 
-polished_sulfur	Polished Sulfur	50	40	yes	yes	blocks	
+polished_sulfur	Polished Sulfur	5000	4000	yes	yes	blocks	
 
-polished_sulfur_slab	Polished Sulfur Slab	12	9	yes	yes	blocks	
+polished_sulfur_slab	Polished Sulfur Slab	1200	900	yes	yes	blocks	
 
-polished_sulfur_stairs	Polished Sulfur Stairs	12	9	yes	yes	blocks	
+polished_sulfur_stairs	Polished Sulfur Stairs	1200	900	yes	yes	blocks	
 
-polished_sulfur_wall	Polished Sulfur Wall	12	9	yes	yes	blocks	
+polished_sulfur_wall	Polished Sulfur Wall	1200	900	yes	yes	blocks	
 
-polished_tuff	Polished Tuff	10	8	yes	yes	blocks	
+polished_tuff	Polished Tuff	1000	800	yes	yes	blocks	
 
-polished_tuff_slab	Polished Tuff Slab	12	5	yes	yes	blocks	
+polished_tuff_slab	Polished Tuff Slab	1200	500	yes	yes	blocks	
 
-polished_tuff_stairs	Polished Tuff Stairs	12	9	yes	yes	blocks	
+polished_tuff_stairs	Polished Tuff Stairs	1200	900	yes	yes	blocks	
 
-polished_tuff_wall	Polished Tuff Wall	12	9	yes	yes	blocks	
+polished_tuff_wall	Polished Tuff Wall	1200	900	yes	yes	blocks	
 
-poplar_boat	Poplar Boat	30	24	yes	yes	misc	
+poplar_boat	Poplar Boat	3000	2400	yes	yes	misc	
 
-poplar_button	Poplar Button	12	9	yes	yes	redstone	
+poplar_button	Poplar Button	1200	900	yes	yes	redstone	
 
-poplar_chest_boat	Poplar Boat with Chest	30	24	yes	yes	misc	
+poplar_chest_boat	Poplar Boat with Chest	3000	2400	yes	yes	misc	
 
-poplar_door	Poplar Door	12	9	yes	yes	blocks	
+poplar_door	Poplar Door	1200	900	yes	yes	blocks	
 
-poplar_fence	Poplar Fence	12	9	yes	yes	blocks	
+poplar_fence	Poplar Fence	1200	900	yes	yes	blocks	
 
-poplar_fence_gate	Poplar Fence Gate	12	9	yes	yes	blocks	
+poplar_fence_gate	Poplar Fence Gate	1200	900	yes	yes	blocks	
 
-poplar_hanging_sign	Poplar Hanging Sign	20	16	yes	yes	blocks	
+poplar_hanging_sign	Poplar Hanging Sign	2000	1600	yes	yes	blocks	
 
-poplar_log	Poplar Log	8	6	yes	yes	blocks	
+poplar_log	Poplar Log	800	600	yes	yes	blocks	
 
-poplar_planks	Poplar Planks	8	6	yes	yes	blocks	
+poplar_planks	Poplar Planks	800	600	yes	yes	blocks	
 
-poplar_pressure_plate	Poplar Pressure Plate	12	9	yes	yes	redstone	
+poplar_pressure_plate	Poplar Pressure Plate	1200	900	yes	yes	redstone	
 
-poplar_sapling	Poplar Sapling	5	4	yes	yes	blocks	
+poplar_sapling	Poplar Sapling	500	400	yes	yes	blocks	
 
-poplar_shelf	Poplar Shelf	20	16	yes	yes	blocks	
+poplar_shelf	Poplar Shelf	2000	1600	yes	yes	blocks	
 
-poplar_sign	Poplar Sign	20	16	yes	yes	blocks	
+poplar_sign	Poplar Sign	2000	1600	yes	yes	blocks	
 
-poplar_slab	Poplar Slab	12	9	yes	yes	blocks	
+poplar_slab	Poplar Slab	1200	900	yes	yes	blocks	
 
-poplar_stairs	Poplar Stairs	12	9	yes	yes	blocks	
+poplar_stairs	Poplar Stairs	1200	900	yes	yes	blocks	
 
-poplar_trapdoor	Poplar Trapdoor	12	9	yes	yes	blocks	
+poplar_trapdoor	Poplar Trapdoor	1200	900	yes	yes	blocks	
 
-poplar_wood	Poplar Wood	8	6	yes	yes	blocks	
+poplar_wood	Poplar Wood	800	600	yes	yes	blocks	
 
-popped_chorus_fruit	Popped Chorus Fruit	25	8	yes	yes	end	
+popped_chorus_fruit	Popped Chorus Fruit	2500	800	yes	yes	end	
 
-poppy	Poppy	10	8	yes	yes	blocks	
+poppy	Poppy	1000	800	yes	yes	blocks	
 
-porkchop	Raw Porkchop	8	6	yes	yes	food	
+porkchop	Raw Porkchop	800	600	yes	yes	food	
 
-potato	Potato	8	6	yes	yes	food	
+potato	Potato	800	600	yes	yes	food	
 
-potent_sulfur	Potent Sulfur	100	80	yes	yes	blocks	
+potent_sulfur	Potent Sulfur	10000	8000	yes	yes	blocks	
 
-potion	Potion	50	40	yes	yes	misc	
+potion	Potion	5000	4000	yes	yes	misc	
 
-powder_snow_bucket	Powder Snow Bucket	50	40	yes	yes	blocks	
+powder_snow_bucket	Powder Snow Bucket	5000	4000	yes	yes	blocks	
 
 powered_rail	Powered Rail	8	6	yes	yes	redstone	
-prismarine	Prismarine	100	80	yes	yes	blocks	
+prismarine	Prismarine	10000	8000	yes	yes	blocks	
 
-prismarine_brick_slab	Prismarine Brick Slab	113	90	yes	yes	blocks	
+prismarine_brick_slab	Prismarine Brick Slab	11300	9000	yes	yes	blocks	
 
-prismarine_brick_stairs	Prismarine Brick Stairs	225	180	yes	yes	blocks	
+prismarine_brick_stairs	Prismarine Brick Stairs	22500	18000	yes	yes	blocks	
 
-prismarine_bricks	Prismarine Bricks	225	180	yes	yes	blocks	
+prismarine_bricks	Prismarine Bricks	22500	18000	yes	yes	blocks	
 
-prismarine_crystals	Prismarine Crystals	25	20	yes	yes	misc	
+prismarine_crystals	Prismarine Crystals	2500	2000	yes	yes	misc	
 
-prismarine_shard	Prismarine Shard	25	20	yes	yes	misc	
+prismarine_shard	Prismarine Shard	2500	2000	yes	yes	misc	
 
-prismarine_slab	Prismarine Slab	50	40	yes	yes	blocks	
+prismarine_slab	Prismarine Slab	5000	4000	yes	yes	blocks	
 
-prismarine_stairs	Prismarine Stairs	100	80	yes	yes	blocks	
+prismarine_stairs	Prismarine Stairs	10000	8000	yes	yes	blocks	
 
-prismarine_wall	Prismarine Wall	100	80	yes	yes	blocks	
+prismarine_wall	Prismarine Wall	10000	8000	yes	yes	blocks	
 
-prize_pottery_sherd	Prize Pottery Sherd	500	400	yes	yes	misc	
+prize_pottery_sherd	Prize Pottery Sherd	50000	40000	yes	yes	misc	
 
-pufferfish	Pufferfish	8	6	yes	yes	food	
+pufferfish	Pufferfish	800	600	yes	yes	food	
 
-pufferfish_bucket	Bucket of Pufferfish	50	40	yes	yes	food	
+pufferfish_bucket	Bucket of Pufferfish	5000	4000	yes	yes	food	
 
-pufferfish_spawn_egg	Pufferfish Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+pufferfish_spawn_egg	Pufferfish Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-pumpkin	Pumpkin	10	8	yes	yes	blocks	
+pumpkin	Pumpkin	1000	800	yes	yes	blocks	
 
-pumpkin_pie	Pumpkin Pie	8	6	yes	yes	misc	
+pumpkin_pie	Pumpkin Pie	800	600	yes	yes	misc	
 
-pumpkin_seeds	Pumpkin Seeds	5	2	yes	yes	blocks	
+pumpkin_seeds	Pumpkin Seeds	500	200	yes	yes	blocks	
 
-purple_banner	Purple Banner	30	24	yes	yes	blocks	
+purple_banner	Purple Banner	3000	2400	yes	yes	blocks	
 
-purple_bed	Purple Bed	50	36	yes	yes	blocks	
+purple_bed	Purple Bed	5000	3600	yes	yes	blocks	
 
-purple_bundle	Purple Bundle	50	32	yes	yes	misc	
+purple_bundle	Purple Bundle	5000	3200	yes	yes	misc	
 
-purple_candle	Purple Candle	20	16	yes	yes	blocks	
+purple_candle	Purple Candle	2000	1600	yes	yes	blocks	
 
 purple_carpet	Purple Carpet	7	5	yes	yes	blocks	
 
@@ -2291,83 +2291,83 @@ purple_concrete_slab	Purple Concrete Slab	12	9	yes	yes	blocks
 
 purple_concrete_stairs	Purple Concrete Stairs	12	9	yes	yes	blocks	
 
-purple_cushion	Purple Cushion	30	24	yes	yes	misc	
+purple_cushion	Purple Cushion	3000	2400	yes	yes	misc	
 
-purple_dye	Purple Dye	25	7	yes	yes	misc	
+purple_dye	Purple Dye	2500	700	yes	yes	misc	
 
-purple_glazed_terracotta	Purple Glazed Terracotta	15	12	yes	yes	blocks	
+purple_glazed_terracotta	Purple Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-purple_harness	Purple Harness	100	80	yes	yes	misc	
+purple_harness	Purple Harness	10000	8000	yes	yes	misc	
 
-purple_shulker_box	Purple Shulker Box	1000	800	yes	yes	end	
+purple_shulker_box	Purple Shulker Box	100000	80000	yes	yes	end	
 
-purple_stained_glass	Purple Stained Glass	10	8	yes	yes	blocks	
+purple_stained_glass	Purple Stained Glass	1000	103	yes	yes	blocks	
 
-purple_stained_glass_pane	Purple Stained Glass Pane	10	3	yes	yes	blocks	
+purple_stained_glass_pane	Purple Stained Glass Pane	1000	38	yes	yes	blocks	
 
-purple_terracotta	Purple Terracotta	15	12	yes	yes	blocks	
+purple_terracotta	Purple Terracotta	1500	1200	yes	yes	blocks	
 
-purple_wool	Purple Wool	10	8	yes	yes	blocks	
+purple_wool	Purple Wool	1000	800	yes	yes	blocks	
 
-purple_wool_slab	Purple Wool Slab	12	9	yes	yes	blocks	
+purple_wool_slab	Purple Wool Slab	1200	900	yes	yes	blocks	
 
-purple_wool_stairs	Purple Wool Stairs	12	9	yes	yes	blocks	
+purple_wool_stairs	Purple Wool Stairs	1200	900	yes	yes	blocks	
 
-purpur_block	Purpur Block	25	8	yes	yes	end	
+purpur_block	Purpur Block	2500	800	yes	yes	end	
 
-purpur_pillar	Purpur Pillar	25	8	yes	yes	end	
+purpur_pillar	Purpur Pillar	2500	800	yes	yes	end	
 
-purpur_slab	Purpur Slab	13	4	yes	yes	end	
+purpur_slab	Purpur Slab	1300	400	yes	yes	end	
 
-purpur_stairs	Purpur Stairs	25	8	yes	yes	end	
+purpur_stairs	Purpur Stairs	2500	800	yes	yes	end	
 
-quartz	Nether Quartz	30	24	yes	yes	nether	
+quartz	Nether Quartz	3000	2400	yes	yes	nether	
 
-quartz_block	Block of Quartz	120	96	yes	yes	ores	
-quartz_bricks	Quartz Bricks	120	96	yes	yes	nether	
+quartz_block	Block of Quartz	12000	9600	yes	yes	ores	
+quartz_bricks	Quartz Bricks	12000	9600	yes	yes	nether	
 
-quartz_pillar	Quartz Pillar	120	96	yes	yes	nether	
+quartz_pillar	Quartz Pillar	12000	9600	yes	yes	nether	
 
-quartz_slab	Quartz Slab	60	48	yes	yes	nether	
+quartz_slab	Quartz Slab	6000	4800	yes	yes	nether	
 
-quartz_stairs	Quartz Stairs	120	96	yes	yes	nether	
+quartz_stairs	Quartz Stairs	12000	9600	yes	yes	nether	
 
-rabbit	Raw Rabbit	8	6	yes	yes	food	
+rabbit	Raw Rabbit	800	600	yes	yes	food	
 
-rabbit_foot	Rabbit's Foot	25	20	yes	yes	food	
+rabbit_foot	Rabbit's Foot	2500	2000	yes	yes	food	
 
-rabbit_hide	Rabbit Hide	25	20	yes	yes	food	
+rabbit_hide	Rabbit Hide	2500	2000	yes	yes	food	
 
-rabbit_spawn_egg	Rabbit Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+rabbit_spawn_egg	Rabbit Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-rabbit_stew	Rabbit Stew	8	6	yes	yes	food	
+rabbit_stew	Rabbit Stew	800	600	yes	yes	food	
 
 rail	Rail	5	4	yes	yes	redstone	
-raiser_armor_trim_smithing_template	Smithing Template	3000	2200	yes	yes	misc	
+raiser_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
 
-ravager_spawn_egg	Ravager Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+ravager_spawn_egg	Ravager Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-raw_copper	Raw Copper	50	40	yes	yes	ores	
+raw_copper	Raw Copper	5000	4000	yes	yes	ores	
 
-raw_copper_block	Block of Raw Copper	450	360	yes	yes	ores	
+raw_copper_block	Block of Raw Copper	45000	36000	yes	yes	ores	
 
-raw_gold	Raw Gold	90	72	yes	yes	ores	
+raw_gold	Raw Gold	9000	7200	yes	yes	ores	
 
-raw_gold_block	Block of Raw Gold	810	648	yes	yes	ores	
+raw_gold_block	Block of Raw Gold	81000	64800	yes	yes	ores	
 
-raw_iron	Raw Iron	45	36	yes	yes	ores	
+raw_iron	Raw Iron	4500	3600	yes	yes	ores	
 
-raw_iron_block	Block of Raw Iron	405	324	yes	yes	ores	
+raw_iron_block	Block of Raw Iron	40500	32400	yes	yes	ores	
 
-recovery_compass	Recovery Compass	1000	800	yes	yes	misc	
+recovery_compass	Recovery Compass	100000	80000	yes	yes	misc	
 
-red_banner	Red Banner	30	24	yes	yes	blocks	
+red_banner	Red Banner	3000	2400	yes	yes	blocks	
 
-red_bed	Red Bed	50	36	yes	yes	blocks	
+red_bed	Red Bed	5000	3600	yes	yes	blocks	
 
-red_bundle	Red Bundle	50	30	yes	yes	misc	
+red_bundle	Red Bundle	5000	3000	yes	yes	misc	
 
-red_candle	Red Candle	20	15	yes	yes	blocks	
+red_candle	Red Candle	2000	1500	yes	yes	blocks	
 
 red_carpet	Red Carpet	7	5	yes	yes	blocks	
 
@@ -2379,27 +2379,27 @@ red_concrete_slab	Red Concrete Slab	12	9	yes	yes	blocks
 
 red_concrete_stairs	Red Concrete Stairs	12	9	yes	yes	blocks	
 
-red_cushion	Red Cushion	30	24	yes	yes	misc	
+red_cushion	Red Cushion	3000	2400	yes	yes	misc	
 
-red_dye	Red Dye	25	5	yes	yes	misc	
+red_dye	Red Dye	2500	500	yes	yes	misc	
 
-red_glazed_terracotta	Red Glazed Terracotta	15	12	yes	yes	blocks	
+red_glazed_terracotta	Red Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-red_harness	Red Harness	100	80	yes	yes	misc	
+red_harness	Red Harness	10000	8000	yes	yes	misc	
 
-red_mushroom	Red Mushroom	10	8	yes	yes	blocks	
+red_mushroom	Red Mushroom	1000	800	yes	yes	blocks	
 
-red_mushroom_block	Red Mushroom Block	20	16	yes	yes	blocks	
+red_mushroom_block	Red Mushroom Block	2000	1600	yes	yes	blocks	
 
-red_nether_brick_slab	Red Nether Brick Slab	12	5	yes	yes	nether	
+red_nether_brick_slab	Red Nether Brick Slab	1200	500	yes	yes	nether	
 
-red_nether_brick_stairs	Red Nether Brick Stairs	12	9	yes	yes	nether	
+red_nether_brick_stairs	Red Nether Brick Stairs	1200	900	yes	yes	nether	
 
-red_nether_brick_wall	Red Nether Brick Wall	12	9	yes	yes	nether	
+red_nether_brick_wall	Red Nether Brick Wall	1200	900	yes	yes	nether	
 
-red_nether_bricks	Red Nether Bricks	10	8	yes	yes	nether	
+red_nether_bricks	Red Nether Bricks	1000	800	yes	yes	nether	
 
-red_poplar_leaves	Red Poplar Leaves	5	4	yes	yes	blocks	
+red_poplar_leaves	Red Poplar Leaves	500	400	yes	yes	blocks	
 
 red_sand	Red Sand	10	8	yes	yes	blocks	
 
@@ -2411,70 +2411,70 @@ red_sandstone_stairs	Red Sandstone Stairs	40	32	yes	yes	blocks
 
 red_sandstone_wall	Red Sandstone Wall	40	32	yes	yes	blocks	
 
-red_shrub	Red Shrub	10	8	yes	yes	blocks	
+red_shrub	Red Shrub	1000	800	yes	yes	blocks	
 
-red_shulker_box	Red Shulker Box	1000	800	yes	yes	end	
+red_shulker_box	Red Shulker Box	100000	80000	yes	yes	end	
 
-red_stained_glass	Red Stained Glass	10	8	yes	yes	blocks	
+red_stained_glass	Red Stained Glass	1000	72	yes	yes	blocks	
 
-red_stained_glass_pane	Red Stained Glass Pane	10	3	yes	yes	blocks	
+red_stained_glass_pane	Red Stained Glass Pane	1000	27	yes	yes	blocks	
 
-red_terracotta	Red Terracotta	15	12	yes	yes	blocks	
+red_terracotta	Red Terracotta	1500	1200	yes	yes	blocks	
 
-red_tulip	Red Tulip	10	8	yes	yes	blocks	
+red_tulip	Red Tulip	1000	800	yes	yes	blocks	
 
-red_wool	Red Wool	10	8	yes	yes	blocks	
+red_wool	Red Wool	1000	800	yes	yes	blocks	
 
-red_wool_slab	Red Wool Slab	12	9	yes	yes	blocks	
+red_wool_slab	Red Wool Slab	1200	900	yes	yes	blocks	
 
-red_wool_stairs	Red Wool Stairs	12	9	yes	yes	blocks	
+red_wool_stairs	Red Wool Stairs	1200	900	yes	yes	blocks	
 
-redstone	Redstone Dust	12	9	yes	yes	redstone	
+redstone	Redstone Dust	1200	900	yes	yes	redstone	
 
-redstone_block	Block of Redstone	108	86	yes	yes	ores	
-redstone_lamp	Redstone Lamp	10	8	yes	yes	redstone	
+redstone_block	Block of Redstone	10800	8600	yes	yes	ores	
+redstone_lamp	Redstone Lamp	1000	800	yes	yes	redstone	
 
-redstone_ore	Redstone Ore	30	24	yes	yes	ores	
+redstone_ore	Redstone Ore	3000	2400	yes	yes	ores	
 
-redstone_torch	Redstone Torch	5	4	yes	yes	redstone	
+redstone_torch	Redstone Torch	500	400	yes	yes	redstone	
 
-reinforced_deepslate	Reinforced Deepslate	0	5000	no	no	creative	creative only
+reinforced_deepslate	Reinforced Deepslate	0	500000	no	no	creative	creative only
 
-repeater	Redstone Repeater	10	8	yes	yes	redstone	
+repeater	Redstone Repeater	1000	800	yes	yes	redstone	
 
-repeating_command_block	Repeating Command Block	0	5000	no	no	creative	creative only
+repeating_command_block	Repeating Command Block	0	500000	no	no	creative	creative only
 
-resin_block	Block of Resin	108	86	yes	yes	blocks	
+resin_block	Block of Resin	10800	8600	yes	yes	blocks	
 
-resin_brick	Resin Brick	12	9	yes	yes	misc	
+resin_brick	Resin Brick	1200	900	yes	yes	misc	
 
-resin_brick_slab	Resin Brick Slab	24	19	yes	yes	blocks	
+resin_brick_slab	Resin Brick Slab	2400	1900	yes	yes	blocks	
 
-resin_brick_stairs	Resin Brick Stairs	48	38	yes	yes	blocks	
+resin_brick_stairs	Resin Brick Stairs	4800	3800	yes	yes	blocks	
 
-resin_brick_wall	Resin Brick Wall	48	38	yes	yes	blocks	
+resin_brick_wall	Resin Brick Wall	4800	3800	yes	yes	blocks	
 
-resin_bricks	Resin Bricks	48	38	yes	yes	blocks	
+resin_bricks	Resin Bricks	4800	3800	yes	yes	blocks	
 
-resin_clump	Resin Clump	12	9	yes	yes	blocks	
+resin_clump	Resin Clump	1200	900	yes	yes	blocks	
 
-respawn_anchor	Respawn Anchor	10	8	yes	yes	blocks	
+respawn_anchor	Respawn Anchor	1000	800	yes	yes	blocks	
 
-rib_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+rib_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-rooted_dirt	Rooted Dirt	10	8	yes	yes	blocks	
+rooted_dirt	Rooted Dirt	1000	800	yes	yes	blocks	
 
-rose_bush	Rose Bush	10	8	yes	yes	blocks	
+rose_bush	Rose Bush	1000	800	yes	yes	blocks	
 
-rotten_flesh	Rotten Flesh	8	6	yes	yes	misc	
+rotten_flesh	Rotten Flesh	800	600	yes	yes	misc	
 
-saddle	Saddle	150	120	yes	yes	misc	
+saddle	Saddle	15000	12000	yes	yes	misc	
 
-salmon	Raw Salmon	8	6	yes	yes	food	
+salmon	Raw Salmon	800	600	yes	yes	food	
 
-salmon_bucket	Bucket of Salmon	50	40	yes	yes	food	
+salmon_bucket	Bucket of Salmon	5000	4000	yes	yes	food	
 
-salmon_spawn_egg	Salmon Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+salmon_spawn_egg	Salmon Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
 sand	Sand	10	8	yes	yes	blocks	
 
@@ -2486,91 +2486,91 @@ sandstone_stairs	Sandstone Stairs	40	32	yes	yes	blocks
 
 sandstone_wall	Sandstone Wall	40	32	yes	yes	blocks	
 
-savanna_village_map	Savanna Village Map	25	20	yes	yes	misc	
+savanna_village_map	Savanna Village Map	2500	2000	yes	yes	misc	
 
-scaffolding	Scaffolding	10	8	yes	yes	blocks	
+scaffolding	Scaffolding	1000	800	yes	yes	blocks	
 
-scrape_pottery_sherd	Scrape Pottery Sherd	500	400	yes	yes	misc	
+scrape_pottery_sherd	Scrape Pottery Sherd	50000	40000	yes	yes	misc	
 
-sculk	Sculk	10	8	yes	yes	blocks	
+sculk	Sculk	1000	800	yes	yes	blocks	
 
-sculk_catalyst	Sculk Catalyst	10	8	yes	yes	blocks	
+sculk_catalyst	Sculk Catalyst	1000	800	yes	yes	blocks	
 
-sculk_sensor	Sculk Sensor	10	8	yes	yes	blocks	
+sculk_sensor	Sculk Sensor	1000	800	yes	yes	blocks	
 
-sculk_shrieker	Sculk Shrieker	10	8	yes	yes	blocks	
+sculk_shrieker	Sculk Shrieker	1000	800	yes	yes	blocks	
 
-sculk_vein	Sculk Vein	10	8	yes	yes	blocks	
+sculk_vein	Sculk Vein	1000	800	yes	yes	blocks	
 
-sea_lantern	Sea Lantern	5	4	yes	yes	blocks	
+sea_lantern	Sea Lantern	500	400	yes	yes	blocks	
 
-sea_pickle	Sea Pickle	10	8	yes	yes	blocks	
+sea_pickle	Sea Pickle	1000	800	yes	yes	blocks	
 
-seagrass	Seagrass	10	8	yes	yes	blocks	
+seagrass	Seagrass	1000	800	yes	yes	blocks	
 
-sentry_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+sentry_armor_trim_smithing_template	Smithing Template	300000	210010	yes	yes	misc	
 
-shaper_armor_trim_smithing_template	Smithing Template	3000	2200	yes	yes	misc	
+shaper_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
 
-sheaf_pottery_sherd	Sheaf Pottery Sherd	500	400	yes	yes	misc	
+sheaf_pottery_sherd	Sheaf Pottery Sherd	50000	40000	yes	yes	misc	
 
-shears	Shears	80	64	yes	yes	misc	
+shears	Shears	8000	6400	yes	yes	misc	
 
-sheep_spawn_egg	Sheep Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+sheep_spawn_egg	Sheep Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-shelf_mushroom	Shelf Mushroom	10	8	yes	yes	blocks	
+shelf_mushroom	Shelf Mushroom	1000	800	yes	yes	blocks	
 
-shelter_pottery_sherd	Shelter Pottery Sherd	500	400	yes	yes	misc	
+shelter_pottery_sherd	Shelter Pottery Sherd	50000	40000	yes	yes	misc	
 
-shield	Shield	25	20	yes	yes	misc	
+shield	Shield	2500	2000	yes	yes	misc	
 
-short_dry_grass	Short Dry Grass	10	8	yes	yes	blocks	
+short_dry_grass	Short Dry Grass	1000	800	yes	yes	blocks	
 
-short_grass	Short Grass	10	8	yes	yes	blocks	
+short_grass	Short Grass	1000	800	yes	yes	blocks	
 
-shroomlight	Shroomlight	10	8	yes	yes	blocks	
+shroomlight	Shroomlight	1000	800	yes	yes	blocks	
 
-shulker_box	Shulker Box	1000	800	yes	yes	end	
+shulker_box	Shulker Box	100000	80000	yes	yes	end	
 
-shulker_shell	Shulker Shell	500	400	yes	yes	end	
+shulker_shell	Shulker Shell	50000	40000	yes	yes	end	
 
-shulker_spawn_egg	Shulker Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+shulker_spawn_egg	Shulker Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-silence_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+silence_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-silverfish_spawn_egg	Silverfish Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+silverfish_spawn_egg	Silverfish Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-skeleton_horse_spawn_egg	Skeleton Horse Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+skeleton_horse_spawn_egg	Skeleton Horse Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-skeleton_skull	Skeleton Skull	1000	800	yes	yes	blocks	
+skeleton_skull	Skeleton Skull	100000	80000	yes	yes	blocks	
 
-skeleton_spawn_egg	Skeleton Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+skeleton_spawn_egg	Skeleton Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-skull_banner_pattern	Banner Pattern	1000	800	yes	yes	misc	
+skull_banner_pattern	Banner Pattern	100000	80000	yes	yes	misc	
 
-skull_pottery_sherd	Skull Pottery Sherd	500	400	yes	yes	misc	
+skull_pottery_sherd	Skull Pottery Sherd	50000	40000	yes	yes	misc	
 
-slime_ball	Slimeball	25	20	yes	yes	misc	
+slime_ball	Slimeball	2500	2000	yes	yes	misc	
 
-slime_block	Slime Block	225	180	yes	yes	blocks	
+slime_block	Slime Block	22500	18000	yes	yes	blocks	
 
-slime_spawn_egg	Slime Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+slime_spawn_egg	Slime Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-small_amethyst_bud	Small Amethyst Bud	10	8	yes	yes	blocks	
+small_amethyst_bud	Small Amethyst Bud	1000	800	yes	yes	blocks	
 
-small_dripleaf	Small Dripleaf	10	8	yes	yes	blocks	
+small_dripleaf	Small Dripleaf	1000	800	yes	yes	blocks	
 
-smithing_table	Smithing Table	10	8	yes	yes	blocks	
+smithing_table	Smithing Table	1000	800	yes	yes	blocks	
 
-smoker	Smoker	10	8	yes	yes	blocks	
+smoker	Smoker	1000	800	yes	yes	blocks	
 
-smooth_basalt	Smooth Basalt	10	8	yes	yes	blocks	
+smooth_basalt	Smooth Basalt	1000	800	yes	yes	blocks	
 
-smooth_quartz	Smooth Quartz Block	120	96	yes	yes	nether	
+smooth_quartz	Smooth Quartz Block	12000	9600	yes	yes	nether	
 
-smooth_quartz_slab	Smooth Quartz Slab	60	48	yes	yes	nether	
+smooth_quartz_slab	Smooth Quartz Slab	6000	4800	yes	yes	nether	
 
-smooth_quartz_stairs	Smooth Quartz Stairs	120	96	yes	yes	nether	
+smooth_quartz_stairs	Smooth Quartz Stairs	12000	9600	yes	yes	nether	
 
 smooth_red_sandstone	Smooth Red Sandstone	40	32	yes	yes	blocks	
 
@@ -2584,545 +2584,545 @@ smooth_sandstone_slab	Smooth Sandstone Slab	20	16	yes	yes	blocks
 
 smooth_sandstone_stairs	Smooth Sandstone Stairs	40	32	yes	yes	blocks	
 
-smooth_stone	Smooth Stone	10	8	yes	yes	blocks	
+smooth_stone	Smooth Stone	1000	10	yes	yes	blocks	
 
-smooth_stone_slab	Smooth Stone Slab	12	5	yes	yes	blocks	
+smooth_stone_slab	Smooth Stone Slab	1200	5	yes	yes	blocks	
 
-sniffer_egg	Sniffer Egg	5000	4000	yes	yes	blocks	
+sniffer_egg	Sniffer Egg	500000	400000	yes	yes	blocks	
 
-sniffer_spawn_egg	Sniffer Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+sniffer_spawn_egg	Sniffer Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-snort_pottery_sherd	Snort Pottery Sherd	500	400	yes	yes	misc	
+snort_pottery_sherd	Snort Pottery Sherd	50000	40000	yes	yes	misc	
 
-snout_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+snout_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-snow	Snow	50	40	yes	yes	blocks	
+snow	Snow	5000	4000	yes	yes	blocks	
 
-snow_block	Snow Block	100	80	yes	yes	blocks	
+snow_block	Snow Block	10000	8000	yes	yes	blocks	
 
-snow_golem_spawn_egg	Snow Golem Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+snow_golem_spawn_egg	Snow Golem Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-snowball	Snowball	25	20	yes	yes	misc	
+snowball	Snowball	2500	2000	yes	yes	misc	
 
-snowy_village_map	Snowy Village Map	25	20	yes	yes	misc	
+snowy_village_map	Snowy Village Map	2500	2000	yes	yes	misc	
 
-soul_campfire	Soul Campfire	5	4	yes	yes	nether	
+soul_campfire	Soul Campfire	500	400	yes	yes	nether	
 
-soul_lantern	Soul Lantern	5	4	yes	yes	nether	
+soul_lantern	Soul Lantern	500	400	yes	yes	nether	
 
 soul_sand	Soul Sand	10	8	yes	yes	nether	
 
-soul_soil	Soul Soil	10	8	yes	yes	nether	
+soul_soil	Soul Soil	1000	800	yes	yes	nether	
 
-soul_torch	Soul Torch	5	4	yes	yes	nether	
+soul_torch	Soul Torch	500	400	yes	yes	nether	
 
-spawner	Monster Spawner	5000	4000	yes	yes	blocks	
+spawner	Monster Spawner	500000	400000	yes	yes	blocks	
 
-spectral_arrow	Spectral Arrow	25	20	yes	yes	misc	
+spectral_arrow	Spectral Arrow	2500	2000	yes	yes	misc	
 
-spider_eye	Spider Eye	8	6	yes	yes	misc	
+spider_eye	Spider Eye	800	600	yes	yes	misc	
 
-spider_spawn_egg	Spider Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+spider_spawn_egg	Spider Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-spire_armor_trim_smithing_template	Smithing Template	3000	2108	yes	yes	misc	
+spire_armor_trim_smithing_template	Smithing Template	300000	210800	yes	yes	misc	
 
-splash_potion	Splash Potion	50	40	yes	yes	misc	
+splash_potion	Splash Potion	5000	4000	yes	yes	misc	
 
-sponge	Sponge	10	8	yes	yes	blocks	
+sponge	Sponge	1000	800	yes	yes	blocks	
 
-spore_blossom	Spore Blossom	10	8	yes	yes	blocks	
+spore_blossom	Spore Blossom	1000	800	yes	yes	blocks	
 
-spruce_boat	Spruce Boat	40	10	yes	yes	misc	
+spruce_boat	Spruce Boat	4000	1000	yes	yes	misc	
 
-spruce_button	Spruce Button	12	2	yes	yes	redstone	
+spruce_button	Spruce Button	1200	200	yes	yes	redstone	
 
-spruce_chest_boat	Spruce Boat with Chest	30	24	yes	yes	misc	
+spruce_chest_boat	Spruce Boat with Chest	3000	2400	yes	yes	misc	
 
-spruce_door	Spruce Door	16	4	yes	yes	blocks	
+spruce_door	Spruce Door	1600	400	yes	yes	blocks	
 
-spruce_fence	Spruce Fence	12	3	yes	yes	blocks	
+spruce_fence	Spruce Fence	1200	300	yes	yes	blocks	
 
-spruce_fence_gate	Spruce Fence Gate	12	8	yes	yes	blocks	
+spruce_fence_gate	Spruce Fence Gate	1200	800	yes	yes	blocks	
 
-spruce_hanging_sign	Spruce Hanging Sign	20	16	yes	yes	blocks	
+spruce_hanging_sign	Spruce Hanging Sign	2000	1600	yes	yes	blocks	
 
-spruce_leaves	Spruce Leaves	5	4	yes	yes	blocks	
+spruce_leaves	Spruce Leaves	500	400	yes	yes	blocks	
 
-spruce_log	Spruce Log	8	6	yes	yes	blocks	
+spruce_log	Spruce Log	800	600	yes	yes	blocks	
 
-spruce_planks	Spruce Planks	8	2	yes	yes	blocks	
+spruce_planks	Spruce Planks	800	200	yes	yes	blocks	
 
-spruce_pressure_plate	Spruce Pressure Plate	16	4	yes	yes	redstone	
+spruce_pressure_plate	Spruce Pressure Plate	1600	400	yes	yes	redstone	
 
-spruce_sapling	Spruce Sapling	5	4	yes	yes	blocks	
+spruce_sapling	Spruce Sapling	500	400	yes	yes	blocks	
 
-spruce_shelf	Spruce Shelf	20	16	yes	yes	blocks	
+spruce_shelf	Spruce Shelf	2000	1600	yes	yes	blocks	
 
-spruce_sign	Spruce Sign	20	4	yes	yes	blocks	
+spruce_sign	Spruce Sign	2000	400	yes	yes	blocks	
 
-spruce_slab	Spruce Slab	12	1	yes	yes	blocks	
+spruce_slab	Spruce Slab	1200	100	yes	yes	blocks	
 
-spruce_stairs	Spruce Stairs	12	3	yes	yes	blocks	
+spruce_stairs	Spruce Stairs	1200	300	yes	yes	blocks	
 
-spruce_trapdoor	Spruce Trapdoor	24	6	yes	yes	blocks	
+spruce_trapdoor	Spruce Trapdoor	2400	600	yes	yes	blocks	
 
-spruce_wood	Spruce Wood	11	8	yes	yes	blocks	
+spruce_wood	Spruce Wood	1100	800	yes	yes	blocks	
 
-spyglass	Spyglass	25	20	yes	yes	misc	
+spyglass	Spyglass	2500	2000	yes	yes	misc	
 
-squid_spawn_egg	Squid Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+squid_spawn_egg	Squid Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-stick	Stick	25	1	yes	yes	misc	
+stick	Stick	2500	100	yes	yes	misc	
 
-sticky_piston	Sticky Piston	100	35	yes	yes	redstone	
+sticky_piston	Sticky Piston	10000	3500	yes	yes	redstone	
 
-stone	Stone	10	8	yes	yes	blocks	
+stone	Stone	1000	10	yes	yes	blocks	
 
-stone_axe	Stone Axe	60	32	yes	yes	tools	
+stone_axe	Stone Axe	6000	230	yes	yes	tools	
 
-stone_brick_slab	Stone Brick Slab	12	5	yes	yes	blocks	
+stone_brick_slab	Stone Brick Slab	1200	5	yes	yes	blocks	
 
-stone_brick_stairs	Stone Brick Stairs	12	9	yes	yes	blocks	
+stone_brick_stairs	Stone Brick Stairs	1200	10	yes	yes	blocks	
 
-stone_brick_wall	Stone Brick Wall	12	9	yes	yes	blocks	
+stone_brick_wall	Stone Brick Wall	1200	10	yes	yes	blocks	
 
-stone_bricks	Stone Bricks	10	8	yes	yes	blocks	
+stone_bricks	Stone Bricks	1000	10	yes	yes	blocks	
 
-stone_button	Stone Button	12	9	yes	yes	redstone	
+stone_button	Stone Button	1200	10	yes	yes	redstone	
 
-stone_hoe	Stone Hoe	60	22	yes	yes	tools	
+stone_hoe	Stone Hoe	6000	220	yes	yes	tools	
 
-stone_pickaxe	Stone Pickaxe	60	32	yes	yes	tools	
+stone_pickaxe	Stone Pickaxe	6000	230	yes	yes	tools	
 
-stone_pressure_plate	Stone Pressure Plate	20	16	yes	yes	redstone	
+stone_pressure_plate	Stone Pressure Plate	2000	20	yes	yes	redstone	
 
-stone_shovel	Stone Shovel	60	12	yes	yes	tools	
+stone_shovel	Stone Shovel	6000	210	yes	yes	tools	
 
-stone_slab	Stone Slab	12	5	yes	yes	blocks	
+stone_slab	Stone Slab	1200	5	yes	yes	blocks	
 
-stone_spear	Stone Spear	60	48	yes	yes	tools	
+stone_spear	Stone Spear	6000	4800	yes	yes	tools	
 
-stone_stairs	Stone Stairs	12	9	yes	yes	blocks	
+stone_stairs	Stone Stairs	1200	10	yes	yes	blocks	
 
-stone_sword	Stone Sword	60	21	yes	yes	tools	
+stone_sword	Stone Sword	6000	120	yes	yes	tools	
 
-stonecutter	Stonecutter	10	8	yes	yes	blocks	
+stonecutter	Stonecutter	1000	800	yes	yes	blocks	
 
-straw_bed	Straw Bed	50	40	yes	yes	blocks	
+straw_bed	Straw Bed	5000	4000	yes	yes	blocks	
 
-stray_spawn_egg	Stray Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+stray_spawn_egg	Stray Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-strider_spawn_egg	Strider Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+strider_spawn_egg	Strider Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-string	String	10	8	yes	yes	blocks	
+string	String	1000	800	yes	yes	blocks	
 
-stripped_acacia_log	Stripped Acacia Log	8	6	yes	yes	blocks	
+stripped_acacia_log	Stripped Acacia Log	800	600	yes	yes	blocks	
 
-stripped_acacia_wood	Stripped Acacia Wood	11	8	yes	yes	blocks	
+stripped_acacia_wood	Stripped Acacia Wood	1100	800	yes	yes	blocks	
 
-stripped_bamboo_block	Block of Stripped Bamboo	20	16	yes	yes	blocks	
+stripped_bamboo_block	Block of Stripped Bamboo	2000	1600	yes	yes	blocks	
 
-stripped_birch_log	Stripped Birch Log	8	6	yes	yes	blocks	
+stripped_birch_log	Stripped Birch Log	800	600	yes	yes	blocks	
 
-stripped_birch_wood	Stripped Birch Wood	11	8	yes	yes	blocks	
+stripped_birch_wood	Stripped Birch Wood	1100	800	yes	yes	blocks	
 
-stripped_cherry_log	Stripped Cherry Log	8	6	yes	yes	blocks	
+stripped_cherry_log	Stripped Cherry Log	800	600	yes	yes	blocks	
 
-stripped_cherry_wood	Stripped Cherry Wood	11	8	yes	yes	blocks	
+stripped_cherry_wood	Stripped Cherry Wood	1100	800	yes	yes	blocks	
 
-stripped_crimson_hyphae	Stripped Crimson Hyphae	11	8	yes	yes	blocks	
+stripped_crimson_hyphae	Stripped Crimson Hyphae	1100	800	yes	yes	blocks	
 
-stripped_crimson_stem	Stripped Crimson Stem	8	6	yes	yes	blocks	
+stripped_crimson_stem	Stripped Crimson Stem	800	600	yes	yes	blocks	
 
-stripped_dark_oak_log	Stripped Dark Oak Log	8	6	yes	yes	blocks	
+stripped_dark_oak_log	Stripped Dark Oak Log	800	600	yes	yes	blocks	
 
-stripped_dark_oak_wood	Stripped Dark Oak Wood	11	8	yes	yes	blocks	
+stripped_dark_oak_wood	Stripped Dark Oak Wood	1100	800	yes	yes	blocks	
 
-stripped_jungle_log	Stripped Jungle Log	8	6	yes	yes	blocks	
+stripped_jungle_log	Stripped Jungle Log	800	600	yes	yes	blocks	
 
-stripped_jungle_wood	Stripped Jungle Wood	11	8	yes	yes	blocks	
+stripped_jungle_wood	Stripped Jungle Wood	1100	800	yes	yes	blocks	
 
-stripped_mangrove_log	Stripped Mangrove Log	8	6	yes	yes	blocks	
+stripped_mangrove_log	Stripped Mangrove Log	800	600	yes	yes	blocks	
 
-stripped_mangrove_wood	Stripped Mangrove Wood	11	8	yes	yes	blocks	
+stripped_mangrove_wood	Stripped Mangrove Wood	1100	800	yes	yes	blocks	
 
-stripped_oak_log	Stripped Oak Log	8	6	yes	yes	blocks	
+stripped_oak_log	Stripped Oak Log	800	600	yes	yes	blocks	
 
-stripped_oak_wood	Stripped Oak Wood	11	8	yes	yes	blocks	
+stripped_oak_wood	Stripped Oak Wood	1100	800	yes	yes	blocks	
 
-stripped_pale_oak_log	Stripped Pale Oak Log	8	6	yes	yes	blocks	
+stripped_pale_oak_log	Stripped Pale Oak Log	800	600	yes	yes	blocks	
 
-stripped_pale_oak_wood	Stripped Pale Oak Wood	11	8	yes	yes	blocks	
+stripped_pale_oak_wood	Stripped Pale Oak Wood	1100	800	yes	yes	blocks	
 
-stripped_poplar_log	Stripped Poplar Log	8	6	yes	yes	blocks	
+stripped_poplar_log	Stripped Poplar Log	800	600	yes	yes	blocks	
 
-stripped_poplar_wood	Stripped Poplar Wood	8	6	yes	yes	blocks	
+stripped_poplar_wood	Stripped Poplar Wood	800	600	yes	yes	blocks	
 
-stripped_spruce_log	Stripped Spruce Log	8	6	yes	yes	blocks	
+stripped_spruce_log	Stripped Spruce Log	800	600	yes	yes	blocks	
 
-stripped_spruce_wood	Stripped Spruce Wood	11	8	yes	yes	blocks	
+stripped_spruce_wood	Stripped Spruce Wood	1100	800	yes	yes	blocks	
 
-stripped_warped_hyphae	Stripped Warped Hyphae	11	8	yes	yes	blocks	
+stripped_warped_hyphae	Stripped Warped Hyphae	1100	800	yes	yes	blocks	
 
-stripped_warped_stem	Stripped Warped Stem	8	6	yes	yes	blocks	
+stripped_warped_stem	Stripped Warped Stem	800	600	yes	yes	blocks	
 
-structure_block	Structure Block	0	5000	no	no	creative	creative only
+structure_block	Structure Block	0	500000	no	no	creative	creative only
 
-structure_void	Structure Void	0	5000	no	no	creative	creative only
+structure_void	Structure Void	0	500000	no	no	creative	creative only
 
-sugar	Sugar	25	2	yes	yes	misc	
+sugar	Sugar	2500	200	yes	yes	misc	
 
-sugar_cane	Sugar Cane	10	8	yes	yes	blocks	
+sugar_cane	Sugar Cane	1000	800	yes	yes	blocks	
 
-sulfur	Sulfur	20	16	yes	yes	blocks	
+sulfur	Sulfur	2000	1600	yes	yes	blocks	
 
-sulfur_brick_slab	Sulfur Brick Slab	12	9	yes	yes	blocks	
+sulfur_brick_slab	Sulfur Brick Slab	1200	900	yes	yes	blocks	
 
-sulfur_brick_stairs	Sulfur Brick Stairs	12	9	yes	yes	blocks	
+sulfur_brick_stairs	Sulfur Brick Stairs	1200	900	yes	yes	blocks	
 
-sulfur_brick_wall	Sulfur Brick Wall	12	9	yes	yes	blocks	
+sulfur_brick_wall	Sulfur Brick Wall	1200	900	yes	yes	blocks	
 
-sulfur_bricks	Sulfur Bricks	10	8	yes	yes	blocks	
+sulfur_bricks	Sulfur Bricks	1000	800	yes	yes	blocks	
 
-sulfur_cube_bucket	Bucket of Sulfur Cube	50	40	yes	yes	misc	
+sulfur_cube_bucket	Bucket of Sulfur Cube	5000	4000	yes	yes	misc	
 
-sulfur_cube_spawn_egg	Sulfur Cube Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+sulfur_cube_spawn_egg	Sulfur Cube Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-sulfur_slab	Sulfur Slab	12	9	yes	yes	blocks	
+sulfur_slab	Sulfur Slab	1200	900	yes	yes	blocks	
 
-sulfur_spike	Sulfur Spike	10	8	yes	yes	blocks	
+sulfur_spike	Sulfur Spike	1000	800	yes	yes	blocks	
 
-sulfur_stairs	Sulfur Stairs	12	9	yes	yes	blocks	
+sulfur_stairs	Sulfur Stairs	1200	900	yes	yes	blocks	
 
-sulfur_wall	Sulfur Wall	12	9	yes	yes	blocks	
+sulfur_wall	Sulfur Wall	1200	900	yes	yes	blocks	
 
-sunflower	Sunflower	10	8	yes	yes	blocks	
+sunflower	Sunflower	1000	800	yes	yes	blocks	
 
 suspicious_gravel	Suspicious Gravel	50	40	yes	yes	blocks	
 
 suspicious_sand	Suspicious Sand	50	40	yes	yes	blocks	
 
-suspicious_stew	Suspicious Stew	8	6	yes	yes	food	
+suspicious_stew	Suspicious Stew	800	600	yes	yes	food	
 
-swamp_hut_map	Swamp Hut Map	25	20	yes	yes	misc	
+swamp_hut_map	Swamp Hut Map	2500	2000	yes	yes	misc	
 
-sweet_berries	Sweet Berries	8	6	yes	yes	food	
+sweet_berries	Sweet Berries	800	600	yes	yes	food	
 
-tadpole_bucket	Bucket of Tadpole	50	40	yes	yes	misc	
+tadpole_bucket	Bucket of Tadpole	5000	4000	yes	yes	misc	
 
-tadpole_spawn_egg	Tadpole Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+tadpole_spawn_egg	Tadpole Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-taiga_village_map	Taiga Village Map	25	20	yes	yes	misc	
+taiga_village_map	Taiga Village Map	2500	2000	yes	yes	misc	
 
-tall_dry_grass	Tall Dry Grass	10	8	yes	yes	blocks	
+tall_dry_grass	Tall Dry Grass	1000	800	yes	yes	blocks	
 
-tall_grass	Tall Grass	10	8	yes	yes	blocks	
+tall_grass	Tall Grass	1000	800	yes	yes	blocks	
 
-target	Target	10	8	yes	yes	blocks	
+target	Target	1000	800	yes	yes	blocks	
 
-terracotta	Terracotta	100	80	yes	yes	blocks	
+terracotta	Terracotta	10000	8000	yes	yes	blocks	
 
-test_block	Test Block	0	5000	no	no	creative	creative only
+test_block	Test Block	0	500000	no	no	creative	creative only
 
-test_instance_block	Test Instance Block	0	5000	no	no	creative	creative only
+test_instance_block	Test Instance Block	0	500000	no	no	creative	creative only
 
-tide_armor_trim_smithing_template	Smithing Template	3000	2200	yes	yes	misc	
+tide_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
 
-tinted_glass	Tinted Glass	10	8	yes	yes	blocks	
+tinted_glass	Tinted Glass	1000	800	yes	yes	blocks	
 
-tipped_arrow	Tipped Arrow	25	20	yes	yes	misc	
+tipped_arrow	Tipped Arrow	2500	2000	yes	yes	misc	
 
-tnt	TNT	10	8	yes	yes	blocks	
+tnt	TNT	1000	800	yes	yes	blocks	
 
-tnt_minecart	Minecart with TNT	100	80	yes	yes	misc	
+tnt_minecart	Minecart with TNT	10000	8000	yes	yes	misc	
 
-torch	Torch	10	4	yes	yes	blocks	
+torch	Torch	1000	400	yes	yes	blocks	
 
-torchflower	Torchflower	10	8	yes	yes	blocks	
+torchflower	Torchflower	1000	800	yes	yes	blocks	
 
-torchflower_seeds	Torchflower Seeds	5	4	yes	yes	blocks	
+torchflower_seeds	Torchflower Seeds	500	400	yes	yes	blocks	
 
-totem_of_undying	Totem of Undying	5000	4000	yes	yes	misc	
+totem_of_undying	Totem of Undying	500000	400000	yes	yes	misc	
 
-trader_llama_spawn_egg	Trader Llama Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+trader_llama_spawn_egg	Trader Llama Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-trapped_chest	Trapped Chest	50	26	yes	yes	blocks	
+trapped_chest	Trapped Chest	5000	2600	yes	yes	blocks	
 
-trial_key	Trial Key	500	400	yes	yes	misc	
+trial_key	Trial Key	50000	40000	yes	yes	misc	
 
-trial_spawner	Trial Spawner	0	5000	no	no	creative	creative only
+trial_spawner	Trial Spawner	0	500000	no	no	creative	creative only
 
-trident	Trident	3000	2400	yes	yes	misc	
+trident	Trident	300000	240000	yes	yes	misc	
 
-tripwire_hook	Tripwire Hook	10	8	yes	yes	blocks	
+tripwire_hook	Tripwire Hook	1000	800	yes	yes	blocks	
 
-tropical_fish	Tropical Fish	8	6	yes	yes	food	
+tropical_fish	Tropical Fish	800	600	yes	yes	food	
 
-tropical_fish_bucket	Bucket of Tropical Fish	50	40	yes	yes	food	
+tropical_fish_bucket	Bucket of Tropical Fish	5000	4000	yes	yes	food	
 
-tropical_fish_spawn_egg	Tropical Fish Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+tropical_fish_spawn_egg	Tropical Fish Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-tube_coral	Tube Coral	20	16	yes	yes	blocks	
+tube_coral	Tube Coral	2000	1600	yes	yes	blocks	
 
-tube_coral_block	Tube Coral Block	20	16	yes	yes	blocks	
+tube_coral_block	Tube Coral Block	2000	1600	yes	yes	blocks	
 
-tube_coral_fan	Tube Coral Fan	10	8	yes	yes	blocks	
+tube_coral_fan	Tube Coral Fan	1000	800	yes	yes	blocks	
 
-tuff	Tuff	10	8	yes	yes	blocks	
+tuff	Tuff	1000	800	yes	yes	blocks	
 
-tuff_brick_slab	Tuff Brick Slab	12	5	yes	yes	blocks	
+tuff_brick_slab	Tuff Brick Slab	1200	500	yes	yes	blocks	
 
-tuff_brick_stairs	Tuff Brick Stairs	12	9	yes	yes	blocks	
+tuff_brick_stairs	Tuff Brick Stairs	1200	900	yes	yes	blocks	
 
-tuff_brick_wall	Tuff Brick Wall	12	9	yes	yes	blocks	
+tuff_brick_wall	Tuff Brick Wall	1200	900	yes	yes	blocks	
 
-tuff_bricks	Tuff Bricks	10	8	yes	yes	blocks	
+tuff_bricks	Tuff Bricks	1000	800	yes	yes	blocks	
 
-tuff_slab	Tuff Slab	12	5	yes	yes	blocks	
+tuff_slab	Tuff Slab	1200	500	yes	yes	blocks	
 
-tuff_stairs	Tuff Stairs	12	9	yes	yes	blocks	
+tuff_stairs	Tuff Stairs	1200	900	yes	yes	blocks	
 
-tuff_wall	Tuff Wall	12	9	yes	yes	blocks	
+tuff_wall	Tuff Wall	1200	900	yes	yes	blocks	
 
-turtle_egg	Turtle Egg	10	8	yes	yes	blocks	
+turtle_egg	Turtle Egg	1000	800	yes	yes	blocks	
 
-turtle_helmet	Turtle Shell	500	125	yes	yes	armor	
+turtle_helmet	Turtle Shell	50000	12500	yes	yes	armor	
 
-turtle_scute	Turtle Scute	25	20	yes	yes	misc	
+turtle_scute	Turtle Scute	2500	2000	yes	yes	misc	
 
-turtle_spawn_egg	Turtle Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+turtle_spawn_egg	Turtle Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-twisting_vines	Twisting Vines	10	8	yes	yes	blocks	
+twisting_vines	Twisting Vines	1000	800	yes	yes	blocks	
 
-vault	Vault	0	5000	no	no	creative	creative only
+vault	Vault	0	500000	no	no	creative	creative only
 
-verdant_froglight	Verdant Froglight	100	80	yes	yes	blocks	
+verdant_froglight	Verdant Froglight	10000	8000	yes	yes	blocks	
 
-vex_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+vex_armor_trim_smithing_template	Smithing Template	300000	210010	yes	yes	misc	
 
-vex_spawn_egg	Vex Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+vex_spawn_egg	Vex Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-villager_spawn_egg	Villager Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+villager_spawn_egg	Villager Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-vindicator_spawn_egg	Vindicator Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+vindicator_spawn_egg	Vindicator Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-vine	Vines	10	8	yes	yes	blocks	
+vine	Vines	1000	800	yes	yes	blocks	
 
-wandering_trader_spawn_egg	Wandering Trader Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+wandering_trader_spawn_egg	Wandering Trader Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-ward_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+ward_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-warden_spawn_egg	Warden Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+warden_spawn_egg	Warden Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-warm_ocean_ruins_map	Warm Ocean Ruins Map	25	20	yes	yes	misc	
+warm_ocean_ruins_map	Warm Ocean Ruins Map	2500	2000	yes	yes	misc	
 
-warped_button	Warped Button	12	2	yes	yes	redstone	
+warped_button	Warped Button	1200	200	yes	yes	redstone	
 
-warped_door	Warped Door	16	4	yes	yes	blocks	
+warped_door	Warped Door	1600	400	yes	yes	blocks	
 
-warped_fence	Warped Fence	12	3	yes	yes	blocks	
+warped_fence	Warped Fence	1200	300	yes	yes	blocks	
 
-warped_fence_gate	Warped Fence Gate	12	8	yes	yes	blocks	
+warped_fence_gate	Warped Fence Gate	1200	800	yes	yes	blocks	
 
-warped_fungus	Warped Fungus	10	8	yes	yes	blocks	
+warped_fungus	Warped Fungus	1000	800	yes	yes	blocks	
 
-warped_fungus_on_a_stick	Warped Fungus on a Stick	25	20	yes	yes	misc	
+warped_fungus_on_a_stick	Warped Fungus on a Stick	2500	2000	yes	yes	misc	
 
-warped_hanging_sign	Warped Hanging Sign	20	16	yes	yes	blocks	
+warped_hanging_sign	Warped Hanging Sign	2000	1600	yes	yes	blocks	
 
-warped_hyphae	Warped Hyphae	11	8	yes	yes	blocks	
+warped_hyphae	Warped Hyphae	1100	800	yes	yes	blocks	
 
-warped_nylium	Warped Nylium	10	8	yes	yes	blocks	
+warped_nylium	Warped Nylium	1000	800	yes	yes	blocks	
 
-warped_planks	Warped Planks	8	2	yes	yes	blocks	
+warped_planks	Warped Planks	800	200	yes	yes	blocks	
 
-warped_pressure_plate	Warped Pressure Plate	16	4	yes	yes	redstone	
+warped_pressure_plate	Warped Pressure Plate	1600	400	yes	yes	redstone	
 
-warped_roots	Warped Roots	10	8	yes	yes	blocks	
+warped_roots	Warped Roots	1000	800	yes	yes	blocks	
 
-warped_shelf	Warped Shelf	20	16	yes	yes	blocks	
+warped_shelf	Warped Shelf	2000	1600	yes	yes	blocks	
 
-warped_sign	Warped Sign	20	4	yes	yes	blocks	
+warped_sign	Warped Sign	2000	400	yes	yes	blocks	
 
-warped_slab	Warped Slab	12	1	yes	yes	blocks	
+warped_slab	Warped Slab	1200	100	yes	yes	blocks	
 
-warped_stairs	Warped Stairs	12	3	yes	yes	blocks	
+warped_stairs	Warped Stairs	1200	300	yes	yes	blocks	
 
-warped_stem	Warped Stem	8	6	yes	yes	blocks	
+warped_stem	Warped Stem	800	600	yes	yes	blocks	
 
-warped_trapdoor	Warped Trapdoor	24	6	yes	yes	blocks	
+warped_trapdoor	Warped Trapdoor	2400	600	yes	yes	blocks	
 
-warped_wart_block	Warped Wart Block	20	16	yes	yes	blocks	
+warped_wart_block	Warped Wart Block	2000	1600	yes	yes	blocks	
 
-water_bucket	Water Bucket	50	40	yes	yes	misc	
+water_bucket	Water Bucket	5000	4000	yes	yes	misc	
 
-waxed_chiseled_copper	Waxed Chiseled Copper	50	33	yes	yes	blocks	
+waxed_chiseled_copper	Waxed Chiseled Copper	5000	3300	yes	yes	blocks	
 
-waxed_copper_bars	Waxed Copper Bars	10	8	yes	yes	blocks	
+waxed_copper_bars	Waxed Copper Bars	1000	800	yes	yes	blocks	
 
-waxed_copper_block	Waxed Block of Copper	135	108	yes	yes	ores	
+waxed_copper_block	Waxed Block of Copper	13500	10800	yes	yes	ores	
 
-waxed_copper_bulb	Waxed Copper Bulb	10	8	yes	yes	blocks	
+waxed_copper_bulb	Waxed Copper Bulb	1000	800	yes	yes	blocks	
 
-waxed_copper_chain	Waxed Copper Chain	10	8	yes	yes	blocks	
+waxed_copper_chain	Waxed Copper Chain	1000	800	yes	yes	blocks	
 
-waxed_copper_chest	Waxed Copper Chest	50	40	yes	yes	blocks	
+waxed_copper_chest	Waxed Copper Chest	5000	4000	yes	yes	blocks	
 
-waxed_copper_door	Waxed Copper Door	12	9	yes	yes	blocks	
+waxed_copper_door	Waxed Copper Door	1200	900	yes	yes	blocks	
 
-waxed_copper_golem_statue	Waxed Copper Golem Statue	500	400	yes	yes	blocks	
+waxed_copper_golem_statue	Waxed Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-waxed_copper_grate	Waxed Copper Grate	34	27	yes	yes	blocks	
+waxed_copper_grate	Waxed Copper Grate	3400	2700	yes	yes	blocks	
 
-waxed_copper_lantern	Waxed Copper Lantern	5	4	yes	yes	blocks	
+waxed_copper_lantern	Waxed Copper Lantern	500	400	yes	yes	blocks	
 
-waxed_copper_trapdoor	Waxed Copper Trapdoor	12	9	yes	yes	blocks	
+waxed_copper_trapdoor	Waxed Copper Trapdoor	1200	900	yes	yes	blocks	
 
-waxed_cut_copper	Waxed Cut Copper	50	33	yes	yes	blocks	
+waxed_cut_copper	Waxed Cut Copper	5000	3300	yes	yes	blocks	
 
-waxed_cut_copper_slab	Waxed Cut Copper Slab	17	13	yes	yes	blocks	
+waxed_cut_copper_slab	Waxed Cut Copper Slab	1700	1300	yes	yes	blocks	
 
-waxed_cut_copper_stairs	Waxed Cut Copper Stairs	34	27	yes	yes	blocks	
+waxed_cut_copper_stairs	Waxed Cut Copper Stairs	3400	2700	yes	yes	blocks	
 
-waxed_exposed_chiseled_copper	Waxed Exposed Chiseled Copper	50	12	yes	yes	blocks	
+waxed_exposed_chiseled_copper	Waxed Exposed Chiseled Copper	5000	1200	yes	yes	blocks	
 
-waxed_exposed_copper	Waxed Exposed Copper	50	40	yes	yes	blocks	
+waxed_exposed_copper	Waxed Exposed Copper	5000	4000	yes	yes	blocks	
 
-waxed_exposed_copper_bars	Waxed Exposed Copper Bars	10	8	yes	yes	blocks	
+waxed_exposed_copper_bars	Waxed Exposed Copper Bars	1000	800	yes	yes	blocks	
 
-waxed_exposed_copper_bulb	Waxed Exposed Copper Bulb	10	8	yes	yes	blocks	
+waxed_exposed_copper_bulb	Waxed Exposed Copper Bulb	1000	800	yes	yes	blocks	
 
-waxed_exposed_copper_chain	Waxed Exposed Copper Chain	10	8	yes	yes	blocks	
+waxed_exposed_copper_chain	Waxed Exposed Copper Chain	1000	800	yes	yes	blocks	
 
-waxed_exposed_copper_chest	Waxed Exposed Copper Chest	50	40	yes	yes	blocks	
+waxed_exposed_copper_chest	Waxed Exposed Copper Chest	5000	4000	yes	yes	blocks	
 
-waxed_exposed_copper_door	Waxed Exposed Copper Door	12	9	yes	yes	blocks	
+waxed_exposed_copper_door	Waxed Exposed Copper Door	1200	900	yes	yes	blocks	
 
-waxed_exposed_copper_golem_statue	Waxed Exposed Copper Golem Statue	500	400	yes	yes	blocks	
+waxed_exposed_copper_golem_statue	Waxed Exposed Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-waxed_exposed_copper_grate	Waxed Exposed Copper Grate	13	10	yes	yes	blocks	
+waxed_exposed_copper_grate	Waxed Exposed Copper Grate	1300	1000	yes	yes	blocks	
 
-waxed_exposed_copper_lantern	Waxed Exposed Copper Lantern	5	4	yes	yes	blocks	
+waxed_exposed_copper_lantern	Waxed Exposed Copper Lantern	500	400	yes	yes	blocks	
 
-waxed_exposed_copper_trapdoor	Waxed Exposed Copper Trapdoor	12	9	yes	yes	blocks	
+waxed_exposed_copper_trapdoor	Waxed Exposed Copper Trapdoor	1200	900	yes	yes	blocks	
 
-waxed_exposed_cut_copper	Waxed Exposed Cut Copper	50	12	yes	yes	blocks	
+waxed_exposed_cut_copper	Waxed Exposed Cut Copper	5000	1200	yes	yes	blocks	
 
-waxed_exposed_cut_copper_slab	Waxed Exposed Cut Copper Slab	12	6	yes	yes	blocks	
+waxed_exposed_cut_copper_slab	Waxed Exposed Cut Copper Slab	1200	600	yes	yes	blocks	
 
-waxed_exposed_cut_copper_stairs	Waxed Exposed Cut Copper Stairs	13	10	yes	yes	blocks	
+waxed_exposed_cut_copper_stairs	Waxed Exposed Cut Copper Stairs	1300	1000	yes	yes	blocks	
 
-waxed_exposed_lightning_rod	Waxed Exposed Lightning Rod	10	8	yes	yes	blocks	
+waxed_exposed_lightning_rod	Waxed Exposed Lightning Rod	1000	800	yes	yes	blocks	
 
-waxed_lightning_rod	Waxed Lightning Rod	10	8	yes	yes	blocks	
+waxed_lightning_rod	Waxed Lightning Rod	1000	800	yes	yes	blocks	
 
-waxed_oxidized_chiseled_copper	Waxed Oxidized Chiseled Copper	50	12	yes	yes	blocks	
+waxed_oxidized_chiseled_copper	Waxed Oxidized Chiseled Copper	5000	1200	yes	yes	blocks	
 
-waxed_oxidized_copper	Waxed Oxidized Copper	50	40	yes	yes	blocks	
+waxed_oxidized_copper	Waxed Oxidized Copper	5000	4000	yes	yes	blocks	
 
-waxed_oxidized_copper_bars	Waxed Oxidized Copper Bars	10	8	yes	yes	blocks	
+waxed_oxidized_copper_bars	Waxed Oxidized Copper Bars	1000	800	yes	yes	blocks	
 
-waxed_oxidized_copper_bulb	Waxed Oxidized Copper Bulb	10	8	yes	yes	blocks	
+waxed_oxidized_copper_bulb	Waxed Oxidized Copper Bulb	1000	800	yes	yes	blocks	
 
-waxed_oxidized_copper_chain	Waxed Oxidized Copper Chain	10	8	yes	yes	blocks	
+waxed_oxidized_copper_chain	Waxed Oxidized Copper Chain	1000	800	yes	yes	blocks	
 
-waxed_oxidized_copper_chest	Waxed Oxidized Copper Chest	50	40	yes	yes	blocks	
+waxed_oxidized_copper_chest	Waxed Oxidized Copper Chest	5000	4000	yes	yes	blocks	
 
-waxed_oxidized_copper_door	Waxed Oxidized Copper Door	12	9	yes	yes	blocks	
+waxed_oxidized_copper_door	Waxed Oxidized Copper Door	1200	900	yes	yes	blocks	
 
-waxed_oxidized_copper_golem_statue	Waxed Oxidized Copper Golem Statue	500	400	yes	yes	blocks	
+waxed_oxidized_copper_golem_statue	Waxed Oxidized Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-waxed_oxidized_copper_grate	Waxed Oxidized Copper Grate	13	10	yes	yes	blocks	
+waxed_oxidized_copper_grate	Waxed Oxidized Copper Grate	1300	1000	yes	yes	blocks	
 
-waxed_oxidized_copper_lantern	Waxed Oxidized Copper Lantern	5	4	yes	yes	blocks	
+waxed_oxidized_copper_lantern	Waxed Oxidized Copper Lantern	500	400	yes	yes	blocks	
 
-waxed_oxidized_copper_trapdoor	Waxed Oxidized Copper Trapdoor	12	9	yes	yes	blocks	
+waxed_oxidized_copper_trapdoor	Waxed Oxidized Copper Trapdoor	1200	900	yes	yes	blocks	
 
-waxed_oxidized_cut_copper	Waxed Oxidized Cut Copper	50	12	yes	yes	blocks	
+waxed_oxidized_cut_copper	Waxed Oxidized Cut Copper	5000	1200	yes	yes	blocks	
 
-waxed_oxidized_cut_copper_slab	Waxed Oxidized Cut Copper Slab	12	6	yes	yes	blocks	
+waxed_oxidized_cut_copper_slab	Waxed Oxidized Cut Copper Slab	1200	600	yes	yes	blocks	
 
-waxed_oxidized_cut_copper_stairs	Waxed Oxidized Cut Copper Stairs	13	10	yes	yes	blocks	
+waxed_oxidized_cut_copper_stairs	Waxed Oxidized Cut Copper Stairs	1300	1000	yes	yes	blocks	
 
-waxed_oxidized_lightning_rod	Waxed Oxidized Lightning Rod	10	8	yes	yes	blocks	
+waxed_oxidized_lightning_rod	Waxed Oxidized Lightning Rod	1000	800	yes	yes	blocks	
 
-waxed_weathered_chiseled_copper	Waxed Weathered Chiseled Copper	50	12	yes	yes	blocks	
+waxed_weathered_chiseled_copper	Waxed Weathered Chiseled Copper	5000	1200	yes	yes	blocks	
 
-waxed_weathered_copper	Waxed Weathered Copper	50	40	yes	yes	blocks	
+waxed_weathered_copper	Waxed Weathered Copper	5000	4000	yes	yes	blocks	
 
-waxed_weathered_copper_bars	Waxed Weathered Copper Bars	10	8	yes	yes	blocks	
+waxed_weathered_copper_bars	Waxed Weathered Copper Bars	1000	800	yes	yes	blocks	
 
-waxed_weathered_copper_bulb	Waxed Weathered Copper Bulb	10	8	yes	yes	blocks	
+waxed_weathered_copper_bulb	Waxed Weathered Copper Bulb	1000	800	yes	yes	blocks	
 
-waxed_weathered_copper_chain	Waxed Weathered Copper Chain	10	8	yes	yes	blocks	
+waxed_weathered_copper_chain	Waxed Weathered Copper Chain	1000	800	yes	yes	blocks	
 
-waxed_weathered_copper_chest	Waxed Weathered Copper Chest	50	40	yes	yes	blocks	
+waxed_weathered_copper_chest	Waxed Weathered Copper Chest	5000	4000	yes	yes	blocks	
 
-waxed_weathered_copper_door	Waxed Weathered Copper Door	12	9	yes	yes	blocks	
+waxed_weathered_copper_door	Waxed Weathered Copper Door	1200	900	yes	yes	blocks	
 
-waxed_weathered_copper_golem_statue	Waxed Weathered Copper Golem Statue	500	400	yes	yes	blocks	
+waxed_weathered_copper_golem_statue	Waxed Weathered Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-waxed_weathered_copper_grate	Waxed Weathered Copper Grate	13	10	yes	yes	blocks	
+waxed_weathered_copper_grate	Waxed Weathered Copper Grate	1300	1000	yes	yes	blocks	
 
-waxed_weathered_copper_lantern	Waxed Weathered Copper Lantern	5	4	yes	yes	blocks	
+waxed_weathered_copper_lantern	Waxed Weathered Copper Lantern	500	400	yes	yes	blocks	
 
-waxed_weathered_copper_trapdoor	Waxed Weathered Copper Trapdoor	12	9	yes	yes	blocks	
+waxed_weathered_copper_trapdoor	Waxed Weathered Copper Trapdoor	1200	900	yes	yes	blocks	
 
-waxed_weathered_cut_copper	Waxed Weathered Cut Copper	50	12	yes	yes	blocks	
+waxed_weathered_cut_copper	Waxed Weathered Cut Copper	5000	1200	yes	yes	blocks	
 
-waxed_weathered_cut_copper_slab	Waxed Weathered Cut Copper Slab	12	6	yes	yes	blocks	
+waxed_weathered_cut_copper_slab	Waxed Weathered Cut Copper Slab	1200	600	yes	yes	blocks	
 
-waxed_weathered_cut_copper_stairs	Waxed Weathered Cut Copper Stairs	13	10	yes	yes	blocks	
+waxed_weathered_cut_copper_stairs	Waxed Weathered Cut Copper Stairs	1300	1000	yes	yes	blocks	
 
-waxed_weathered_lightning_rod	Waxed Weathered Lightning Rod	10	8	yes	yes	blocks	
+waxed_weathered_lightning_rod	Waxed Weathered Lightning Rod	1000	800	yes	yes	blocks	
 
-wayfinder_armor_trim_smithing_template	Smithing Template	3000	2200	yes	yes	misc	
+wayfinder_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
 
-weathered_chiseled_copper	Weathered Chiseled Copper	50	12	yes	yes	blocks	
+weathered_chiseled_copper	Weathered Chiseled Copper	5000	1200	yes	yes	blocks	
 
-weathered_copper	Weathered Copper	50	40	yes	yes	blocks	
+weathered_copper	Weathered Copper	5000	4000	yes	yes	blocks	
 
-weathered_copper_bars	Weathered Copper Bars	10	8	yes	yes	blocks	
+weathered_copper_bars	Weathered Copper Bars	1000	800	yes	yes	blocks	
 
-weathered_copper_bulb	Weathered Copper Bulb	10	8	yes	yes	blocks	
+weathered_copper_bulb	Weathered Copper Bulb	1000	800	yes	yes	blocks	
 
-weathered_copper_chain	Weathered Copper Chain	10	8	yes	yes	blocks	
+weathered_copper_chain	Weathered Copper Chain	1000	800	yes	yes	blocks	
 
-weathered_copper_chest	Weathered Copper Chest	50	40	yes	yes	blocks	
+weathered_copper_chest	Weathered Copper Chest	5000	4000	yes	yes	blocks	
 
-weathered_copper_door	Weathered Copper Door	12	9	yes	yes	blocks	
+weathered_copper_door	Weathered Copper Door	1200	900	yes	yes	blocks	
 
-weathered_copper_golem_statue	Weathered Copper Golem Statue	500	400	yes	yes	blocks	
+weathered_copper_golem_statue	Weathered Copper Golem Statue	50000	40000	yes	yes	blocks	
 
-weathered_copper_grate	Weathered Copper Grate	13	10	yes	yes	blocks	
+weathered_copper_grate	Weathered Copper Grate	1300	1000	yes	yes	blocks	
 
-weathered_copper_lantern	Weathered Copper Lantern	5	4	yes	yes	blocks	
+weathered_copper_lantern	Weathered Copper Lantern	500	400	yes	yes	blocks	
 
-weathered_copper_trapdoor	Weathered Copper Trapdoor	12	9	yes	yes	blocks	
+weathered_copper_trapdoor	Weathered Copper Trapdoor	1200	900	yes	yes	blocks	
 
-weathered_cut_copper	Weathered Cut Copper	50	12	yes	yes	blocks	
+weathered_cut_copper	Weathered Cut Copper	5000	1200	yes	yes	blocks	
 
-weathered_cut_copper_slab	Weathered Cut Copper Slab	12	6	yes	yes	blocks	
+weathered_cut_copper_slab	Weathered Cut Copper Slab	1200	600	yes	yes	blocks	
 
-weathered_cut_copper_stairs	Weathered Cut Copper Stairs	13	10	yes	yes	blocks	
+weathered_cut_copper_stairs	Weathered Cut Copper Stairs	1300	1000	yes	yes	blocks	
 
-weathered_lightning_rod	Weathered Lightning Rod	10	8	yes	yes	blocks	
+weathered_lightning_rod	Weathered Lightning Rod	1000	800	yes	yes	blocks	
 
-weeping_vines	Weeping Vines	10	8	yes	yes	blocks	
+weeping_vines	Weeping Vines	1000	800	yes	yes	blocks	
 
-wet_sponge	Wet Sponge	10	8	yes	yes	blocks	
+wet_sponge	Wet Sponge	1000	800	yes	yes	blocks	
 
-wheat	Wheat	25	20	yes	yes	misc	
+wheat	Wheat	2500	2000	yes	yes	misc	
 
-wheat_seeds	Wheat Seeds	5	4	yes	yes	blocks	
+wheat_seeds	Wheat Seeds	500	400	yes	yes	blocks	
 
-white_banner	White Banner	30	24	yes	yes	blocks	
+white_banner	White Banner	3000	2400	yes	yes	blocks	
 
-white_bed	White Bed	50	40	yes	yes	blocks	
+white_bed	White Bed	5000	4000	yes	yes	blocks	
 
-white_bundle	White Bundle	50	33	yes	yes	misc	
+white_bundle	White Bundle	5000	3300	yes	yes	misc	
 
-white_candle	White Candle	20	16	yes	yes	blocks	
+white_candle	White Candle	2000	1600	yes	yes	blocks	
 
 white_carpet	White Carpet	27	21	yes	yes	blocks	
 
@@ -3134,75 +3134,75 @@ white_concrete_slab	White Concrete Slab	12	9	yes	yes	blocks
 
 white_concrete_stairs	White Concrete Stairs	12	9	yes	yes	blocks	
 
-white_cushion	White Cushion	30	24	yes	yes	misc	
+white_cushion	White Cushion	3000	2400	yes	yes	misc	
 
-white_dye	White Dye	25	8	yes	yes	misc	
+white_dye	White Dye	2500	800	yes	yes	misc	
 
-white_glazed_terracotta	White Glazed Terracotta	15	12	yes	yes	blocks	
+white_glazed_terracotta	White Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-white_harness	White Harness	100	80	yes	yes	misc	
+white_harness	White Harness	10000	8000	yes	yes	misc	
 
-white_shulker_box	White Shulker Box	1000	800	yes	yes	end	
+white_shulker_box	White Shulker Box	100000	80000	yes	yes	end	
 
-white_stained_glass	White Stained Glass	10	8	yes	yes	blocks	
+white_stained_glass	White Stained Glass	1000	114	yes	yes	blocks	
 
-white_stained_glass_pane	White Stained Glass Pane	10	3	yes	yes	blocks	
+white_stained_glass_pane	White Stained Glass Pane	1000	42	yes	yes	blocks	
 
-white_terracotta	White Terracotta	15	12	yes	yes	blocks	
+white_terracotta	White Terracotta	1500	1200	yes	yes	blocks	
 
-white_tulip	White Tulip	10	8	yes	yes	blocks	
+white_tulip	White Tulip	1000	800	yes	yes	blocks	
 
-white_wool	White Wool	40	32	yes	yes	blocks	
+white_wool	White Wool	4000	3200	yes	yes	blocks	
 
-white_wool_slab	White Wool Slab	12	9	yes	yes	blocks	
+white_wool_slab	White Wool Slab	1200	900	yes	yes	blocks	
 
-white_wool_stairs	White Wool Stairs	12	9	yes	yes	blocks	
+white_wool_stairs	White Wool Stairs	1200	900	yes	yes	blocks	
 
-wild_armor_trim_smithing_template	Smithing Template	3000	2110	yes	yes	misc	
+wild_armor_trim_smithing_template	Smithing Template	300000	210010	yes	yes	misc	
 
-wildflowers	Wildflowers	10	8	yes	yes	blocks	
+wildflowers	Wildflowers	1000	800	yes	yes	blocks	
 
-wind_charge	Wind Charge	125	100	yes	yes	misc	
+wind_charge	Wind Charge	12500	10000	yes	yes	misc	
 
-witch_spawn_egg	Witch Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+witch_spawn_egg	Witch Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-wither_rose	Wither Rose	10	8	yes	yes	nether	
+wither_rose	Wither Rose	1000	800	yes	yes	nether	
 
-wither_skeleton_skull	Wither Skeleton Skull	1000	800	yes	yes	nether	
+wither_skeleton_skull	Wither Skeleton Skull	100000	80000	yes	yes	nether	
 
-wither_skeleton_spawn_egg	Wither Skeleton Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+wither_skeleton_spawn_egg	Wither Skeleton Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-wither_spawn_egg	Wither Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+wither_spawn_egg	Wither Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-wolf_armor	Wolf Armor	150	120	yes	yes	misc	
+wolf_armor	Wolf Armor	15000	12000	yes	yes	misc	
 
-wolf_spawn_egg	Wolf Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+wolf_spawn_egg	Wolf Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-wooden_axe	Wooden Axe	20	8	yes	yes	tools	
+wooden_axe	Wooden Axe	2000	800	yes	yes	tools	
 
-wooden_hoe	Wooden Hoe	20	6	yes	yes	tools	
+wooden_hoe	Wooden Hoe	2000	600	yes	yes	tools	
 
-wooden_pickaxe	Wooden Pickaxe	20	8	yes	yes	tools	
+wooden_pickaxe	Wooden Pickaxe	2000	800	yes	yes	tools	
 
-wooden_shovel	Wooden Shovel	20	4	yes	yes	tools	
+wooden_shovel	Wooden Shovel	2000	400	yes	yes	tools	
 
-wooden_spear	Wooden Spear	20	16	yes	yes	tools	
+wooden_spear	Wooden Spear	2000	1600	yes	yes	tools	
 
-wooden_sword	Wooden Sword	20	5	yes	yes	tools	
+wooden_sword	Wooden Sword	2000	500	yes	yes	tools	
 
-woodland_mansion_map	Woodland Mansion Map	25	20	yes	yes	misc	
+woodland_mansion_map	Woodland Mansion Map	2500	2000	yes	yes	misc	
 
-writable_book	Book and Quill	25	20	yes	yes	misc	
+writable_book	Book and Quill	2500	2000	yes	yes	misc	
 
-written_book	Written Book	25	20	yes	yes	misc	
+written_book	Written Book	2500	2000	yes	yes	misc	
 
-yellow_banner	Yellow Banner	30	24	yes	yes	blocks	
+yellow_banner	Yellow Banner	3000	2400	yes	yes	blocks	
 
-yellow_bed	Yellow Bed	50	36	yes	yes	blocks	
+yellow_bed	Yellow Bed	5000	3600	yes	yes	blocks	
 
-yellow_bundle	Yellow Bundle	50	30	yes	yes	misc	
+yellow_bundle	Yellow Bundle	5000	3000	yes	yes	misc	
 
-yellow_candle	Yellow Candle	20	15	yes	yes	blocks	
+yellow_candle	Yellow Candle	2000	1500	yes	yes	blocks	
 
 yellow_carpet	Yellow Carpet	7	5	yes	yes	blocks	
 
@@ -3214,40 +3214,40 @@ yellow_concrete_slab	Yellow Concrete Slab	12	9	yes	yes	blocks
 
 yellow_concrete_stairs	Yellow Concrete Stairs	12	9	yes	yes	blocks	
 
-yellow_cushion	Yellow Cushion	30	24	yes	yes	misc	
+yellow_cushion	Yellow Cushion	3000	2400	yes	yes	misc	
 
-yellow_dye	Yellow Dye	25	5	yes	yes	misc	
+yellow_dye	Yellow Dye	2500	500	yes	yes	misc	
 
-yellow_glazed_terracotta	Yellow Glazed Terracotta	15	12	yes	yes	blocks	
+yellow_glazed_terracotta	Yellow Glazed Terracotta	1500	1200	yes	yes	blocks	
 
-yellow_harness	Yellow Harness	100	80	yes	yes	misc	
+yellow_harness	Yellow Harness	10000	8000	yes	yes	misc	
 
-yellow_poplar_leaves	Yellow Poplar Leaves	5	4	yes	yes	blocks	
+yellow_poplar_leaves	Yellow Poplar Leaves	500	400	yes	yes	blocks	
 
-yellow_shulker_box	Yellow Shulker Box	1000	800	yes	yes	end	
+yellow_shulker_box	Yellow Shulker Box	100000	80000	yes	yes	end	
 
-yellow_stained_glass	Yellow Stained Glass	10	8	yes	yes	blocks	
+yellow_stained_glass	Yellow Stained Glass	1000	72	yes	yes	blocks	
 
-yellow_stained_glass_pane	Yellow Stained Glass Pane	10	3	yes	yes	blocks	
+yellow_stained_glass_pane	Yellow Stained Glass Pane	1000	27	yes	yes	blocks	
 
-yellow_terracotta	Yellow Terracotta	15	12	yes	yes	blocks	
+yellow_terracotta	Yellow Terracotta	1500	1200	yes	yes	blocks	
 
-yellow_wool	Yellow Wool	10	8	yes	yes	blocks	
+yellow_wool	Yellow Wool	1000	800	yes	yes	blocks	
 
-yellow_wool_slab	Yellow Wool Slab	12	9	yes	yes	blocks	
+yellow_wool_slab	Yellow Wool Slab	1200	900	yes	yes	blocks	
 
-yellow_wool_stairs	Yellow Wool Stairs	12	9	yes	yes	blocks	
+yellow_wool_stairs	Yellow Wool Stairs	1200	900	yes	yes	blocks	
 
-zoglin_spawn_egg	Zoglin Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+zoglin_spawn_egg	Zoglin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-zombie_head	Zombie Head	1000	800	yes	yes	blocks	
+zombie_head	Zombie Head	100000	80000	yes	yes	blocks	
 
-zombie_horse_spawn_egg	Zombie Horse Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+zombie_horse_spawn_egg	Zombie Horse Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-zombie_nautilus_spawn_egg	Zombie Nautilus Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+zombie_nautilus_spawn_egg	Zombie Nautilus Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-zombie_spawn_egg	Zombie Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+zombie_spawn_egg	Zombie Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-zombie_villager_spawn_egg	Zombie Villager Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+zombie_villager_spawn_egg	Zombie Villager Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-zombified_piglin_spawn_egg	Zombified Piglin Spawn Egg	0	1000	no	no	creative	spawn egg (creative only)
+zombified_piglin_spawn_egg	Zombified Piglin Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)

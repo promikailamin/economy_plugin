@@ -1,0 +1,36 @@
+rows=1657 protected=121 scaled=1536 multiplier=100 sell_capped=70
+protected buy total=1,975 sell total=1,515
+
+Largest sell caps:
+  furnace                                          buy      8,000  sell      6,400 -> 80        
+  dune_armor_trim_smithing_template                buy    300,000  sell    214,000 -> 210,040   
+  stone_axe                                        buy      6,000  sell      3,200 -> 230       
+  stone_pickaxe                                    buy      6,000  sell      3,200 -> 230       
+  stone_hoe                                        buy      6,000  sell      2,200 -> 220       
+  stone_sword                                      buy      6,000  sell      2,100 -> 120       
+  stone_pressure_plate                             buy      2,000  sell      1,600 -> 20        
+  coast_armor_trim_smithing_template               buy    300,000  sell    211,000 -> 210,010   
+  glass_bottle                                     buy      2,500  sell      1,000 -> 10        
+  sentry_armor_trim_smithing_template              buy    300,000  sell    211,000 -> 210,010   
+  stone_shovel                                     buy      6,000  sell      1,200 -> 210       
+  vex_armor_trim_smithing_template                 buy    300,000  sell    211,000 -> 210,010   
+  wild_armor_trim_smithing_template                buy    300,000  sell    211,000 -> 210,010   
+  stone_brick_stairs                               buy      1,200  sell        900 -> 10        
+  stone_brick_wall                                 buy      1,200  sell        900 -> 10        
+  stone_button                                     buy      1,200  sell        900 -> 10        
+  stone_stairs                                     buy      1,200  sell        900 -> 10        
+  chiseled_stone_bricks                            buy      1,000  sell        800 -> 10        
+  cracked_stone_bricks                             buy      1,000  sell        800 -> 10        
+  glass                                            buy      1,000  sell        800 -> 10        
+  smooth_stone                                     buy      1,000  sell        800 -> 10        
+  stone                                            buy      1,000  sell        800 -> 10        
+  stone_bricks                                     buy      1,000  sell        800 -> 10        
+  cyan_stained_glass                               buy      1,000  sell        800 -> 72        
+  magenta_stained_glass                            buy      1,000  sell        800 -> 72        
+  orange_stained_glass                             buy      1,000  sell        800 -> 72        
+  pink_stained_glass                               buy      1,000  sell        800 -> 72        
+  red_stained_glass                                buy      1,000  sell        800 -> 72        
+  yellow_stained_glass                             buy      1,000  sell        800 -> 72        
+  purple_stained_glass                             buy      1,000  sell        800 -> 103       
+
+Wrote .agent-work/tmp/prices_reproduced.tsv
