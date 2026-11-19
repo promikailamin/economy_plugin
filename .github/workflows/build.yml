@@ -109,3 +109,4 @@ jobs:
           files: |
             release/*.jar
             docs/PRICE.md
+            docs/GUI.md

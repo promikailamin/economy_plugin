@@ -20,16 +20,27 @@ Server-side economy plugin. No client mod needed.
 `./gradlew build` -> `build/libs/Economy-1.0.0.jar` (Java 21; API jars are in `libs/`).
 
 GitHub Actions builds on every push/PR with `.github/workflows/build.yml`. Pushes to `main`
-and `v*` tags also create or update a GitHub release containing the plugin jar and
-[`docs/PRICE.md`](docs/PRICE.md).
+and `v*` tags also create or update a GitHub release containing the plugin jar,
+[`docs/PRICE.md`](docs/PRICE.md) and [`docs/GUI.md`](docs/GUI.md).
 
-## Price guide
-[`docs/PRICE.md`](docs/PRICE.md) lists every shop price with its real Minecraft item
-texture. Regenerate it after changing `prices.tsv`:
+## Guides
+- [`docs/PRICE.md`](docs/PRICE.md) lists every shop price with its real Minecraft item
+  texture.
+- [`docs/GUI.md`](docs/GUI.md) shows every in-game GUI rendered with the official
+  Minecraft container textures, item textures and bitmap font.
+
+Most prices are 100x their original values. Easily renewable resources
+(cobblestone, sand, gravel, concrete, rails and carpets) keep their old prices, and
+sell prices are capped where a cheap resource could otherwise be crafted into a
+profitable item. Regenerate the price guide after changing `prices.tsv`:
 
 ```bash
 .agent-work/tools/fetch_client_jar.sh 26.3
 python3 .agent-work/tools/generate_price_docs.py \
+  --jar .agent-work/tmp/mc/client.jar --version 26.3 \
+  --prices src/main/resources/prices.tsv --docs docs
+
+python3 .agent-work/tools/generate_gui_docs.py \
   --jar .agent-work/tmp/mc/client.jar --version 26.3 \
   --prices src/main/resources/prices.tsv --docs docs
 ```
