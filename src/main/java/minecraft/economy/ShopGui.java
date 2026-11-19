@@ -85,6 +85,10 @@ public final class ShopGui {
                     "§7Browse the catalog by item family", "§aClick to open"));
             inv.setItem(47, item(Material.HOPPER, "§e§lSell Chest",
                     "§7Drop items in, close the chest", "§7and they are sold!", "§aClick to open"));
+            inv.setItem(48, item(Material.ENDER_CHEST, "§d§lMystery Shop",
+                    "§7Spend money on a random crate", "§7Worse or best - the AI decides", "§aClick to open"));
+            inv.setItem(50, item(Material.BEACON, "§b§lSmart Market",
+                    "§7AI stock, demand and restock status", "§aClick to inspect"));
             inv.setItem(HEAD, balanceHead(player));
             inv.setItem(CLOSE, item(Material.BARRIER, "§cClose", "§7Close this menu"));
             fillEmpty(inv, 0, 54, Material.GRAY_STAINED_GLASS_PANE);
@@ -108,6 +112,8 @@ public final class ShopGui {
                 case 45 -> navigate(me, () -> AuctionGui.open(player, 1));
                 case 46 -> navigate(me, () -> BuyGui.open(player, "all", 1));
                 case 47 -> navigate(me, () -> SellGui.open(player));
+                case 48 -> navigate(me, () -> MysteryGui.open(player));
+                case 50 -> navigate(me, () -> AiMarketGui.open(player));
                 case CLOSE -> close();
                 default -> {
                 }

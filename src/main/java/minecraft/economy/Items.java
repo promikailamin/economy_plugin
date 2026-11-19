@@ -9,6 +9,7 @@ import org.bukkit.inventory.meta.BlockStateMeta;
 import org.bukkit.inventory.meta.BundleMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.List;
 import java.util.function.Predicate;
 
 /** Inventory / trade helpers shared by commands and GUIs. */
@@ -50,6 +51,35 @@ public final class Items {
             if (room >= amount) return true;
         }
         return room >= amount;
+    }
+
+    public static boolean canFitAll(Player player, List<ItemStack> items) {
+        ItemStack[] sim = new ItemStack[player.getInventory().getStorageContents().length];
+        ItemStack[] current = player.getInventory().getStorageContents();
+        for (int i = 0; i < sim.length; i++) {
+            if (current[i] != null && !current[i].getType().isAir()) sim[i] = current[i].clone();
+        }
+        for (ItemStack item : items) {
+            int left = item.getAmount();
+            int max = item.getMaxStackSize();
+            for (int i = 0; i < sim.length && left > 0; i++) {
+                if (sim[i] != null && sim[i].isSimilar(item) && sim[i].getAmount() < max) {
+                    int move = Math.min(left, max - sim[i].getAmount());
+                    sim[i].setAmount(sim[i].getAmount() + move);
+                    left -= move;
+                }
+            }
+            for (int i = 0; i < sim.length && left > 0; i++) {
+                if (sim[i] == null) {
+                    ItemStack copy = item.clone();
+                    copy.setAmount(Math.min(left, max));
+                    sim[i] = copy;
+                    left -= copy.getAmount();
+                }
+            }
+            if (left > 0) return false;
+        }
+        return true;
     }
 
     /** Gives items, splitting into stacks; anything that does not fit is dropped at the player's feet. */

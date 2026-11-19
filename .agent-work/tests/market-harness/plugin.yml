@@ -1,0 +1,5 @@
+name: MarketHarness
+version: 1.0.0
+main: marketharness.MarketHarness
+api-version: '1.21'
+depend: [Economy]

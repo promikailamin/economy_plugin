@@ -17,3 +17,30 @@ auction:
   # Percentage of the sale price removed from the economy when an auction sells.
   tax-percent: 5
   max-price: 1000000000000
+
+  ai:
+    # Synthetic listings make a small server feel busy. They are ordinary
+    # auction listings with realistic gear, damage and enchantments.
+    enabled: true
+    # How many AI listings the engine tries to keep live.
+    target-listings: 36
+    # Maximum new AI listings per 30 second market tick.
+    max-new-per-tick: 5
+    # How long AI listings last before they are recycled.
+    duration-hours: 48
+    # Base time between stock restocks (each category gets a random +/-40%).
+    restock-minutes: 12
+    # Change this for a different but repeatable item/price pattern.
+    seed: 1337
+
+mystery:
+  enabled: true
+  # Crates available per tier before they sell out and need a restock.
+  stock-per-tier: 8
+  restock-minutes: 20
+  # Scales the value of prizes without changing crate prices.
+  payout-scale: 1.0
+  # Multiply every crate price (0.5 = half price, 2.0 = double price).
+  price-multiplier: 1.0
+  broadcast-jackpots: true
+  seed: 7331

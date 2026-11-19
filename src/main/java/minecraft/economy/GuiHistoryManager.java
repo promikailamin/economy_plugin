@@ -62,6 +62,8 @@ public final class GuiHistoryManager {
             case "buy_catalog" -> BuyGui.open(player, s.param1(), s.param2());
             case "buy_search" -> BuyGui.openSearch(player, s.param1(), s.param2());
             case "auction" -> AuctionGui.open(player, s.param2());
+            case "ai_market" -> AiMarketGui.open(player);
+            case "mystery" -> MysteryGui.open(player);
             default -> ShopGui.openMainMenu(player);
         }
     }

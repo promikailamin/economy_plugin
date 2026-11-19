@@ -6,6 +6,7 @@ build/
 .agent-work/tmp/*
 !.agent-work/tmp/.gitkeep
 .agent-work/logs/opencode-output.log
+.agent-work/tests/out/
 
 # Python bytecode
 __pycache__/

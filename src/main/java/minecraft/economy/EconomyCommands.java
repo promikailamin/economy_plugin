@@ -73,6 +73,7 @@ public class EconomyCommands implements CommandExecutor, TabCompleter {
                 if (p != null) EconomyScoreboard.get().toggle(p);
             }
             case "ah" -> ah(sender, args);
+            case "mystery" -> mystery(sender, args);
             case "sellaxe" -> sellaxe(sender, args);
             default -> {
                 return false;
@@ -193,8 +194,9 @@ public class EconomyCommands implements CommandExecutor, TabCompleter {
 
         if (sub.equals("reload")) {
             EconomyData.reload();
+            plugin.reloadMarketConfig();
             EconomyScoreboard.get().updateAll();
-            sender.sendMessage(ChatColor.GREEN + "Economy config and prices reloaded.");
+            sender.sendMessage(ChatColor.GREEN + "Economy config, prices and market engines reloaded.");
             return;
         }
         if (!List.of("give", "take", "set", "reset").contains(sub)) {
@@ -353,6 +355,14 @@ public class EconomyCommands implements CommandExecutor, TabCompleter {
         String sub = args.length == 0 ? "open" : args[0].toLowerCase(Locale.ROOT);
         switch (sub) {
             case "open", "browse" -> AuctionGui.open(p, 1);
+            case "stock", "market", "ai" -> AiMarketGui.open(p);
+            case "mystery" -> {
+                if (!p.hasPermission("economy.mystery")) {
+                    err(p, "You don't have permission to use the mystery shop.");
+                    return;
+                }
+                MysteryGui.open(p);
+            }
             case "collect", "claim" -> plugin.auctions().collect(p);
             case "sell" -> {
                 if (args.length < 2) {
@@ -363,8 +373,30 @@ public class EconomyCommands implements CommandExecutor, TabCompleter {
                 if (price < 0) return;
                 plugin.auctions().create(p, price);
             }
-            default -> err(p, "Usage: /ah [open|sell <price>|collect]");
+            default -> err(p, "Usage: /ah [open|stock|mystery|sell <price>|collect]");
         }
+    }
+
+    // ------------------------------------------------------------------ /mystery
+
+    private void mystery(CommandSender sender, String[] args) {
+        Player p = playerOnly(sender);
+        if (p == null) return;
+        if (!p.hasPermission("economy.mystery")) {
+            err(p, "You don't have permission to use the mystery shop.");
+            return;
+        }
+        if (args.length == 0) {
+            MysteryGui.open(p);
+            return;
+        }
+        MysteryShop.Tier tier = MysteryShop.Tier.byId(args[0]);
+        if (tier == null) {
+            err(p, "Usage: /mystery [scrap|adventurer|treasure|relic|neural]");
+            return;
+        }
+        MysteryShop.Result result = plugin.mystery().open(p, tier);
+        if (result != null) MysteryGui.openResult(p, result);
     }
 
     // ------------------------------------------------------------------ /sellaxe
@@ -465,7 +497,14 @@ public class EconomyCommands implements CommandExecutor, TabCompleter {
                 }
             }
             case "ah" -> {
-                if (args.length == 1) return filter(List.of("open", "sell", "collect"), args[0]);
+                if (args.length == 1) return filter(List.of("open", "stock", "market", "mystery", "sell", "collect"), args[0]);
+            }
+            case "mystery" -> {
+                if (args.length == 1) {
+                    List<String> ids = new ArrayList<>();
+                    for (MysteryShop.Tier tier : MysteryShop.Tier.values()) ids.add(tier.id());
+                    return filter(ids, args[0]);
+                }
             }
             case "sellaxe" -> {
                 if (args.length == 1) return filter(List.of("apply", "give"), args[0]);

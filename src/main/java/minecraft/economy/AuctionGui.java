@@ -78,6 +78,10 @@ public final class AuctionGui {
                     "§7(expired or cancelled listings)",
                     claims > 0 ? "§a▶ Click to collect" : "§8Nothing to collect"));
             inv.setItem(HEAD, balanceHead(player));
+            inv.setItem(48, item(Material.ENDER_CHEST, "§d§lMystery Shop",
+                    "§7Bet money on a random generated crate", "§7Worse or best - click to open"));
+            inv.setItem(50, item(Material.BEACON, "§b§lSmart Market",
+                    "§7AI stock, demand and restock status", "§7Click to inspect"));
             inv.setItem(51, item(Material.PAPER, "§bHow to sell",
                     "§7Hold an item and run:", "§e/ah sell <price>",
                     "§7Prices accept suffixes: §f1k, 2.5m"));
@@ -107,6 +111,8 @@ public final class AuctionGui {
                     house().collect(player);
                     AuctionGui.open(player, page);
                 }
+                case 48 -> navigate(me, () -> MysteryGui.open(player));
+                case 50 -> navigate(me, () -> AiMarketGui.open(player));
                 case 52 -> { if (page < maxPages) AuctionGui.open(player, page + 1); }
                 case CLOSE -> close();
                 default -> {

@@ -31,8 +31,16 @@ public final class AuctionHouse {
         public final long price;
         public final long created;
         public final long expires;
+        public final boolean synthetic;
+        public final String archetype;
+        public final double[] aiInput;
 
         Listing(long id, UUID seller, String sellerName, ItemStack item, long price, long created, long expires) {
+            this(id, seller, sellerName, item, price, created, expires, false, null, null);
+        }
+
+        Listing(long id, UUID seller, String sellerName, ItemStack item, long price, long created, long expires,
+                boolean synthetic, String archetype, double[] aiInput) {
             this.id = id;
             this.seller = seller;
             this.sellerName = sellerName;
@@ -40,6 +48,9 @@ public final class AuctionHouse {
             this.price = price;
             this.created = created;
             this.expires = expires;
+            this.synthetic = synthetic;
+            this.archetype = archetype;
+            this.aiInput = aiInput;
         }
     }
 
@@ -96,6 +107,20 @@ public final class AuctionHouse {
         return list == null ? 0 : list.size();
     }
 
+    public int syntheticCount() {
+        int c = 0;
+        for (Listing l : listings.values()) if (l.synthetic) c++;
+        return c;
+    }
+
+    public int syntheticCount(String archetype) {
+        int c = 0;
+        for (Listing l : listings.values()) {
+            if (l.synthetic && Objects.equals(l.archetype, archetype)) c++;
+        }
+        return c;
+    }
+
     // ------------------------------------------------------------------ actions
 
     /** Lists the item the player is holding. */
@@ -130,6 +155,15 @@ public final class AuctionHouse {
                 + ChatColor.GOLD + EconomyData.formatMoney(price) + ChatColor.GREEN + ".");
     }
 
+    public long addSynthetic(UUID seller, String sellerName, ItemStack item, long price, String archetype,
+                             double[] aiInput, long durationMillis) {
+        long now = System.currentTimeMillis();
+        Listing l = new Listing(nextId++, seller, sellerName, item.clone(), price, now, now + durationMillis,
+                true, archetype, aiInput);
+        listings.put(l.id, l);
+        return l.id;
+    }
+
     public void buy(Player buyer, long id) {
         Listing l = listings.get(id);
         if (l == null) {
@@ -151,18 +185,24 @@ public final class AuctionHouse {
         }
 
         listings.remove(id);
-        long tax = (long) Math.floor(l.price * taxPercent() / 100.0);
-        long proceeds = l.price - tax;
-        EconomyData.deposit(l.seller, proceeds);
         Items.give(buyer, l.item, l.item.getAmount());
 
         buyer.sendMessage(ChatColor.GREEN + "Bought " + l.item.getAmount() + "x " + prettyName(l.item) + " for "
                 + ChatColor.GOLD + EconomyData.formatMoney(l.price) + ChatColor.GREEN + ".");
-        Player sellerOnline = Bukkit.getPlayer(l.seller);
-        if (sellerOnline != null) {
-            sellerOnline.sendMessage(ChatColor.GREEN + buyer.getName() + " bought your " + l.item.getAmount() + "x "
-                    + prettyName(l.item) + " — you received " + ChatColor.GOLD + EconomyData.formatMoney(proceeds)
-                    + ChatColor.GRAY + (tax > 0 ? " (" + EconomyData.formatMoney(tax) + " tax)" : "") + ChatColor.GREEN + ".");
+
+        if (l.synthetic) {
+            AuctionAi ai = EconomyPlugin.get().ai();
+            if (ai != null) ai.onSold(l);
+        } else {
+            long tax = (long) Math.floor(l.price * taxPercent() / 100.0);
+            long proceeds = l.price - tax;
+            EconomyData.deposit(l.seller, proceeds);
+            Player sellerOnline = Bukkit.getPlayer(l.seller);
+            if (sellerOnline != null) {
+                sellerOnline.sendMessage(ChatColor.GREEN + buyer.getName() + " bought your " + l.item.getAmount() + "x "
+                        + prettyName(l.item) + " — you received " + ChatColor.GOLD + EconomyData.formatMoney(proceeds)
+                        + ChatColor.GRAY + (tax > 0 ? " (" + EconomyData.formatMoney(tax) + " tax)" : "") + ChatColor.GREEN + ".");
+            }
         }
         save();
         EconomyData.save(); // keep money and items consistent on disk
@@ -173,6 +213,10 @@ public final class AuctionHouse {
         Listing l = listings.get(id);
         if (l == null) {
             owner.sendMessage(ChatColor.RED + "That listing is no longer available.");
+            return;
+        }
+        if (l.synthetic) {
+            owner.sendMessage(ChatColor.RED + "That listing belongs to another seller.");
             return;
         }
         if (!l.seller.equals(owner.getUniqueId()) && !owner.hasPermission("economy.admin")) {
@@ -197,6 +241,11 @@ public final class AuctionHouse {
         for (Listing l : listings.values()) if (l.expires <= now) expired.add(l);
         for (Listing l : expired) {
             listings.remove(l.id);
+            if (l.synthetic) {
+                AuctionAi ai = EconomyPlugin.get().ai();
+                if (ai != null) ai.onExpired(l);
+                continue;
+            }
             addClaim(l.seller, l.item);
             Player p = Bukkit.getPlayer(l.seller);
             if (p != null) {
@@ -276,9 +325,12 @@ public final class AuctionHouse {
                     ItemStack item = s.getItemStack("item");
                     if (item == null) continue;
                     long id = Long.parseLong(key);
+                    List<Double> rawInput = s.getDoubleList("ai-input");
+                    double[] aiInput = rawInput.isEmpty() ? null : rawInput.stream().mapToDouble(Double::doubleValue).toArray();
                     listings.put(id, new Listing(id, UUID.fromString(Objects.requireNonNull(s.getString("seller"))),
                             s.getString("seller-name", "?"), item, s.getLong("price"),
-                            s.getLong("created"), s.getLong("expires")));
+                            s.getLong("created"), s.getLong("expires"),
+                            s.getBoolean("synthetic", false), s.getString("archetype", null), aiInput));
                     nextId = Math.max(nextId, id + 1);
                 } catch (RuntimeException ex) {
                     plugin.getLogger().warning("Skipping malformed auction listing '" + key + "'");
@@ -313,6 +365,15 @@ public final class AuctionHouse {
             cfg.set(base + ".price", l.price);
             cfg.set(base + ".created", l.created);
             cfg.set(base + ".expires", l.expires);
+            if (l.synthetic) {
+                cfg.set(base + ".synthetic", true);
+                cfg.set(base + ".archetype", l.archetype);
+                if (l.aiInput != null) {
+                    List<Double> input = new ArrayList<>(l.aiInput.length);
+                    for (double v : l.aiInput) input.add(v);
+                    cfg.set(base + ".ai-input", input);
+                }
+            }
         }
         for (Map.Entry<UUID, List<ItemStack>> e : claims.entrySet()) {
             cfg.set("claims." + e.getKey(), e.getValue());

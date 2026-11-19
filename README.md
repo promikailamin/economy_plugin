@@ -8,13 +8,28 @@ Server-side economy plugin. No client mod needed.
 - Sell chest (`/sell`): drop items in, close, get paid; unsellable items are returned
 - `/sell hand | all | <item> [amount|all]`
 - Auction house (`/ah`, `/ah sell <price>`, `/ah collect`) with expiry and sale tax
+- Smart AI market: synthetic listings with realistic random tools, armour, enchantments,
+  damage, stacks and shulker-box supply crates; per-category stock, restock timers,
+  demand and a small neural network that learns from sales and reprices listings
+- `/ah stock` market overview with live stock/demand/price information
+- Mystery shop (`/mystery`, `/ah mystery`): crate tiers with stock/restock, a neural
+  luck model, dry-streak compensation and weighted loot that can be better or worse
 - Sell Axe: blocks broken with it are sold automatically (`/sellaxe`)
 - Balance sidebar (`/ecosb`, remembered per player), `/baltop`
 - `/pay`, `/fine` (can cause debt), `/eco give|take|set|reset|reload`
 - Amounts accept `1500`, `1,500`, `2.5k`, `1m`, `0.5b`
 
 ## Files created in plugins/Economy/
-`config.yml`, `prices.tsv` (editable, `/eco reload`), `balances.yml`, `auctions.yml`
+`config.yml`, `prices.tsv` (editable, `/eco reload`), `balances.yml`, `auctions.yml`,
+`ai-market.yml` (AI brain + stock state), `mystery.yml` (crate stock + stats)
+
+## AI market and mystery shop
+Configure them under `auction.ai` and `mystery` in `config.yml`. The AI market keeps a
+target number of realistic listings live and restocks categories on a randomized timer.
+The mystery shop uses weighted payout bands; its neural model gradually adjusts luck for
+long dry streaks, while the configured payout factors keep long-term returns below 100%.
+Use `/eco reload` after changing market settings. `/ah stock` shows stock, demand, price
+trend and restock state for every AI category.
 
 ## Build
 `./gradlew build` -> `build/libs/Economy-1.0.0.jar` (Java 21; API jars are in `libs/`).
@@ -47,4 +62,5 @@ python3 .agent-work/tools/generate_gui_docs.py \
 
 ## Permissions
 `economy.bal`, `economy.bal.others`, `economy.pay`, `economy.shop`, `economy.scoreboard`,
-`economy.auction` (all default true); `economy.admin` (default op): `/eco`, `/fine`, `/sellaxe`.
+`economy.auction`, `economy.mystery` (all default true); `economy.admin` (default op):
+`/eco`, `/fine`, `/sellaxe`.
