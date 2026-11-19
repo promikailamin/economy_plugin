@@ -1,0 +1,105 @@
+entries=1549 recipes=1339 changed=517 buy_raised=249 sell_reduced=315
+
+Top buy increases:
+  netherite_block                                      500 -> 10800      sell 400 -> 8640
+  music_disc_5                                        1500 -> 9000       sell 1200 -> 7200
+  diamond_block                                        400 -> 2700       sell 320 -> 2160
+  diamond_chestplate                                   400 -> 2400       sell 320 -> 1920
+  emerald_block                                        300 -> 2250       sell 240 -> 1800
+  diamond_leggings                                     400 -> 2100       sell 320 -> 1680
+  diamond_helmet                                       400 -> 1500       sell 320 -> 1200
+  blue_ice                                              10 -> 810        sell 8 -> 648
+  diamond_boots                                        400 -> 1200       sell 320 -> 960
+  leather_chestplate                                    80 -> 800        sell 64 -> 640
+  raw_gold_block                                        90 -> 810        sell 72 -> 648
+  leather_leggings                                      80 -> 700        sell 64 -> 560
+  gold_block                                           150 -> 720        sell 120 -> 576
+  golden_chestplate                                    150 -> 640        sell 120 -> 512
+  raw_copper_block                                      18 -> 450        sell 14 -> 360
+  leather_helmet                                        80 -> 500        sell 64 -> 400
+  golden_leggings                                      150 -> 560        sell 120 -> 448
+  raw_iron_block                                        45 -> 405        sell 36 -> 324
+  leather_boots                                         80 -> 400        sell 64 -> 320
+  iron_block                                            80 -> 360        sell 64 -> 288
+  cauldron                                              10 -> 280        sell 8 -> 224
+  golden_helmet                                        150 -> 400        sell 120 -> 320
+  iron_chestplate                                       80 -> 320        sell 64 -> 256
+  prismarine_bricks                                     10 -> 225        sell 8 -> 180
+  prismarine_brick_stairs                               12 -> 225        sell 9 -> 180
+  bone_block                                            20 -> 225        sell 16 -> 75
+  hay_block                                             20 -> 225        sell 16 -> 180
+  slime_block                                           20 -> 225        sell 16 -> 180
+  iron_leggings                                         80 -> 280        sell 64 -> 224
+  leather_horse_armor                                  500 -> 700        sell 400 -> 560
+  golden_boots                                         150 -> 320        sell 120 -> 256
+  iron_trapdoor                                         12 -> 160        sell 9 -> 128
+  light_weighted_pressure_plate                         12 -> 160        sell 9 -> 128
+  lapis_block                                           50 -> 180        sell 40 -> 144
+  wolf_armor                                            25 -> 150        sell 20 -> 120
+  iron_helmet                                           80 -> 200        sell 64 -> 160
+  quartz_bricks                                         10 -> 120        sell 8 -> 96
+  quartz_pillar                                         10 -> 120        sell 8 -> 96
+  smooth_quartz                                         10 -> 120        sell 8 -> 96
+  quartz_stairs                                         12 -> 120        sell 9 -> 96
+
+Top sell reductions:
+  bordure_indented_banner_pattern               buy 1000 -> 1000     sell      800 -> 20
+  flower_banner_pattern                         buy 1000 -> 1000     sell      800 -> 20
+  field_masoned_banner_pattern                  buy 1000 -> 1000     sell      800 -> 110
+  spire_armor_trim_smithing_template            buy 3000 -> 3000     sell     2400 -> 2108
+  coast_armor_trim_smithing_template            buy 3000 -> 3000     sell     2400 -> 2110
+  eye_armor_trim_smithing_template              buy 3000 -> 3000     sell     2400 -> 2110
+  netherite_upgrade_smithing_template           buy 3000 -> 3000     sell     2400 -> 2110
+  rib_armor_trim_smithing_template              buy 3000 -> 3000     sell     2400 -> 2110
+  sentry_armor_trim_smithing_template           buy 3000 -> 3000     sell     2400 -> 2110
+  silence_armor_trim_smithing_template          buy 3000 -> 3000     sell     2400 -> 2110
+  snout_armor_trim_smithing_template            buy 3000 -> 3000     sell     2400 -> 2110
+  vex_armor_trim_smithing_template              buy 3000 -> 3000     sell     2400 -> 2110
+  ward_armor_trim_smithing_template             buy 3000 -> 3000     sell     2400 -> 2110
+  wild_armor_trim_smithing_template             buy 3000 -> 3000     sell     2400 -> 2110
+  turtle_helmet                                 buy 500 -> 500      sell      400 -> 125
+  dune_armor_trim_smithing_template             buy 3000 -> 3000     sell     2400 -> 2140
+  host_armor_trim_smithing_template             buy 3000 -> 3000     sell     2400 -> 2200
+  raiser_armor_trim_smithing_template           buy 3000 -> 3000     sell     2400 -> 2200
+  shaper_armor_trim_smithing_template           buy 3000 -> 3000     sell     2400 -> 2200
+  tide_armor_trim_smithing_template             buy 3000 -> 3000     sell     2400 -> 2200
+  wayfinder_armor_trim_smithing_template        buy 3000 -> 3000     sell     2400 -> 2200
+  chiseled_bookshelf                            buy 100 -> 100      sell       80 -> 15
+  calibrated_sculk_sensor                       buy 200 -> 200      sell      160 -> 100
+  sticky_piston                                 buy 100 -> 100      sell       80 -> 35
+  golden_shovel                                 buy 150 -> 150      sell      120 -> 82
+  stone_shovel                                  buy 60 -> 60       sell       48 -> 12
+  bolt_armor_trim_smithing_template             buy 3000 -> 3000     sell     2400 -> 2370
+  exposed_chiseled_copper                       buy 50 -> 50       sell       40 -> 12
+  exposed_cut_copper                            buy 50 -> 50       sell       40 -> 12
+  oxidized_chiseled_copper                      buy 50 -> 50       sell       40 -> 12
+  oxidized_cut_copper                           buy 50 -> 50       sell       40 -> 12
+  waxed_exposed_chiseled_copper                 buy 50 -> 50       sell       40 -> 12
+  waxed_exposed_cut_copper                      buy 50 -> 50       sell       40 -> 12
+  waxed_oxidized_chiseled_copper                buy 50 -> 50       sell       40 -> 12
+  waxed_oxidized_cut_copper                     buy 50 -> 50       sell       40 -> 12
+  waxed_weathered_chiseled_copper               buy 50 -> 50       sell       40 -> 12
+  waxed_weathered_cut_copper                    buy 50 -> 50       sell       40 -> 12
+  weathered_chiseled_copper                     buy 50 -> 50       sell       40 -> 12
+  weathered_cut_copper                          buy 50 -> 50       sell       40 -> 12
+  stone_sword                                   buy 60 -> 60       sell       48 -> 21
+  stone_hoe                                     buy 60 -> 60       sell       48 -> 22
+  iron_shovel                                   buy 80 -> 80       sell       64 -> 42
+  bowl                                          buy 25 -> 25       sell       20 -> 1
+  stick                                         buy 25 -> 25       sell       20 -> 1
+  diamond_shovel                                buy 400 -> 400      sell      320 -> 302
+  sugar                                         buy 25 -> 25       sell       20 -> 2
+  stone_axe                                     buy 60 -> 60       sell       48 -> 32
+  stone_pickaxe                                 buy 60 -> 60       sell       48 -> 32
+  cyan_dye                                      buy 25 -> 25       sell       20 -> 5
+  magenta_dye                                   buy 25 -> 25       sell       20 -> 5
+  orange_dye                                    buy 25 -> 25       sell       20 -> 5
+  pink_dye                                      buy 25 -> 25       sell       20 -> 5
+  red_dye                                       buy 25 -> 25       sell       20 -> 5
+  yellow_dye                                    buy 25 -> 25       sell       20 -> 5
+  acacia_boat                                   buy 30 -> 40       sell       24 -> 10
+  birch_boat                                    buy 30 -> 40       sell       24 -> 10
+  cherry_boat                                   buy 30 -> 40       sell       24 -> 10
+  dark_oak_boat                                 buy 30 -> 40       sell       24 -> 10
+  jungle_boat                                   buy 30 -> 40       sell       24 -> 10
+  mangrove_boat                                 buy 30 -> 40       sell       24 -> 10
