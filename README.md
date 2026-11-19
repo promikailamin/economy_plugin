@@ -17,7 +17,22 @@ Server-side economy plugin. No client mod needed.
 `config.yml`, `prices.tsv` (editable, `/eco reload`), `balances.yml`, `auctions.yml`
 
 ## Build
-`gradle build` -> `build/libs/Economy-1.0.0.jar` (Java 21; API jars are in `libs/`).
+`./gradlew build` -> `build/libs/Economy-1.0.0.jar` (Java 21; API jars are in `libs/`).
+
+GitHub Actions builds on every push/PR with `.github/workflows/build.yml`. Pushes to `main`
+and `v*` tags also create or update a GitHub release containing the plugin jar and
+[`docs/PRICE.md`](docs/PRICE.md).
+
+## Price guide
+[`docs/PRICE.md`](docs/PRICE.md) lists every shop price with its real Minecraft item
+texture. Regenerate it after changing `prices.tsv`:
+
+```bash
+.agent-work/tools/fetch_client_jar.sh 26.3
+python3 .agent-work/tools/generate_price_docs.py \
+  --jar .agent-work/tmp/mc/client.jar --version 26.3 \
+  --prices src/main/resources/prices.tsv --docs docs
+```
 
 ## Permissions
 `economy.bal`, `economy.bal.others`, `economy.pay`, `economy.shop`, `economy.scoreboard`,
