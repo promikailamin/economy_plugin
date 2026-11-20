@@ -164,6 +164,15 @@ public final class AuctionHouse {
         return l.id;
     }
 
+    /** Adds a normal player listing directly (used by integrations and tests). */
+    public long addListing(UUID seller, String sellerName, ItemStack item, long price) {
+        long now = System.currentTimeMillis();
+        Listing l = new Listing(nextId++, seller, sellerName, item.clone(), price, now, now + durationMillis());
+        listings.put(l.id, l);
+        save();
+        return l.id;
+    }
+
     public void buy(Player buyer, long id) {
         Listing l = listings.get(id);
         if (l == null) {
@@ -212,6 +221,39 @@ public final class AuctionHouse {
         }
         save();
         EconomyData.save(); // keep money and items consistent on disk
+    }
+
+    /**
+     * Completes a sale to a synthetic AI buyer. Only player listings can be bought this way.
+     *
+     * @return true when the listing was still available and the seller was paid
+     */
+    public boolean sellToAi(long id, String buyerName) {
+        Listing l = listings.get(id);
+        if (l == null || l.synthetic) return false;
+
+        listings.remove(id);
+        long tax = (long) Math.floor(l.price * taxPercent() / 100.0);
+        long proceeds = l.price - tax;
+        EconomyData.deposit(l.seller, proceeds);
+
+        Player sellerOnline = Bukkit.getPlayer(l.seller);
+        if (sellerOnline != null) {
+            sellerOnline.sendMessage(ChatColor.GREEN + "AI buyer " + ChatColor.AQUA + buyerName + ChatColor.GREEN
+                    + " bought your " + l.item.getAmount() + "x " + prettyName(l.item) + " for "
+                    + ChatColor.GOLD + EconomyData.formatMoney(proceeds)
+                    + ChatColor.GRAY + (tax > 0 ? " (" + EconomyData.formatMoney(tax) + " tax)" : "")
+                    + ChatColor.GREEN + ".");
+        }
+        if (SpecialItems.isSpecial(l.item)) {
+            Bukkit.broadcastMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + buyerName
+                    + ChatColor.RESET + ChatColor.LIGHT_PURPLE + " (AI) claimed the relic " + prettyName(l.item)
+                    + ChatColor.LIGHT_PURPLE + " for " + ChatColor.GOLD + EconomyData.formatMoney(l.price)
+                    + ChatColor.LIGHT_PURPLE + "!");
+        }
+        save();
+        EconomyData.save(); // keep money and items consistent on disk
+        return true;
     }
 
     /** Removes a listing owned by the player and returns the item (or stores it for collection). */

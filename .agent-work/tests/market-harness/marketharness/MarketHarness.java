@@ -2,11 +2,14 @@ package marketharness;
 
 import minecraft.economy.AiItemFactory;
 import minecraft.economy.AuctionAi;
+import minecraft.economy.AuctionHouse;
 import minecraft.economy.EconomyData;
 import minecraft.economy.EconomyPlugin;
 import minecraft.economy.MysteryShop;
 import minecraft.economy.SpecialItems;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +18,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.List;
 import java.util.Random;
+import java.util.UUID;
 
 public final class MarketHarness extends JavaPlugin {
 
@@ -51,6 +55,61 @@ public final class MarketHarness extends JavaPlugin {
                     .append(" sellable=").append(entry != null && entry.sellable())
                     .append('\n');
         }
+        report.append("\nAI buyer checks\n");
+        AuctionHouse house = EconomyPlugin.get().auctions();
+        FileConfiguration cfg = EconomyPlugin.get().getConfig();
+        cfg.set("auction.ai.buyers.enabled", true);
+        cfg.set("auction.ai.buyers.chance-per-listing-per-tick", 1.0D);
+        cfg.set("auction.ai.buyers.max-per-tick", 5);
+        cfg.set("auction.ai.buyers.min-age-minutes", 0);
+        cfg.set("auction.ai.buyers.min-value", 1);
+        cfg.set("auction.ai.buyers.max-price", 1_000_000_000L);
+        cfg.set("auction.ai.buyers.max-value-ratio", 1.75D);
+        if (ai != null) ai.reload();
+
+        UUID seller = UUID.nameUUIDFromBytes("HarnessSeller".getBytes(StandardCharsets.UTF_8));
+        EconomyData.setBalance(seller, 0);
+        ItemStack diamonds = new ItemStack(Material.DIAMOND, 8);
+        long fairValue = AiItemFactory.value(diamonds);
+        long fairPrice = Math.max(1, fairValue);
+        long fairId = house.addListing(seller, "HarnessSeller", diamonds, fairPrice);
+        int syntheticBefore = house.syntheticCount();
+        int bought = ai == null ? 0 : ai.tickBuyers();
+        long earned = EconomyData.getBalance(seller);
+        long expectedTax = (long) Math.floor(fairPrice * cfg.getDouble("auction.tax-percent", 5) / 100.0);
+        long expectedEarned = fairPrice - expectedTax;
+        boolean fairSold = house.get(fairId) == null && bought >= 1;
+        boolean paid = earned == expectedEarned;
+        if (!fairSold) failures++;
+        if (!paid) failures++;
+        if (house.syntheticCount() != syntheticBefore) failures++;
+        long aiBoughtTotal = ai == null ? 0 : ai.totalBoughtByAi();
+        long aiSpentTotal = ai == null ? 0 : ai.totalSpentByAi();
+        if (aiBoughtTotal < 1 || aiSpentTotal < fairPrice) failures++;
+        report.append("fair listing value=").append(fairValue).append(" price=").append(fairPrice)
+                .append(" bought=").append(bought).append(" sellerEarned=").append(earned)
+                .append(" expected=").append(expectedEarned)
+                .append(" aiBoughtTotal=").append(aiBoughtTotal)
+                .append(" aiSpentTotal=").append(aiSpentTotal).append('\n');
+
+        long overpricedId = house.addListing(seller, "HarnessSeller", new ItemStack(Material.DIAMOND, 8),
+                Math.max(1, fairValue * 3));
+        int overpricedBought = ai == null ? 0 : ai.tickBuyers();
+        boolean overpricedKept = house.get(overpricedId) != null;
+        if (!overpricedKept || overpricedBought != 0) failures++;
+        report.append("overpriced listing kept=").append(overpricedKept)
+                .append(" bought=").append(overpricedBought).append('\n');
+
+        cfg.set("auction.ai.buyers.enabled", false);
+        if (ai != null) ai.reload();
+        long disabledId = house.addListing(seller, "HarnessSeller", new ItemStack(Material.DIAMOND, 8),
+                Math.max(1, fairValue));
+        int disabledBought = ai == null ? 0 : ai.tickBuyers();
+        boolean disabledKept = house.get(disabledId) != null;
+        if (!disabledKept || disabledBought != 0) failures++;
+        report.append("disabled buyers kept=").append(disabledKept)
+                .append(" bought=").append(disabledBought).append('\n');
+
         report.append('\n');
         report.append("generation checks\n");
         for (AiItemFactory.Quality quality : AiItemFactory.Quality.values()) {

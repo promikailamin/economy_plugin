@@ -11,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -55,6 +56,13 @@ public final class AuctionAi {
             "ObsidianOllie", "BambooBri", "CopperCody", "AmethystAmy", "DeepslateDana"
     };
 
+    private static final String[] BUYERS = {
+            "CollectorCora", "BidderBea", "GearGoblin", "VaultVera", "MerchantMilo",
+            "AuctionAddict", "LootLarry", "DealDana", "BarterBen", "TraderTess",
+            "HaggleHank", "CofferCleo", "StashSteve", "BidBotBella", "EmporiumEli",
+            "PursePenny"
+    };
+
     private static final int INPUTS = 6;
     private static final int HIDDEN = 9;
     private static final int OUTPUTS = 3;
@@ -79,6 +87,15 @@ public final class AuctionAi {
     private int specialMinted = 0;
     private double keepInventoryHelmetChance = 0.02;
     private double stockScale = 1.0;
+    private boolean buyersEnabled = true;
+    private double buyerChance = 0.03;
+    private int buyerMaxPerTick = 2;
+    private long buyerMinAgeMillis = 10L * 60_000L;
+    private long buyerMinValue = 1_000L;
+    private long buyerMaxPrice = 1_000_000_000L;
+    private double buyerMaxValueRatio = 1.75;
+    private long aiBought = 0;
+    private long aiSpent = 0;
 
     private static final class Stock {
         final Spec spec;
@@ -160,6 +177,16 @@ public final class AuctionAi {
         maxSpecialRelics = Math.max(0, cfg.getInt("auction.ai.max-special-relics", 24));
         keepInventoryHelmetChance = Math.max(0, Math.min(1,
                 cfg.getDouble("auction.ai.keep-inventory-helmet-chance", 0.02)));
+        buyersEnabled = cfg.getBoolean("auction.ai.buyers.enabled", true);
+        buyerChance = Math.max(0, Math.min(1,
+                cfg.getDouble("auction.ai.buyers.chance-per-listing-per-tick", 0.03)));
+        buyerMaxPerTick = Math.max(1, Math.min(50,
+                cfg.getInt("auction.ai.buyers.max-per-tick", 2)));
+        buyerMinAgeMillis = Math.max(0, cfg.getLong("auction.ai.buyers.min-age-minutes", 10)) * 60_000L;
+        buyerMinValue = Math.max(0, cfg.getLong("auction.ai.buyers.min-value", 1_000L));
+        buyerMaxPrice = Math.max(1, cfg.getLong("auction.ai.buyers.max-price", 1_000_000_000L));
+        buyerMaxValueRatio = Math.max(1.0,
+                cfg.getDouble("auction.ai.buyers.max-value-ratio", 1.75));
         stockScale = Math.max(1.0, (double) targetListings / BASE_CAPACITY_TOTAL);
         resizeStocks();
     }
@@ -194,8 +221,64 @@ public final class AuctionAi {
             }
         }
         int created = fill(now);
+        int bought = buyPlayerListings(now);
         heat = Math.max(0.08, heat * 0.985);
-        if (changed || created > 0) save();
+        if (changed || created > 0 || bought > 0) save();
+    }
+
+    /** Runs the AI buyer step immediately. Used by the market tick and integration tests. */
+    public int tickBuyers() {
+        int bought = buyPlayerListings(System.currentTimeMillis());
+        if (bought > 0) save();
+        return bought;
+    }
+
+    private int buyPlayerListings(long now) {
+        if (!enabled || !buyersEnabled || buyerChance <= 0) return 0;
+
+        List<AuctionHouse.Listing> candidates = new ArrayList<>();
+        for (AuctionHouse.Listing listing : house.all()) {
+            if (!listing.synthetic) candidates.add(listing);
+        }
+        if (candidates.isEmpty()) return 0;
+
+        Collections.shuffle(candidates, rng);
+        int bought = 0;
+        for (AuctionHouse.Listing listing : candidates) {
+            if (bought >= buyerMaxPerTick) break;
+            if (now - listing.created < buyerMinAgeMillis) continue;
+
+            long value = Math.max(1L, AiItemFactory.value(listing.item));
+            if (value < buyerMinValue) continue;
+            if (listing.price <= 0 || listing.price > buyerMaxPrice) continue;
+
+            double ratio = (double) listing.price / value;
+            if (ratio > buyerMaxValueRatio) continue;
+            if (rng.nextDouble() >= buyChance(ratio, listing, now)) continue;
+
+            String buyer = BUYERS[rng.nextInt(BUYERS.length)];
+            if (house.sellToAi(listing.id, buyer)) {
+                bought++;
+                aiBought++;
+                aiSpent += listing.price;
+                heat = NeuralNetwork.clamp01(heat + 0.02);
+            }
+        }
+        return bought;
+    }
+
+    private double buyChance(double priceToValue, AuctionHouse.Listing listing, long now) {
+        double chance = buyerChance;
+        if (priceToValue <= 0.60) chance *= 2.0;
+        else if (priceToValue <= 0.85) chance *= 1.5;
+        else if (priceToValue <= 1.10) chance *= 1.0;
+        else if (priceToValue <= 1.40) chance *= 0.60;
+        else chance *= 0.25;
+
+        if (SpecialItems.isSpecial(listing.item)) chance *= 1.25;
+        double ageHours = Math.max(0, now - listing.created) / 3_600_000.0;
+        chance *= 1.0 + Math.min(1.5, ageHours * 0.15);
+        return NeuralNetwork.clamp01(chance);
     }
 
     private int fill(long now) {
@@ -371,6 +454,18 @@ public final class AuctionAi {
         return specialMinted;
     }
 
+    public boolean buyersEnabled() {
+        return buyersEnabled;
+    }
+
+    public long totalBoughtByAi() {
+        return aiBought;
+    }
+
+    public long totalSpentByAi() {
+        return aiSpent;
+    }
+
     public long totalSold() {
         long total = 0;
         for (Stock stock : stocks.values()) total += stock.sold;
@@ -433,6 +528,8 @@ public final class AuctionAi {
         }
         heat = NeuralNetwork.clamp01(cfg.getDouble("heat", heat));
         specialMinted = Math.max(0, cfg.getInt("special-minted", 0));
+        aiBought = Math.max(0, cfg.getLong("buyers.bought", 0));
+        aiSpent = Math.max(0, cfg.getLong("buyers.spent", 0));
     }
 
     public void save() {
@@ -444,6 +541,8 @@ public final class AuctionAi {
         cfg.set("brain.trained", brain.trained());
         cfg.set("heat", heat);
         cfg.set("special-minted", specialMinted);
+        cfg.set("buyers.bought", aiBought);
+        cfg.set("buyers.spent", aiSpent);
         for (Stock stock : stocks.values()) {
             String base = "stocks." + stock.spec.id();
             cfg.set(base + ".stock", stock.stock);

@@ -1,0 +1,84 @@
+ai market scale checks
+target=1000 active=1000
+
+head trade checks
+player_head buyable=false sellable=true
+creeper_head buyable=false sellable=true
+piglin_head buyable=false sellable=true
+skeleton_skull buyable=false sellable=true
+wither_skeleton_skull buyable=false sellable=true
+zombie_head buyable=false sellable=true
+
+AI buyer checks
+fair listing value=192000 price=192000 bought=1 sellerEarned=182400 expected=182400 aiBoughtTotal=1 aiSpentTotal=192000
+overpriced listing kept=true bought=0
+disabled buyers kept=true bought=0
+
+generation checks
+junk COMMON avgValue=35371 amount=1-32
+supplies COMMON avgValue=83351 amount=4-35
+tools COMMON avgValue=1735 amount=1-1
+armor COMMON avgValue=31072 amount=1-1
+enchanted_tools COMMON avgValue=1834 amount=1-1
+enchanted_armor COMMON avgValue=31014 amount=1-1
+weapons COMMON avgValue=1685 amount=1-1
+crates COMMON avgValue=472550 amount=1-1
+books COMMON avgValue=62025 amount=1-1
+treasures COMMON avgValue=234100 amount=1-20
+special COMMON avgValue=24829814 amount=1-1
+junk UNCOMMON avgValue=85978 amount=1-39
+supplies UNCOMMON avgValue=195463 amount=4-45
+tools UNCOMMON avgValue=3680 amount=1-1
+armor UNCOMMON avgValue=29273 amount=1-1
+enchanted_tools UNCOMMON avgValue=3823 amount=1-1
+enchanted_armor UNCOMMON avgValue=28361 amount=1-1
+weapons UNCOMMON avgValue=1962 amount=1-1
+crates UNCOMMON avgValue=482932 amount=1-1
+books UNCOMMON avgValue=73887 amount=1-1
+treasures UNCOMMON avgValue=233800 amount=1-21
+special UNCOMMON avgValue=23354328 amount=1-1
+junk RARE avgValue=309924 amount=1-28
+supplies RARE avgValue=87463 amount=4-41
+tools RARE avgValue=8121 amount=1-1
+armor RARE avgValue=32905 amount=1-1
+enchanted_tools RARE avgValue=6796 amount=1-1
+enchanted_armor RARE avgValue=33001 amount=1-1
+weapons RARE avgValue=80448 amount=1-1
+crates RARE avgValue=892488 amount=1-1
+books RARE avgValue=83150 amount=1-1
+treasures RARE avgValue=508950 amount=1-19
+special RARE avgValue=34202094 amount=1-1
+junk EPIC avgValue=127325 amount=1-26
+supplies EPIC avgValue=72713 amount=4-41
+tools EPIC avgValue=19356 amount=1-1
+armor EPIC avgValue=58345 amount=1-1
+enchanted_tools EPIC avgValue=24097 amount=1-1
+enchanted_armor EPIC avgValue=76739 amount=1-1
+weapons EPIC avgValue=183059 amount=1-1
+crates EPIC avgValue=915889 amount=1-1
+books EPIC avgValue=92737 amount=1-1
+treasures EPIC avgValue=581450 amount=1-23
+special EPIC avgValue=34172065 amount=1-1
+junk LEGENDARY avgValue=136481 amount=1-32
+supplies LEGENDARY avgValue=155837 amount=4-38
+tools LEGENDARY avgValue=33955 amount=1-1
+armor LEGENDARY avgValue=124449 amount=1-1
+enchanted_tools LEGENDARY avgValue=33412 amount=1-1
+enchanted_armor LEGENDARY avgValue=98066 amount=1-1
+weapons LEGENDARY avgValue=278080 amount=1-1
+crates LEGENDARY avgValue=1336267 amount=1-1
+books LEGENDARY avgValue=97125 amount=1-1
+treasures LEGENDARY avgValue=885750 amount=1-22
+special LEGENDARY avgValue=19099485 amount=1-1
+
+keep inventory helmet checks
+generated 50 helmets, failures so far=0
+
+crate payout checks
+scrap cost=1000 rolls=4000 jackpots=91 avg=913 return=91.3% min=296 max=7687
+adventurer cost=10000 rolls=4000 jackpots=111 avg=8713 return=87.1% min=800 max=115000
+treasure cost=50000 rolls=4000 jackpots=101 avg=41789 return=83.6% min=5038 max=625914
+relic cost=200000 rolls=4000 jackpots=126 avg=162213 return=81.1% min=20308 max=1411729
+neural cost=1000000 rolls=4000 jackpots=136 avg=774542 return=77.5% min=177483 max=10129370
+
+failures=0

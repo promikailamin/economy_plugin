@@ -44,6 +44,24 @@ auction:
     # 0.02 means 2 in 100 relics. Set 0 to make it unobtainable from the market.
     keep-inventory-helmet-chance: 0.02
 
+    # AI buyers occasionally purchase listings created by players. They only buy
+    # listings that are reasonably priced compared with the item's appraised value.
+    buyers:
+      enabled: true
+      # Base chance per player listing on each 30 second market tick. Good deals
+      # get a bonus and listings become more attractive as they age.
+      chance-per-listing-per-tick: 0.03
+      # Hard cap so a busy auction house cannot be bought out instantly.
+      max-per-tick: 2
+      # Give players time to advertise before an AI can buy the listing.
+      min-age-minutes: 10
+      # Ignore very cheap items and listings above this price.
+      min-value: 1000
+      max-price: 1000000000
+      # Maximum price / appraised value. Listings priced above this are ignored.
+      # 1.75 means the AI may overpay by up to 75% on a good day.
+      max-value-ratio: 1.75
+
 mystery:
   enabled: true
   # Crates available per tier before they sell out and need a restock.

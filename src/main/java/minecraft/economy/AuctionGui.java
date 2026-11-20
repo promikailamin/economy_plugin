@@ -84,7 +84,8 @@ public final class AuctionGui {
                     "§7AI stock, demand and restock status", "§7Click to inspect"));
             inv.setItem(51, item(Material.PAPER, "§bHow to sell",
                     "§7Hold an item and run:", "§e/ah sell <price>",
-                    "§7Prices accept suffixes: §f1k, 2.5m"));
+                    "§7Prices accept suffixes: §f1k, 2.5m",
+                    "§7Fair-priced listings may be bought by AI buyers."));
             if (page < maxPages) inv.setItem(52, item(Material.LIME_STAINED_GLASS_PANE, "§aNext Page »", "§7Page " + (page + 1)));
             inv.setItem(CLOSE, item(Material.BARRIER, "§cClose", "§7Close this menu"));
             fillEmpty(inv, 45, 54, Material.GRAY_STAINED_GLASS_PANE);

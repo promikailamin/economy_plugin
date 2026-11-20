@@ -12,6 +12,8 @@ Server-side economy plugin. No client mod needed.
 - Smart AI market: up to 1000 synthetic listings by default with realistic random tools,
   armour, enchantments, damage, stacks and shulker-box supply crates; per-category stock,
   restock timers, demand and a small neural network that learns from sales and reprices listings
+- AI buyers that occasionally purchase reasonably priced listings created by players,
+  paying the seller (minus tax) and reporting the sale in chat
 - `/ah stock` market overview with live stock/demand/price information
 - Limited special relics in the AI market: 3x3/4x4/5x5 area miners (pickaxe and
   shovel), vein miner, tree miner, level 10-15 enchanted books and gear, eternal
@@ -26,7 +28,7 @@ Server-side economy plugin. No client mod needed.
 
 ## Files created in plugins/Economy/
 `config.yml`, `prices.tsv` (editable, `/eco reload`), `balances.yml`, `auctions.yml`,
-`ai-market.yml` (AI brain + stock state), `mystery.yml` (crate stock + stats)
+`ai-market.yml` (AI brain, stock and buyer stats), `mystery.yml` (crate stock + stats)
 
 ## AI market and mystery shop
 Configure them under `auction.ai` and `mystery` in `config.yml`. The AI market keeps a
@@ -37,6 +39,12 @@ The mystery shop uses weighted payout bands; its neural model gradually adjusts 
 long dry streaks, while the configured payout factors keep long-term returns below 100%.
 Use `/eco reload` after changing market settings. `/ah stock` shows stock, demand, price
 trend and restock state for every AI category.
+
+AI buyers run on the same 30-second market tick. They only consider player-created
+listings, skip items below `min-value` or above `max-price`, and ignore listings priced
+more than `max-value-ratio` times their appraised value. The chance per listing can be
+tuned with `auction.ai.buyers.chance-per-listing-per-tick`; sales pay the seller the
+normal proceeds after auction tax. Buyer statistics are stored in `ai-market.yml`.
 
 ## Build
 `./gradlew build` -> `build/libs/Economy-1.0.0.jar` (Java 21; API jars are in `libs/`).
