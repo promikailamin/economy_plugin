@@ -2,22 +2,27 @@ package minecraft.economy;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
+import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.Container;
+import org.bukkit.block.BlockState;
+import org.bukkit.block.Chest;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.Collection;
-
 /**
- * Blocks broken with a Sell Axe have their sellable drops sold instantly.
- * Drops the shop doesn't buy still drop on the ground as normal.
+ * Breaking a chest with a Sell Axe cancels the break, keeps the chest in place and sells
+ * everything inside it. A double chest is sold as one combined inventory. Blocks other
+ * than chests break normally.
  */
 public final class SellAxeListener implements Listener {
+
+    public record SaleResult(int sold, long earned) {
+    }
 
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
     public void onBlockBreak(BlockBreakEvent event) {
@@ -25,36 +30,50 @@ public final class SellAxeListener implements Listener {
         if (player.getGameMode() == GameMode.CREATIVE || player.getGameMode() == GameMode.SPECTATOR) return;
 
         ItemStack tool = player.getInventory().getItemInMainHand();
-        if (!SellAxe.isAxe(tool) || !SellAxe.isSellAxe(tool)) return;
+        if (!SellAxe.isSellAxe(tool)) return;
 
         Block block = event.getBlock();
-        // Never swallow the contents of chests, shulker boxes, etc.
-        if (block.getState() instanceof Container) return;
+        if (!isChest(block.getType())) return;
 
-        Collection<ItemStack> drops = block.getDrops(tool, player);
-        if (drops.isEmpty()) return;
+        BlockState state = block.getState();
+        if (!(state instanceof Chest chest)) return;
 
+        // Keep the chest itself; only its contents are sold.
+        event.setCancelled(true);
+
+        // For a double chest getInventory() returns the combined inventory of both halves.
+        SaleResult result = sellChestContents(chest.getInventory());
+        if (result.sold() == 0) {
+            player.sendActionBar(ChatColor.YELLOW + "No sellable items in this chest.");
+            return;
+        }
+
+        EconomyData.deposit(player.getUniqueId(), result.earned());
+        player.sendActionBar(ChatColor.GREEN + "Auto-sold " + result.sold() + " item"
+                + (result.sold() == 1 ? "" : "s") + " for " + EconomyData.formatMoney(result.earned()));
+    }
+
+    /**
+     * Sells every sellable stack in {@code inventory}, leaving items the shop does not buy
+     * untouched. Returns how many items were sold and how much money they are worth.
+     */
+    public static SaleResult sellChestContents(Inventory inventory) {
+        ItemStack[] contents = inventory.getContents();
         long earned = 0;
         int sold = 0;
-        java.util.List<ItemStack> keep = new java.util.ArrayList<>();
-        for (ItemStack drop : drops) {
-            if (drop == null || drop.getAmount() <= 0) continue;
-            EconomyData.ShopEntry entry = Items.sellEntry(drop);
-            if (entry == null) {
-                keep.add(drop);
-            } else {
-                earned += entry.sell * drop.getAmount();
-                sold += drop.getAmount();
-            }
+        for (int i = 0; i < contents.length; i++) {
+            ItemStack item = contents[i];
+            if (item == null || item.getType().isAir() || item.getAmount() <= 0) continue;
+            EconomyData.ShopEntry entry = Items.sellEntry(item);
+            if (entry == null) continue; // items the shop doesn't buy stay in the chest
+            earned += entry.sell * item.getAmount();
+            sold += item.getAmount();
+            inventory.setItem(i, null);
         }
-        if (sold == 0) return; // nothing sellable: leave vanilla behaviour untouched
+        return new SaleResult(sold, earned);
+    }
 
-        event.setDropItems(false);
-        for (ItemStack k : keep) {
-            block.getWorld().dropItemNaturally(block.getLocation().add(0.5, 0.5, 0.5), k);
-        }
-        EconomyData.deposit(player.getUniqueId(), earned);
-        player.sendActionBar(ChatColor.GREEN + "Auto-sold " + sold + " item" + (sold == 1 ? "" : "s") + " for "
-                + EconomyData.formatMoney(earned));
+    private static boolean isChest(Material type) {
+        return type == Material.CHEST || type == Material.TRAPPED_CHEST;
     }
 }

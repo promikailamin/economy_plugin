@@ -45,7 +45,8 @@ public final class SellAxe {
         meta.setEnchantmentGlintOverride(true);
         List<String> lore = meta.getLore() == null ? new ArrayList<>() : new ArrayList<>(meta.getLore());
         if (!lore.contains(LORE)) lore.add(0, LORE);
-        lore.add("§7Broken blocks are sold automatically.");
+        lore.add("§7Breaking a chest sells its contents");
+        lore.add("§7and keeps the chest in place.");
         meta.setLore(lore);
         item.setItemMeta(meta);
         return true;

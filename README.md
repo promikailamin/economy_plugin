@@ -22,7 +22,8 @@ Server-side economy plugin. No client mod needed.
   Keep Inventory Helmet
 - Mystery shop (`/mystery`, `/ah mystery`): crate tiers with stock/restock, a neural
   luck model, dry-streak compensation and weighted loot that can be better or worse
-- Sell Axe: blocks broken with it are sold automatically (`/sellaxe`)
+- Sell Axe: breaking a chest with it keeps the chest in place and sells its contents
+  (double chests included); other blocks break normally (`/sellaxe`)
 - Balance sidebar (`/ecosb`, remembered per player), `/baltop`
 - `/pay`, `/fine` (can cause debt), `/eco give|take|set|reset|reload`
 - Amounts accept `1500`, `1,500`, `2.5k`, `1m`, `0.5b`

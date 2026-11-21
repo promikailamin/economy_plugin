@@ -1,0 +1,9 @@
+Sell Axe chest checks
+single sold=13 earned=72080 expected=72080 soldRemoved=true unsellableKept=true chestStillThere=true
+double combinedSize=54 sold=10 earned=96048 expected=96048 bothCleared=true blocksStillThere=true
+trapped sold=5 earned=40 expected=40 cleared=true
+event chest cancelled=true remains=true emptied=true paid=true balance=48000 expected=48000
+event non-chest normalBreak=true
+event normalAxe normalBreak=true chestKept=true
+
+failures=0
