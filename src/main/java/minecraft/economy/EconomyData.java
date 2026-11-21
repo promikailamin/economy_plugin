@@ -34,6 +34,7 @@ public final class EconomyData {
     private static final Map<UUID, Long> BALANCES = new ConcurrentHashMap<>();
     private static final Map<UUID, String> NAMES = new ConcurrentHashMap<>();
     private static final Set<UUID> SCOREBOARD = ConcurrentHashMap.newKeySet();
+    private static final Map<UUID, AuctionHouse.SortMode> AUCTION_SORT = new ConcurrentHashMap<>();
     private static final AtomicBoolean DIRTY = new AtomicBoolean(false);
 
     private EconomyData() {
@@ -346,6 +347,17 @@ public final class EconomyData {
         DIRTY.set(true);
     }
 
+    // ------------------------------------------------------------------ auction filter preference
+
+    public static AuctionHouse.SortMode auctionSort(UUID id) {
+        return AUCTION_SORT.getOrDefault(id, AuctionHouse.SortMode.SORTED);
+    }
+
+    public static void setAuctionSort(UUID id, AuctionHouse.SortMode mode) {
+        AUCTION_SORT.put(id, mode == null ? AuctionHouse.SortMode.SORTED : mode);
+        DIRTY.set(true);
+    }
+
     // ------------------------------------------------------------------ persistence
 
     private static File balancesFile() {
@@ -356,6 +368,7 @@ public final class EconomyData {
         BALANCES.clear();
         NAMES.clear();
         SCOREBOARD.clear();
+        AUCTION_SORT.clear();
         File f = balancesFile();
         if (!f.exists()) return;
 
@@ -371,6 +384,8 @@ public final class EconomyData {
                 String name = s.getString("name");
                 if (name != null) NAMES.put(id, name);
                 if (s.getBoolean("scoreboard", false)) SCOREBOARD.add(id);
+                String sort = s.getString("auction-sort");
+                if (sort != null) AUCTION_SORT.put(id, AuctionHouse.SortMode.byName(sort));
             } catch (IllegalArgumentException ignored) {
                 // skip malformed uuid
             }
@@ -386,6 +401,10 @@ public final class EconomyData {
             String name = NAMES.get(e.getKey());
             if (name != null) cfg.set(base + ".name", name);
             if (SCOREBOARD.contains(e.getKey())) cfg.set(base + ".scoreboard", true);
+            AuctionHouse.SortMode sort = AUCTION_SORT.get(e.getKey());
+            if (sort != null && sort != AuctionHouse.SortMode.SORTED) {
+                cfg.set(base + ".auction-sort", sort.name());
+            }
         }
         return cfg.saveToString();
     }

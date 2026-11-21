@@ -212,17 +212,17 @@ black_cushion	Black Cushion	3000	2400	yes	yes	misc
 
 black_dye	Black Dye	2500	1000	yes	yes	misc	
 
-black_glazed_terracotta	Black Glazed Terracotta	1500	1200	yes	yes	blocks	
+black_glazed_terracotta	Black Glazed Terracotta	10	8	yes	yes	blocks	
 
 black_harness	Black Harness	10000	8000	yes	yes	misc	
 
-black_shulker_box	Black Shulker Box	100000	80000	yes	yes	end	
+black_shulker_box	Black Shulker Box	10000	8000	yes	yes	end	
 
 black_stained_glass	Black Stained Glass	1000	135	yes	yes	blocks	
 
 black_stained_glass_pane	Black Stained Glass Pane	1000	50	yes	yes	blocks	
 
-black_terracotta	Black Terracotta	1500	1200	yes	yes	blocks	
+black_terracotta	Black Terracotta	10	8	yes	yes	blocks	
 
 black_wool	Black Wool	1000	800	yes	yes	blocks	
 
@@ -272,7 +272,7 @@ blue_dye	Blue Dye	2500	1000	yes	yes	misc
 
 blue_egg	Blue Egg	2500	2000	yes	yes	misc	
 
-blue_glazed_terracotta	Blue Glazed Terracotta	1500	1200	yes	yes	blocks	
+blue_glazed_terracotta	Blue Glazed Terracotta	10	8	yes	yes	blocks	
 
 blue_harness	Blue Harness	10000	8000	yes	yes	misc	
 
@@ -280,13 +280,13 @@ blue_ice	Blue Ice	81000	64800	yes	yes	blocks
 
 blue_orchid	Blue Orchid	1000	800	yes	yes	blocks	
 
-blue_shulker_box	Blue Shulker Box	100000	80000	yes	yes	end	
+blue_shulker_box	Blue Shulker Box	10000	8000	yes	yes	end	
 
 blue_stained_glass	Blue Stained Glass	1000	135	yes	yes	blocks	
 
 blue_stained_glass_pane	Blue Stained Glass Pane	1000	50	yes	yes	blocks	
 
-blue_terracotta	Blue Terracotta	1500	1200	yes	yes	blocks	
+blue_terracotta	Blue Terracotta	10	8	yes	yes	blocks	
 
 blue_wool	Blue Wool	1000	800	yes	yes	blocks	
 
@@ -330,15 +330,15 @@ brewer_pottery_sherd	Brewer Pottery Sherd	50000	40000	yes	yes	misc
 
 brewing_stand	Brewing Stand	1000	800	yes	yes	blocks	
 
-brick	Brick	2500	2000	yes	yes	misc	
+brick	Brick	2	1	yes	yes	misc	
 
-brick_slab	Brick Slab	5000	4000	yes	yes	blocks	
+brick_slab	Brick Slab	10	4	yes	yes	blocks	
 
-brick_stairs	Brick Stairs	10000	8000	yes	yes	blocks	
+brick_stairs	Brick Stairs	10	8	yes	yes	blocks	
 
-brick_wall	Brick Wall	10000	8000	yes	yes	blocks	
+brick_wall	Brick Wall	10	8	yes	yes	blocks	
 
-bricks	Bricks	10000	8000	yes	yes	blocks	
+bricks	Bricks	10	8	yes	yes	blocks	
 
 brown_banner	Brown Banner	3000	2400	yes	yes	blocks	
 
@@ -364,7 +364,7 @@ brown_dye	Brown Dye	2500	1000	yes	yes	misc
 
 brown_egg	Brown Egg	2500	2000	yes	yes	misc	
 
-brown_glazed_terracotta	Brown Glazed Terracotta	1500	1200	yes	yes	blocks	
+brown_glazed_terracotta	Brown Glazed Terracotta	10	8	yes	yes	blocks	
 
 brown_harness	Brown Harness	10000	8000	yes	yes	misc	
 
@@ -372,13 +372,13 @@ brown_mushroom	Brown Mushroom	1000	800	yes	yes	blocks
 
 brown_mushroom_block	Brown Mushroom Block	2000	1600	yes	yes	blocks	
 
-brown_shulker_box	Brown Shulker Box	100000	80000	yes	yes	end	
+brown_shulker_box	Brown Shulker Box	10000	8000	yes	yes	end	
 
 brown_stained_glass	Brown Stained Glass	1000	135	yes	yes	blocks	
 
 brown_stained_glass_pane	Brown Stained Glass Pane	1000	50	yes	yes	blocks	
 
-brown_terracotta	Brown Terracotta	1500	1200	yes	yes	blocks	
+brown_terracotta	Brown Terracotta	10	8	yes	yes	blocks	
 
 brown_wool	Brown Wool	1000	800	yes	yes	blocks	
 
@@ -552,9 +552,9 @@ cinnabar_stairs	Cinnabar Stairs	1200	900	yes	yes	blocks
 
 cinnabar_wall	Cinnabar Wall	1200	900	yes	yes	blocks	
 
-clay	Clay	10000	8000	yes	yes	blocks	
+clay	Clay	10	8	yes	yes	blocks	
 
-clay_ball	Clay Ball	2500	2000	yes	yes	misc	
+clay_ball	Clay Ball	2	1	yes	yes	misc	
 
 clock	Clock	2500	2000	yes	yes	misc	
 
@@ -565,7 +565,7 @@ coal	Coal	1000	800	yes	yes	misc
 coal_block	Block of Coal	9000	7200	yes	yes	ores	
 coal_ore	Coal Ore	2000	1600	yes	yes	ores	
 
-coarse_dirt	Coarse Dirt	1000	505	yes	yes	blocks	
+coarse_dirt	Coarse Dirt	10	8	yes	yes	blocks	
 
 coast_armor_trim_smithing_template	Smithing Template	300000	210010	yes	yes	misc	
 
@@ -769,17 +769,17 @@ cyan_cushion	Cyan Cushion	3000	2400	yes	yes	misc
 
 cyan_dye	Cyan Dye	2500	500	yes	yes	misc	
 
-cyan_glazed_terracotta	Cyan Glazed Terracotta	1500	1200	yes	yes	blocks	
+cyan_glazed_terracotta	Cyan Glazed Terracotta	10	8	yes	yes	blocks	
 
 cyan_harness	Cyan Harness	10000	8000	yes	yes	misc	
 
-cyan_shulker_box	Cyan Shulker Box	100000	80000	yes	yes	end	
+cyan_shulker_box	Cyan Shulker Box	10000	8000	yes	yes	end	
 
 cyan_stained_glass	Cyan Stained Glass	1000	72	yes	yes	blocks	
 
 cyan_stained_glass_pane	Cyan Stained Glass Pane	1000	27	yes	yes	blocks	
 
-cyan_terracotta	Cyan Terracotta	1500	1200	yes	yes	blocks	
+cyan_terracotta	Cyan Terracotta	10	8	yes	yes	blocks	
 
 cyan_wool	Cyan Wool	1000	800	yes	yes	blocks	
 
@@ -871,7 +871,7 @@ dead_tube_coral_fan	Dead Tube Coral Fan	1000	800	yes	yes	blocks
 
 debug_stick	Debug Stick	0	500000	no	no	creative	creative only
 
-decorated_pot	Decorated Pot	10000	8000	yes	yes	blocks	
+decorated_pot	Decorated Pot	10	8	yes	yes	blocks	
 
 deepslate	Deepslate	1000	800	yes	yes	blocks	
 
@@ -940,9 +940,9 @@ diorite_stairs	Diorite Stairs	1200	900	yes	yes	blocks
 
 diorite_wall	Diorite Wall	1200	900	yes	yes	blocks	
 
-dirt	Dirt	1000	800	yes	yes	blocks	
+dirt	Dirt	10	8	yes	yes	blocks	
 
-dirt_path	Dirt Path	1000	800	yes	yes	blocks	
+dirt_path	Dirt Path	10	8	yes	yes	blocks	
 
 disc_fragment_5	Disc Fragment	100000	80000	yes	yes	misc	
 
@@ -989,7 +989,7 @@ enchanted_book	Enchanted Book	0	50000	yes	no	auction	auction only
 
 enchanted_golden_apple	Enchanted Golden Apple	200000	160000	yes	yes	food	
 
-enchanting_table	Enchanting Table	1000	800	yes	yes	blocks	
+enchanting_table	Enchanting Table	100000	50000	yes	yes	blocks	
 
 end_crystal	End Crystal	2500	2000	yes	yes	end	
 
@@ -1057,7 +1057,7 @@ exposed_lightning_rod	Exposed Lightning Rod	1000	800	yes	yes	blocks
 
 eye_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-farmland	Farmland	1000	800	yes	yes	blocks	
+farmland	Farmland	10	8	yes	yes	blocks	
 
 feather	Feather	2500	2000	yes	yes	misc	
 
@@ -1065,7 +1065,7 @@ fermented_spider_eye	Fermented Spider Eye	2500	2000	yes	yes	misc
 
 fern	Fern	1000	800	yes	yes	blocks	
 
-field_masoned_banner_pattern	Field Masoned Banner Pattern	100000	11000	yes	yes	misc	
+field_masoned_banner_pattern	Field Masoned Banner Pattern	100000	1000	yes	yes	misc	
 
 filled_map	Map	2500	2000	yes	yes	misc	
 
@@ -1099,7 +1099,7 @@ flow_pottery_sherd	Flow Pottery Sherd	50000	40000	yes	yes	misc
 
 flower_banner_pattern	Banner Pattern	100000	2000	yes	yes	misc	
 
-flower_pot	Flower Pot	7500	6000	yes	yes	blocks	
+flower_pot	Flower Pot	10	6	yes	yes	blocks	
 
 flowering_azalea	Flowering Azalea	1000	800	yes	yes	blocks	
 
@@ -1187,7 +1187,7 @@ granite_stairs	Granite Stairs	1200	900	yes	yes	blocks
 
 granite_wall	Granite Wall	1200	900	yes	yes	blocks	
 
-grass_block	Grass Block	2000	1600	yes	yes	blocks	
+grass_block	Grass Block	10	8	yes	yes	blocks	
 
 gravel	Gravel	10	8	yes	yes	blocks	
 
@@ -1213,17 +1213,17 @@ gray_cushion	Gray Cushion	3000	2400	yes	yes	misc
 
 gray_dye	Gray Dye	2500	900	yes	yes	misc	
 
-gray_glazed_terracotta	Gray Glazed Terracotta	1500	1200	yes	yes	blocks	
+gray_glazed_terracotta	Gray Glazed Terracotta	10	8	yes	yes	blocks	
 
 gray_harness	Gray Harness	10000	8000	yes	yes	misc	
 
-gray_shulker_box	Gray Shulker Box	100000	80000	yes	yes	end	
+gray_shulker_box	Gray Shulker Box	10000	8000	yes	yes	end	
 
 gray_stained_glass	Gray Stained Glass	1000	124	yes	yes	blocks	
 
 gray_stained_glass_pane	Gray Stained Glass Pane	1000	46	yes	yes	blocks	
 
-gray_terracotta	Gray Terracotta	1500	1200	yes	yes	blocks	
+gray_terracotta	Gray Terracotta	10	8	yes	yes	blocks	
 
 gray_wool	Gray Wool	1000	800	yes	yes	blocks	
 
@@ -1253,17 +1253,17 @@ green_cushion	Green Cushion	3000	2400	yes	yes	misc
 
 green_dye	Green Dye	2500	1000	yes	yes	misc	
 
-green_glazed_terracotta	Green Glazed Terracotta	1500	1200	yes	yes	blocks	
+green_glazed_terracotta	Green Glazed Terracotta	10	8	yes	yes	blocks	
 
 green_harness	Green Harness	10000	8000	yes	yes	misc	
 
-green_shulker_box	Green Shulker Box	100000	80000	yes	yes	end	
+green_shulker_box	Green Shulker Box	10000	8000	yes	yes	end	
 
 green_stained_glass	Green Stained Glass	1000	135	yes	yes	blocks	
 
 green_stained_glass_pane	Green Stained Glass Pane	1000	50	yes	yes	blocks	
 
-green_terracotta	Green Terracotta	1500	1200	yes	yes	blocks	
+green_terracotta	Green Terracotta	10	8	yes	yes	blocks	
 
 green_wool	Green Wool	1000	800	yes	yes	blocks	
 
@@ -1319,7 +1319,7 @@ horn_coral_fan	Horn Coral Fan	1000	800	yes	yes	blocks
 
 horse_spawn_egg	Horse Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
-host_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
+host_armor_trim_smithing_template	Smithing Template	300000	200000	yes	yes	misc	
 
 howl_pottery_sherd	Howl Pottery Sherd	50000	40000	yes	yes	misc	
 
@@ -1484,17 +1484,17 @@ light_blue_cushion	Light Blue Cushion	3000	2400	yes	yes	misc
 
 light_blue_dye	Light Blue Dye	2500	900	yes	yes	misc	
 
-light_blue_glazed_terracotta	Light Blue Glazed Terracotta	1500	1200	yes	yes	blocks	
+light_blue_glazed_terracotta	Light Blue Glazed Terracotta	10	8	yes	yes	blocks	
 
 light_blue_harness	Light Blue Harness	10000	8000	yes	yes	misc	
 
-light_blue_shulker_box	Light Blue Shulker Box	100000	80000	yes	yes	end	
+light_blue_shulker_box	Light Blue Shulker Box	10000	8000	yes	yes	end	
 
 light_blue_stained_glass	Light Blue Stained Glass	1000	124	yes	yes	blocks	
 
 light_blue_stained_glass_pane	Light Blue Stained Glass Pane	1000	46	yes	yes	blocks	
 
-light_blue_terracotta	Light Blue Terracotta	1500	1200	yes	yes	blocks	
+light_blue_terracotta	Light Blue Terracotta	10	8	yes	yes	blocks	
 
 light_blue_wool	Light Blue Wool	1000	800	yes	yes	blocks	
 
@@ -1524,17 +1524,17 @@ light_gray_cushion	Light Gray Cushion	3000	2400	yes	yes	misc
 
 light_gray_dye	Light Gray Dye	2500	800	yes	yes	misc	
 
-light_gray_glazed_terracotta	Light Gray Glazed Terracotta	1500	1200	yes	yes	blocks	
+light_gray_glazed_terracotta	Light Gray Glazed Terracotta	10	8	yes	yes	blocks	
 
 light_gray_harness	Light Gray Harness	10000	8000	yes	yes	misc	
 
-light_gray_shulker_box	Light Gray Shulker Box	100000	80000	yes	yes	end	
+light_gray_shulker_box	Light Gray Shulker Box	10000	8000	yes	yes	end	
 
 light_gray_stained_glass	Light Gray Stained Glass	1000	119	yes	yes	blocks	
 
 light_gray_stained_glass_pane	Light Gray Stained Glass Pane	1000	44	yes	yes	blocks	
 
-light_gray_terracotta	Light Gray Terracotta	1500	1200	yes	yes	blocks	
+light_gray_terracotta	Light Gray Terracotta	10	8	yes	yes	blocks	
 
 light_gray_wool	Light Gray Wool	1000	800	yes	yes	blocks	
 
@@ -1574,17 +1574,17 @@ lime_cushion	Lime Cushion	3000	2400	yes	yes	misc
 
 lime_dye	Lime Dye	2500	900	yes	yes	misc	
 
-lime_glazed_terracotta	Lime Glazed Terracotta	1500	1200	yes	yes	blocks	
+lime_glazed_terracotta	Lime Glazed Terracotta	10	8	yes	yes	blocks	
 
 lime_harness	Lime Harness	10000	8000	yes	yes	misc	
 
-lime_shulker_box	Lime Shulker Box	100000	80000	yes	yes	end	
+lime_shulker_box	Lime Shulker Box	10000	8000	yes	yes	end	
 
 lime_stained_glass	Lime Stained Glass	1000	124	yes	yes	blocks	
 
 lime_stained_glass_pane	Lime Stained Glass Pane	1000	46	yes	yes	blocks	
 
-lime_terracotta	Lime Terracotta	1500	1200	yes	yes	blocks	
+lime_terracotta	Lime Terracotta	10	8	yes	yes	blocks	
 
 lime_wool	Lime Wool	1000	800	yes	yes	blocks	
 
@@ -1624,17 +1624,17 @@ magenta_cushion	Magenta Cushion	3000	2400	yes	yes	misc
 
 magenta_dye	Magenta Dye	2500	500	yes	yes	misc	
 
-magenta_glazed_terracotta	Magenta Glazed Terracotta	1500	1200	yes	yes	blocks	
+magenta_glazed_terracotta	Magenta Glazed Terracotta	10	8	yes	yes	blocks	
 
 magenta_harness	Magenta Harness	10000	8000	yes	yes	misc	
 
-magenta_shulker_box	Magenta Shulker Box	100000	80000	yes	yes	end	
+magenta_shulker_box	Magenta Shulker Box	10000	8000	yes	yes	end	
 
 magenta_stained_glass	Magenta Stained Glass	1000	72	yes	yes	blocks	
 
 magenta_stained_glass_pane	Magenta Stained Glass Pane	1000	27	yes	yes	blocks	
 
-magenta_terracotta	Magenta Terracotta	1500	1200	yes	yes	blocks	
+magenta_terracotta	Magenta Terracotta	10	8	yes	yes	blocks	
 
 magenta_wool	Magenta Wool	1000	800	yes	yes	blocks	
 
@@ -1728,17 +1728,17 @@ mossy_stone_bricks	Mossy Stone Bricks	1000	800	yes	yes	blocks
 
 mourner_pottery_sherd	Mourner Pottery Sherd	50000	40000	yes	yes	misc	
 
-mud	Mud	1000	800	yes	yes	blocks	
+mud	Mud	10	8	yes	yes	blocks	
 
-mud_brick_slab	Mud Brick Slab	1200	500	yes	yes	blocks	
+mud_brick_slab	Mud Brick Slab	10	5	yes	yes	blocks	
 
-mud_brick_stairs	Mud Brick Stairs	1200	900	yes	yes	blocks	
+mud_brick_stairs	Mud Brick Stairs	10	8	yes	yes	blocks	
 
-mud_brick_wall	Mud Brick Wall	1200	900	yes	yes	blocks	
+mud_brick_wall	Mud Brick Wall	10	8	yes	yes	blocks	
 
-mud_bricks	Mud Bricks	1000	800	yes	yes	blocks	
+mud_bricks	Mud Bricks	10	8	yes	yes	blocks	
 
-muddy_mangrove_roots	Muddy Mangrove Roots	1000	800	yes	yes	blocks	
+muddy_mangrove_roots	Muddy Mangrove Roots	10	8	yes	yes	blocks	
 
 mule_spawn_egg	Mule Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -1792,7 +1792,7 @@ music_disc_ward	Music Disc	150000	120000	yes	yes	misc
 
 mutton	Raw Mutton	800	600	yes	yes	food	
 
-mycelium	Mycelium	1000	800	yes	yes	blocks	
+mycelium	Mycelium	10	8	yes	yes	blocks	
 
 name_tag	Name Tag	10000	8000	yes	yes	misc	
 
@@ -1924,19 +1924,19 @@ orange_cushion	Orange Cushion	3000	2400	yes	yes	misc
 
 orange_dye	Orange Dye	2500	500	yes	yes	misc	
 
-orange_glazed_terracotta	Orange Glazed Terracotta	1500	1200	yes	yes	blocks	
+orange_glazed_terracotta	Orange Glazed Terracotta	10	8	yes	yes	blocks	
 
 orange_harness	Orange Harness	10000	8000	yes	yes	misc	
 
 orange_poplar_leaves	Orange Poplar Leaves	500	400	yes	yes	blocks	
 
-orange_shulker_box	Orange Shulker Box	100000	80000	yes	yes	end	
+orange_shulker_box	Orange Shulker Box	10000	8000	yes	yes	end	
 
 orange_stained_glass	Orange Stained Glass	1000	72	yes	yes	blocks	
 
 orange_stained_glass_pane	Orange Stained Glass Pane	1000	27	yes	yes	blocks	
 
-orange_terracotta	Orange Terracotta	1500	1200	yes	yes	blocks	
+orange_terracotta	Orange Terracotta	10	8	yes	yes	blocks	
 
 orange_tulip	Orange Tulip	1000	800	yes	yes	blocks	
 
@@ -1980,7 +1980,7 @@ oxidized_lightning_rod	Oxidized Lightning Rod	1000	800	yes	yes	blocks
 
 packed_ice	Packed Ice	9000	7200	yes	yes	blocks	
 
-packed_mud	Packed Mud	1000	800	yes	yes	blocks	
+packed_mud	Packed Mud	10	8	yes	yes	blocks	
 
 painting	Painting	2500	1800	yes	yes	misc	
 
@@ -2078,19 +2078,19 @@ pink_cushion	Pink Cushion	3000	2400	yes	yes	misc
 
 pink_dye	Pink Dye	2500	500	yes	yes	misc	
 
-pink_glazed_terracotta	Pink Glazed Terracotta	1500	1200	yes	yes	blocks	
+pink_glazed_terracotta	Pink Glazed Terracotta	10	8	yes	yes	blocks	
 
 pink_harness	Pink Harness	10000	8000	yes	yes	misc	
 
 pink_petals	Pink Petals	1000	800	yes	yes	blocks	
 
-pink_shulker_box	Pink Shulker Box	100000	80000	yes	yes	end	
+pink_shulker_box	Pink Shulker Box	10000	8000	yes	yes	end	
 
 pink_stained_glass	Pink Stained Glass	1000	72	yes	yes	blocks	
 
 pink_stained_glass_pane	Pink Stained Glass Pane	1000	27	yes	yes	blocks	
 
-pink_terracotta	Pink Terracotta	1500	1200	yes	yes	blocks	
+pink_terracotta	Pink Terracotta	10	8	yes	yes	blocks	
 
 pink_tulip	Pink Tulip	1000	800	yes	yes	blocks	
 
@@ -2112,7 +2112,7 @@ player_head	Player Head	0	80000	yes	no	blocks	Player head - not sold by shop
 
 plenty_pottery_sherd	Plenty Pottery Sherd	50000	40000	yes	yes	misc	
 
-podzol	Podzol	1000	800	yes	yes	blocks	
+podzol	Podzol	10	8	yes	yes	blocks	
 
 pointed_dripstone	Pointed Dripstone	1000	800	yes	yes	blocks	
 
@@ -2295,17 +2295,17 @@ purple_cushion	Purple Cushion	3000	2400	yes	yes	misc
 
 purple_dye	Purple Dye	2500	700	yes	yes	misc	
 
-purple_glazed_terracotta	Purple Glazed Terracotta	1500	1200	yes	yes	blocks	
+purple_glazed_terracotta	Purple Glazed Terracotta	10	8	yes	yes	blocks	
 
 purple_harness	Purple Harness	10000	8000	yes	yes	misc	
 
-purple_shulker_box	Purple Shulker Box	100000	80000	yes	yes	end	
+purple_shulker_box	Purple Shulker Box	10000	8000	yes	yes	end	
 
 purple_stained_glass	Purple Stained Glass	1000	103	yes	yes	blocks	
 
 purple_stained_glass_pane	Purple Stained Glass Pane	1000	38	yes	yes	blocks	
 
-purple_terracotta	Purple Terracotta	1500	1200	yes	yes	blocks	
+purple_terracotta	Purple Terracotta	10	8	yes	yes	blocks	
 
 purple_wool	Purple Wool	1000	800	yes	yes	blocks	
 
@@ -2343,7 +2343,7 @@ rabbit_spawn_egg	Rabbit Spawn Egg	0	100000	no	no	creative	spawn egg (creative on
 rabbit_stew	Rabbit Stew	800	600	yes	yes	food	
 
 rail	Rail	5	4	yes	yes	redstone	
-raiser_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
+raiser_armor_trim_smithing_template	Smithing Template	300000	200000	yes	yes	misc	
 
 ravager_spawn_egg	Ravager Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -2383,7 +2383,7 @@ red_cushion	Red Cushion	3000	2400	yes	yes	misc
 
 red_dye	Red Dye	2500	500	yes	yes	misc	
 
-red_glazed_terracotta	Red Glazed Terracotta	1500	1200	yes	yes	blocks	
+red_glazed_terracotta	Red Glazed Terracotta	10	8	yes	yes	blocks	
 
 red_harness	Red Harness	10000	8000	yes	yes	misc	
 
@@ -2413,13 +2413,13 @@ red_sandstone_wall	Red Sandstone Wall	40	32	yes	yes	blocks
 
 red_shrub	Red Shrub	1000	800	yes	yes	blocks	
 
-red_shulker_box	Red Shulker Box	100000	80000	yes	yes	end	
+red_shulker_box	Red Shulker Box	10000	8000	yes	yes	end	
 
 red_stained_glass	Red Stained Glass	1000	72	yes	yes	blocks	
 
 red_stained_glass_pane	Red Stained Glass Pane	1000	27	yes	yes	blocks	
 
-red_terracotta	Red Terracotta	1500	1200	yes	yes	blocks	
+red_terracotta	Red Terracotta	10	8	yes	yes	blocks	
 
 red_tulip	Red Tulip	1000	800	yes	yes	blocks	
 
@@ -2462,7 +2462,7 @@ respawn_anchor	Respawn Anchor	1000	800	yes	yes	blocks
 
 rib_armor_trim_smithing_template	Smithing Template	300000	211000	yes	yes	misc	
 
-rooted_dirt	Rooted Dirt	1000	800	yes	yes	blocks	
+rooted_dirt	Rooted Dirt	10	8	yes	yes	blocks	
 
 rose_bush	Rose Bush	1000	800	yes	yes	blocks	
 
@@ -2510,7 +2510,7 @@ seagrass	Seagrass	1000	800	yes	yes	blocks
 
 sentry_armor_trim_smithing_template	Smithing Template	300000	210010	yes	yes	misc	
 
-shaper_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
+shaper_armor_trim_smithing_template	Smithing Template	300000	200000	yes	yes	misc	
 
 sheaf_pottery_sherd	Sheaf Pottery Sherd	50000	40000	yes	yes	misc	
 
@@ -2530,9 +2530,9 @@ short_grass	Short Grass	1000	800	yes	yes	blocks
 
 shroomlight	Shroomlight	1000	800	yes	yes	blocks	
 
-shulker_box	Shulker Box	100000	80000	yes	yes	end	
+shulker_box	Shulker Box	10000	8000	yes	yes	end	
 
-shulker_shell	Shulker Shell	50000	40000	yes	yes	end	
+shulker_shell	Shulker Shell	5000	4000	yes	yes	end	
 
 shulker_spawn_egg	Shulker Spawn Egg	0	100000	no	no	creative	spawn egg (creative only)
 
@@ -2820,7 +2820,7 @@ tall_grass	Tall Grass	1000	800	yes	yes	blocks
 
 target	Target	1000	800	yes	yes	blocks	
 
-terracotta	Terracotta	10000	8000	yes	yes	blocks	
+terracotta	Terracotta	10	8	yes	yes	blocks	
 
 test_block	Test Block	0	500000	no	no	creative	creative only
 
@@ -3076,7 +3076,7 @@ waxed_weathered_cut_copper_stairs	Waxed Weathered Cut Copper Stairs	1300	1000	ye
 
 waxed_weathered_lightning_rod	Waxed Weathered Lightning Rod	1000	800	yes	yes	blocks	
 
-wayfinder_armor_trim_smithing_template	Smithing Template	300000	220000	yes	yes	misc	
+wayfinder_armor_trim_smithing_template	Smithing Template	300000	200000	yes	yes	misc	
 
 weathered_chiseled_copper	Weathered Chiseled Copper	5000	1200	yes	yes	blocks	
 
@@ -3138,17 +3138,17 @@ white_cushion	White Cushion	3000	2400	yes	yes	misc
 
 white_dye	White Dye	2500	800	yes	yes	misc	
 
-white_glazed_terracotta	White Glazed Terracotta	1500	1200	yes	yes	blocks	
+white_glazed_terracotta	White Glazed Terracotta	10	8	yes	yes	blocks	
 
 white_harness	White Harness	10000	8000	yes	yes	misc	
 
-white_shulker_box	White Shulker Box	100000	80000	yes	yes	end	
+white_shulker_box	White Shulker Box	10000	8000	yes	yes	end	
 
 white_stained_glass	White Stained Glass	1000	114	yes	yes	blocks	
 
 white_stained_glass_pane	White Stained Glass Pane	1000	42	yes	yes	blocks	
 
-white_terracotta	White Terracotta	1500	1200	yes	yes	blocks	
+white_terracotta	White Terracotta	10	8	yes	yes	blocks	
 
 white_tulip	White Tulip	1000	800	yes	yes	blocks	
 
@@ -3218,19 +3218,19 @@ yellow_cushion	Yellow Cushion	3000	2400	yes	yes	misc
 
 yellow_dye	Yellow Dye	2500	500	yes	yes	misc	
 
-yellow_glazed_terracotta	Yellow Glazed Terracotta	1500	1200	yes	yes	blocks	
+yellow_glazed_terracotta	Yellow Glazed Terracotta	10	8	yes	yes	blocks	
 
 yellow_harness	Yellow Harness	10000	8000	yes	yes	misc	
 
 yellow_poplar_leaves	Yellow Poplar Leaves	500	400	yes	yes	blocks	
 
-yellow_shulker_box	Yellow Shulker Box	100000	80000	yes	yes	end	
+yellow_shulker_box	Yellow Shulker Box	10000	8000	yes	yes	end	
 
 yellow_stained_glass	Yellow Stained Glass	1000	72	yes	yes	blocks	
 
 yellow_stained_glass_pane	Yellow Stained Glass Pane	1000	27	yes	yes	blocks	
 
-yellow_terracotta	Yellow Terracotta	1500	1200	yes	yes	blocks	
+yellow_terracotta	Yellow Terracotta	10	8	yes	yes	blocks	
 
 yellow_wool	Yellow Wool	1000	800	yes	yes	blocks	
 

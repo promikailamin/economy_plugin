@@ -9,6 +9,7 @@ Server-side economy plugin. No client mod needed.
 - Sell chest (`/sell`): drop items in, close, get paid; unsellable items are returned
 - `/sell hand | all | <item> [amount|all]`
 - Auction house (`/ah`, `/ah sell <price>`, `/ah collect`) with expiry and sale tax
+- Auction browser filter (`Sorted`, `Low to High`, `High to Low`), saved per player
 - Smart AI market: up to 1000 synthetic listings by default with realistic random tools,
   armour, enchantments, damage, stacks and shulker-box supply crates; per-category stock,
   restock timers, demand and a small neural network that learns from sales and reprices listings
@@ -17,7 +18,7 @@ Server-side economy plugin. No client mod needed.
 - `/ah stock` market overview with live stock/demand/price information
 - Limited special relics in the AI market: 3x3/4x4/5x5 area miners (pickaxe and
   shovel), vein miner, tree miner, level 10-15 enchanted books and gear, eternal
-  armour with one random slot-bound good or bad potion effect, and an extremely rare
+  armour with one random slot-bound good or bad potion effect, and at most one
   Keep Inventory Helmet
 - Mystery shop (`/mystery`, `/ah mystery`): crate tiers with stock/restock, a neural
   luck model, dry-streak compensation and weighted loot that can be better or worse
@@ -39,6 +40,10 @@ The mystery shop uses weighted payout bands; its neural model gradually adjusts 
 long dry streaks, while the configured payout factors keep long-term returns below 100%.
 Use `/eco reload` after changing market settings. `/ah stock` shows stock, demand, price
 trend and restock state for every AI category.
+
+AI listings expire after a random 1-5 hours (`auction.ai.duration-hours-min` and
+`duration-hours-max`). The browser groups matching item types in `Sorted` mode, and the
+chosen filter is stored per UUID in `balances.yml`.
 
 AI buyers run on the same 30-second market tick. They only consider player-created
 listings, skip items below `min-value` or above `max-price`, and ignore listings priced
@@ -76,10 +81,12 @@ python3 .agent-work/tools/generate_gui_docs.py \
 ```
 
 ## Special relics
-The AI market keeps at most a couple of special relics listed, and the total number it
-may ever mint is capped by `auction.ai.max-special-relics` (default 24). Relics are
-priced from a much higher base value than normal gear and cannot be sold back to the
-server shop, so they only change hands through the auction house.
+The AI market maintains configured active-count ranges for each relic family under
+`auction.ai.special-counts`: effect armour (10-30), high-enchant armour (10-30), super
+tools (10-30), high-enchant books (20-50), and the Keep Inventory Helmet (0-1). The
+total active special-relic count is capped by `auction.ai.max-special-relics` (default
+200). Relics are priced from a much higher base value than normal gear and cannot be
+sold back to the server shop, so they only change hands through the auction house.
 
 Area miners break a plane around the mined block based on where the player is looking;
 vein miners break connected ores (up to 64) and tree miners fell connected logs (up to
@@ -89,9 +96,10 @@ matched to its slot (speed on boots, resistance/regeneration on chestplates and
 leggings, and so on). Some relics carry a bad effect instead.
 
 The Keep Inventory Helmet is much rarer than other relics (`auction.ai.keep-inventory-helmet-chance`,
-2% by default) and costs hundreds of millions. While worn it keeps the player's entire
-inventory on death, but experience is still lost normally and the helmet shatters when
-the player respawns.
+2% by default) and costs hundreds of millions. Only one can be listed by any seller at a
+time. While worn it keeps the player's entire inventory on death, but experience is still
+lost normally. Each respawn costs 25% of the helmet's maximum durability; it shatters
+when that would leave less than 25% durability remaining.
 
 ## Permissions
 `economy.bal`, `economy.bal.others`, `economy.pay`, `economy.shop`, `economy.scoreboard`,

@@ -23,6 +23,43 @@ import java.util.logging.Level;
  */
 public final class AuctionHouse {
 
+    /** How the auction browser orders listings for a player. */
+    public enum SortMode {
+        SORTED("Sorted", "Same item types are grouped together"),
+        LOW_TO_HIGH("Low to High", "Cheapest listings first"),
+        HIGH_TO_LOW("High to Low", "Most expensive listings first");
+
+        private final String label;
+        private final String description;
+
+        SortMode(String label, String description) {
+            this.label = label;
+            this.description = description;
+        }
+
+        public String label() {
+            return label;
+        }
+
+        public String description() {
+            return description;
+        }
+
+        public SortMode next() {
+            SortMode[] values = values();
+            return values[(ordinal() + 1) % values.length];
+        }
+
+        public static SortMode byName(String raw) {
+            if (raw != null) {
+                for (SortMode mode : values()) {
+                    if (mode.name().equalsIgnoreCase(raw)) return mode;
+                }
+            }
+            return SORTED;
+        }
+    }
+
     public static final class Listing {
         public final long id;
         public final UUID seller;
@@ -121,6 +158,14 @@ public final class AuctionHouse {
         return c;
     }
 
+    /** True when any seller (player or AI) already has a Keep Inventory Helmet listed. */
+    public boolean hasActiveKeepInventoryHelmet() {
+        for (Listing l : listings.values()) {
+            if (SpecialItems.isKeepInventoryHelmet(l.item)) return true;
+        }
+        return false;
+    }
+
     // ------------------------------------------------------------------ actions
 
     /** Lists the item the player is holding. */
@@ -140,6 +185,11 @@ public final class AuctionHouse {
         }
         if (SellAxe.isSellAxe(hand)) {
             seller.sendMessage(ChatColor.RED + "Sell Axes can't be auctioned.");
+            return;
+        }
+        if (SpecialItems.isKeepInventoryHelmet(hand) && hasActiveKeepInventoryHelmet()) {
+            seller.sendMessage(ChatColor.RED
+                    + "A Helm of Preservation is already listed. Only one can be sold at a time.");
             return;
         }
 

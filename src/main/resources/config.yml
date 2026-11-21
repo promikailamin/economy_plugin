@@ -27,8 +27,9 @@ auction:
     target-listings: 1000
     # Maximum new AI listings per 30 second market tick.
     max-new-per-tick: 50
-    # How long AI listings last before they are recycled.
-    duration-hours: 48
+    # AI sellers list their items for a random duration in this range.
+    duration-hours-min: 1
+    duration-hours-max: 5
     # Base time between stock restocks (each category gets a random +/-40%).
     restock-minutes: 12
     # Change this for a different but repeatable item/price pattern.
@@ -38,11 +39,24 @@ auction:
     # area mining, vein mining, tree felling, level 10-15 enchantments and
     # eternal armour with a random slot-bound potion effect.
     special-relics-enabled: true
-    # Total number of relics the market may ever mint. Set 0 to disable.
-    max-special-relics: 24
-    # Chance that a newly minted relic is the extremely rare Keep Inventory Helmet.
-    # 0.02 means 2 in 100 relics. Set 0 to make it unobtainable from the market.
+    # Maximum number of special relics the market keeps live at once. The
+    # per-category minimums below are always honoured.
+    max-special-relics: 200
+    # Chance that the market keeps a Keep Inventory Helmet listed. Only one may
+    # exist at a time across the whole auction house.
     keep-inventory-helmet-chance: 0.02
+    # How many of each relic type the AI market aims to keep listed.
+    special-counts:
+      effect-armor-min: 10
+      effect-armor-max: 30
+      enchant-armor-min: 10
+      enchant-armor-max: 30
+      super-tools-min: 10
+      super-tools-max: 30
+      enchant-books-min: 20
+      enchant-books-max: 50
+      keep-helmet-min: 0
+      keep-helmet-max: 1
 
     # AI buyers occasionally purchase listings created by players. They only buy
     # listings that are reasonably priced compared with the item's appraised value.

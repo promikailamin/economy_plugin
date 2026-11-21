@@ -198,7 +198,7 @@ The sell chest. Slots 0-44 are a normal drop area; the preview updates as items 
 
 <img src="assets/gui/auction-browse.png" alt="Auction House (1/1) GUI">
 
-The auction browser. Listings fill slots 0-44; the control row shows collection, selling help and navigation. The sample shows seven listings.
+The auction browser. Listings fill slots 0-44; the control row shows collection, the saved filter mode and navigation. The sample shows seven listings.
 
 | Icon | Slot | Item / control | Lore / action |
 |:---:|:---:|:--|:--|
@@ -211,7 +211,7 @@ The auction browser. Listings fill slots 0-44; the control row shows collection,
 | <img src="assets/icons/arrow.png" width="24" height="24" alt=""> | `45` | **« Back** | Return to previous screen |
 | <img src="assets/icons/chest.png" width="24" height="24" alt=""> | `47` | **Collect items** | Waiting for you: 2<br>(expired or cancelled listings)<br>▶ Click to collect |
 | <img src="assets/icons/player_head.png" width="24" height="24" alt=""> | `49` | **Steve \| Profile** | Balance: $1M<br>($1,000,000)<br>-------------------------<br>Account active |
-| <img src="assets/icons/paper.png" width="24" height="24" alt=""> | `51` | **How to sell** | Hold an item and run:<br>/ah sell <price><br>Prices accept suffixes: 1k, 2.5m |
+| <img src="assets/icons/comparator.png" width="24" height="24" alt=""> | `51` | **Filter: Sorted** | Same item types are grouped together<br>Modes: Sorted, Low to High, High to Low<br>▶ Click to cycle filter mode<br>Your choice is saved for this account. |
 | <img src="assets/icons/barrier.png" width="24" height="24" alt=""> | `53` | **Close** | Close this menu |
 |  | `...` | **1 more dynamic entries** | Rendered in the same slots in-game. |
 

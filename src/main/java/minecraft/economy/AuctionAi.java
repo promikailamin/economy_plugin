@@ -68,24 +68,43 @@ public final class AuctionAi {
     private static final int OUTPUTS = 3;
     private static final int BASE_CAPACITY_TOTAL = 85;
 
+    private static final String RELIC_EFFECT_ARMOR = "effect_armor";
+    private static final String RELIC_ENCHANT_ARMOR = "enchant_armor";
+    private static final String RELIC_SUPER_TOOL = "super_tool";
+    private static final String RELIC_ENCHANT_BOOK = "enchant_book";
+    private static final String RELIC_KEEP_HELMET = "keep_helmet";
+
     private final EconomyPlugin plugin;
     private final AuctionHouse house;
     private final File file;
     private final Map<String, Stock> stocks = new LinkedHashMap<>();
+    private final Map<String, Integer> relicTargets = new LinkedHashMap<>();
 
     private Random rng = new Random(1337);
     private NeuralNetwork brain = new NeuralNetwork(1337, INPUTS, HIDDEN, OUTPUTS);
     private boolean enabled = true;
     private int targetListings = 36;
     private int maxNewPerTick = 5;
-    private long durationMillis = 48L * 3_600_000L;
+    private long durationMinMillis = 3_600_000L;
+    private long durationMaxMillis = 5L * 3_600_000L;
     private long restockMillis = 12L * 60_000L;
     private long seed = 1337;
     private double heat = 0.35;
     private boolean specialRelicsEnabled = true;
-    private int maxSpecialRelics = 24;
+    private int maxSpecialRelics = 200;
     private int specialMinted = 0;
     private double keepInventoryHelmetChance = 0.02;
+    private int effectArmorMin = 10;
+    private int effectArmorMax = 30;
+    private int enchantArmorMin = 10;
+    private int enchantArmorMax = 30;
+    private int superToolMin = 10;
+    private int superToolMax = 30;
+    private int enchantBookMin = 20;
+    private int enchantBookMax = 50;
+    private int keepHelmetMin = 0;
+    private int keepHelmetMax = 1;
+    private boolean announceRelics = false;
     private double stockScale = 1.0;
     private boolean buyersEnabled = true;
     private double buyerChance = 0.03;
@@ -123,6 +142,7 @@ public final class AuctionAi {
     public void load() {
         applySettings();
         rng = new Random(seed);
+        refreshRelicTargets();
         for (Spec spec : SPECS) stocks.put(spec.id(), new Stock(spec, capacityFor(spec)));
 
         boolean fresh = !file.exists();
@@ -146,20 +166,21 @@ public final class AuctionAi {
         ensureStockTimers(now);
         if (fresh && enabled) seedInitial(now);
         fill(now, targetListings);
+        announceRelics = true;
         save();
         plugin.getLogger().info("AI auction market ready: " + house.syntheticCount() + " synthetic listings.");
     }
 
     public void reload() {
         applySettings();
+        refreshRelicTargets();
         fill(System.currentTimeMillis());
         save();
     }
 
     private void seedInitial(long now) {
         for (Spec spec : SPECS) {
-            if (spec.id().equals("special")
-                    && (!specialRelicsEnabled || specialMinted >= maxSpecialRelics)) continue;
+            if (spec.id().equals("special")) continue;
             Stock stock = stocks.get(spec.id());
             if (stock.stock > 0 && house.syntheticCount(spec.id()) == 0) generate(stock, now);
         }
@@ -168,15 +189,29 @@ public final class AuctionAi {
     private void applySettings() {
         ConfigurationSection cfg = plugin.getConfig();
         enabled = cfg.getBoolean("auction.ai.enabled", true);
-        targetListings = Math.max(1, Math.min(5000, cfg.getInt("auction.ai.target-listings", 1000)));
+        targetListings = Math.max(1, Math.min(1000, cfg.getInt("auction.ai.target-listings", 1000)));
         maxNewPerTick = Math.max(1, Math.min(500, cfg.getInt("auction.ai.max-new-per-tick", 50)));
-        durationMillis = Math.max(1, cfg.getLong("auction.ai.duration-hours", 48)) * 3_600_000L;
+        long minHours = cfg.getLong("auction.ai.duration-hours-min", 1);
+        long maxHours = cfg.getLong("auction.ai.duration-hours-max", 5);
+        durationMinMillis = Math.max(1, Math.min(minHours, maxHours)) * 3_600_000L;
+        durationMaxMillis = Math.max(1, Math.max(minHours, maxHours)) * 3_600_000L;
         restockMillis = Math.max(1, cfg.getLong("auction.ai.restock-minutes", 12)) * 60_000L;
         seed = cfg.getLong("auction.ai.seed", 1337L);
         specialRelicsEnabled = cfg.getBoolean("auction.ai.special-relics-enabled", true);
-        maxSpecialRelics = Math.max(0, cfg.getInt("auction.ai.max-special-relics", 24));
+        maxSpecialRelics = Math.max(0, cfg.getInt("auction.ai.max-special-relics", 200));
         keepInventoryHelmetChance = Math.max(0, Math.min(1,
                 cfg.getDouble("auction.ai.keep-inventory-helmet-chance", 0.02)));
+        effectArmorMin = Math.max(0, cfg.getInt("auction.ai.special-counts.effect-armor-min", 10));
+        effectArmorMax = Math.max(effectArmorMin, cfg.getInt("auction.ai.special-counts.effect-armor-max", 30));
+        enchantArmorMin = Math.max(0, cfg.getInt("auction.ai.special-counts.enchant-armor-min", 10));
+        enchantArmorMax = Math.max(enchantArmorMin, cfg.getInt("auction.ai.special-counts.enchant-armor-max", 30));
+        superToolMin = Math.max(0, cfg.getInt("auction.ai.special-counts.super-tools-min", 10));
+        superToolMax = Math.max(superToolMin, cfg.getInt("auction.ai.special-counts.super-tools-max", 30));
+        enchantBookMin = Math.max(0, cfg.getInt("auction.ai.special-counts.enchant-books-min", 20));
+        enchantBookMax = Math.max(enchantBookMin, cfg.getInt("auction.ai.special-counts.enchant-books-max", 50));
+        keepHelmetMin = Math.max(0, Math.min(1, cfg.getInt("auction.ai.special-counts.keep-helmet-min", 0)));
+        keepHelmetMax = Math.max(keepHelmetMin,
+                Math.min(1, cfg.getInt("auction.ai.special-counts.keep-helmet-max", 1)));
         buyersEnabled = cfg.getBoolean("auction.ai.buyers.enabled", true);
         buyerChance = Math.max(0, Math.min(1,
                 cfg.getDouble("auction.ai.buyers.chance-per-listing-per-tick", 0.03)));
@@ -192,6 +227,7 @@ public final class AuctionAi {
     }
 
     private int capacityFor(Spec spec) {
+        if (spec.id().equals("special")) return Math.max(1, maxSpecialRelics);
         return Math.max(1, (int) Math.ceil(spec.capacity() * stockScale));
     }
 
@@ -289,6 +325,15 @@ public final class AuctionAi {
         if (!enabled) return 0;
         int active = house.syntheticCount();
         int created = 0;
+
+        while (active < targetListings && created < createdLimit) {
+            String category = nextRelicCategory();
+            if (category == null) break;
+            generateRelic(category, now);
+            active++;
+            created++;
+        }
+
         int attempts = 0;
         int limit = SPECS.size() * 8;
         while (active < targetListings && created < createdLimit && attempts < limit) {
@@ -311,9 +356,8 @@ public final class AuctionAi {
         List<Stock> candidates = new ArrayList<>();
         List<Double> weights = new ArrayList<>();
         for (Stock stock : stocks.values()) {
+            if (stock.spec.id().equals("special")) continue;
             if (stock.stock <= 0) continue;
-            if (stock.spec.id().equals("special")
-                    && (!specialRelicsEnabled || specialMinted >= maxSpecialRelics)) continue;
             double weight = stock.spec.weight() * (0.55 + stock.demand * 1.45);
             if (weight <= 0) continue;
             total += weight;
@@ -329,44 +373,134 @@ public final class AuctionAi {
         return candidates.get(candidates.size() - 1);
     }
 
-    private void generate(Stock stock, long now) {
-        AiItemFactory.Quality quality = stock.spec.quality();
-        if (rng.nextDouble() < Math.max(0, stock.demand - 0.55) * 0.45) {
-            quality = AiItemFactory.Quality.byRank(quality.rank() + 1);
+    private void refreshRelicTargets() {
+        relicTargets.clear();
+        if (!specialRelicsEnabled) return;
+        relicTargets.put(RELIC_EFFECT_ARMOR, randomInRange(effectArmorMin, effectArmorMax));
+        relicTargets.put(RELIC_ENCHANT_ARMOR, randomInRange(enchantArmorMin, enchantArmorMax));
+        relicTargets.put(RELIC_SUPER_TOOL, randomInRange(superToolMin, superToolMax));
+        relicTargets.put(RELIC_ENCHANT_BOOK, randomInRange(enchantBookMin, enchantBookMax));
+        int helmet = keepHelmetMin >= keepHelmetMax
+                ? keepHelmetMin
+                : (rng.nextDouble() < keepInventoryHelmetChance ? keepHelmetMax : keepHelmetMin);
+        relicTargets.put(RELIC_KEEP_HELMET, helmet);
+    }
+
+    private int randomInRange(int min, int max) {
+        if (max <= min) return min;
+        return min + rng.nextInt(max - min + 1);
+    }
+
+    private Map<String, Integer> relicCounts() {
+        Map<String, Integer> counts = new LinkedHashMap<>();
+        for (AuctionHouse.Listing listing : house.all()) {
+            if (SpecialItems.isKeepInventoryHelmet(listing.item)) {
+                counts.merge(RELIC_KEEP_HELMET, 1, Integer::sum);
+            }
+            if (!listing.synthetic) continue;
+            String category = SpecialItems.relicCategory(listing.item);
+            if (category != null && !category.equals(RELIC_KEEP_HELMET)) {
+                counts.merge(category, 1, Integer::sum);
+            }
         }
-        var item = AiItemFactory.generate(rng, stock.spec.id(), quality, keepInventoryHelmetChance);
-        boolean relic = SpecialItems.isSpecial(item);
-        long value = AiItemFactory.value(item);
-        double[] input = features(stock, quality, now);
+        return counts;
+    }
+
+    private String nextRelicCategory() {
+        if (!specialRelicsEnabled) return null;
+        Map<String, Integer> counts = relicCounts();
+        int active = 0;
+        for (int count : counts.values()) active += count;
+
+        int minTotal = effectArmorMin + enchantArmorMin + superToolMin + enchantBookMin + keepHelmetMin;
+        int cap = Math.max(maxSpecialRelics, minTotal);
+        boolean belowMin = counts.getOrDefault(RELIC_EFFECT_ARMOR, 0) < effectArmorMin
+                || counts.getOrDefault(RELIC_ENCHANT_ARMOR, 0) < enchantArmorMin
+                || counts.getOrDefault(RELIC_SUPER_TOOL, 0) < superToolMin
+                || counts.getOrDefault(RELIC_ENCHANT_BOOK, 0) < enchantBookMin
+                || counts.getOrDefault(RELIC_KEEP_HELMET, 0) < keepHelmetMin;
+        if (active >= cap && !belowMin) return null;
+
+        for (String category : List.of(RELIC_EFFECT_ARMOR, RELIC_ENCHANT_ARMOR, RELIC_SUPER_TOOL,
+                RELIC_ENCHANT_BOOK, RELIC_KEEP_HELMET)) {
+            int target = relicTargets.getOrDefault(category, 0);
+            if (counts.getOrDefault(category, 0) < target) return category;
+        }
+        return null;
+    }
+
+    private void generateRelic(String category, long now) {
+        var item = switch (category) {
+            case RELIC_EFFECT_ARMOR -> SpecialItems.eternalArmor(rng);
+            case RELIC_ENCHANT_ARMOR -> SpecialItems.highEnchantGear(rng, true);
+            case RELIC_SUPER_TOOL -> SpecialItems.superTool(rng);
+            case RELIC_ENCHANT_BOOK -> SpecialItems.highEnchantBook(rng);
+            case RELIC_KEEP_HELMET -> SpecialItems.keepInventoryHelmet(rng);
+            default -> null;
+        };
+        if (item == null || item.getType().isAir()) return;
+
+        Stock special = stocks.get("special");
+        double[] input = features(special, AiItemFactory.Quality.LEGENDARY, now);
         double[] output = brain.forward(input);
         double factor = 0.72 + output[0] * 1.05;
         double noise = 0.94 + rng.nextDouble() * 0.12;
-        long price = roundPrice(Math.max(50, Math.round(value * factor * stock.priceIndex * noise)));
-        if (relic) price = roundPrice(Math.round(price * 1.10));
+        double index = special == null ? 1.0 : special.priceIndex;
+        long value = AiItemFactory.value(item);
+        long price = roundPrice(Math.max(50, Math.round(value * factor * index * noise)));
+        price = roundPrice(Math.round(price * 1.10));
         price = Math.min(price, house.maxPrice());
 
         String seller = SELLERS[rng.nextInt(SELLERS.length)];
         UUID sellerId = UUID.nameUUIDFromBytes(("EconomyMarket:" + seller).getBytes(StandardCharsets.UTF_8));
-        house.addSynthetic(sellerId, seller, item, price, stock.spec.id(), input, durationMillis);
-        stock.stock--;
-        stock.listed++;
-        stock.priceIndex = Math.min(1.30, stock.priceIndex + 0.004);
-        heat = Math.min(1.0, heat + 0.01);
-        if (relic) {
-            specialMinted++;
+        house.addSynthetic(sellerId, seller, item, price, "special", input, randomDuration());
+        if (special != null) special.listed++;
+        specialMinted++;
+        heat = Math.min(1.0, heat + 0.02);
+        if (announceRelics) {
             plugin.getServer().broadcastMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD
                     + "A special relic appeared in the auction house: " + ChatColor.RESET
                     + AuctionHouse.prettyName(item));
         }
     }
 
+    private long randomDuration() {
+        if (durationMaxMillis <= durationMinMillis) return durationMinMillis;
+        long span = durationMaxMillis - durationMinMillis;
+        return durationMinMillis + (long) (rng.nextDouble() * span);
+    }
+
+    private void generate(Stock stock, long now) {
+        AiItemFactory.Quality quality = stock.spec.quality();
+        if (rng.nextDouble() < Math.max(0, stock.demand - 0.55) * 0.45) {
+            quality = AiItemFactory.Quality.byRank(quality.rank() + 1);
+        }
+        var item = AiItemFactory.generate(rng, stock.spec.id(), quality, keepInventoryHelmetChance);
+        long value = AiItemFactory.value(item);
+        double[] input = features(stock, quality, now);
+        double[] output = brain.forward(input);
+        double factor = 0.72 + output[0] * 1.05;
+        double noise = 0.94 + rng.nextDouble() * 0.12;
+        long price = roundPrice(Math.max(50, Math.round(value * factor * stock.priceIndex * noise)));
+        price = Math.min(price, house.maxPrice());
+
+        String seller = SELLERS[rng.nextInt(SELLERS.length)];
+        UUID sellerId = UUID.nameUUIDFromBytes(("EconomyMarket:" + seller).getBytes(StandardCharsets.UTF_8));
+        house.addSynthetic(sellerId, seller, item, price, stock.spec.id(), input, randomDuration());
+        stock.stock--;
+        stock.listed++;
+        stock.priceIndex = Math.min(1.30, stock.priceIndex + 0.004);
+        heat = Math.min(1.0, heat + 0.01);
+    }
+
     private double[] features(Stock stock, AiItemFactory.Quality quality, long now) {
-        double stockRatio = stock.capacity <= 0 ? 0 : (double) stock.stock / stock.capacity;
+        double stockRatio = stock == null || stock.capacity <= 0 ? 0.5 : (double) stock.stock / stock.capacity;
+        double demand = stock == null ? 0.5 : stock.demand;
         double day = (now % 86_400_000L) / 86_400_000.0;
         double hour = Math.sin(day * Math.PI * 2) * 0.5 + 0.5;
         return new double[]{
                 stockRatio,
-                stock.demand,
+                demand,
                 quality.rank() / 4.0,
                 hour,
                 heat,
@@ -415,15 +549,29 @@ public final class AuctionAi {
         List<Status> list = new ArrayList<>();
         for (Spec spec : SPECS) {
             Stock stock = stocks.get(spec.id());
-            list.add(new Status(spec.id(), spec.label(), spec.icon(), stock.stock, stock.capacity,
+            int active = house.syntheticCount(spec.id());
+            int shownStock = spec.id().equals("special")
+                    ? Math.max(0, maxSpecialRelics - active)
+                    : stock.stock;
+            list.add(new Status(spec.id(), spec.label(), spec.icon(), shownStock, stock.capacity,
                     stock.nextRestock, stock.demand, stock.priceIndex,
-                    house.syntheticCount(spec.id()), stock.sold, stock.listed));
+                    active, stock.sold, stock.listed));
         }
         return list;
     }
 
     public int activeListings() {
         return house.syntheticCount();
+    }
+
+    public Map<String, Integer> activeRelicCounts() {
+        return relicCounts();
+    }
+
+    public int activeSpecialCount() {
+        int total = 0;
+        for (int count : relicCounts().values()) total += count;
+        return total;
     }
 
     public int targetListings() {

@@ -43,7 +43,55 @@ public final class MarketHarness extends JavaPlugin {
                     .append(" active=").append(ai.activeListings()).append('\n');
             if (ai.targetListings() < 1000) failures++;
             if (ai.activeListings() < Math.min(ai.targetListings(), 1000)) failures++;
+            if (ai.activeListings() > 1000) failures++;
         }
+
+        AuctionHouse house = EconomyPlugin.get().auctions();
+        report.append("\nAI relic and duration checks\n");
+        if (ai != null) {
+            var relics = ai.activeRelicCounts();
+            int effectArmor = relics.getOrDefault("effect_armor", 0);
+            int enchantArmor = relics.getOrDefault("enchant_armor", 0);
+            int superTools = relics.getOrDefault("super_tool", 0);
+            int enchantBooks = relics.getOrDefault("enchant_book", 0);
+            int keepHelmets = relics.getOrDefault("keep_helmet", 0);
+            report.append("effect_armor=").append(effectArmor)
+                    .append(" enchant_armor=").append(enchantArmor)
+                    .append(" super_tools=").append(superTools)
+                    .append(" enchant_books=").append(enchantBooks)
+                    .append(" keep_helmets=").append(keepHelmets).append('\n');
+            if (effectArmor < 10 || effectArmor > 30) failures++;
+            if (enchantArmor < 10 || enchantArmor > 30) failures++;
+            if (superTools < 10 || superTools > 30) failures++;
+            if (enchantBooks < 20 || enchantBooks > 50) failures++;
+            if (keepHelmets < 0 || keepHelmets > 1) failures++;
+        }
+        for (AuctionHouse.Listing listing : house.all()) {
+            if (!listing.synthetic) continue;
+            long hours = (listing.expires - listing.created) / 3_600_000L;
+            if (hours < 1 || hours > 5) {
+                failures++;
+                report.append("bad AI duration=").append(hours).append("h id=").append(listing.id).append('\n');
+            }
+        }
+
+        report.append("\nprice checks\n");
+        for (String id : List.of("dirt", "coarse_dirt", "mud", "clay")) {
+            EconomyData.ShopEntry entry = EconomyData.get(id);
+            if (entry == null || entry.buy != 10 || entry.sell != 8) failures++;
+            report.append(id).append(" buy=").append(entry == null ? -1 : entry.buy)
+                    .append(" sell=").append(entry == null ? -1 : entry.sell).append('\n');
+        }
+        EconomyData.ShopEntry enchanting = EconomyData.get("enchanting_table");
+        if (enchanting == null || enchanting.buy != 100_000) failures++;
+        EconomyData.ShopEntry shell = EconomyData.get("shulker_shell");
+        if (shell == null || shell.buy != 5_000) failures++;
+        for (String id : List.of("shulker_box", "white_shulker_box", "black_shulker_box")) {
+            EconomyData.ShopEntry entry = EconomyData.get(id);
+            if (entry == null || entry.buy != 10_000) failures++;
+        }
+        report.append("enchanting_table buy=").append(enchanting == null ? -1 : enchanting.buy)
+                .append(" shulker_shell buy=").append(shell == null ? -1 : shell.buy).append('\n');
 
         report.append("\nhead trade checks\n");
         for (String id : List.of("player_head", "creeper_head", "piglin_head",
@@ -56,7 +104,6 @@ public final class MarketHarness extends JavaPlugin {
                     .append('\n');
         }
         report.append("\nAI buyer checks\n");
-        AuctionHouse house = EconomyPlugin.get().auctions();
         FileConfiguration cfg = EconomyPlugin.get().getConfig();
         cfg.set("auction.ai.buyers.enabled", true);
         cfg.set("auction.ai.buyers.chance-per-listing-per-tick", 1.0D);
@@ -69,6 +116,9 @@ public final class MarketHarness extends JavaPlugin {
 
         UUID seller = UUID.nameUUIDFromBytes("HarnessSeller".getBytes(StandardCharsets.UTF_8));
         EconomyData.setBalance(seller, 0);
+        EconomyData.setAuctionSort(seller, AuctionHouse.SortMode.HIGH_TO_LOW);
+        if (EconomyData.auctionSort(seller) != AuctionHouse.SortMode.HIGH_TO_LOW) failures++;
+        EconomyData.setAuctionSort(seller, AuctionHouse.SortMode.SORTED);
         ItemStack diamonds = new ItemStack(Material.DIAMOND, 8);
         long fairValue = AiItemFactory.value(diamonds);
         long fairPrice = Math.max(1, fairValue);

@@ -629,9 +629,11 @@ def build_specs(rows):
                   "\u00a77(expired or cancelled listings)",
                   "\u00a7a\u25b6 Click to collect"]},
         dict(head, slot=49),
-        {"slot": 51, "id": "paper", "name": "\u00a7bHow to sell",
-         "lore": ["\u00a77Hold an item and run:", "\u00a7e/ah sell <price>",
-                  "\u00a77Prices accept suffixes: \u00a7f1k, 2.5m"]},
+        {"slot": 51, "id": "comparator", "name": "\u00a7b\u00a7lFilter: \u00a7fSorted",
+         "lore": ["\u00a77Same item types are grouped together",
+                  "\u00a78Modes: Sorted, Low to High, High to Low",
+                  "\u00a7a\u25b6 Click to cycle filter mode",
+                  "\u00a77Your choice is saved for this account."]},
         {"slot": 53, "id": "barrier", "name": "\u00a7cClose",
          "lore": ["\u00a77Close this menu"]},
     ]
@@ -640,7 +642,7 @@ def build_specs(rows):
         "command": "/ah", "items": auction_items,
         "fill": [(45, 54, "gray_stained_glass_pane")],
         "summary": "The auction browser. Listings fill slots 0-44; the control row shows "
-                   "collection, selling help and navigation. The sample shows seven listings.",
+                   "collection, the saved filter mode and navigation. The sample shows seven listings.",
     }
 
     # -------------------------------------------------------- auction confirm

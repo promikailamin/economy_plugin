@@ -39,7 +39,7 @@ public final class AiMarketGui {
                                         + EconomyData.formatMoney(engine.totalSpentByAi()) + "§8)"
                                 : "§7AI buyers: §cdisabled",
                         engine.specialRelicsEnabled()
-                                ? "§7Special relics minted: §d" + engine.specialMinted() + "§8/§d" + engine.maxSpecialRelics()
+                                ? "§7Special relics: §d" + engine.activeSpecialCount() + "§8/§d" + engine.maxSpecialRelics()
                                 : "§7Special relics: §cdisabled",
                         "§7The engine restocks, reprices and buys",
                         "§7reasonably priced player listings.",

@@ -20,7 +20,7 @@ Every price is read directly from [`src/main/resources/prices.tsv`](../src/main/
 | Item icons extracted | **1,657 / 1,657** |
 | Categories | **12** |
 | Minecraft assets version | **26.3** |
-| Cheapest sellable item | **Glass Pane** (3) |
+| Cheapest sellable item | **Brick** (1) |
 | Most valuable sellable item | **Elytra** (2,500,000) |
 
 ## How to Read the Tables
@@ -132,10 +132,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/black_concrete_powder.png" width="32" height="32" alt="Black Concrete Powder" title="Black Concrete Powder"> | **Black Concrete Powder** | `black_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/black_concrete_slab.png" width="32" height="32" alt="Black Concrete Slab" title="Black Concrete Slab"> | **Black Concrete Slab** | `black_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/black_concrete_stairs.png" width="32" height="32" alt="Black Concrete Stairs" title="Black Concrete Stairs"> | **Black Concrete Stairs** | `black_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/black_glazed_terracotta.png" width="32" height="32" alt="Black Glazed Terracotta" title="Black Glazed Terracotta"> | **Black Glazed Terracotta** | `black_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/black_glazed_terracotta.png" width="32" height="32" alt="Black Glazed Terracotta" title="Black Glazed Terracotta"> | **Black Glazed Terracotta** | `black_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/black_stained_glass.png" width="32" height="32" alt="Black Stained Glass" title="Black Stained Glass"> | **Black Stained Glass** | `black_stained_glass` | 1,000 | 135 | Buy / Sell | - |
 | <img src="assets/icons/black_stained_glass_pane.png" width="32" height="32" alt="Black Stained Glass Pane" title="Black Stained Glass Pane"> | **Black Stained Glass Pane** | `black_stained_glass_pane` | 1,000 | 50 | Buy / Sell | - |
-| <img src="assets/icons/black_terracotta.png" width="32" height="32" alt="Black Terracotta" title="Black Terracotta"> | **Black Terracotta** | `black_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/black_terracotta.png" width="32" height="32" alt="Black Terracotta" title="Black Terracotta"> | **Black Terracotta** | `black_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/black_wool.png" width="32" height="32" alt="Black Wool" title="Black Wool"> | **Black Wool** | `black_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/black_wool_slab.png" width="32" height="32" alt="Black Wool Slab" title="Black Wool Slab"> | **Black Wool Slab** | `black_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/black_wool_stairs.png" width="32" height="32" alt="Black Wool Stairs" title="Black Wool Stairs"> | **Black Wool Stairs** | `black_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -155,12 +155,12 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/blue_concrete_powder.png" width="32" height="32" alt="Blue Concrete Powder" title="Blue Concrete Powder"> | **Blue Concrete Powder** | `blue_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/blue_concrete_slab.png" width="32" height="32" alt="Blue Concrete Slab" title="Blue Concrete Slab"> | **Blue Concrete Slab** | `blue_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/blue_concrete_stairs.png" width="32" height="32" alt="Blue Concrete Stairs" title="Blue Concrete Stairs"> | **Blue Concrete Stairs** | `blue_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/blue_glazed_terracotta.png" width="32" height="32" alt="Blue Glazed Terracotta" title="Blue Glazed Terracotta"> | **Blue Glazed Terracotta** | `blue_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/blue_glazed_terracotta.png" width="32" height="32" alt="Blue Glazed Terracotta" title="Blue Glazed Terracotta"> | **Blue Glazed Terracotta** | `blue_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/blue_ice.png" width="32" height="32" alt="Blue Ice" title="Blue Ice"> | **Blue Ice** | `blue_ice` | 81,000 | 64,800 | Buy / Sell | - |
 | <img src="assets/icons/blue_orchid.png" width="32" height="32" alt="Blue Orchid" title="Blue Orchid"> | **Blue Orchid** | `blue_orchid` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/blue_stained_glass.png" width="32" height="32" alt="Blue Stained Glass" title="Blue Stained Glass"> | **Blue Stained Glass** | `blue_stained_glass` | 1,000 | 135 | Buy / Sell | - |
 | <img src="assets/icons/blue_stained_glass_pane.png" width="32" height="32" alt="Blue Stained Glass Pane" title="Blue Stained Glass Pane"> | **Blue Stained Glass Pane** | `blue_stained_glass_pane` | 1,000 | 50 | Buy / Sell | - |
-| <img src="assets/icons/blue_terracotta.png" width="32" height="32" alt="Blue Terracotta" title="Blue Terracotta"> | **Blue Terracotta** | `blue_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/blue_terracotta.png" width="32" height="32" alt="Blue Terracotta" title="Blue Terracotta"> | **Blue Terracotta** | `blue_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/blue_wool.png" width="32" height="32" alt="Blue Wool" title="Blue Wool"> | **Blue Wool** | `blue_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/blue_wool_slab.png" width="32" height="32" alt="Blue Wool Slab" title="Blue Wool Slab"> | **Blue Wool Slab** | `blue_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/blue_wool_stairs.png" width="32" height="32" alt="Blue Wool Stairs" title="Blue Wool Stairs"> | **Blue Wool Stairs** | `blue_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -170,10 +170,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/brain_coral_block.png" width="32" height="32" alt="Brain Coral Block" title="Brain Coral Block"> | **Brain Coral Block** | `brain_coral_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/brain_coral_fan.png" width="32" height="32" alt="Brain Coral Fan" title="Brain Coral Fan"> | **Brain Coral Fan** | `brain_coral_fan` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/brewing_stand.png" width="32" height="32" alt="Brewing Stand" title="Brewing Stand"> | **Brewing Stand** | `brewing_stand` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/brick_slab.png" width="32" height="32" alt="Brick Slab" title="Brick Slab"> | **Brick Slab** | `brick_slab` | 5,000 | 4,000 | Buy / Sell | - |
-| <img src="assets/icons/brick_stairs.png" width="32" height="32" alt="Brick Stairs" title="Brick Stairs"> | **Brick Stairs** | `brick_stairs` | 10,000 | 8,000 | Buy / Sell | - |
-| <img src="assets/icons/brick_wall.png" width="32" height="32" alt="Brick Wall" title="Brick Wall"> | **Brick Wall** | `brick_wall` | 10,000 | 8,000 | Buy / Sell | - |
-| <img src="assets/icons/bricks.png" width="32" height="32" alt="Bricks" title="Bricks"> | **Bricks** | `bricks` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/brick_slab.png" width="32" height="32" alt="Brick Slab" title="Brick Slab"> | **Brick Slab** | `brick_slab` | 10 | 4 | Buy / Sell | - |
+| <img src="assets/icons/brick_stairs.png" width="32" height="32" alt="Brick Stairs" title="Brick Stairs"> | **Brick Stairs** | `brick_stairs` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/brick_wall.png" width="32" height="32" alt="Brick Wall" title="Brick Wall"> | **Brick Wall** | `brick_wall` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/bricks.png" width="32" height="32" alt="Bricks" title="Bricks"> | **Bricks** | `bricks` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/brown_banner.png" width="32" height="32" alt="Brown Banner" title="Brown Banner"> | **Brown Banner** | `brown_banner` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/brown_bed.png" width="32" height="32" alt="Brown Bed" title="Brown Bed"> | **Brown Bed** | `brown_bed` | 5,000 | 3,600 | Buy / Sell | - |
 | <img src="assets/icons/brown_candle.png" width="32" height="32" alt="Brown Candle" title="Brown Candle"> | **Brown Candle** | `brown_candle` | 2,000 | 1,600 | Buy / Sell | - |
@@ -182,12 +182,12 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/brown_concrete_powder.png" width="32" height="32" alt="Brown Concrete Powder" title="Brown Concrete Powder"> | **Brown Concrete Powder** | `brown_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/brown_concrete_slab.png" width="32" height="32" alt="Brown Concrete Slab" title="Brown Concrete Slab"> | **Brown Concrete Slab** | `brown_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/brown_concrete_stairs.png" width="32" height="32" alt="Brown Concrete Stairs" title="Brown Concrete Stairs"> | **Brown Concrete Stairs** | `brown_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/brown_glazed_terracotta.png" width="32" height="32" alt="Brown Glazed Terracotta" title="Brown Glazed Terracotta"> | **Brown Glazed Terracotta** | `brown_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/brown_glazed_terracotta.png" width="32" height="32" alt="Brown Glazed Terracotta" title="Brown Glazed Terracotta"> | **Brown Glazed Terracotta** | `brown_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/brown_mushroom.png" width="32" height="32" alt="Brown Mushroom" title="Brown Mushroom"> | **Brown Mushroom** | `brown_mushroom` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/brown_mushroom_block.png" width="32" height="32" alt="Brown Mushroom Block" title="Brown Mushroom Block"> | **Brown Mushroom Block** | `brown_mushroom_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/brown_stained_glass.png" width="32" height="32" alt="Brown Stained Glass" title="Brown Stained Glass"> | **Brown Stained Glass** | `brown_stained_glass` | 1,000 | 135 | Buy / Sell | - |
 | <img src="assets/icons/brown_stained_glass_pane.png" width="32" height="32" alt="Brown Stained Glass Pane" title="Brown Stained Glass Pane"> | **Brown Stained Glass Pane** | `brown_stained_glass_pane` | 1,000 | 50 | Buy / Sell | - |
-| <img src="assets/icons/brown_terracotta.png" width="32" height="32" alt="Brown Terracotta" title="Brown Terracotta"> | **Brown Terracotta** | `brown_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/brown_terracotta.png" width="32" height="32" alt="Brown Terracotta" title="Brown Terracotta"> | **Brown Terracotta** | `brown_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/brown_wool.png" width="32" height="32" alt="Brown Wool" title="Brown Wool"> | **Brown Wool** | `brown_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/brown_wool_slab.png" width="32" height="32" alt="Brown Wool Slab" title="Brown Wool Slab"> | **Brown Wool Slab** | `brown_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/brown_wool_stairs.png" width="32" height="32" alt="Brown Wool Stairs" title="Brown Wool Stairs"> | **Brown Wool Stairs** | `brown_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -240,9 +240,9 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/cinnabar_slab.png" width="32" height="32" alt="Cinnabar Slab" title="Cinnabar Slab"> | **Cinnabar Slab** | `cinnabar_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/cinnabar_stairs.png" width="32" height="32" alt="Cinnabar Stairs" title="Cinnabar Stairs"> | **Cinnabar Stairs** | `cinnabar_stairs` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/cinnabar_wall.png" width="32" height="32" alt="Cinnabar Wall" title="Cinnabar Wall"> | **Cinnabar Wall** | `cinnabar_wall` | 1,200 | 900 | Buy / Sell | - |
-| <img src="assets/icons/clay.png" width="32" height="32" alt="Clay" title="Clay"> | **Clay** | `clay` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/clay.png" width="32" height="32" alt="Clay" title="Clay"> | **Clay** | `clay` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/closed_eyeblossom.png" width="32" height="32" alt="Closed Eyeblossom" title="Closed Eyeblossom"> | **Closed Eyeblossom** | `closed_eyeblossom` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/coarse_dirt.png" width="32" height="32" alt="Coarse Dirt" title="Coarse Dirt"> | **Coarse Dirt** | `coarse_dirt` | 1,000 | 505 | Buy / Sell | - |
+| <img src="assets/icons/coarse_dirt.png" width="32" height="32" alt="Coarse Dirt" title="Coarse Dirt"> | **Coarse Dirt** | `coarse_dirt` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/cobbled_deepslate.png" width="32" height="32" alt="Cobbled Deepslate" title="Cobbled Deepslate"> | **Cobbled Deepslate** | `cobbled_deepslate` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/cobbled_deepslate_slab.png" width="32" height="32" alt="Cobbled Deepslate Slab" title="Cobbled Deepslate Slab"> | **Cobbled Deepslate Slab** | `cobbled_deepslate_slab` | 1,200 | 500 | Buy / Sell | - |
 | <img src="assets/icons/cobbled_deepslate_stairs.png" width="32" height="32" alt="Cobbled Deepslate Stairs" title="Cobbled Deepslate Stairs"> | **Cobbled Deepslate Stairs** | `cobbled_deepslate_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -305,10 +305,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/cyan_concrete_powder.png" width="32" height="32" alt="Cyan Concrete Powder" title="Cyan Concrete Powder"> | **Cyan Concrete Powder** | `cyan_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/cyan_concrete_slab.png" width="32" height="32" alt="Cyan Concrete Slab" title="Cyan Concrete Slab"> | **Cyan Concrete Slab** | `cyan_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/cyan_concrete_stairs.png" width="32" height="32" alt="Cyan Concrete Stairs" title="Cyan Concrete Stairs"> | **Cyan Concrete Stairs** | `cyan_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/cyan_glazed_terracotta.png" width="32" height="32" alt="Cyan Glazed Terracotta" title="Cyan Glazed Terracotta"> | **Cyan Glazed Terracotta** | `cyan_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/cyan_glazed_terracotta.png" width="32" height="32" alt="Cyan Glazed Terracotta" title="Cyan Glazed Terracotta"> | **Cyan Glazed Terracotta** | `cyan_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/cyan_stained_glass.png" width="32" height="32" alt="Cyan Stained Glass" title="Cyan Stained Glass"> | **Cyan Stained Glass** | `cyan_stained_glass` | 1,000 | 72 | Buy / Sell | - |
 | <img src="assets/icons/cyan_stained_glass_pane.png" width="32" height="32" alt="Cyan Stained Glass Pane" title="Cyan Stained Glass Pane"> | **Cyan Stained Glass Pane** | `cyan_stained_glass_pane` | 1,000 | 27 | Buy / Sell | - |
-| <img src="assets/icons/cyan_terracotta.png" width="32" height="32" alt="Cyan Terracotta" title="Cyan Terracotta"> | **Cyan Terracotta** | `cyan_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/cyan_terracotta.png" width="32" height="32" alt="Cyan Terracotta" title="Cyan Terracotta"> | **Cyan Terracotta** | `cyan_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/cyan_wool.png" width="32" height="32" alt="Cyan Wool" title="Cyan Wool"> | **Cyan Wool** | `cyan_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/cyan_wool_slab.png" width="32" height="32" alt="Cyan Wool Slab" title="Cyan Wool Slab"> | **Cyan Wool Slab** | `cyan_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/cyan_wool_stairs.png" width="32" height="32" alt="Cyan Wool Stairs" title="Cyan Wool Stairs"> | **Cyan Wool Stairs** | `cyan_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -348,7 +348,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/dead_tube_coral.png" width="32" height="32" alt="Dead Tube Coral" title="Dead Tube Coral"> | **Dead Tube Coral** | `dead_tube_coral` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/dead_tube_coral_block.png" width="32" height="32" alt="Dead Tube Coral Block" title="Dead Tube Coral Block"> | **Dead Tube Coral Block** | `dead_tube_coral_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/dead_tube_coral_fan.png" width="32" height="32" alt="Dead Tube Coral Fan" title="Dead Tube Coral Fan"> | **Dead Tube Coral Fan** | `dead_tube_coral_fan` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/decorated_pot.png" width="32" height="32" alt="Decorated Pot" title="Decorated Pot"> | **Decorated Pot** | `decorated_pot` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/decorated_pot.png" width="32" height="32" alt="Decorated Pot" title="Decorated Pot"> | **Decorated Pot** | `decorated_pot` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/deepslate.png" width="32" height="32" alt="Deepslate" title="Deepslate"> | **Deepslate** | `deepslate` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/deepslate_brick_slab.png" width="32" height="32" alt="Deepslate Brick Slab" title="Deepslate Brick Slab"> | **Deepslate Brick Slab** | `deepslate_brick_slab` | 1,200 | 500 | Buy / Sell | - |
 | <img src="assets/icons/deepslate_brick_stairs.png" width="32" height="32" alt="Deepslate Brick Stairs" title="Deepslate Brick Stairs"> | **Deepslate Brick Stairs** | `deepslate_brick_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -362,10 +362,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/diorite_slab.png" width="32" height="32" alt="Diorite Slab" title="Diorite Slab"> | **Diorite Slab** | `diorite_slab` | 1,200 | 500 | Buy / Sell | - |
 | <img src="assets/icons/diorite_stairs.png" width="32" height="32" alt="Diorite Stairs" title="Diorite Stairs"> | **Diorite Stairs** | `diorite_stairs` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/diorite_wall.png" width="32" height="32" alt="Diorite Wall" title="Diorite Wall"> | **Diorite Wall** | `diorite_wall` | 1,200 | 900 | Buy / Sell | - |
-| <img src="assets/icons/dirt.png" width="32" height="32" alt="Dirt" title="Dirt"> | **Dirt** | `dirt` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/dirt_path.png" width="32" height="32" alt="Dirt Path" title="Dirt Path"> | **Dirt Path** | `dirt_path` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/dirt.png" width="32" height="32" alt="Dirt" title="Dirt"> | **Dirt** | `dirt` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/dirt_path.png" width="32" height="32" alt="Dirt Path" title="Dirt Path"> | **Dirt Path** | `dirt_path` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/dripstone_block.png" width="32" height="32" alt="Dripstone Block" title="Dripstone Block"> | **Dripstone Block** | `dripstone_block` | 4,000 | 3,200 | Buy / Sell | - |
-| <img src="assets/icons/enchanting_table.png" width="32" height="32" alt="Enchanting Table" title="Enchanting Table"> | **Enchanting Table** | `enchanting_table` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/enchanting_table.png" width="32" height="32" alt="Enchanting Table" title="Enchanting Table"> | **Enchanting Table** | `enchanting_table` | 100,000 | 50,000 | Buy / Sell | - |
 | <img src="assets/icons/ender_chest.png" width="32" height="32" alt="Ender Chest" title="Ender Chest"> | **Ender Chest** | `ender_chest` | 5,000 | 4,000 | Buy / Sell | - |
 | <img src="assets/icons/exposed_chiseled_copper.png" width="32" height="32" alt="Exposed Chiseled Copper" title="Exposed Chiseled Copper"> | **Exposed Chiseled Copper** | `exposed_chiseled_copper` | 5,000 | 1,200 | Buy / Sell | - |
 | <img src="assets/icons/exposed_copper.png" width="32" height="32" alt="Exposed Copper" title="Exposed Copper"> | **Exposed Copper** | `exposed_copper` | 5,000 | 4,000 | Buy / Sell | - |
@@ -382,14 +382,14 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/exposed_cut_copper_slab.png" width="32" height="32" alt="Exposed Cut Copper Slab" title="Exposed Cut Copper Slab"> | **Exposed Cut Copper Slab** | `exposed_cut_copper_slab` | 1,200 | 600 | Buy / Sell | - |
 | <img src="assets/icons/exposed_cut_copper_stairs.png" width="32" height="32" alt="Exposed Cut Copper Stairs" title="Exposed Cut Copper Stairs"> | **Exposed Cut Copper Stairs** | `exposed_cut_copper_stairs` | 1,300 | 1,000 | Buy / Sell | - |
 | <img src="assets/icons/exposed_lightning_rod.png" width="32" height="32" alt="Exposed Lightning Rod" title="Exposed Lightning Rod"> | **Exposed Lightning Rod** | `exposed_lightning_rod` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/farmland.png" width="32" height="32" alt="Farmland" title="Farmland"> | **Farmland** | `farmland` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/farmland.png" width="32" height="32" alt="Farmland" title="Farmland"> | **Farmland** | `farmland` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/fern.png" width="32" height="32" alt="Fern" title="Fern"> | **Fern** | `fern` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/fire_coral.png" width="32" height="32" alt="Fire Coral" title="Fire Coral"> | **Fire Coral** | `fire_coral` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/fire_coral_block.png" width="32" height="32" alt="Fire Coral Block" title="Fire Coral Block"> | **Fire Coral Block** | `fire_coral_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/fire_coral_fan.png" width="32" height="32" alt="Fire Coral Fan" title="Fire Coral Fan"> | **Fire Coral Fan** | `fire_coral_fan` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/firefly_bush.png" width="32" height="32" alt="Firefly Bush" title="Firefly Bush"> | **Firefly Bush** | `firefly_bush` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/fletching_table.png" width="32" height="32" alt="Fletching Table" title="Fletching Table"> | **Fletching Table** | `fletching_table` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/flower_pot.png" width="32" height="32" alt="Flower Pot" title="Flower Pot"> | **Flower Pot** | `flower_pot` | 7,500 | 6,000 | Buy / Sell | - |
+| <img src="assets/icons/flower_pot.png" width="32" height="32" alt="Flower Pot" title="Flower Pot"> | **Flower Pot** | `flower_pot` | 10 | 6 | Buy / Sell | - |
 | <img src="assets/icons/flowering_azalea.png" width="32" height="32" alt="Flowering Azalea" title="Flowering Azalea"> | **Flowering Azalea** | `flowering_azalea` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/flowering_azalea_leaves.png" width="32" height="32" alt="Flowering Azalea Leaves" title="Flowering Azalea Leaves"> | **Flowering Azalea Leaves** | `flowering_azalea_leaves` | 500 | 400 | Buy / Sell | - |
 | <img src="assets/icons/frogspawn.png" width="32" height="32" alt="Frogspawn" title="Frogspawn"> | **Frogspawn** | `frogspawn` | 1,000 | 800 | Buy / Sell | - |
@@ -403,7 +403,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/granite_slab.png" width="32" height="32" alt="Granite Slab" title="Granite Slab"> | **Granite Slab** | `granite_slab` | 1,200 | 500 | Buy / Sell | - |
 | <img src="assets/icons/granite_stairs.png" width="32" height="32" alt="Granite Stairs" title="Granite Stairs"> | **Granite Stairs** | `granite_stairs` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/granite_wall.png" width="32" height="32" alt="Granite Wall" title="Granite Wall"> | **Granite Wall** | `granite_wall` | 1,200 | 900 | Buy / Sell | - |
-| <img src="assets/icons/grass_block.png" width="32" height="32" alt="Grass Block" title="Grass Block"> | **Grass Block** | `grass_block` | 2,000 | 1,600 | Buy / Sell | - |
+| <img src="assets/icons/grass_block.png" width="32" height="32" alt="Grass Block" title="Grass Block"> | **Grass Block** | `grass_block` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/gravel.png" width="32" height="32" alt="Gravel" title="Gravel"> | **Gravel** | `gravel` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/gray_banner.png" width="32" height="32" alt="Gray Banner" title="Gray Banner"> | **Gray Banner** | `gray_banner` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/gray_bed.png" width="32" height="32" alt="Gray Bed" title="Gray Bed"> | **Gray Bed** | `gray_bed` | 5,000 | 3,600 | Buy / Sell | - |
@@ -413,10 +413,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/gray_concrete_powder.png" width="32" height="32" alt="Gray Concrete Powder" title="Gray Concrete Powder"> | **Gray Concrete Powder** | `gray_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/gray_concrete_slab.png" width="32" height="32" alt="Gray Concrete Slab" title="Gray Concrete Slab"> | **Gray Concrete Slab** | `gray_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/gray_concrete_stairs.png" width="32" height="32" alt="Gray Concrete Stairs" title="Gray Concrete Stairs"> | **Gray Concrete Stairs** | `gray_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/gray_glazed_terracotta.png" width="32" height="32" alt="Gray Glazed Terracotta" title="Gray Glazed Terracotta"> | **Gray Glazed Terracotta** | `gray_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/gray_glazed_terracotta.png" width="32" height="32" alt="Gray Glazed Terracotta" title="Gray Glazed Terracotta"> | **Gray Glazed Terracotta** | `gray_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/gray_stained_glass.png" width="32" height="32" alt="Gray Stained Glass" title="Gray Stained Glass"> | **Gray Stained Glass** | `gray_stained_glass` | 1,000 | 124 | Buy / Sell | - |
 | <img src="assets/icons/gray_stained_glass_pane.png" width="32" height="32" alt="Gray Stained Glass Pane" title="Gray Stained Glass Pane"> | **Gray Stained Glass Pane** | `gray_stained_glass_pane` | 1,000 | 46 | Buy / Sell | - |
-| <img src="assets/icons/gray_terracotta.png" width="32" height="32" alt="Gray Terracotta" title="Gray Terracotta"> | **Gray Terracotta** | `gray_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/gray_terracotta.png" width="32" height="32" alt="Gray Terracotta" title="Gray Terracotta"> | **Gray Terracotta** | `gray_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/gray_wool.png" width="32" height="32" alt="Gray Wool" title="Gray Wool"> | **Gray Wool** | `gray_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/gray_wool_slab.png" width="32" height="32" alt="Gray Wool Slab" title="Gray Wool Slab"> | **Gray Wool Slab** | `gray_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/gray_wool_stairs.png" width="32" height="32" alt="Gray Wool Stairs" title="Gray Wool Stairs"> | **Gray Wool Stairs** | `gray_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -428,10 +428,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/green_concrete_powder.png" width="32" height="32" alt="Green Concrete Powder" title="Green Concrete Powder"> | **Green Concrete Powder** | `green_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/green_concrete_slab.png" width="32" height="32" alt="Green Concrete Slab" title="Green Concrete Slab"> | **Green Concrete Slab** | `green_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/green_concrete_stairs.png" width="32" height="32" alt="Green Concrete Stairs" title="Green Concrete Stairs"> | **Green Concrete Stairs** | `green_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/green_glazed_terracotta.png" width="32" height="32" alt="Green Glazed Terracotta" title="Green Glazed Terracotta"> | **Green Glazed Terracotta** | `green_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/green_glazed_terracotta.png" width="32" height="32" alt="Green Glazed Terracotta" title="Green Glazed Terracotta"> | **Green Glazed Terracotta** | `green_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/green_stained_glass.png" width="32" height="32" alt="Green Stained Glass" title="Green Stained Glass"> | **Green Stained Glass** | `green_stained_glass` | 1,000 | 135 | Buy / Sell | - |
 | <img src="assets/icons/green_stained_glass_pane.png" width="32" height="32" alt="Green Stained Glass Pane" title="Green Stained Glass Pane"> | **Green Stained Glass Pane** | `green_stained_glass_pane` | 1,000 | 50 | Buy / Sell | - |
-| <img src="assets/icons/green_terracotta.png" width="32" height="32" alt="Green Terracotta" title="Green Terracotta"> | **Green Terracotta** | `green_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/green_terracotta.png" width="32" height="32" alt="Green Terracotta" title="Green Terracotta"> | **Green Terracotta** | `green_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/green_wool.png" width="32" height="32" alt="Green Wool" title="Green Wool"> | **Green Wool** | `green_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/green_wool_slab.png" width="32" height="32" alt="Green Wool Slab" title="Green Wool Slab"> | **Green Wool Slab** | `green_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/green_wool_stairs.png" width="32" height="32" alt="Green Wool Stairs" title="Green Wool Stairs"> | **Green Wool Stairs** | `green_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -486,10 +486,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/light_blue_concrete_powder.png" width="32" height="32" alt="Light Blue Concrete Powder" title="Light Blue Concrete Powder"> | **Light Blue Concrete Powder** | `light_blue_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_concrete_slab.png" width="32" height="32" alt="Light Blue Concrete Slab" title="Light Blue Concrete Slab"> | **Light Blue Concrete Slab** | `light_blue_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_concrete_stairs.png" width="32" height="32" alt="Light Blue Concrete Stairs" title="Light Blue Concrete Stairs"> | **Light Blue Concrete Stairs** | `light_blue_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/light_blue_glazed_terracotta.png" width="32" height="32" alt="Light Blue Glazed Terracotta" title="Light Blue Glazed Terracotta"> | **Light Blue Glazed Terracotta** | `light_blue_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/light_blue_glazed_terracotta.png" width="32" height="32" alt="Light Blue Glazed Terracotta" title="Light Blue Glazed Terracotta"> | **Light Blue Glazed Terracotta** | `light_blue_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_stained_glass.png" width="32" height="32" alt="Light Blue Stained Glass" title="Light Blue Stained Glass"> | **Light Blue Stained Glass** | `light_blue_stained_glass` | 1,000 | 124 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_stained_glass_pane.png" width="32" height="32" alt="Light Blue Stained Glass Pane" title="Light Blue Stained Glass Pane"> | **Light Blue Stained Glass Pane** | `light_blue_stained_glass_pane` | 1,000 | 46 | Buy / Sell | - |
-| <img src="assets/icons/light_blue_terracotta.png" width="32" height="32" alt="Light Blue Terracotta" title="Light Blue Terracotta"> | **Light Blue Terracotta** | `light_blue_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/light_blue_terracotta.png" width="32" height="32" alt="Light Blue Terracotta" title="Light Blue Terracotta"> | **Light Blue Terracotta** | `light_blue_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_wool.png" width="32" height="32" alt="Light Blue Wool" title="Light Blue Wool"> | **Light Blue Wool** | `light_blue_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_wool_slab.png" width="32" height="32" alt="Light Blue Wool Slab" title="Light Blue Wool Slab"> | **Light Blue Wool Slab** | `light_blue_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/light_blue_wool_stairs.png" width="32" height="32" alt="Light Blue Wool Stairs" title="Light Blue Wool Stairs"> | **Light Blue Wool Stairs** | `light_blue_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -501,10 +501,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/light_gray_concrete_powder.png" width="32" height="32" alt="Light Gray Concrete Powder" title="Light Gray Concrete Powder"> | **Light Gray Concrete Powder** | `light_gray_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_concrete_slab.png" width="32" height="32" alt="Light Gray Concrete Slab" title="Light Gray Concrete Slab"> | **Light Gray Concrete Slab** | `light_gray_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_concrete_stairs.png" width="32" height="32" alt="Light Gray Concrete Stairs" title="Light Gray Concrete Stairs"> | **Light Gray Concrete Stairs** | `light_gray_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/light_gray_glazed_terracotta.png" width="32" height="32" alt="Light Gray Glazed Terracotta" title="Light Gray Glazed Terracotta"> | **Light Gray Glazed Terracotta** | `light_gray_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/light_gray_glazed_terracotta.png" width="32" height="32" alt="Light Gray Glazed Terracotta" title="Light Gray Glazed Terracotta"> | **Light Gray Glazed Terracotta** | `light_gray_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_stained_glass.png" width="32" height="32" alt="Light Gray Stained Glass" title="Light Gray Stained Glass"> | **Light Gray Stained Glass** | `light_gray_stained_glass` | 1,000 | 119 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_stained_glass_pane.png" width="32" height="32" alt="Light Gray Stained Glass Pane" title="Light Gray Stained Glass Pane"> | **Light Gray Stained Glass Pane** | `light_gray_stained_glass_pane` | 1,000 | 44 | Buy / Sell | - |
-| <img src="assets/icons/light_gray_terracotta.png" width="32" height="32" alt="Light Gray Terracotta" title="Light Gray Terracotta"> | **Light Gray Terracotta** | `light_gray_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/light_gray_terracotta.png" width="32" height="32" alt="Light Gray Terracotta" title="Light Gray Terracotta"> | **Light Gray Terracotta** | `light_gray_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_wool.png" width="32" height="32" alt="Light Gray Wool" title="Light Gray Wool"> | **Light Gray Wool** | `light_gray_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_wool_slab.png" width="32" height="32" alt="Light Gray Wool Slab" title="Light Gray Wool Slab"> | **Light Gray Wool Slab** | `light_gray_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/light_gray_wool_stairs.png" width="32" height="32" alt="Light Gray Wool Stairs" title="Light Gray Wool Stairs"> | **Light Gray Wool Stairs** | `light_gray_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -520,10 +520,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/lime_concrete_powder.png" width="32" height="32" alt="Lime Concrete Powder" title="Lime Concrete Powder"> | **Lime Concrete Powder** | `lime_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/lime_concrete_slab.png" width="32" height="32" alt="Lime Concrete Slab" title="Lime Concrete Slab"> | **Lime Concrete Slab** | `lime_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/lime_concrete_stairs.png" width="32" height="32" alt="Lime Concrete Stairs" title="Lime Concrete Stairs"> | **Lime Concrete Stairs** | `lime_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/lime_glazed_terracotta.png" width="32" height="32" alt="Lime Glazed Terracotta" title="Lime Glazed Terracotta"> | **Lime Glazed Terracotta** | `lime_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/lime_glazed_terracotta.png" width="32" height="32" alt="Lime Glazed Terracotta" title="Lime Glazed Terracotta"> | **Lime Glazed Terracotta** | `lime_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/lime_stained_glass.png" width="32" height="32" alt="Lime Stained Glass" title="Lime Stained Glass"> | **Lime Stained Glass** | `lime_stained_glass` | 1,000 | 124 | Buy / Sell | - |
 | <img src="assets/icons/lime_stained_glass_pane.png" width="32" height="32" alt="Lime Stained Glass Pane" title="Lime Stained Glass Pane"> | **Lime Stained Glass Pane** | `lime_stained_glass_pane` | 1,000 | 46 | Buy / Sell | - |
-| <img src="assets/icons/lime_terracotta.png" width="32" height="32" alt="Lime Terracotta" title="Lime Terracotta"> | **Lime Terracotta** | `lime_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/lime_terracotta.png" width="32" height="32" alt="Lime Terracotta" title="Lime Terracotta"> | **Lime Terracotta** | `lime_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/lime_wool.png" width="32" height="32" alt="Lime Wool" title="Lime Wool"> | **Lime Wool** | `lime_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/lime_wool_slab.png" width="32" height="32" alt="Lime Wool Slab" title="Lime Wool Slab"> | **Lime Wool Slab** | `lime_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/lime_wool_stairs.png" width="32" height="32" alt="Lime Wool Stairs" title="Lime Wool Stairs"> | **Lime Wool Stairs** | `lime_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -537,10 +537,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/magenta_concrete_powder.png" width="32" height="32" alt="Magenta Concrete Powder" title="Magenta Concrete Powder"> | **Magenta Concrete Powder** | `magenta_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/magenta_concrete_slab.png" width="32" height="32" alt="Magenta Concrete Slab" title="Magenta Concrete Slab"> | **Magenta Concrete Slab** | `magenta_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/magenta_concrete_stairs.png" width="32" height="32" alt="Magenta Concrete Stairs" title="Magenta Concrete Stairs"> | **Magenta Concrete Stairs** | `magenta_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/magenta_glazed_terracotta.png" width="32" height="32" alt="Magenta Glazed Terracotta" title="Magenta Glazed Terracotta"> | **Magenta Glazed Terracotta** | `magenta_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/magenta_glazed_terracotta.png" width="32" height="32" alt="Magenta Glazed Terracotta" title="Magenta Glazed Terracotta"> | **Magenta Glazed Terracotta** | `magenta_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/magenta_stained_glass.png" width="32" height="32" alt="Magenta Stained Glass" title="Magenta Stained Glass"> | **Magenta Stained Glass** | `magenta_stained_glass` | 1,000 | 72 | Buy / Sell | - |
 | <img src="assets/icons/magenta_stained_glass_pane.png" width="32" height="32" alt="Magenta Stained Glass Pane" title="Magenta Stained Glass Pane"> | **Magenta Stained Glass Pane** | `magenta_stained_glass_pane` | 1,000 | 27 | Buy / Sell | - |
-| <img src="assets/icons/magenta_terracotta.png" width="32" height="32" alt="Magenta Terracotta" title="Magenta Terracotta"> | **Magenta Terracotta** | `magenta_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/magenta_terracotta.png" width="32" height="32" alt="Magenta Terracotta" title="Magenta Terracotta"> | **Magenta Terracotta** | `magenta_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/magenta_wool.png" width="32" height="32" alt="Magenta Wool" title="Magenta Wool"> | **Magenta Wool** | `magenta_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/magenta_wool_slab.png" width="32" height="32" alt="Magenta Wool Slab" title="Magenta Wool Slab"> | **Magenta Wool Slab** | `magenta_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/magenta_wool_stairs.png" width="32" height="32" alt="Magenta Wool Stairs" title="Magenta Wool Stairs"> | **Magenta Wool Stairs** | `magenta_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -573,14 +573,14 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/mossy_stone_brick_stairs.png" width="32" height="32" alt="Mossy Stone Brick Stairs" title="Mossy Stone Brick Stairs"> | **Mossy Stone Brick Stairs** | `mossy_stone_brick_stairs` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/mossy_stone_brick_wall.png" width="32" height="32" alt="Mossy Stone Brick Wall" title="Mossy Stone Brick Wall"> | **Mossy Stone Brick Wall** | `mossy_stone_brick_wall` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/mossy_stone_bricks.png" width="32" height="32" alt="Mossy Stone Bricks" title="Mossy Stone Bricks"> | **Mossy Stone Bricks** | `mossy_stone_bricks` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/mud.png" width="32" height="32" alt="Mud" title="Mud"> | **Mud** | `mud` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/mud_brick_slab.png" width="32" height="32" alt="Mud Brick Slab" title="Mud Brick Slab"> | **Mud Brick Slab** | `mud_brick_slab` | 1,200 | 500 | Buy / Sell | - |
-| <img src="assets/icons/mud_brick_stairs.png" width="32" height="32" alt="Mud Brick Stairs" title="Mud Brick Stairs"> | **Mud Brick Stairs** | `mud_brick_stairs` | 1,200 | 900 | Buy / Sell | - |
-| <img src="assets/icons/mud_brick_wall.png" width="32" height="32" alt="Mud Brick Wall" title="Mud Brick Wall"> | **Mud Brick Wall** | `mud_brick_wall` | 1,200 | 900 | Buy / Sell | - |
-| <img src="assets/icons/mud_bricks.png" width="32" height="32" alt="Mud Bricks" title="Mud Bricks"> | **Mud Bricks** | `mud_bricks` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/muddy_mangrove_roots.png" width="32" height="32" alt="Muddy Mangrove Roots" title="Muddy Mangrove Roots"> | **Muddy Mangrove Roots** | `muddy_mangrove_roots` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/mud.png" width="32" height="32" alt="Mud" title="Mud"> | **Mud** | `mud` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/mud_brick_slab.png" width="32" height="32" alt="Mud Brick Slab" title="Mud Brick Slab"> | **Mud Brick Slab** | `mud_brick_slab` | 10 | 5 | Buy / Sell | - |
+| <img src="assets/icons/mud_brick_stairs.png" width="32" height="32" alt="Mud Brick Stairs" title="Mud Brick Stairs"> | **Mud Brick Stairs** | `mud_brick_stairs` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/mud_brick_wall.png" width="32" height="32" alt="Mud Brick Wall" title="Mud Brick Wall"> | **Mud Brick Wall** | `mud_brick_wall` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/mud_bricks.png" width="32" height="32" alt="Mud Bricks" title="Mud Bricks"> | **Mud Bricks** | `mud_bricks` | 10 | 8 | Buy / Sell | - |
+| <img src="assets/icons/muddy_mangrove_roots.png" width="32" height="32" alt="Muddy Mangrove Roots" title="Muddy Mangrove Roots"> | **Muddy Mangrove Roots** | `muddy_mangrove_roots` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/mushroom_stem.png" width="32" height="32" alt="Mushroom Stem" title="Mushroom Stem"> | **Mushroom Stem** | `mushroom_stem` | 800 | 600 | Buy / Sell | - |
-| <img src="assets/icons/mycelium.png" width="32" height="32" alt="Mycelium" title="Mycelium"> | **Mycelium** | `mycelium` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/mycelium.png" width="32" height="32" alt="Mycelium" title="Mycelium"> | **Mycelium** | `mycelium` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/note_block.png" width="32" height="32" alt="Note Block" title="Note Block"> | **Note Block** | `note_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/oak_door.png" width="32" height="32" alt="Oak Door" title="Oak Door"> | **Oak Door** | `oak_door` | 1,600 | 400 | Buy / Sell | - |
 | <img src="assets/icons/oak_fence.png" width="32" height="32" alt="Oak Fence" title="Oak Fence"> | **Oak Fence** | `oak_fence` | 1,200 | 300 | Buy / Sell | - |
@@ -607,11 +607,11 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/orange_concrete_powder.png" width="32" height="32" alt="Orange Concrete Powder" title="Orange Concrete Powder"> | **Orange Concrete Powder** | `orange_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/orange_concrete_slab.png" width="32" height="32" alt="Orange Concrete Slab" title="Orange Concrete Slab"> | **Orange Concrete Slab** | `orange_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/orange_concrete_stairs.png" width="32" height="32" alt="Orange Concrete Stairs" title="Orange Concrete Stairs"> | **Orange Concrete Stairs** | `orange_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/orange_glazed_terracotta.png" width="32" height="32" alt="Orange Glazed Terracotta" title="Orange Glazed Terracotta"> | **Orange Glazed Terracotta** | `orange_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/orange_glazed_terracotta.png" width="32" height="32" alt="Orange Glazed Terracotta" title="Orange Glazed Terracotta"> | **Orange Glazed Terracotta** | `orange_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/orange_poplar_leaves.png" width="32" height="32" alt="Orange Poplar Leaves" title="Orange Poplar Leaves"> | **Orange Poplar Leaves** | `orange_poplar_leaves` | 500 | 400 | Buy / Sell | - |
 | <img src="assets/icons/orange_stained_glass.png" width="32" height="32" alt="Orange Stained Glass" title="Orange Stained Glass"> | **Orange Stained Glass** | `orange_stained_glass` | 1,000 | 72 | Buy / Sell | - |
 | <img src="assets/icons/orange_stained_glass_pane.png" width="32" height="32" alt="Orange Stained Glass Pane" title="Orange Stained Glass Pane"> | **Orange Stained Glass Pane** | `orange_stained_glass_pane` | 1,000 | 27 | Buy / Sell | - |
-| <img src="assets/icons/orange_terracotta.png" width="32" height="32" alt="Orange Terracotta" title="Orange Terracotta"> | **Orange Terracotta** | `orange_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/orange_terracotta.png" width="32" height="32" alt="Orange Terracotta" title="Orange Terracotta"> | **Orange Terracotta** | `orange_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/orange_tulip.png" width="32" height="32" alt="Orange Tulip" title="Orange Tulip"> | **Orange Tulip** | `orange_tulip` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/orange_wool.png" width="32" height="32" alt="Orange Wool" title="Orange Wool"> | **Orange Wool** | `orange_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/orange_wool_slab.png" width="32" height="32" alt="Orange Wool Slab" title="Orange Wool Slab"> | **Orange Wool Slab** | `orange_wool_slab` | 1,200 | 900 | Buy / Sell | - |
@@ -633,7 +633,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/oxidized_cut_copper_stairs.png" width="32" height="32" alt="Oxidized Cut Copper Stairs" title="Oxidized Cut Copper Stairs"> | **Oxidized Cut Copper Stairs** | `oxidized_cut_copper_stairs` | 1,300 | 1,000 | Buy / Sell | - |
 | <img src="assets/icons/oxidized_lightning_rod.png" width="32" height="32" alt="Oxidized Lightning Rod" title="Oxidized Lightning Rod"> | **Oxidized Lightning Rod** | `oxidized_lightning_rod` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/packed_ice.png" width="32" height="32" alt="Packed Ice" title="Packed Ice"> | **Packed Ice** | `packed_ice` | 9,000 | 7,200 | Buy / Sell | - |
-| <img src="assets/icons/packed_mud.png" width="32" height="32" alt="Packed Mud" title="Packed Mud"> | **Packed Mud** | `packed_mud` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/packed_mud.png" width="32" height="32" alt="Packed Mud" title="Packed Mud"> | **Packed Mud** | `packed_mud` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/pale_hanging_moss.png" width="32" height="32" alt="Pale Hanging Moss" title="Pale Hanging Moss"> | **Pale Hanging Moss** | `pale_hanging_moss` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pale_moss_block.png" width="32" height="32" alt="Pale Moss Block" title="Pale Moss Block"> | **Pale Moss Block** | `pale_moss_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/pale_moss_carpet.png" width="32" height="32" alt="Pale Moss Carpet" title="Pale Moss Carpet"> | **Pale Moss Carpet** | `pale_moss_carpet` | 14 | 11 | Buy / Sell | - |
@@ -662,11 +662,11 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/pink_concrete_powder.png" width="32" height="32" alt="Pink Concrete Powder" title="Pink Concrete Powder"> | **Pink Concrete Powder** | `pink_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/pink_concrete_slab.png" width="32" height="32" alt="Pink Concrete Slab" title="Pink Concrete Slab"> | **Pink Concrete Slab** | `pink_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/pink_concrete_stairs.png" width="32" height="32" alt="Pink Concrete Stairs" title="Pink Concrete Stairs"> | **Pink Concrete Stairs** | `pink_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/pink_glazed_terracotta.png" width="32" height="32" alt="Pink Glazed Terracotta" title="Pink Glazed Terracotta"> | **Pink Glazed Terracotta** | `pink_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/pink_glazed_terracotta.png" width="32" height="32" alt="Pink Glazed Terracotta" title="Pink Glazed Terracotta"> | **Pink Glazed Terracotta** | `pink_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/pink_petals.png" width="32" height="32" alt="Pink Petals" title="Pink Petals"> | **Pink Petals** | `pink_petals` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pink_stained_glass.png" width="32" height="32" alt="Pink Stained Glass" title="Pink Stained Glass"> | **Pink Stained Glass** | `pink_stained_glass` | 1,000 | 72 | Buy / Sell | - |
 | <img src="assets/icons/pink_stained_glass_pane.png" width="32" height="32" alt="Pink Stained Glass Pane" title="Pink Stained Glass Pane"> | **Pink Stained Glass Pane** | `pink_stained_glass_pane` | 1,000 | 27 | Buy / Sell | - |
-| <img src="assets/icons/pink_terracotta.png" width="32" height="32" alt="Pink Terracotta" title="Pink Terracotta"> | **Pink Terracotta** | `pink_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/pink_terracotta.png" width="32" height="32" alt="Pink Terracotta" title="Pink Terracotta"> | **Pink Terracotta** | `pink_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/pink_tulip.png" width="32" height="32" alt="Pink Tulip" title="Pink Tulip"> | **Pink Tulip** | `pink_tulip` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pink_wool.png" width="32" height="32" alt="Pink Wool" title="Pink Wool"> | **Pink Wool** | `pink_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pink_wool_slab.png" width="32" height="32" alt="Pink Wool Slab" title="Pink Wool Slab"> | **Pink Wool Slab** | `pink_wool_slab` | 1,200 | 900 | Buy / Sell | - |
@@ -674,7 +674,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/pitcher_plant.png" width="32" height="32" alt="Pitcher Plant" title="Pitcher Plant"> | **Pitcher Plant** | `pitcher_plant` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/pitcher_pod.png" width="32" height="32" alt="Pitcher Pod" title="Pitcher Pod"> | **Pitcher Pod** | `pitcher_pod` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/player_head.png" width="32" height="32" alt="Player Head" title="Player Head"> | **Player Head** | `player_head` | - | 80,000 | Sell only | Player head - not sold by shop |
-| <img src="assets/icons/podzol.png" width="32" height="32" alt="Podzol" title="Podzol"> | **Podzol** | `podzol` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/podzol.png" width="32" height="32" alt="Podzol" title="Podzol"> | **Podzol** | `podzol` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/pointed_dripstone.png" width="32" height="32" alt="Pointed Dripstone" title="Pointed Dripstone"> | **Pointed Dripstone** | `pointed_dripstone` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/polished_andesite.png" width="32" height="32" alt="Polished Andesite" title="Polished Andesite"> | **Polished Andesite** | `polished_andesite` | 1,000 | 505 | Buy / Sell | - |
 | <img src="assets/icons/polished_andesite_slab.png" width="32" height="32" alt="Polished Andesite Slab" title="Polished Andesite Slab"> | **Polished Andesite Slab** | `polished_andesite_slab` | 1,200 | 252 | Buy / Sell | - |
@@ -743,10 +743,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/purple_concrete_powder.png" width="32" height="32" alt="Purple Concrete Powder" title="Purple Concrete Powder"> | **Purple Concrete Powder** | `purple_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/purple_concrete_slab.png" width="32" height="32" alt="Purple Concrete Slab" title="Purple Concrete Slab"> | **Purple Concrete Slab** | `purple_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/purple_concrete_stairs.png" width="32" height="32" alt="Purple Concrete Stairs" title="Purple Concrete Stairs"> | **Purple Concrete Stairs** | `purple_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/purple_glazed_terracotta.png" width="32" height="32" alt="Purple Glazed Terracotta" title="Purple Glazed Terracotta"> | **Purple Glazed Terracotta** | `purple_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/purple_glazed_terracotta.png" width="32" height="32" alt="Purple Glazed Terracotta" title="Purple Glazed Terracotta"> | **Purple Glazed Terracotta** | `purple_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/purple_stained_glass.png" width="32" height="32" alt="Purple Stained Glass" title="Purple Stained Glass"> | **Purple Stained Glass** | `purple_stained_glass` | 1,000 | 103 | Buy / Sell | - |
 | <img src="assets/icons/purple_stained_glass_pane.png" width="32" height="32" alt="Purple Stained Glass Pane" title="Purple Stained Glass Pane"> | **Purple Stained Glass Pane** | `purple_stained_glass_pane` | 1,000 | 38 | Buy / Sell | - |
-| <img src="assets/icons/purple_terracotta.png" width="32" height="32" alt="Purple Terracotta" title="Purple Terracotta"> | **Purple Terracotta** | `purple_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/purple_terracotta.png" width="32" height="32" alt="Purple Terracotta" title="Purple Terracotta"> | **Purple Terracotta** | `purple_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/purple_wool.png" width="32" height="32" alt="Purple Wool" title="Purple Wool"> | **Purple Wool** | `purple_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/purple_wool_slab.png" width="32" height="32" alt="Purple Wool Slab" title="Purple Wool Slab"> | **Purple Wool Slab** | `purple_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/purple_wool_stairs.png" width="32" height="32" alt="Purple Wool Stairs" title="Purple Wool Stairs"> | **Purple Wool Stairs** | `purple_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -758,7 +758,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/red_concrete_powder.png" width="32" height="32" alt="Red Concrete Powder" title="Red Concrete Powder"> | **Red Concrete Powder** | `red_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/red_concrete_slab.png" width="32" height="32" alt="Red Concrete Slab" title="Red Concrete Slab"> | **Red Concrete Slab** | `red_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/red_concrete_stairs.png" width="32" height="32" alt="Red Concrete Stairs" title="Red Concrete Stairs"> | **Red Concrete Stairs** | `red_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/red_glazed_terracotta.png" width="32" height="32" alt="Red Glazed Terracotta" title="Red Glazed Terracotta"> | **Red Glazed Terracotta** | `red_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/red_glazed_terracotta.png" width="32" height="32" alt="Red Glazed Terracotta" title="Red Glazed Terracotta"> | **Red Glazed Terracotta** | `red_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/red_mushroom.png" width="32" height="32" alt="Red Mushroom" title="Red Mushroom"> | **Red Mushroom** | `red_mushroom` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/red_mushroom_block.png" width="32" height="32" alt="Red Mushroom Block" title="Red Mushroom Block"> | **Red Mushroom Block** | `red_mushroom_block` | 2,000 | 1,600 | Buy / Sell | - |
 | <img src="assets/icons/red_poplar_leaves.png" width="32" height="32" alt="Red Poplar Leaves" title="Red Poplar Leaves"> | **Red Poplar Leaves** | `red_poplar_leaves` | 500 | 400 | Buy / Sell | - |
@@ -770,7 +770,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/red_shrub.png" width="32" height="32" alt="Red Shrub" title="Red Shrub"> | **Red Shrub** | `red_shrub` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/red_stained_glass.png" width="32" height="32" alt="Red Stained Glass" title="Red Stained Glass"> | **Red Stained Glass** | `red_stained_glass` | 1,000 | 72 | Buy / Sell | - |
 | <img src="assets/icons/red_stained_glass_pane.png" width="32" height="32" alt="Red Stained Glass Pane" title="Red Stained Glass Pane"> | **Red Stained Glass Pane** | `red_stained_glass_pane` | 1,000 | 27 | Buy / Sell | - |
-| <img src="assets/icons/red_terracotta.png" width="32" height="32" alt="Red Terracotta" title="Red Terracotta"> | **Red Terracotta** | `red_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/red_terracotta.png" width="32" height="32" alt="Red Terracotta" title="Red Terracotta"> | **Red Terracotta** | `red_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/red_tulip.png" width="32" height="32" alt="Red Tulip" title="Red Tulip"> | **Red Tulip** | `red_tulip` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/red_wool.png" width="32" height="32" alt="Red Wool" title="Red Wool"> | **Red Wool** | `red_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/red_wool_slab.png" width="32" height="32" alt="Red Wool Slab" title="Red Wool Slab"> | **Red Wool Slab** | `red_wool_slab` | 1,200 | 900 | Buy / Sell | - |
@@ -781,7 +781,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/resin_bricks.png" width="32" height="32" alt="Resin Bricks" title="Resin Bricks"> | **Resin Bricks** | `resin_bricks` | 4,800 | 3,800 | Buy / Sell | - |
 | <img src="assets/icons/resin_clump.png" width="32" height="32" alt="Resin Clump" title="Resin Clump"> | **Resin Clump** | `resin_clump` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/respawn_anchor.png" width="32" height="32" alt="Respawn Anchor" title="Respawn Anchor"> | **Respawn Anchor** | `respawn_anchor` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/rooted_dirt.png" width="32" height="32" alt="Rooted Dirt" title="Rooted Dirt"> | **Rooted Dirt** | `rooted_dirt` | 1,000 | 800 | Buy / Sell | - |
+| <img src="assets/icons/rooted_dirt.png" width="32" height="32" alt="Rooted Dirt" title="Rooted Dirt"> | **Rooted Dirt** | `rooted_dirt` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/rose_bush.png" width="32" height="32" alt="Rose Bush" title="Rose Bush"> | **Rose Bush** | `rose_bush` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/sand.png" width="32" height="32" alt="Sand" title="Sand"> | **Sand** | `sand` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/sandstone.png" width="32" height="32" alt="Sandstone" title="Sandstone"> | **Sandstone** | `sandstone` | 40 | 32 | Buy / Sell | - |
@@ -885,7 +885,7 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/tall_dry_grass.png" width="32" height="32" alt="Tall Dry Grass" title="Tall Dry Grass"> | **Tall Dry Grass** | `tall_dry_grass` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/tall_grass.png" width="32" height="32" alt="Tall Grass" title="Tall Grass"> | **Tall Grass** | `tall_grass` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/target.png" width="32" height="32" alt="Target" title="Target"> | **Target** | `target` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/terracotta.png" width="32" height="32" alt="Terracotta" title="Terracotta"> | **Terracotta** | `terracotta` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/terracotta.png" width="32" height="32" alt="Terracotta" title="Terracotta"> | **Terracotta** | `terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/tinted_glass.png" width="32" height="32" alt="Tinted Glass" title="Tinted Glass"> | **Tinted Glass** | `tinted_glass` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/tnt.png" width="32" height="32" alt="TNT" title="TNT"> | **TNT** | `tnt` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/torch.png" width="32" height="32" alt="Torch" title="Torch"> | **Torch** | `torch` | 1,000 | 400 | Buy / Sell | - |
@@ -1009,10 +1009,10 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/white_concrete_powder.png" width="32" height="32" alt="White Concrete Powder" title="White Concrete Powder"> | **White Concrete Powder** | `white_concrete_powder` | 15 | 11 | Buy / Sell | - |
 | <img src="assets/icons/white_concrete_slab.png" width="32" height="32" alt="White Concrete Slab" title="White Concrete Slab"> | **White Concrete Slab** | `white_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/white_concrete_stairs.png" width="32" height="32" alt="White Concrete Stairs" title="White Concrete Stairs"> | **White Concrete Stairs** | `white_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/white_glazed_terracotta.png" width="32" height="32" alt="White Glazed Terracotta" title="White Glazed Terracotta"> | **White Glazed Terracotta** | `white_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/white_glazed_terracotta.png" width="32" height="32" alt="White Glazed Terracotta" title="White Glazed Terracotta"> | **White Glazed Terracotta** | `white_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/white_stained_glass.png" width="32" height="32" alt="White Stained Glass" title="White Stained Glass"> | **White Stained Glass** | `white_stained_glass` | 1,000 | 114 | Buy / Sell | - |
 | <img src="assets/icons/white_stained_glass_pane.png" width="32" height="32" alt="White Stained Glass Pane" title="White Stained Glass Pane"> | **White Stained Glass Pane** | `white_stained_glass_pane` | 1,000 | 42 | Buy / Sell | - |
-| <img src="assets/icons/white_terracotta.png" width="32" height="32" alt="White Terracotta" title="White Terracotta"> | **White Terracotta** | `white_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/white_terracotta.png" width="32" height="32" alt="White Terracotta" title="White Terracotta"> | **White Terracotta** | `white_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/white_tulip.png" width="32" height="32" alt="White Tulip" title="White Tulip"> | **White Tulip** | `white_tulip` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/white_wool.png" width="32" height="32" alt="White Wool" title="White Wool"> | **White Wool** | `white_wool` | 4,000 | 3,200 | Buy / Sell | - |
 | <img src="assets/icons/white_wool_slab.png" width="32" height="32" alt="White Wool Slab" title="White Wool Slab"> | **White Wool Slab** | `white_wool_slab` | 1,200 | 900 | Buy / Sell | - |
@@ -1026,11 +1026,11 @@ _970 items, 965 buyable, 970 sellable._
 | <img src="assets/icons/yellow_concrete_powder.png" width="32" height="32" alt="Yellow Concrete Powder" title="Yellow Concrete Powder"> | **Yellow Concrete Powder** | `yellow_concrete_powder` | 15 | 10 | Buy / Sell | - |
 | <img src="assets/icons/yellow_concrete_slab.png" width="32" height="32" alt="Yellow Concrete Slab" title="Yellow Concrete Slab"> | **Yellow Concrete Slab** | `yellow_concrete_slab` | 12 | 9 | Buy / Sell | - |
 | <img src="assets/icons/yellow_concrete_stairs.png" width="32" height="32" alt="Yellow Concrete Stairs" title="Yellow Concrete Stairs"> | **Yellow Concrete Stairs** | `yellow_concrete_stairs` | 12 | 9 | Buy / Sell | - |
-| <img src="assets/icons/yellow_glazed_terracotta.png" width="32" height="32" alt="Yellow Glazed Terracotta" title="Yellow Glazed Terracotta"> | **Yellow Glazed Terracotta** | `yellow_glazed_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/yellow_glazed_terracotta.png" width="32" height="32" alt="Yellow Glazed Terracotta" title="Yellow Glazed Terracotta"> | **Yellow Glazed Terracotta** | `yellow_glazed_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/yellow_poplar_leaves.png" width="32" height="32" alt="Yellow Poplar Leaves" title="Yellow Poplar Leaves"> | **Yellow Poplar Leaves** | `yellow_poplar_leaves` | 500 | 400 | Buy / Sell | - |
 | <img src="assets/icons/yellow_stained_glass.png" width="32" height="32" alt="Yellow Stained Glass" title="Yellow Stained Glass"> | **Yellow Stained Glass** | `yellow_stained_glass` | 1,000 | 72 | Buy / Sell | - |
 | <img src="assets/icons/yellow_stained_glass_pane.png" width="32" height="32" alt="Yellow Stained Glass Pane" title="Yellow Stained Glass Pane"> | **Yellow Stained Glass Pane** | `yellow_stained_glass_pane` | 1,000 | 27 | Buy / Sell | - |
-| <img src="assets/icons/yellow_terracotta.png" width="32" height="32" alt="Yellow Terracotta" title="Yellow Terracotta"> | **Yellow Terracotta** | `yellow_terracotta` | 1,500 | 1,200 | Buy / Sell | - |
+| <img src="assets/icons/yellow_terracotta.png" width="32" height="32" alt="Yellow Terracotta" title="Yellow Terracotta"> | **Yellow Terracotta** | `yellow_terracotta` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/yellow_wool.png" width="32" height="32" alt="Yellow Wool" title="Yellow Wool"> | **Yellow Wool** | `yellow_wool` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/yellow_wool_slab.png" width="32" height="32" alt="Yellow Wool Slab" title="Yellow Wool Slab"> | **Yellow Wool Slab** | `yellow_wool_slab` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/yellow_wool_stairs.png" width="32" height="32" alt="Yellow Wool Stairs" title="Yellow Wool Stairs"> | **Yellow Wool Stairs** | `yellow_wool_stairs` | 1,200 | 900 | Buy / Sell | - |
@@ -1145,13 +1145,13 @@ _35 items, 35 buyable, 35 sellable._
 
 | Icon | Item | ID | Buy | Sell | Trade | Notes |
 |:---:|:--|:--|--:|--:|:--:|:--|
-| <img src="assets/icons/black_shulker_box.png" width="32" height="32" alt="Black Shulker Box" title="Black Shulker Box"> | **Black Shulker Box** | `black_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/blue_shulker_box.png" width="32" height="32" alt="Blue Shulker Box" title="Blue Shulker Box"> | **Blue Shulker Box** | `blue_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/brown_shulker_box.png" width="32" height="32" alt="Brown Shulker Box" title="Brown Shulker Box"> | **Brown Shulker Box** | `brown_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/black_shulker_box.png" width="32" height="32" alt="Black Shulker Box" title="Black Shulker Box"> | **Black Shulker Box** | `black_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/blue_shulker_box.png" width="32" height="32" alt="Blue Shulker Box" title="Blue Shulker Box"> | **Blue Shulker Box** | `blue_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/brown_shulker_box.png" width="32" height="32" alt="Brown Shulker Box" title="Brown Shulker Box"> | **Brown Shulker Box** | `brown_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
 | <img src="assets/icons/chorus_flower.png" width="32" height="32" alt="Chorus Flower" title="Chorus Flower"> | **Chorus Flower** | `chorus_flower` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/chorus_fruit.png" width="32" height="32" alt="Chorus Fruit" title="Chorus Fruit"> | **Chorus Fruit** | `chorus_fruit` | 800 | 600 | Buy / Sell | - |
 | <img src="assets/icons/chorus_plant.png" width="32" height="32" alt="Chorus Plant" title="Chorus Plant"> | **Chorus Plant** | `chorus_plant` | 1,000 | 800 | Buy / Sell | - |
-| <img src="assets/icons/cyan_shulker_box.png" width="32" height="32" alt="Cyan Shulker Box" title="Cyan Shulker Box"> | **Cyan Shulker Box** | `cyan_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/cyan_shulker_box.png" width="32" height="32" alt="Cyan Shulker Box" title="Cyan Shulker Box"> | **Cyan Shulker Box** | `cyan_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
 | <img src="assets/icons/dragon_breath.png" width="32" height="32" alt="Dragon's Breath" title="Dragon's Breath"> | **Dragon's Breath** | `dragon_breath` | 50,000 | 40,000 | Buy / Sell | - |
 | <img src="assets/icons/end_crystal.png" width="32" height="32" alt="End Crystal" title="End Crystal"> | **End Crystal** | `end_crystal` | 2,500 | 2,000 | Buy / Sell | - |
 | <img src="assets/icons/end_rod.png" width="32" height="32" alt="End Rod" title="End Rod"> | **End Rod** | `end_rod` | 1,000 | 800 | Buy / Sell | - |
@@ -1161,25 +1161,25 @@ _35 items, 35 buyable, 35 sellable._
 | <img src="assets/icons/end_stone_brick_wall.png" width="32" height="32" alt="End Stone Brick Wall" title="End Stone Brick Wall"> | **End Stone Brick Wall** | `end_stone_brick_wall` | 1,200 | 900 | Buy / Sell | - |
 | <img src="assets/icons/end_stone_bricks.png" width="32" height="32" alt="End Stone Bricks" title="End Stone Bricks"> | **End Stone Bricks** | `end_stone_bricks` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/friend_pottery_sherd.png" width="32" height="32" alt="Friend Pottery Sherd" title="Friend Pottery Sherd"> | **Friend Pottery Sherd** | `friend_pottery_sherd` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/gray_shulker_box.png" width="32" height="32" alt="Gray Shulker Box" title="Gray Shulker Box"> | **Gray Shulker Box** | `gray_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/green_shulker_box.png" width="32" height="32" alt="Green Shulker Box" title="Green Shulker Box"> | **Green Shulker Box** | `green_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/light_blue_shulker_box.png" width="32" height="32" alt="Light Blue Shulker Box" title="Light Blue Shulker Box"> | **Light Blue Shulker Box** | `light_blue_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/light_gray_shulker_box.png" width="32" height="32" alt="Light Gray Shulker Box" title="Light Gray Shulker Box"> | **Light Gray Shulker Box** | `light_gray_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/lime_shulker_box.png" width="32" height="32" alt="Lime Shulker Box" title="Lime Shulker Box"> | **Lime Shulker Box** | `lime_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/magenta_shulker_box.png" width="32" height="32" alt="Magenta Shulker Box" title="Magenta Shulker Box"> | **Magenta Shulker Box** | `magenta_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/orange_shulker_box.png" width="32" height="32" alt="Orange Shulker Box" title="Orange Shulker Box"> | **Orange Shulker Box** | `orange_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/pink_shulker_box.png" width="32" height="32" alt="Pink Shulker Box" title="Pink Shulker Box"> | **Pink Shulker Box** | `pink_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/gray_shulker_box.png" width="32" height="32" alt="Gray Shulker Box" title="Gray Shulker Box"> | **Gray Shulker Box** | `gray_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/green_shulker_box.png" width="32" height="32" alt="Green Shulker Box" title="Green Shulker Box"> | **Green Shulker Box** | `green_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/light_blue_shulker_box.png" width="32" height="32" alt="Light Blue Shulker Box" title="Light Blue Shulker Box"> | **Light Blue Shulker Box** | `light_blue_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/light_gray_shulker_box.png" width="32" height="32" alt="Light Gray Shulker Box" title="Light Gray Shulker Box"> | **Light Gray Shulker Box** | `light_gray_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/lime_shulker_box.png" width="32" height="32" alt="Lime Shulker Box" title="Lime Shulker Box"> | **Lime Shulker Box** | `lime_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/magenta_shulker_box.png" width="32" height="32" alt="Magenta Shulker Box" title="Magenta Shulker Box"> | **Magenta Shulker Box** | `magenta_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/orange_shulker_box.png" width="32" height="32" alt="Orange Shulker Box" title="Orange Shulker Box"> | **Orange Shulker Box** | `orange_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/pink_shulker_box.png" width="32" height="32" alt="Pink Shulker Box" title="Pink Shulker Box"> | **Pink Shulker Box** | `pink_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
 | <img src="assets/icons/popped_chorus_fruit.png" width="32" height="32" alt="Popped Chorus Fruit" title="Popped Chorus Fruit"> | **Popped Chorus Fruit** | `popped_chorus_fruit` | 2,500 | 800 | Buy / Sell | - |
-| <img src="assets/icons/purple_shulker_box.png" width="32" height="32" alt="Purple Shulker Box" title="Purple Shulker Box"> | **Purple Shulker Box** | `purple_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/purple_shulker_box.png" width="32" height="32" alt="Purple Shulker Box" title="Purple Shulker Box"> | **Purple Shulker Box** | `purple_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
 | <img src="assets/icons/purpur_block.png" width="32" height="32" alt="Purpur Block" title="Purpur Block"> | **Purpur Block** | `purpur_block` | 2,500 | 800 | Buy / Sell | - |
 | <img src="assets/icons/purpur_pillar.png" width="32" height="32" alt="Purpur Pillar" title="Purpur Pillar"> | **Purpur Pillar** | `purpur_pillar` | 2,500 | 800 | Buy / Sell | - |
 | <img src="assets/icons/purpur_slab.png" width="32" height="32" alt="Purpur Slab" title="Purpur Slab"> | **Purpur Slab** | `purpur_slab` | 1,300 | 400 | Buy / Sell | - |
 | <img src="assets/icons/purpur_stairs.png" width="32" height="32" alt="Purpur Stairs" title="Purpur Stairs"> | **Purpur Stairs** | `purpur_stairs` | 2,500 | 800 | Buy / Sell | - |
-| <img src="assets/icons/red_shulker_box.png" width="32" height="32" alt="Red Shulker Box" title="Red Shulker Box"> | **Red Shulker Box** | `red_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/shulker_box.png" width="32" height="32" alt="Shulker Box" title="Shulker Box"> | **Shulker Box** | `shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/shulker_shell.png" width="32" height="32" alt="Shulker Shell" title="Shulker Shell"> | **Shulker Shell** | `shulker_shell` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/white_shulker_box.png" width="32" height="32" alt="White Shulker Box" title="White Shulker Box"> | **White Shulker Box** | `white_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
-| <img src="assets/icons/yellow_shulker_box.png" width="32" height="32" alt="Yellow Shulker Box" title="Yellow Shulker Box"> | **Yellow Shulker Box** | `yellow_shulker_box` | 100,000 | 80,000 | Buy / Sell | - |
+| <img src="assets/icons/red_shulker_box.png" width="32" height="32" alt="Red Shulker Box" title="Red Shulker Box"> | **Red Shulker Box** | `red_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/shulker_box.png" width="32" height="32" alt="Shulker Box" title="Shulker Box"> | **Shulker Box** | `shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/shulker_shell.png" width="32" height="32" alt="Shulker Shell" title="Shulker Shell"> | **Shulker Shell** | `shulker_shell` | 5,000 | 4,000 | Buy / Sell | - |
+| <img src="assets/icons/white_shulker_box.png" width="32" height="32" alt="White Shulker Box" title="White Shulker Box"> | **White Shulker Box** | `white_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
+| <img src="assets/icons/yellow_shulker_box.png" width="32" height="32" alt="Yellow Shulker Box" title="Yellow Shulker Box"> | **Yellow Shulker Box** | `yellow_shulker_box` | 10,000 | 8,000 | Buy / Sell | - |
 
 ## Food & Farming
 
@@ -1428,7 +1428,7 @@ _280 items, 280 buyable, 280 sellable._
 | <img src="assets/icons/bowl.png" width="32" height="32" alt="Bowl" title="Bowl"> | **Bowl** | `bowl` | 2,500 | 100 | Buy / Sell | - |
 | <img src="assets/icons/breeze_rod.png" width="32" height="32" alt="Breeze Rod" title="Breeze Rod"> | **Breeze Rod** | `breeze_rod` | 50,000 | 40,000 | Buy / Sell | - |
 | <img src="assets/icons/brewer_pottery_sherd.png" width="32" height="32" alt="Brewer Pottery Sherd" title="Brewer Pottery Sherd"> | **Brewer Pottery Sherd** | `brewer_pottery_sherd` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/brick.png" width="32" height="32" alt="Brick" title="Brick"> | **Brick** | `brick` | 2,500 | 2,000 | Buy / Sell | - |
+| <img src="assets/icons/brick.png" width="32" height="32" alt="Brick" title="Brick"> | **Brick** | `brick` | 2 | 1 | Buy / Sell | - |
 | <img src="assets/icons/brown_bundle.png" width="32" height="32" alt="Brown Bundle" title="Brown Bundle"> | **Brown Bundle** | `brown_bundle` | 5,000 | 3,500 | Buy / Sell | - |
 | <img src="assets/icons/brown_cushion.png" width="32" height="32" alt="Brown Cushion" title="Brown Cushion"> | **Brown Cushion** | `brown_cushion` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/brown_dye.png" width="32" height="32" alt="Brown Dye" title="Brown Dye"> | **Brown Dye** | `brown_dye` | 2,500 | 1,000 | Buy / Sell | - |
@@ -1448,7 +1448,7 @@ _280 items, 280 buyable, 280 sellable._
 | <img src="assets/icons/charcoal.png" width="32" height="32" alt="Charcoal" title="Charcoal"> | **Charcoal** | `charcoal` | 2,500 | 800 | Buy / Sell | - |
 | <img src="assets/icons/cherry_boat.png" width="32" height="32" alt="Cherry Boat" title="Cherry Boat"> | **Cherry Boat** | `cherry_boat` | 4,000 | 1,000 | Buy / Sell | - |
 | <img src="assets/icons/cherry_chest_boat.png" width="32" height="32" alt="Cherry Boat with Chest" title="Cherry Boat with Chest"> | **Cherry Boat with Chest** | `cherry_chest_boat` | 3,000 | 2,400 | Buy / Sell | - |
-| <img src="assets/icons/clay_ball.png" width="32" height="32" alt="Clay Ball" title="Clay Ball"> | **Clay Ball** | `clay_ball` | 2,500 | 2,000 | Buy / Sell | - |
+| <img src="assets/icons/clay_ball.png" width="32" height="32" alt="Clay Ball" title="Clay Ball"> | **Clay Ball** | `clay_ball` | 2 | 1 | Buy / Sell | - |
 | <img src="assets/icons/clock.png" width="32" height="32" alt="Clock" title="Clock"> | **Clock** | `clock` | 2,500 | 2,000 | Buy / Sell | - |
 | <img src="assets/icons/coal.png" width="32" height="32" alt="Coal" title="Coal"> | **Coal** | `coal` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/compass.png" width="32" height="32" alt="Compass" title="Compass"> | **Compass** | `compass` | 2,500 | 2,000 | Buy / Sell | - |
@@ -1477,7 +1477,7 @@ _280 items, 280 buyable, 280 sellable._
 | <img src="assets/icons/ender_eye.png" width="32" height="32" alt="Eye of Ender" title="Eye of Ender"> | **Eye of Ender** | `ender_eye` | 2,500 | 2,000 | Buy / Sell | - |
 | <img src="assets/icons/feather.png" width="32" height="32" alt="Feather" title="Feather"> | **Feather** | `feather` | 2,500 | 2,000 | Buy / Sell | - |
 | <img src="assets/icons/fermented_spider_eye.png" width="32" height="32" alt="Fermented Spider Eye" title="Fermented Spider Eye"> | **Fermented Spider Eye** | `fermented_spider_eye` | 2,500 | 2,000 | Buy / Sell | - |
-| <img src="assets/icons/field_masoned_banner_pattern.png" width="32" height="32" alt="Field Masoned Banner Pattern" title="Field Masoned Banner Pattern"> | **Field Masoned Banner Pattern** | `field_masoned_banner_pattern` | 100,000 | 11,000 | Buy / Sell | - |
+| <img src="assets/icons/field_masoned_banner_pattern.png" width="32" height="32" alt="Field Masoned Banner Pattern" title="Field Masoned Banner Pattern"> | **Field Masoned Banner Pattern** | `field_masoned_banner_pattern` | 100,000 | 1,000 | Buy / Sell | - |
 | <img src="assets/icons/fire_charge.png" width="32" height="32" alt="Fire Charge" title="Fire Charge"> | **Fire Charge** | `fire_charge` | 2,500 | 1,800 | Buy / Sell | - |
 | <img src="assets/icons/firework_rocket.png" width="32" height="32" alt="Firework Rocket" title="Firework Rocket"> | **Firework Rocket** | `firework_rocket` | 2,500 | 1,100 | Buy / Sell | - |
 | <img src="assets/icons/firework_star.png" width="32" height="32" alt="Firework Star" title="Firework Star"> | **Firework Star** | `firework_star` | 2,500 | 2,000 | Buy / Sell | - |
@@ -1619,18 +1619,18 @@ _280 items, 280 buyable, 280 sellable._
 | <img src="assets/icons/dune_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `dune_armor_trim_smithing_template` | 300,000 | 210,040 | Buy / Sell | - |
 | <img src="assets/icons/eye_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `eye_armor_trim_smithing_template` | 300,000 | 211,000 | Buy / Sell | - |
 | <img src="assets/icons/flow_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `flow_armor_trim_smithing_template` | 300,000 | 240,000 | Buy / Sell | - |
-| <img src="assets/icons/host_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `host_armor_trim_smithing_template` | 300,000 | 220,000 | Buy / Sell | - |
-| <img src="assets/icons/raiser_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `raiser_armor_trim_smithing_template` | 300,000 | 220,000 | Buy / Sell | - |
+| <img src="assets/icons/host_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `host_armor_trim_smithing_template` | 300,000 | 200,000 | Buy / Sell | - |
+| <img src="assets/icons/raiser_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `raiser_armor_trim_smithing_template` | 300,000 | 200,000 | Buy / Sell | - |
 | <img src="assets/icons/rib_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `rib_armor_trim_smithing_template` | 300,000 | 211,000 | Buy / Sell | - |
 | <img src="assets/icons/sentry_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `sentry_armor_trim_smithing_template` | 300,000 | 210,010 | Buy / Sell | - |
-| <img src="assets/icons/shaper_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `shaper_armor_trim_smithing_template` | 300,000 | 220,000 | Buy / Sell | - |
+| <img src="assets/icons/shaper_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `shaper_armor_trim_smithing_template` | 300,000 | 200,000 | Buy / Sell | - |
 | <img src="assets/icons/silence_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `silence_armor_trim_smithing_template` | 300,000 | 211,000 | Buy / Sell | - |
 | <img src="assets/icons/snout_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `snout_armor_trim_smithing_template` | 300,000 | 211,000 | Buy / Sell | - |
 | <img src="assets/icons/spire_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `spire_armor_trim_smithing_template` | 300,000 | 210,800 | Buy / Sell | - |
 | <img src="assets/icons/tide_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `tide_armor_trim_smithing_template` | 300,000 | 220,000 | Buy / Sell | - |
 | <img src="assets/icons/vex_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `vex_armor_trim_smithing_template` | 300,000 | 210,010 | Buy / Sell | - |
 | <img src="assets/icons/ward_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `ward_armor_trim_smithing_template` | 300,000 | 211,000 | Buy / Sell | - |
-| <img src="assets/icons/wayfinder_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `wayfinder_armor_trim_smithing_template` | 300,000 | 220,000 | Buy / Sell | - |
+| <img src="assets/icons/wayfinder_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `wayfinder_armor_trim_smithing_template` | 300,000 | 200,000 | Buy / Sell | - |
 | <img src="assets/icons/wild_armor_trim_smithing_template.png" width="32" height="32" alt="Smithing Template" title="Smithing Template"> | **Smithing Template** | `wild_armor_trim_smithing_template` | 300,000 | 210,010 | Buy / Sell | - |
 | <img src="assets/icons/snort_pottery_sherd.png" width="32" height="32" alt="Snort Pottery Sherd" title="Snort Pottery Sherd"> | **Snort Pottery Sherd** | `snort_pottery_sherd` | 50,000 | 40,000 | Buy / Sell | - |
 | <img src="assets/icons/snowball.png" width="32" height="32" alt="Snowball" title="Snowball"> | **Snowball** | `snowball` | 2,500 | 2,000 | Buy / Sell | - |

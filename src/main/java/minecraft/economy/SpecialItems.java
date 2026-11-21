@@ -158,6 +158,39 @@ public final class SpecialItems {
         return kind(item) == Kind.KEEP_INVENTORY_HELMET;
     }
 
+    /**
+     * The AI market bucket a relic belongs to, or {@code null} for ordinary items.
+     */
+    public static String relicCategory(ItemStack item) {
+        Kind kind = kind(item);
+        if (kind == null) return null;
+        return switch (kind) {
+            case ETERNAL_ARMOR -> "effect_armor";
+            case HIGH_ENCHANT_GEAR -> isArmor(item.getType()) ? "enchant_armor" : "super_tool";
+            case HIGH_ENCHANT_BOOK -> "enchant_book";
+            case AREA_MINER, VEIN_MINER, TREE_MINER -> "super_tool";
+            case KEEP_INVENTORY_HELMET -> "keep_helmet";
+        };
+    }
+
+    private static boolean isArmor(Material material) {
+        String name = material.name();
+        return name.endsWith("_HELMET") || name.endsWith("_CHESTPLATE")
+                || name.endsWith("_LEGGINGS") || name.endsWith("_BOOTS")
+                || name.equals("TURTLE_HELMET");
+    }
+
+    /** A random ability tool: area miner, vein miner or tree feller. */
+    public static ItemStack superTool(Random rng) {
+        return switch (rng.nextInt(5)) {
+            case 0 -> areaMiner(rng, 3, false);
+            case 1 -> areaMiner(rng, 4, false);
+            case 2 -> areaMiner(rng, 5, false);
+            case 3 -> veinMiner(rng);
+            default -> treeMiner(rng);
+        };
+    }
+
     public static ItemStack random(Random rng) {
         return random(rng, 0.02);
     }
@@ -295,7 +328,10 @@ public final class SpecialItems {
     }
 
     public static ItemStack highEnchantGear(Random rng) {
-        boolean armor = rng.nextBoolean();
+        return highEnchantGear(rng, rng.nextBoolean());
+    }
+
+    public static ItemStack highEnchantGear(Random rng, boolean armor) {
         Material[] pool = armor
                 ? new Material[]{Material.NETHERITE_HELMET, Material.NETHERITE_CHESTPLATE,
                         Material.NETHERITE_LEGGINGS, Material.NETHERITE_BOOTS}
@@ -339,7 +375,8 @@ public final class SpecialItems {
         List<String> lore = new ArrayList<>();
         lore.add("§7Passive: §aKeeps your entire inventory on death");
         lore.add("§7Experience is still lost like a normal death.");
-        lore.add("§7The helmet shatters when you respawn.");
+        lore.add("§7Loses §c25%§7 durability when you respawn.");
+        lore.add("§7Shatters if less than §c25%§7 durability remains.");
         lore.add("§8-------------------------");
         lore.add("§8Mythic relic • extremely rare");
         lore.add("§5Relic value: §d" + Money.format(value));
