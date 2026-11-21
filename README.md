@@ -43,7 +43,9 @@ trend and restock state for every AI category.
 
 AI listings expire after a random 1-5 hours (`auction.ai.duration-hours-min` and
 `duration-hours-max`). The browser groups matching item types in `Sorted` mode, and the
-chosen filter is stored per UUID in `balances.yml`.
+chosen filter is stored per UUID in `balances.yml`. On startup the saved market is
+normalised: synthetic listings are trimmed back to the configured target and duplicate
+Keep Inventory Helmet listings are removed (player items go to `/ah collect`).
 
 AI buyers run on the same 30-second market tick. They only consider player-created
 listings, skip items below `min-value` or above `max-price`, and ignore listings priced
