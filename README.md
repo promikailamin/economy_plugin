@@ -88,7 +88,7 @@ total active special-relic count is capped by `auction.ai.max-special-relics` (d
 200). Relics are priced from a much higher base value than normal gear and cannot be
 sold back to the server shop, so they only change hands through the auction house.
 
-Area miners break a plane around the mined block based on where the player is looking;
+Area miners break a 3x3x3, 4x4x4 or 5x5x5 cube centred on the block the player mined;
 vein miners break connected ores (up to 64) and tree miners fell connected logs (up to
 128). Sneak while breaking to disable the extra effect. Eternal armour never loses
 durability and grants its stored effect while worn; each piece has exactly one effect

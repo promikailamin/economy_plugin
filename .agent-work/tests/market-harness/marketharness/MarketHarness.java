@@ -7,6 +7,7 @@ import minecraft.economy.EconomyData;
 import minecraft.economy.EconomyPlugin;
 import minecraft.economy.MysteryShop;
 import minecraft.economy.SpecialItems;
+import minecraft.economy.SpecialToolListener;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -16,8 +17,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.UUID;
 
 public final class MarketHarness extends JavaPlugin {
@@ -193,6 +196,58 @@ public final class MarketHarness extends JavaPlugin {
             if (SpecialItems.serial(helmet) <= 0) failures++;
         }
         report.append("generated 50 helmets, failures so far=").append(failures).append('\n');
+
+        report.append("\narea miner geometry checks\n");
+        for (int size = 3; size <= 5; size++) {
+            List<int[]> offsets = SpecialToolListener.areaOffsets(size);
+            int expected = size * size * size - 1;
+            int min = -(size / 2);
+            int max = min + size - 1;
+            Set<String> unique = new HashSet<>();
+            boolean ok = offsets.size() == expected;
+            for (int[] offset : offsets) {
+                if (offset.length != 3) ok = false;
+                if (offset[0] < min || offset[0] > max
+                        || offset[1] < min || offset[1] > max
+                        || offset[2] < min || offset[2] > max) ok = false;
+                if (offset[0] == 0 && offset[1] == 0 && offset[2] == 0) ok = false;
+                unique.add(offset[0] + "," + offset[1] + "," + offset[2]);
+            }
+            if (unique.size() != expected) ok = false;
+            if (!ok) failures++;
+            report.append(size).append('x').append(size).append('x').append(size)
+                    .append(" blocks=").append(offsets.size())
+                    .append(" range=").append(min).append("..").append(max)
+                    .append(" ok=").append(ok).append('\n');
+        }
+
+        report.append("\nmarket normalisation checks\n");
+        UUID helmetSeller = UUID.nameUUIDFromBytes("HelmetSeller".getBytes(StandardCharsets.UTF_8));
+        UUID helmetSeller2 = UUID.nameUUIDFromBytes("HelmetSeller2".getBytes(StandardCharsets.UTF_8));
+        house.addListing(helmetSeller, "HelmetSeller", SpecialItems.keepInventoryHelmet(rng), 1_000_000L);
+        house.addListing(helmetSeller2, "HelmetSeller2", SpecialItems.keepInventoryHelmet(rng), 2_000_000L);
+        int duplicateHelmets = house.enforceSingleKeepInventoryHelmet();
+        int activeHelmets = 0;
+        for (AuctionHouse.Listing listing : house.all()) {
+            if (SpecialItems.isKeepInventoryHelmet(listing.item)) activeHelmets++;
+        }
+        boolean helmetsOk = duplicateHelmets >= 1 && activeHelmets == 1;
+        if (!helmetsOk) failures++;
+        report.append("duplicate helmets removed=").append(duplicateHelmets)
+                .append(" active=").append(activeHelmets).append(" ok=").append(helmetsOk).append('\n');
+
+        int syntheticBeforeTrim = house.syntheticCount();
+        for (int i = 0; i < 5; i++) {
+            house.addSynthetic(UUID.nameUUIDFromBytes(("TrimSeller" + i).getBytes(StandardCharsets.UTF_8)),
+                    "TrimSeller", new ItemStack(Material.DIRT), 10L, "junk", null, 3_600_000L);
+        }
+        int trimmed = house.trimSyntheticListings(syntheticBeforeTrim);
+        boolean trimOk = trimmed == 5 && house.syntheticCount() == syntheticBeforeTrim;
+        if (!trimOk) failures++;
+        report.append("synthetic trimmed=").append(trimmed)
+                .append(" active=").append(house.syntheticCount())
+                .append(" expected=").append(syntheticBeforeTrim)
+                .append(" ok=").append(trimOk).append('\n');
 
         report.append("\ncrate payout checks\n");
         MysteryShop shop = EconomyPlugin.get().mystery();

@@ -238,8 +238,8 @@ public final class SpecialItems {
         if (shovel) value = Math.round(value * 0.8);
 
         List<String> lore = new ArrayList<>();
-        lore.add("§7Ability: §eMines a §f" + size + "×" + size + "§e area");
-        lore.add("§7The plane follows the direction you face.");
+        lore.add("§7Ability: §eMines a §f" + size + "×" + size + "×" + size + "§e cube");
+        lore.add("§7Centred on the block you break.");
         lore.add("§7Sneak to disable area mining.");
         lore.add("§8-------------------------");
         lore.add("§8Legendary relic • one of a limited supply");

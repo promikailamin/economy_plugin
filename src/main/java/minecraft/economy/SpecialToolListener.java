@@ -10,7 +10,6 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.util.Vector;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -38,7 +37,7 @@ public final class SpecialToolListener implements Listener {
 
         Block origin = event.getBlock();
         List<Block> extra = switch (kind) {
-            case AREA_MINER -> origin.isPreferredTool(tool) ? areaBlocks(player, tool, origin) : List.of();
+            case AREA_MINER -> origin.isPreferredTool(tool) ? areaBlocks(tool, origin) : List.of();
             case VEIN_MINER -> veinBlocks(tool, origin);
             case TREE_MINER -> treeBlocks(tool, origin);
             default -> List.of();
@@ -53,32 +52,36 @@ public final class SpecialToolListener implements Listener {
         if (broken > 0) damageTool(player, tool, broken);
     }
 
-    private static List<Block> areaBlocks(Player player, ItemStack tool, Block origin) {
-        int size = SpecialItems.areaSize(tool);
-        if (size < 3) return List.of();
-        Vector direction = player.getLocation().getDirection();
+    /**
+     * Relative offsets of every block in a {@code size x size x size} cube centred on the
+     * block the player broke. The origin block itself is omitted because the break event
+     * already handles it. Even sizes place the extra layer on the negative side so the
+     * broken block is always part of the cube.
+     */
+    public static List<int[]> areaOffsets(int size) {
+        size = Math.max(3, Math.min(5, size));
         int min = -(size / 2);
         int max = min + size - 1;
-        int[] side = Math.abs(direction.getX()) >= Math.abs(direction.getZ())
-                ? new int[]{0, 0, 1} : new int[]{1, 0, 0};
+        List<int[]> offsets = new ArrayList<>(size * size * size - 1);
+        for (int x = min; x <= max; x++) {
+            for (int y = min; y <= max; y++) {
+                for (int z = min; z <= max; z++) {
+                    if (x == 0 && y == 0 && z == 0) continue;
+                    offsets.add(new int[]{x, y, z});
+                }
+            }
+        }
+        return offsets;
+    }
+
+    private static List<Block> areaBlocks(ItemStack tool, Block origin) {
+        int size = SpecialItems.areaSize(tool);
+        if (size < 3) return List.of();
 
         List<Block> blocks = new ArrayList<>();
-        if (Math.abs(direction.getY()) >= 0.7) {
-            for (int x = min; x <= max; x++) {
-                for (int z = min; z <= max; z++) {
-                    if (x == 0 && z == 0) continue;
-                    Block block = origin.getRelative(x, 0, z);
-                    if (block.isPreferredTool(tool)) blocks.add(block);
-                }
-            }
-        } else {
-            for (int a = min; a <= max; a++) {
-                for (int b = min; b <= max; b++) {
-                    if (a == 0 && b == 0) continue;
-                    Block block = origin.getRelative(side[0] * a, b, side[2] * a);
-                    if (block.isPreferredTool(tool)) blocks.add(block);
-                }
-            }
+        for (int[] offset : areaOffsets(size)) {
+            Block block = origin.getRelative(offset[0], offset[1], offset[2]);
+            if (block.isPreferredTool(tool)) blocks.add(block);
         }
         return blocks;
     }

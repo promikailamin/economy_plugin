@@ -165,6 +165,7 @@ public final class AuctionAi {
         }
         ensureStockTimers(now);
         if (fresh && enabled) seedInitial(now);
+        normalizeMarket();
         fill(now, targetListings);
         announceRelics = true;
         save();
@@ -174,8 +175,21 @@ public final class AuctionAi {
     public void reload() {
         applySettings();
         refreshRelicTargets();
+        normalizeMarket();
         fill(System.currentTimeMillis());
         save();
+    }
+
+    /** Enforces the configured market limits even when the saved data predates them. */
+    private void normalizeMarket() {
+        int trimmed = house.trimSyntheticListings(targetListings);
+        int duplicateHelmets = house.enforceSingleKeepInventoryHelmet();
+        if (trimmed > 0 || duplicateHelmets > 0) {
+            house.save();
+            plugin.getLogger().info("Normalised auction market: removed " + trimmed
+                    + " excess AI listings and " + duplicateHelmets
+                    + " duplicate Keep Inventory Helmet listing(s).");
+        }
     }
 
     private void seedInitial(long now) {

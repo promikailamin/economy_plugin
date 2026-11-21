@@ -166,6 +166,60 @@ public final class AuctionHouse {
         return false;
     }
 
+    /**
+     * Keeps at most one Helm of Preservation in the auction house. Older data could contain
+     * several because the relic was not always unique; extra player listings are moved to
+     * their owner's collection box so no item is lost.
+     *
+     * @return how many duplicate listings were removed
+     */
+    public int enforceSingleKeepInventoryHelmet() {
+        List<Listing> helmets = new ArrayList<>();
+        for (Listing l : listings.values()) {
+            if (SpecialItems.isKeepInventoryHelmet(l.item)) helmets.add(l);
+        }
+        if (helmets.size() <= 1) return 0;
+
+        // Prefer keeping a player's listing, then the oldest listing.
+        helmets.sort(Comparator.comparing((Listing l) -> l.synthetic).thenComparingLong(l -> l.created));
+        Listing keep = helmets.get(0);
+        int removed = 0;
+        for (Listing l : helmets) {
+            if (l.id == keep.id) continue;
+            listings.remove(l.id);
+            if (!l.synthetic) {
+                addClaim(l.seller, l.item);
+                Player owner = Bukkit.getPlayer(l.seller);
+                if (owner != null) {
+                    owner.sendMessage(ChatColor.YELLOW
+                            + "Your Helm of Preservation listing was removed because only one may be "
+                            + "listed at a time. Use /ah collect to get it back.");
+                }
+            }
+            removed++;
+        }
+        return removed;
+    }
+
+    /**
+     * Trims excess synthetic listings so the AI market never grows past its configured
+     * target. The oldest listings are removed first. Player listings are never touched.
+     *
+     * @return how many synthetic listings were removed
+     */
+    public int trimSyntheticListings(int max) {
+        List<Listing> synthetic = new ArrayList<>();
+        for (Listing l : listings.values()) if (l.synthetic) synthetic.add(l);
+        if (synthetic.size() <= max) return 0;
+
+        synthetic.sort(Comparator.comparingLong(l -> l.created));
+        int remove = synthetic.size() - max;
+        for (int i = 0; i < remove; i++) {
+            listings.remove(synthetic.get(i).id);
+        }
+        return remove;
+    }
+
     // ------------------------------------------------------------------ actions
 
     /** Lists the item the player is holding. */
