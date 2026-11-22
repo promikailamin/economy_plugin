@@ -39,6 +39,8 @@ auction:
     # area mining, vein mining, tree felling, level 10-15 enchantments, effect
     # swords that inflict their bound non-instant potion effect on hit, and
     # eternal armour with one random non-instant potion effect (level 1-4).
+    # Special enchantment books for the same abilities are also listed so players
+    # can apply them to their own tools, weapons, armour and elytra with an anvil.
     special-relics-enabled: true
     # Maximum number of special relics the market keeps live at once. The
     # per-category minimums below are always honoured.

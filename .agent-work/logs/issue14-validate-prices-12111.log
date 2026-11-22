@@ -1,0 +1,51 @@
+FAIL: 54 price arbitrage problem(s)
+  acacia_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  acacia_shelf: sell 1600 > cheapest acquisition 800.000
+  birch_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  birch_shelf: sell 1600 > cheapest acquisition 800.000
+  cherry_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  cherry_shelf: sell 1600 > cheapest acquisition 800.000
+  copper_bars: sell 800 > cheapest acquisition 562.500
+  copper_nugget: sell 400 > cheapest acquisition 166.667
+  copper_shovel: sell 2400 > cheapest acquisition 1700.000
+  crimson_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  crimson_shelf: sell 1600 > cheapest acquisition 800.000
+  dark_oak_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  dark_oak_shelf: sell 1600 > cheapest acquisition 800.000
+  jungle_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  jungle_shelf: sell 1600 > cheapest acquisition 800.000
+  leaf_litter: sell 800 > cheapest acquisition 500.000
+  mangrove_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  mangrove_shelf: sell 1600 > cheapest acquisition 800.000
+  oak_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  oak_shelf: sell 1600 > cheapest acquisition 800.000
+  pale_oak_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  pale_oak_shelf: sell 1600 > cheapest acquisition 800.000
+  spruce_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  spruce_shelf: sell 1600 > cheapest acquisition 800.000
+  warped_hanging_sign: sell 1600 > cheapest acquisition 1133.333
+  warped_shelf: sell 1600 > cheapest acquisition 800.000
+  wooden_spear: sell 640 > cheapest acquisition 400.000
+  leaf_litter.json: 1x leaf_litter sells for 800, inputs cost 500.000
+  mangrove_hanging_sign.json: 6x mangrove_hanging_sign sells for 9600, inputs cost 6800.000
+  pale_oak_hanging_sign.json: 6x pale_oak_hanging_sign sells for 9600, inputs cost 6800.000
+  copper_shovel.json: 1x copper_shovel sells for 2400, inputs cost 1700.000
+  cherry_shelf.json: 6x cherry_shelf sells for 9600, inputs cost 4800.000
+  cherry_hanging_sign.json: 6x cherry_hanging_sign sells for 9600, inputs cost 6800.000
+  copper_nugget.json: 9x copper_nugget sells for 3600, inputs cost 1500.000
+  warped_shelf.json: 6x warped_shelf sells for 9600, inputs cost 4800.000
+  mangrove_shelf.json: 6x mangrove_shelf sells for 9600, inputs cost 4800.000
+  oak_shelf.json: 6x oak_shelf sells for 9600, inputs cost 4800.000
+  oak_hanging_sign.json: 6x oak_hanging_sign sells for 9600, inputs cost 6800.000
+  dark_oak_shelf.json: 6x dark_oak_shelf sells for 9600, inputs cost 4800.000
+  warped_hanging_sign.json: 6x warped_hanging_sign sells for 9600, inputs cost 6800.000
+  dark_oak_hanging_sign.json: 6x dark_oak_hanging_sign sells for 9600, inputs cost 6800.000
+  acacia_shelf.json: 6x acacia_shelf sells for 9600, inputs cost 4800.000
+  copper_bars.json: 16x copper_bars sells for 12800, inputs cost 9000.000
+  jungle_hanging_sign.json: 6x jungle_hanging_sign sells for 9600, inputs cost 6800.000
+  wooden_spear.json: 1x wooden_spear sells for 640, inputs cost 400.000
+  acacia_hanging_sign.json: 6x acacia_hanging_sign sells for 9600, inputs cost 6800.000
+  birch_shelf.json: 6x birch_shelf sells for 9600, inputs cost 4800.000
+  crimson_shelf.json: 6x crimson_shelf sells for 9600, inputs cost 4800.000
+  spruce_shelf.json: 6x spruce_shelf sells for 9600, inputs cost 4800.000
+  birch_hanging_sign.json: 6x birch_hanging_sign sells for 9600, inputs cost 6800.000

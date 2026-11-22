@@ -21,6 +21,12 @@ Server-side economy plugin. No client mod needed.
   swords that inflict their bound non-instant potion effect on hit, eternal armour
   with one random non-instant potion effect (level 1-4), and at most one Keep
   Inventory Helmet
+- Special enchantment books in the AI market for area mining, vein mining, tree
+  felling and every non-instant potion effect. Apply them to tools, weapons, armour
+  or elytra in an anvil; two books of the same level combine into the next level
+  (Regeneration II + II = III). An item can hold only one special enchantment but
+  can keep upgrading it, and the same effect stacks across worn armour pieces
+  (Regeneration II chestplate + Regeneration III leggings = Regeneration V)
 - Anvil bypass: level 10-15 books and any enchantment level can be applied, equal
   levels combine one level higher (Protection 4 + 4 = 5), and conflicting
   enchantments such as Infinity + Mending or Sharpness + Smite can coexist
@@ -90,11 +96,19 @@ python3 .agent-work/tools/generate_gui_docs.py \
 ## Special relics
 The AI market maintains configured active-count ranges for each relic family under
 `auction.ai.special-counts`: effect armour (10-30), effect swords (10-30), high-enchant
-armour (10-30), super tools (10-30), high-enchant books (20-50), and the Keep Inventory
-Helmet (0-1). The total active special-relic count is capped by
-`auction.ai.max-special-relics` (default 200). Relics are priced from a much higher base
-value than normal gear and cannot be sold back to the server shop, so they only change
-hands through the auction house.
+armour (10-30), super tools (10-30), high-enchant books (20-50), special enchantment
+books (20-50), and the Keep Inventory Helmet (0-1). The total active special-relic count
+is capped by `auction.ai.max-special-relics` (default 200). Relics are priced from a much
+higher base value than normal gear and cannot be sold back to the server shop, so they
+only change hands through the auction house.
+
+Special enchantment books are applied with an anvil. Area Miner books work on pickaxes
+and shovels (levels 1-3 are 3x3, 4x4 and 5x5), Vein Miner books work on pickaxes
+(32/64/128 blocks), and Tree Feller books work on axes (64/128/192 logs). Effect books
+work on swords, axes, tridents, maces, armour and elytra; the same effect stacks across
+all worn armour pieces and the combined level is capped at 10. Books of different special
+enchantments cannot be combined, and an item that already has one special enchantment
+can only be upgraded with that same enchantment.
 
 Area miners break a 3x3x3, 4x4x4 or 5x5x5 cube centred on the block the player mined;
 vein miners break connected ores (up to 64) and tree miners fell connected logs (up to

@@ -110,7 +110,7 @@ public final class MarketHarness extends JavaPlugin {
 
         report.append("\nissue 14 price checks\n");
         Map<String, long[]> expectedPrices = Map.ofEntries(
-                Map.entry("wooden_spear", new long[]{800, 640}),
+                Map.entry("wooden_spear", new long[]{800, 400}),
                 Map.entry("stone_spear", new long[]{10, 8}),
                 Map.entry("copper_spear", new long[]{1_500, 1_200}),
                 Map.entry("iron_spear", new long[]{4_000, 3_200}),

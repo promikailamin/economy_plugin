@@ -12,17 +12,17 @@ clay buy=10 sell=8
 enchanting_table buy=100000 shulker_shell buy=5000
 
 issue 14 price checks
-diamond_spear skipped (item unknown to this server version)
-netherite_sword buy=1540000 sell=1232000 ok=true
-netherite_chestplate buy=1740000 sell=1392000 ok=true
-stone_spear skipped (item unknown to this server version)
 copper_spear skipped (item unknown to this server version)
-wooden_spear skipped (item unknown to this server version)
-golden_spear skipped (item unknown to this server version)
-netherite_ingot buy=1200000 sell=960000 ok=true
-iron_spear skipped (item unknown to this server version)
-netherite_block buy=10800000 sell=8640000 ok=true
+stone_spear skipped (item unknown to this server version)
+netherite_chestplate buy=1740000 sell=1392000 ok=true
+netherite_sword buy=1540000 sell=1232000 ok=true
+diamond_spear skipped (item unknown to this server version)
 netherite_spear skipped (item unknown to this server version)
+netherite_block buy=10800000 sell=8640000 ok=true
+iron_spear skipped (item unknown to this server version)
+netherite_ingot buy=1200000 sell=960000 ok=true
+golden_spear skipped (item unknown to this server version)
+wooden_spear skipped (item unknown to this server version)
 
 head trade checks
 player_head buyable=false sellable=true

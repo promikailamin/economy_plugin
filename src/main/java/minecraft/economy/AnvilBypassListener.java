@@ -42,8 +42,17 @@ public final class AnvilBypassListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPrepareAnvil(PrepareAnvilEvent event) {
         AnvilInventory inventory = event.getInventory();
-        ItemStack merged = merge(inventory.getItem(0), inventory.getItem(1));
-        if (merged == null) return;
+        ItemStack first = inventory.getItem(0);
+        ItemStack second = inventory.getItem(1);
+        boolean specialBook = SpecialEnchantments.isBook(first) || SpecialEnchantments.isBook(second);
+        ItemStack merged = merge(first, second);
+        if (merged == null) {
+            if (specialBook) {
+                event.setResult(null);
+                event.getView().setRepairCost(0);
+            }
+            return;
+        }
 
         event.setResult(merged);
         event.getView().bypassEnchantmentLevelRestriction(true);
@@ -57,8 +66,16 @@ public final class AnvilBypassListener implements Listener {
         if (!(event.getView().getTopInventory() instanceof AnvilInventory anvil)) return;
         if (!(event.getWhoClicked() instanceof Player player)) return;
 
-        ItemStack merged = merge(anvil.getItem(0), anvil.getItem(1));
-        if (merged == null) return;
+        ItemStack first = anvil.getItem(0);
+        ItemStack second = anvil.getItem(1);
+        ItemStack merged = merge(first, second);
+        if (merged == null) {
+            if (SpecialEnchantments.isBook(first) || SpecialEnchantments.isBook(second)) {
+                event.setCancelled(true);
+                anvil.setItem(RESULT_SLOT, null);
+            }
+            return;
+        }
 
         event.setCancelled(true);
 

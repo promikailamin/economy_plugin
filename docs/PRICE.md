@@ -21,7 +21,7 @@ Every price is read directly from [`src/main/resources/prices.tsv`](../src/main/
 | Categories | **12** |
 | Minecraft assets version | **26.3** |
 | Cheapest sellable item | **Brick** (1) |
-| Most valuable sellable item | **Elytra** (2,500,000) |
+| Most valuable sellable item | **Block of Netherite** (8,640,000) |
 
 ## How to Read the Tables
 
@@ -1050,7 +1050,7 @@ _44 items, 44 buyable, 44 sellable._
 | <img src="assets/icons/gold_block.png" width="32" height="32" alt="Block of Gold" title="Block of Gold"> | **Block of Gold** | `gold_block` | 72,000 | 57,600 | Buy / Sell | - |
 | <img src="assets/icons/iron_block.png" width="32" height="32" alt="Block of Iron" title="Block of Iron"> | **Block of Iron** | `iron_block` | 36,000 | 28,800 | Buy / Sell | - |
 | <img src="assets/icons/lapis_block.png" width="32" height="32" alt="Block of Lapis Lazuli" title="Block of Lapis Lazuli"> | **Block of Lapis Lazuli** | `lapis_block` | 18,000 | 14,400 | Buy / Sell | - |
-| <img src="assets/icons/netherite_block.png" width="32" height="32" alt="Block of Netherite" title="Block of Netherite"> | **Block of Netherite** | `netherite_block` | 1,080,000 | 864,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_block.png" width="32" height="32" alt="Block of Netherite" title="Block of Netherite"> | **Block of Netherite** | `netherite_block` | 10,800,000 | 8,640,000 | Buy / Sell | - |
 | <img src="assets/icons/quartz_block.png" width="32" height="32" alt="Block of Quartz" title="Block of Quartz"> | **Block of Quartz** | `quartz_block` | 12,000 | 9,600 | Buy / Sell | - |
 | <img src="assets/icons/raw_copper_block.png" width="32" height="32" alt="Block of Raw Copper" title="Block of Raw Copper"> | **Block of Raw Copper** | `raw_copper_block` | 45,000 | 36,000 | Buy / Sell | - |
 | <img src="assets/icons/raw_gold_block.png" width="32" height="32" alt="Block of Raw Gold" title="Block of Raw Gold"> | **Block of Raw Gold** | `raw_gold_block` | 81,000 | 64,800 | Buy / Sell | - |
@@ -1080,7 +1080,7 @@ _44 items, 44 buyable, 44 sellable._
 | <img src="assets/icons/lapis_ore.png" width="32" height="32" alt="Lapis Lazuli Ore" title="Lapis Lazuli Ore"> | **Lapis Lazuli Ore** | `lapis_ore` | 5,000 | 4,000 | Buy / Sell | - |
 | <img src="assets/icons/nether_gold_ore.png" width="32" height="32" alt="Nether Gold Ore" title="Nether Gold Ore"> | **Nether Gold Ore** | `nether_gold_ore` | 15,000 | 12,000 | Buy / Sell | - |
 | <img src="assets/icons/nether_quartz_ore.png" width="32" height="32" alt="Nether Quartz Ore" title="Nether Quartz Ore"> | **Nether Quartz Ore** | `nether_quartz_ore` | 3,000 | 2,400 | Buy / Sell | - |
-| <img src="assets/icons/netherite_ingot.png" width="32" height="32" alt="Netherite Ingot" title="Netherite Ingot"> | **Netherite Ingot** | `netherite_ingot` | 120,000 | 96,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_ingot.png" width="32" height="32" alt="Netherite Ingot" title="Netherite Ingot"> | **Netherite Ingot** | `netherite_ingot` | 1,200,000 | 960,000 | Buy / Sell | - |
 | <img src="assets/icons/raw_copper.png" width="32" height="32" alt="Raw Copper" title="Raw Copper"> | **Raw Copper** | `raw_copper` | 5,000 | 4,000 | Buy / Sell | - |
 | <img src="assets/icons/raw_gold.png" width="32" height="32" alt="Raw Gold" title="Raw Gold"> | **Raw Gold** | `raw_gold` | 9,000 | 7,200 | Buy / Sell | - |
 | <img src="assets/icons/raw_iron.png" width="32" height="32" alt="Raw Iron" title="Raw Iron"> | **Raw Iron** | `raw_iron` | 4,500 | 3,600 | Buy / Sell | - |
@@ -1093,7 +1093,7 @@ _45 items, 44 buyable, 45 sellable._
 
 | Icon | Item | ID | Buy | Sell | Trade | Notes |
 |:---:|:--|:--|--:|--:|:--:|:--|
-| <img src="assets/icons/ancient_debris.png" width="32" height="32" alt="Ancient Debris" title="Ancient Debris"> | **Ancient Debris** | `ancient_debris` | 50,000 | 40,000 | Buy / Sell | - |
+| <img src="assets/icons/ancient_debris.png" width="32" height="32" alt="Ancient Debris" title="Ancient Debris"> | **Ancient Debris** | `ancient_debris` | 250,000 | 200,000 | Buy / Sell | - |
 | <img src="assets/icons/blaze_powder.png" width="32" height="32" alt="Blaze Powder" title="Blaze Powder"> | **Blaze Powder** | `blaze_powder` | 2,500 | 1,200 | Buy / Sell | - |
 | <img src="assets/icons/blaze_rod.png" width="32" height="32" alt="Blaze Rod" title="Blaze Rod"> | **Blaze Rod** | `blaze_rod` | 2,500 | 2,000 | Buy / Sell | - |
 | <img src="assets/icons/chiseled_nether_bricks.png" width="32" height="32" alt="Chiseled Nether Bricks" title="Chiseled Nether Bricks"> | **Chiseled Nether Bricks** | `chiseled_nether_bricks` | 10,000 | 4,000 | Buy / Sell | - |
@@ -1115,9 +1115,9 @@ _45 items, 44 buyable, 45 sellable._
 | <img src="assets/icons/nether_star.png" width="32" height="32" alt="Nether Star" title="Nether Star"> | **Nether Star** | `nether_star` | 1,000,000 | 800,000 | Buy / Sell | - |
 | <img src="assets/icons/nether_wart.png" width="32" height="32" alt="Nether Wart" title="Nether Wart"> | **Nether Wart** | `nether_wart` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/nether_wart_block.png" width="32" height="32" alt="Nether Wart Block" title="Nether Wart Block"> | **Nether Wart Block** | `nether_wart_block` | 9,000 | 7,200 | Buy / Sell | - |
-| <img src="assets/icons/netherite_horse_armor.png" width="32" height="32" alt="Netherite Horse Armor" title="Netherite Horse Armor"> | **Netherite Horse Armor** | `netherite_horse_armor` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_nautilus_armor.png" width="32" height="32" alt="Netherite Nautilus Armor" title="Netherite Nautilus Armor"> | **Netherite Nautilus Armor** | `netherite_nautilus_armor` | 2,500 | 2,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_scrap.png" width="32" height="32" alt="Netherite Scrap" title="Netherite Scrap"> | **Netherite Scrap** | `netherite_scrap` | 60,000 | 48,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_horse_armor.png" width="32" height="32" alt="Netherite Horse Armor" title="Netherite Horse Armor"> | **Netherite Horse Armor** | `netherite_horse_armor` | 1,550,000 | 1,240,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_nautilus_armor.png" width="32" height="32" alt="Netherite Nautilus Armor" title="Netherite Nautilus Armor"> | **Netherite Nautilus Armor** | `netherite_nautilus_armor` | 1,502,500 | 1,202,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_scrap.png" width="32" height="32" alt="Netherite Scrap" title="Netherite Scrap"> | **Netherite Scrap** | `netherite_scrap` | 250,000 | 200,000 | Buy / Sell | - |
 | <img src="assets/icons/netherrack.png" width="32" height="32" alt="Netherrack" title="Netherrack"> | **Netherrack** | `netherrack` | 1,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/quartz_bricks.png" width="32" height="32" alt="Quartz Bricks" title="Quartz Bricks"> | **Quartz Bricks** | `quartz_bricks` | 12,000 | 9,600 | Buy / Sell | - |
 | <img src="assets/icons/quartz_pillar.png" width="32" height="32" alt="Quartz Pillar" title="Quartz Pillar"> | **Quartz Pillar** | `quartz_pillar` | 12,000 | 9,600 | Buy / Sell | - |
@@ -1305,43 +1305,43 @@ _42 items, 42 buyable, 42 sellable._
 | <img src="assets/icons/copper_hoe.png" width="32" height="32" alt="Copper Hoe" title="Copper Hoe"> | **Copper Hoe** | `copper_hoe` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/copper_pickaxe.png" width="32" height="32" alt="Copper Pickaxe" title="Copper Pickaxe"> | **Copper Pickaxe** | `copper_pickaxe` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/copper_shovel.png" width="32" height="32" alt="Copper Shovel" title="Copper Shovel"> | **Copper Shovel** | `copper_shovel` | 3,000 | 2,400 | Buy / Sell | - |
-| <img src="assets/icons/copper_spear.png" width="32" height="32" alt="Copper Spear" title="Copper Spear"> | **Copper Spear** | `copper_spear` | 15,000 | 12,000 | Buy / Sell | - |
+| <img src="assets/icons/copper_spear.png" width="32" height="32" alt="Copper Spear" title="Copper Spear"> | **Copper Spear** | `copper_spear` | 1,500 | 1,200 | Buy / Sell | - |
 | <img src="assets/icons/copper_sword.png" width="32" height="32" alt="Copper Sword" title="Copper Sword"> | **Copper Sword** | `copper_sword` | 3,000 | 2,400 | Buy / Sell | - |
 | <img src="assets/icons/diamond_axe.png" width="32" height="32" alt="Diamond Axe" title="Diamond Axe"> | **Diamond Axe** | `diamond_axe` | 40,000 | 32,000 | Buy / Sell | - |
 | <img src="assets/icons/diamond_hoe.png" width="32" height="32" alt="Diamond Hoe" title="Diamond Hoe"> | **Diamond Hoe** | `diamond_hoe` | 40,000 | 32,000 | Buy / Sell | - |
 | <img src="assets/icons/diamond_pickaxe.png" width="32" height="32" alt="Diamond Pickaxe" title="Diamond Pickaxe"> | **Diamond Pickaxe** | `diamond_pickaxe` | 40,000 | 32,000 | Buy / Sell | - |
 | <img src="assets/icons/diamond_shovel.png" width="32" height="32" alt="Diamond Shovel" title="Diamond Shovel"> | **Diamond Shovel** | `diamond_shovel` | 40,000 | 30,200 | Buy / Sell | - |
-| <img src="assets/icons/diamond_spear.png" width="32" height="32" alt="Diamond Spear" title="Diamond Spear"> | **Diamond Spear** | `diamond_spear` | 150,000 | 120,000 | Buy / Sell | - |
+| <img src="assets/icons/diamond_spear.png" width="32" height="32" alt="Diamond Spear" title="Diamond Spear"> | **Diamond Spear** | `diamond_spear` | 30,000 | 24,000 | Buy / Sell | - |
 | <img src="assets/icons/diamond_sword.png" width="32" height="32" alt="Diamond Sword" title="Diamond Sword"> | **Diamond Sword** | `diamond_sword` | 40,000 | 32,000 | Buy / Sell | - |
 | <img src="assets/icons/golden_axe.png" width="32" height="32" alt="Golden Axe" title="Golden Axe"> | **Golden Axe** | `golden_axe` | 15,000 | 12,000 | Buy / Sell | - |
 | <img src="assets/icons/golden_hoe.png" width="32" height="32" alt="Golden Hoe" title="Golden Hoe"> | **Golden Hoe** | `golden_hoe` | 15,000 | 12,000 | Buy / Sell | - |
 | <img src="assets/icons/golden_pickaxe.png" width="32" height="32" alt="Golden Pickaxe" title="Golden Pickaxe"> | **Golden Pickaxe** | `golden_pickaxe` | 15,000 | 12,000 | Buy / Sell | - |
 | <img src="assets/icons/golden_shovel.png" width="32" height="32" alt="Golden Shovel" title="Golden Shovel"> | **Golden Shovel** | `golden_shovel` | 15,000 | 8,200 | Buy / Sell | - |
-| <img src="assets/icons/golden_spear.png" width="32" height="32" alt="Golden Spear" title="Golden Spear"> | **Golden Spear** | `golden_spear` | 50,000 | 40,000 | Buy / Sell | - |
+| <img src="assets/icons/golden_spear.png" width="32" height="32" alt="Golden Spear" title="Golden Spear"> | **Golden Spear** | `golden_spear` | 8,000 | 6,400 | Buy / Sell | - |
 | <img src="assets/icons/golden_sword.png" width="32" height="32" alt="Golden Sword" title="Golden Sword"> | **Golden Sword** | `golden_sword` | 15,000 | 12,000 | Buy / Sell | - |
 | <img src="assets/icons/iron_axe.png" width="32" height="32" alt="Iron Axe" title="Iron Axe"> | **Iron Axe** | `iron_axe` | 8,000 | 6,400 | Buy / Sell | - |
 | <img src="assets/icons/iron_hoe.png" width="32" height="32" alt="Iron Hoe" title="Iron Hoe"> | **Iron Hoe** | `iron_hoe` | 8,000 | 6,400 | Buy / Sell | - |
 | <img src="assets/icons/iron_pickaxe.png" width="32" height="32" alt="Iron Pickaxe" title="Iron Pickaxe"> | **Iron Pickaxe** | `iron_pickaxe` | 8,000 | 6,400 | Buy / Sell | - |
 | <img src="assets/icons/iron_shovel.png" width="32" height="32" alt="Iron Shovel" title="Iron Shovel"> | **Iron Shovel** | `iron_shovel` | 8,000 | 4,200 | Buy / Sell | - |
-| <img src="assets/icons/iron_spear.png" width="32" height="32" alt="Iron Spear" title="Iron Spear"> | **Iron Spear** | `iron_spear` | 30,000 | 24,000 | Buy / Sell | - |
+| <img src="assets/icons/iron_spear.png" width="32" height="32" alt="Iron Spear" title="Iron Spear"> | **Iron Spear** | `iron_spear` | 4,000 | 3,200 | Buy / Sell | - |
 | <img src="assets/icons/iron_sword.png" width="32" height="32" alt="Iron Sword" title="Iron Sword"> | **Iron Sword** | `iron_sword` | 8,000 | 6,400 | Buy / Sell | - |
-| <img src="assets/icons/netherite_axe.png" width="32" height="32" alt="Netherite Axe" title="Netherite Axe"> | **Netherite Axe** | `netherite_axe` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_hoe.png" width="32" height="32" alt="Netherite Hoe" title="Netherite Hoe"> | **Netherite Hoe** | `netherite_hoe` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_pickaxe.png" width="32" height="32" alt="Netherite Pickaxe" title="Netherite Pickaxe"> | **Netherite Pickaxe** | `netherite_pickaxe` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_shovel.png" width="32" height="32" alt="Netherite Shovel" title="Netherite Shovel"> | **Netherite Shovel** | `netherite_shovel` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_spear.png" width="32" height="32" alt="Netherite Spear" title="Netherite Spear"> | **Netherite Spear** | `netherite_spear` | 400,000 | 320,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_sword.png" width="32" height="32" alt="Netherite Sword" title="Netherite Sword"> | **Netherite Sword** | `netherite_sword` | 50,000 | 40,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_axe.png" width="32" height="32" alt="Netherite Axe" title="Netherite Axe"> | **Netherite Axe** | `netherite_axe` | 1,540,000 | 1,232,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_hoe.png" width="32" height="32" alt="Netherite Hoe" title="Netherite Hoe"> | **Netherite Hoe** | `netherite_hoe` | 1,540,000 | 1,232,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_pickaxe.png" width="32" height="32" alt="Netherite Pickaxe" title="Netherite Pickaxe"> | **Netherite Pickaxe** | `netherite_pickaxe` | 1,540,000 | 1,232,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_shovel.png" width="32" height="32" alt="Netherite Shovel" title="Netherite Shovel"> | **Netherite Shovel** | `netherite_shovel` | 1,540,000 | 1,232,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_spear.png" width="32" height="32" alt="Netherite Spear" title="Netherite Spear"> | **Netherite Spear** | `netherite_spear` | 1,200,000 | 960,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_sword.png" width="32" height="32" alt="Netherite Sword" title="Netherite Sword"> | **Netherite Sword** | `netherite_sword` | 1,540,000 | 1,232,000 | Buy / Sell | - |
 | <img src="assets/icons/stone_axe.png" width="32" height="32" alt="Stone Axe" title="Stone Axe"> | **Stone Axe** | `stone_axe` | 6,000 | 230 | Buy / Sell | - |
 | <img src="assets/icons/stone_hoe.png" width="32" height="32" alt="Stone Hoe" title="Stone Hoe"> | **Stone Hoe** | `stone_hoe` | 6,000 | 220 | Buy / Sell | - |
 | <img src="assets/icons/stone_pickaxe.png" width="32" height="32" alt="Stone Pickaxe" title="Stone Pickaxe"> | **Stone Pickaxe** | `stone_pickaxe` | 6,000 | 230 | Buy / Sell | - |
 | <img src="assets/icons/stone_shovel.png" width="32" height="32" alt="Stone Shovel" title="Stone Shovel"> | **Stone Shovel** | `stone_shovel` | 6,000 | 210 | Buy / Sell | - |
-| <img src="assets/icons/stone_spear.png" width="32" height="32" alt="Stone Spear" title="Stone Spear"> | **Stone Spear** | `stone_spear` | 6,000 | 4,800 | Buy / Sell | - |
+| <img src="assets/icons/stone_spear.png" width="32" height="32" alt="Stone Spear" title="Stone Spear"> | **Stone Spear** | `stone_spear` | 10 | 8 | Buy / Sell | - |
 | <img src="assets/icons/stone_sword.png" width="32" height="32" alt="Stone Sword" title="Stone Sword"> | **Stone Sword** | `stone_sword` | 6,000 | 120 | Buy / Sell | - |
 | <img src="assets/icons/wooden_axe.png" width="32" height="32" alt="Wooden Axe" title="Wooden Axe"> | **Wooden Axe** | `wooden_axe` | 2,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/wooden_hoe.png" width="32" height="32" alt="Wooden Hoe" title="Wooden Hoe"> | **Wooden Hoe** | `wooden_hoe` | 2,000 | 600 | Buy / Sell | - |
 | <img src="assets/icons/wooden_pickaxe.png" width="32" height="32" alt="Wooden Pickaxe" title="Wooden Pickaxe"> | **Wooden Pickaxe** | `wooden_pickaxe` | 2,000 | 800 | Buy / Sell | - |
 | <img src="assets/icons/wooden_shovel.png" width="32" height="32" alt="Wooden Shovel" title="Wooden Shovel"> | **Wooden Shovel** | `wooden_shovel` | 2,000 | 400 | Buy / Sell | - |
-| <img src="assets/icons/wooden_spear.png" width="32" height="32" alt="Wooden Spear" title="Wooden Spear"> | **Wooden Spear** | `wooden_spear` | 2,000 | 1,600 | Buy / Sell | - |
+| <img src="assets/icons/wooden_spear.png" width="32" height="32" alt="Wooden Spear" title="Wooden Spear"> | **Wooden Spear** | `wooden_spear` | 800 | 400 | Buy / Sell | - |
 | <img src="assets/icons/wooden_sword.png" width="32" height="32" alt="Wooden Sword" title="Wooden Sword"> | **Wooden Sword** | `wooden_sword` | 2,000 | 500 | Buy / Sell | - |
 
 ## Armor
@@ -1374,10 +1374,10 @@ _29 items, 29 buyable, 29 sellable._
 | <img src="assets/icons/leather_helmet.png" width="32" height="32" alt="Leather Cap" title="Leather Cap"> | **Leather Cap** | `leather_helmet` | 50,000 | 40,000 | Buy / Sell | - |
 | <img src="assets/icons/leather_leggings.png" width="32" height="32" alt="Leather Pants" title="Leather Pants"> | **Leather Pants** | `leather_leggings` | 70,000 | 56,000 | Buy / Sell | - |
 | <img src="assets/icons/leather_chestplate.png" width="32" height="32" alt="Leather Tunic" title="Leather Tunic"> | **Leather Tunic** | `leather_chestplate` | 80,000 | 64,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_boots.png" width="32" height="32" alt="Netherite Boots" title="Netherite Boots"> | **Netherite Boots** | `netherite_boots` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_chestplate.png" width="32" height="32" alt="Netherite Chestplate" title="Netherite Chestplate"> | **Netherite Chestplate** | `netherite_chestplate` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_helmet.png" width="32" height="32" alt="Netherite Helmet" title="Netherite Helmet"> | **Netherite Helmet** | `netherite_helmet` | 50,000 | 40,000 | Buy / Sell | - |
-| <img src="assets/icons/netherite_leggings.png" width="32" height="32" alt="Netherite Leggings" title="Netherite Leggings"> | **Netherite Leggings** | `netherite_leggings` | 50,000 | 40,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_boots.png" width="32" height="32" alt="Netherite Boots" title="Netherite Boots"> | **Netherite Boots** | `netherite_boots` | 1,620,000 | 1,296,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_chestplate.png" width="32" height="32" alt="Netherite Chestplate" title="Netherite Chestplate"> | **Netherite Chestplate** | `netherite_chestplate` | 1,740,000 | 1,392,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_helmet.png" width="32" height="32" alt="Netherite Helmet" title="Netherite Helmet"> | **Netherite Helmet** | `netherite_helmet` | 1,650,000 | 1,320,000 | Buy / Sell | - |
+| <img src="assets/icons/netherite_leggings.png" width="32" height="32" alt="Netherite Leggings" title="Netherite Leggings"> | **Netherite Leggings** | `netherite_leggings` | 1,710,000 | 1,368,000 | Buy / Sell | - |
 | <img src="assets/icons/turtle_helmet.png" width="32" height="32" alt="Turtle Shell" title="Turtle Shell"> | **Turtle Shell** | `turtle_helmet` | 50,000 | 12,500 | Buy / Sell | - |
 
 ## Miscellaneous
