@@ -28,6 +28,8 @@ import java.util.Map;
  *       (Protection 4 + Protection 4 = Protection 5).</li>
  *   <li>Conflicting enchantments can coexist (Infinity + Mending, Sharpness + Smite, ...).</li>
  *   <li>The "Too Expensive" repair cost never blocks a custom merge.</li>
+ *   <li>Special enchantment books can be applied to tools and armour; combining two
+ *       books of the same special enchantment raises its level by one.</li>
  * </ul>
  *
  * <p>The result is previewed with {@link PrepareAnvilEvent} and the actual take is handled in
@@ -130,6 +132,20 @@ public final class AnvilBypassListener implements Listener {
      * keep the higher level. No vanilla maximum, conflict or cost rules are applied.
      */
     public static ItemStack merge(ItemStack first, ItemStack second) {
+        if (first == null || second == null) return null;
+        if (first.getType().isAir() || second.getType().isAir()) return null;
+
+        boolean firstSpecialBook = SpecialEnchantments.isBook(first);
+        boolean secondSpecialBook = SpecialEnchantments.isBook(second);
+        if (firstSpecialBook || secondSpecialBook) {
+            if (firstSpecialBook && secondSpecialBook) {
+                return SpecialEnchantments.combineBooks(first, second);
+            }
+            ItemStack book = firstSpecialBook ? first : second;
+            ItemStack target = firstSpecialBook ? second : first;
+            return SpecialEnchantments.apply(book, target);
+        }
+
         if (!canMerge(first, second)) return null;
 
         ItemStack base = first.clone();

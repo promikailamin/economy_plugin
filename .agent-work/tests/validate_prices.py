@@ -9,7 +9,7 @@ import glob, json, math, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..', '..')
-DATA = os.path.join(HERE, '..', 'tmp', 'mcmeta', 'data', 'minecraft')
+DATA = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, '..', 'tmp', 'mcmeta', 'data', 'minecraft')
 PRICES = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'src', 'main', 'resources', 'prices.tsv')
 INF = float('inf')
 

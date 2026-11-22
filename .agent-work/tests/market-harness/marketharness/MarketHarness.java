@@ -7,6 +7,7 @@ import minecraft.economy.AuctionHouse;
 import minecraft.economy.EconomyData;
 import minecraft.economy.EconomyPlugin;
 import minecraft.economy.MysteryShop;
+import minecraft.economy.SpecialEnchantments;
 import minecraft.economy.SpecialItems;
 import minecraft.economy.SpecialToolListener;
 import org.bukkit.Bukkit;
@@ -16,12 +17,14 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionEffectType;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
@@ -61,18 +64,21 @@ public final class MarketHarness extends JavaPlugin {
             int enchantArmor = relics.getOrDefault("enchant_armor", 0);
             int superTools = relics.getOrDefault("super_tool", 0);
             int enchantBooks = relics.getOrDefault("enchant_book", 0);
+            int abilityBooks = relics.getOrDefault("ability_book", 0);
             int keepHelmets = relics.getOrDefault("keep_helmet", 0);
             report.append("effect_armor=").append(effectArmor)
                     .append(" effect_swords=").append(effectSwords)
                     .append(" enchant_armor=").append(enchantArmor)
                     .append(" super_tools=").append(superTools)
                     .append(" enchant_books=").append(enchantBooks)
+                    .append(" ability_books=").append(abilityBooks)
                     .append(" keep_helmets=").append(keepHelmets).append('\n');
             if (effectArmor < 10 || effectArmor > 30) failures++;
             if (effectSwords < 10 || effectSwords > 30) failures++;
             if (enchantArmor < 10 || enchantArmor > 30) failures++;
             if (superTools < 10 || superTools > 30) failures++;
             if (enchantBooks < 20 || enchantBooks > 50) failures++;
+            if (abilityBooks < 20 || abilityBooks > 50) failures++;
             if (keepHelmets < 0 || keepHelmets > 1) failures++;
         }
         for (AuctionHouse.Listing listing : house.all()) {
@@ -101,6 +107,36 @@ public final class MarketHarness extends JavaPlugin {
         }
         report.append("enchanting_table buy=").append(enchanting == null ? -1 : enchanting.buy)
                 .append(" shulker_shell buy=").append(shell == null ? -1 : shell.buy).append('\n');
+
+        report.append("\nissue 14 price checks\n");
+        Map<String, long[]> expectedPrices = Map.ofEntries(
+                Map.entry("wooden_spear", new long[]{800, 640}),
+                Map.entry("stone_spear", new long[]{10, 8}),
+                Map.entry("copper_spear", new long[]{1_500, 1_200}),
+                Map.entry("iron_spear", new long[]{4_000, 3_200}),
+                Map.entry("golden_spear", new long[]{8_000, 6_400}),
+                Map.entry("diamond_spear", new long[]{30_000, 24_000}),
+                Map.entry("netherite_spear", new long[]{1_200_000, 960_000}),
+                Map.entry("netherite_ingot", new long[]{1_200_000, 960_000}),
+                Map.entry("netherite_block", new long[]{10_800_000, 8_640_000}),
+                Map.entry("netherite_sword", new long[]{1_540_000, 1_232_000}),
+                Map.entry("netherite_chestplate", new long[]{1_740_000, 1_392_000})
+        );
+        for (Map.Entry<String, long[]> expected : expectedPrices.entrySet()) {
+            EconomyData.ShopEntry entry = EconomyData.get(expected.getKey());
+            if (entry == null) {
+                report.append(expected.getKey())
+                        .append(" skipped (item unknown to this server version)\n");
+                continue;
+            }
+            boolean ok = entry.buy == expected.getValue()[0]
+                    && entry.sell == expected.getValue()[1];
+            if (!ok) failures++;
+            report.append(expected.getKey())
+                    .append(" buy=").append(entry.buy)
+                    .append(" sell=").append(entry.sell)
+                    .append(" ok=").append(ok).append('\n');
+        }
 
         report.append("\nhead trade checks\n");
         for (String id : List.of("player_head", "creeper_head", "piglin_head",
@@ -242,6 +278,84 @@ public final class MarketHarness extends JavaPlugin {
             failures++;
             report.append("invalid single-level book was not detected\n");
         }
+
+        report.append("\nspecial enchantment book checks\n");
+        ItemStack areaBook1 = SpecialEnchantments.book(SpecialEnchantments.AREA, 1, rng);
+        ItemStack areaBook1b = SpecialEnchantments.book(SpecialEnchantments.AREA, 1, rng);
+        ItemStack veinBook = SpecialEnchantments.book(SpecialEnchantments.VEIN, 1, rng);
+        boolean areaBookOk = SpecialEnchantments.isBook(areaBook1)
+                && SpecialEnchantments.AREA.equals(SpecialEnchantments.ability(areaBook1))
+                && SpecialEnchantments.level(areaBook1) == 1
+                && SpecialItems.kind(areaBook1) == SpecialItems.Kind.ABILITY_BOOK
+                && SpecialItems.value(areaBook1) > 0;
+        if (!areaBookOk) failures++;
+        ItemStack areaBook2 = AnvilBypassListener.merge(areaBook1, areaBook1b);
+        boolean areaCombineOk = areaBook2 != null
+                && SpecialEnchantments.isBook(areaBook2)
+                && SpecialEnchantments.level(areaBook2) == 2;
+        if (!areaCombineOk) failures++;
+        if (AnvilBypassListener.merge(areaBook1, veinBook) != null) failures++;
+        report.append("area book valid=").append(areaBookOk)
+                .append(" area 1 + 1 = ").append(areaBook2 == null ? -1 : SpecialEnchantments.level(areaBook2))
+                .append(" different books blocked=")
+                .append(AnvilBypassListener.merge(areaBook1, veinBook) == null).append('\n');
+
+        ItemStack areaPick = new ItemStack(Material.DIAMOND_PICKAXE);
+        ItemStack areaPickApplied = AnvilBypassListener.merge(areaPick, areaBook1);
+        boolean areaApplyOk = areaPickApplied != null
+                && SpecialEnchantments.AREA.equals(SpecialEnchantments.effectiveAbility(areaPickApplied))
+                && SpecialEnchantments.effectiveLevel(areaPickApplied) == 1;
+        if (!areaApplyOk) failures++;
+        ItemStack areaPickUpgraded = AnvilBypassListener.merge(areaPickApplied, areaBook1);
+        boolean areaUpgradeOk = areaPickUpgraded != null
+                && SpecialEnchantments.effectiveLevel(areaPickUpgraded) == 2;
+        if (!areaUpgradeOk) failures++;
+        boolean areaSwordBlocked = AnvilBypassListener.merge(
+                new ItemStack(Material.DIAMOND_SWORD), areaBook1) == null;
+        if (!areaSwordBlocked) failures++;
+        report.append("area applied=").append(areaApplyOk)
+                .append(" upgraded=").append(areaUpgradeOk)
+                .append(" sword blocked=").append(areaSwordBlocked).append('\n');
+
+        PotionEffectType regen = PotionEffectType.REGENERATION;
+        ItemStack regen2Book = SpecialEnchantments.book(
+                SpecialEnchantments.effectAbility(regen), 2, rng);
+        ItemStack regen3Book = SpecialEnchantments.book(
+                SpecialEnchantments.effectAbility(regen), 3, rng);
+        ItemStack regenChest = AnvilBypassListener.merge(
+                new ItemStack(Material.DIAMOND_CHESTPLATE), regen2Book);
+        ItemStack regenLegs = AnvilBypassListener.merge(
+                new ItemStack(Material.DIAMOND_LEGGINGS), regen3Book);
+        ItemStack regenElytra = AnvilBypassListener.merge(
+                new ItemStack(Material.ELYTRA), regen2Book);
+        Map<PotionEffectType, Integer> totals = SpecialItems.armorEffectTotals(
+                new ItemStack[]{regenChest, regenLegs, null, null});
+        int stackedRegen = totals.getOrDefault(regen, 0);
+        boolean effectApplyOk = regenChest != null && regenLegs != null && regenElytra != null;
+        if (!effectApplyOk) failures++;
+        if (stackedRegen != 5) failures++;
+        ItemStack speedBook = SpecialEnchantments.book(
+                SpecialEnchantments.effectAbility(PotionEffectType.SPEED), 1, rng);
+        boolean differentEffectBlocked = AnvilBypassListener.merge(regenChest, speedBook) == null;
+        if (!differentEffectBlocked) failures++;
+        ItemStack regenChestUpgraded = AnvilBypassListener.merge(regenChest, regen2Book);
+        boolean sameEffectUpgradeOk = regenChestUpgraded != null
+                && SpecialEnchantments.effectiveLevel(regenChestUpgraded) == 3;
+        if (!sameEffectUpgradeOk) failures++;
+        report.append("effect applied chest/legs/elytra=").append(effectApplyOk)
+                .append(" chest 2 + legs 3=").append(stackedRegen)
+                .append(" different effect blocked=").append(differentEffectBlocked)
+                .append(" same effect upgraded=").append(sameEffectUpgradeOk).append('\n');
+
+        boolean randomBooksOk = true;
+        for (int i = 0; i < 200; i++) {
+            ItemStack book = SpecialEnchantments.randomBook(rng);
+            if (!SpecialEnchantments.isBook(book)) randomBooksOk = false;
+            if (SpecialEnchantments.family(SpecialEnchantments.ability(book)) == null) randomBooksOk = false;
+            if (SpecialEnchantments.level(book) < 1) randomBooksOk = false;
+        }
+        if (!randomBooksOk) failures++;
+        report.append("random special books valid=").append(randomBooksOk).append('\n');
 
         report.append("\nanvil bypass checks\n");
         ItemStack protA = new ItemStack(Material.DIAMOND_CHESTPLATE);

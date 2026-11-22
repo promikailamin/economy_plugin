@@ -73,6 +73,7 @@ public final class AuctionAi {
     private static final String RELIC_ENCHANT_ARMOR = "enchant_armor";
     private static final String RELIC_SUPER_TOOL = "super_tool";
     private static final String RELIC_ENCHANT_BOOK = "enchant_book";
+    private static final String RELIC_ABILITY_BOOK = "ability_book";
     private static final String RELIC_KEEP_HELMET = "keep_helmet";
 
     private final EconomyPlugin plugin;
@@ -105,6 +106,8 @@ public final class AuctionAi {
     private int superToolMax = 30;
     private int enchantBookMin = 20;
     private int enchantBookMax = 50;
+    private int abilityBookMin = 20;
+    private int abilityBookMax = 50;
     private int keepHelmetMin = 0;
     private int keepHelmetMax = 1;
     private boolean announceRelics = false;
@@ -230,6 +233,8 @@ public final class AuctionAi {
         superToolMax = Math.max(superToolMin, cfg.getInt("auction.ai.special-counts.super-tools-max", 30));
         enchantBookMin = Math.max(0, cfg.getInt("auction.ai.special-counts.enchant-books-min", 20));
         enchantBookMax = Math.max(enchantBookMin, cfg.getInt("auction.ai.special-counts.enchant-books-max", 50));
+        abilityBookMin = Math.max(0, cfg.getInt("auction.ai.special-counts.ability-books-min", 20));
+        abilityBookMax = Math.max(abilityBookMin, cfg.getInt("auction.ai.special-counts.ability-books-max", 50));
         keepHelmetMin = Math.max(0, Math.min(1, cfg.getInt("auction.ai.special-counts.keep-helmet-min", 0)));
         keepHelmetMax = Math.max(keepHelmetMin,
                 Math.min(1, cfg.getInt("auction.ai.special-counts.keep-helmet-max", 1)));
@@ -402,6 +407,7 @@ public final class AuctionAi {
         relicTargets.put(RELIC_ENCHANT_ARMOR, randomInRange(enchantArmorMin, enchantArmorMax));
         relicTargets.put(RELIC_SUPER_TOOL, randomInRange(superToolMin, superToolMax));
         relicTargets.put(RELIC_ENCHANT_BOOK, randomInRange(enchantBookMin, enchantBookMax));
+        relicTargets.put(RELIC_ABILITY_BOOK, randomInRange(abilityBookMin, abilityBookMax));
         int helmet = keepHelmetMin >= keepHelmetMax
                 ? keepHelmetMin
                 : (rng.nextDouble() < keepInventoryHelmetChance ? keepHelmetMax : keepHelmetMin);
@@ -435,18 +441,19 @@ public final class AuctionAi {
         for (int count : counts.values()) active += count;
 
         int minTotal = effectArmorMin + effectSwordMin + enchantArmorMin + superToolMin
-                + enchantBookMin + keepHelmetMin;
+                + enchantBookMin + abilityBookMin + keepHelmetMin;
         int cap = Math.max(maxSpecialRelics, minTotal);
         boolean belowMin = counts.getOrDefault(RELIC_EFFECT_ARMOR, 0) < effectArmorMin
                 || counts.getOrDefault(RELIC_EFFECT_SWORD, 0) < effectSwordMin
                 || counts.getOrDefault(RELIC_ENCHANT_ARMOR, 0) < enchantArmorMin
                 || counts.getOrDefault(RELIC_SUPER_TOOL, 0) < superToolMin
                 || counts.getOrDefault(RELIC_ENCHANT_BOOK, 0) < enchantBookMin
+                || counts.getOrDefault(RELIC_ABILITY_BOOK, 0) < abilityBookMin
                 || counts.getOrDefault(RELIC_KEEP_HELMET, 0) < keepHelmetMin;
         if (active >= cap && !belowMin) return null;
 
         for (String category : List.of(RELIC_EFFECT_ARMOR, RELIC_EFFECT_SWORD, RELIC_ENCHANT_ARMOR,
-                RELIC_SUPER_TOOL, RELIC_ENCHANT_BOOK, RELIC_KEEP_HELMET)) {
+                RELIC_SUPER_TOOL, RELIC_ENCHANT_BOOK, RELIC_ABILITY_BOOK, RELIC_KEEP_HELMET)) {
             int target = relicTargets.getOrDefault(category, 0);
             if (counts.getOrDefault(category, 0) < target) return category;
         }
@@ -460,6 +467,7 @@ public final class AuctionAi {
             case RELIC_ENCHANT_ARMOR -> SpecialItems.highEnchantGear(rng, true);
             case RELIC_SUPER_TOOL -> SpecialItems.superTool(rng);
             case RELIC_ENCHANT_BOOK -> SpecialItems.highEnchantBook(rng);
+            case RELIC_ABILITY_BOOK -> SpecialEnchantments.randomBook(rng);
             case RELIC_KEEP_HELMET -> SpecialItems.keepInventoryHelmet(rng);
             default -> null;
         };

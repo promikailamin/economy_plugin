@@ -25,7 +25,7 @@ public final class SpecialItems {
 
     public enum Kind {
         AREA_MINER, VEIN_MINER, TREE_MINER, EFFECT_SWORD, HIGH_ENCHANT_BOOK, HIGH_ENCHANT_GEAR,
-        ETERNAL_ARMOR, KEEP_INVENTORY_HELMET
+        ETERNAL_ARMOR, KEEP_INVENTORY_HELMET, ABILITY_BOOK
     }
 
     private enum ArmorSlot {
@@ -94,7 +94,7 @@ public final class SpecialItems {
         if (BAD_EFFECTS.isEmpty()) BAD_EFFECTS.addAll(ALL_EFFECTS);
     }
 
-    private static String effectId(PotionEffectType type) {
+    static String effectId(PotionEffectType type) {
         String name = type.getName().toLowerCase(Locale.ROOT);
         int colon = name.indexOf(':');
         return colon >= 0 ? name.substring(colon + 1) : name;
@@ -203,6 +203,7 @@ public final class SpecialItems {
             case HIGH_ENCHANT_BOOK -> "enchant_book";
             case AREA_MINER, VEIN_MINER, TREE_MINER -> "super_tool";
             case KEEP_INVENTORY_HELMET -> "keep_helmet";
+            case ABILITY_BOOK -> "ability_book";
         };
     }
 
@@ -503,21 +504,40 @@ public final class SpecialItems {
         return item;
     }
 
-    public static void tickArmor(Player player) {
-        for (ItemStack piece : player.getInventory().getArmorContents()) {
-            if (kind(piece) != Kind.ETERNAL_ARMOR) continue;
-            PotionEffectType type = effect(piece);
-            int level = effectLevel(piece);
+    /**
+     * Sums the levels of every effect enchantment on the supplied armour pieces.
+     * The same effect on several pieces stacks additively, so Regeneration II on a
+     * chestplate and Regeneration III on leggings produce Regeneration V.
+     */
+    public static java.util.Map<PotionEffectType, Integer> armorEffectTotals(ItemStack[] pieces) {
+        java.util.Map<PotionEffectType, Integer> totals = new java.util.LinkedHashMap<>();
+        if (pieces == null) return totals;
+        for (ItemStack piece : pieces) {
+            if (piece == null || piece.getType().isAir()) continue;
+            String ability = SpecialEnchantments.effectiveAbility(piece);
+            if (ability == null || SpecialEnchantments.family(ability) != SpecialEnchantments.Family.EFFECT) {
+                continue;
+            }
+            PotionEffectType type = SpecialEnchantments.effectType(ability);
+            int level = SpecialEnchantments.effectiveLevel(piece);
             if (type == null || level <= 0) continue;
+            totals.merge(type, level, Integer::sum);
+        }
+        return totals;
+    }
 
-            int amplifier = Math.max(0, Math.min(3, level - 1));
-            PotionEffect current = player.getPotionEffect(type);
+    public static void tickArmor(Player player) {
+        java.util.Map<PotionEffectType, Integer> totals =
+                armorEffectTotals(player.getInventory().getArmorContents());
+        for (java.util.Map.Entry<PotionEffectType, Integer> entry : totals.entrySet()) {
+            int amplifier = Math.max(0, Math.min(9, entry.getValue() - 1));
+            PotionEffect current = player.getPotionEffect(entry.getKey());
             if (current != null && current.getAmplifier() >= amplifier && current.getDuration() > 60) continue;
-            player.addPotionEffect(new PotionEffect(type, 120, amplifier, true, false, true), true);
+            player.addPotionEffect(new PotionEffect(entry.getKey(), 120, amplifier, true, false, true), true);
         }
     }
 
-    private static PotionEffectType effectByName(String raw) {
+    static PotionEffectType effectByName(String raw) {
         if (raw == null) return null;
         PotionEffectType direct = PotionEffectType.getByName(raw);
         if (direct != null) return direct;
@@ -529,6 +549,10 @@ public final class SpecialItems {
 
     private static List<PotionEffectType> effectPool(boolean good) {
         return good ? GOOD_EFFECTS : BAD_EFFECTS;
+    }
+
+    static List<PotionEffectType> allEffects() {
+        return ALL_EFFECTS;
     }
 
     private static void applyHighEnchants(Random rng, ItemMeta meta, boolean armor) {
@@ -544,7 +568,7 @@ public final class SpecialItems {
         }
     }
 
-    private static void mark(ItemMeta meta, Kind kind, String id, long value, Random rng) {
+    static void mark(ItemMeta meta, Kind kind, String id, long value, Random rng) {
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
         pdc.set(key(FLAG), PersistentDataType.BYTE, (byte) 1);
         pdc.set(key(KIND), PersistentDataType.STRING, kind.name());
@@ -555,12 +579,12 @@ public final class SpecialItems {
         meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_DYE, ItemFlag.HIDE_ARMOR_TRIM);
     }
 
-    private static String effectLabel(PotionEffectType type) {
+    static String effectLabel(PotionEffectType type) {
         String label = pretty(effectId(type));
         return (BAD_EFFECTS.contains(type) ? "§c" : "§a") + label;
     }
 
-    private static String pretty(String id) {
+    static String pretty(String id) {
         StringBuilder sb = new StringBuilder();
         for (String part : id.toLowerCase(Locale.ROOT).split("_")) {
             if (part.isEmpty()) continue;

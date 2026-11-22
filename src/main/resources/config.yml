@@ -58,6 +58,8 @@ auction:
       super-tools-max: 30
       enchant-books-min: 20
       enchant-books-max: 50
+      ability-books-min: 20
+      ability-books-max: 50
       keep-helmet-min: 0
       keep-helmet-max: 1
 

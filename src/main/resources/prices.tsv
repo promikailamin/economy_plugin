@@ -46,7 +46,7 @@ amethyst_cluster	Amethyst Cluster	5000	4000	yes	yes	blocks
 
 amethyst_shard	Amethyst Shard	3000	2400	yes	yes	misc	
 
-ancient_debris	Ancient Debris	50000	40000	yes	yes	nether	
+ancient_debris	Ancient Debris	250000	200000	yes	yes	nether	
 
 andesite	Andesite	1000	505	yes	yes	blocks	
 
@@ -660,7 +660,7 @@ copper_ore	Copper Ore	3000	2400	yes	yes	ores
 
 copper_pickaxe	Copper Pickaxe	3000	2400	yes	yes	tools	
 copper_shovel	Copper Shovel	3000	2400	yes	yes	tools	
-copper_spear	Copper Spear	15000	12000	yes	yes	tools	
+copper_spear	Copper Spear	1500	1200	yes	yes	tools	
 
 copper_sword	Copper Sword	3000	2400	yes	yes	tools	
 copper_torch	Copper Torch	500	400	yes	yes	blocks	
@@ -929,7 +929,7 @@ diamond_ore	Diamond Ore	40000	32000	yes	yes	ores
 
 diamond_pickaxe	Diamond Pickaxe	40000	32000	yes	yes	tools	
 diamond_shovel	Diamond Shovel	40000	30200	yes	yes	tools	
-diamond_spear	Diamond Spear	150000	120000	yes	yes	tools	
+diamond_spear	Diamond Spear	30000	24000	yes	yes	tools	
 
 diamond_sword	Diamond Sword	40000	32000	yes	yes	tools	
 diorite	Diorite	1000	800	yes	yes	blocks	
@@ -1176,7 +1176,7 @@ golden_nautilus_armor	Golden Nautilus Armor	2500	2000	yes	yes	misc
 
 golden_pickaxe	Golden Pickaxe	15000	12000	yes	yes	tools	
 golden_shovel	Golden Shovel	15000	8200	yes	yes	tools	
-golden_spear	Golden Spear	50000	40000	yes	yes	tools	
+golden_spear	Golden Spear	8000	6400	yes	yes	tools	
 
 golden_sword	Golden Sword	15000	12000	yes	yes	tools	
 granite	Granite	1000	800	yes	yes	blocks	
@@ -1370,7 +1370,7 @@ iron_ore	Iron Ore	8000	6400	yes	yes	ores
 
 iron_pickaxe	Iron Pickaxe	8000	6400	yes	yes	tools	
 iron_shovel	Iron Shovel	8000	4200	yes	yes	tools	
-iron_spear	Iron Spear	30000	24000	yes	yes	tools	
+iron_spear	Iron Spear	4000	3200	yes	yes	tools	
 
 iron_sword	Iron Sword	8000	6400	yes	yes	tools	
 iron_trapdoor	Iron Trapdoor	16000	12800	yes	yes	blocks	
@@ -1824,26 +1824,26 @@ nether_wart	Nether Wart	1000	800	yes	yes	nether
 
 nether_wart_block	Nether Wart Block	9000	7200	yes	yes	nether	
 
-netherite_axe	Netherite Axe	50000	40000	yes	yes	tools	
-netherite_block	Block of Netherite	1080000	864000	yes	yes	ores	
-netherite_boots	Netherite Boots	50000	40000	yes	yes	armor	
-netherite_chestplate	Netherite Chestplate	50000	40000	yes	yes	armor	
-netherite_helmet	Netherite Helmet	50000	40000	yes	yes	armor	
-netherite_hoe	Netherite Hoe	50000	40000	yes	yes	tools	
-netherite_horse_armor	Netherite Horse Armor	50000	40000	yes	yes	nether	
+netherite_axe	Netherite Axe	1540000	1232000	yes	yes	tools	
+netherite_block	Block of Netherite	10800000	8640000	yes	yes	ores	
+netherite_boots	Netherite Boots	1620000	1296000	yes	yes	armor	
+netherite_chestplate	Netherite Chestplate	1740000	1392000	yes	yes	armor	
+netherite_helmet	Netherite Helmet	1650000	1320000	yes	yes	armor	
+netherite_hoe	Netherite Hoe	1540000	1232000	yes	yes	tools	
+netherite_horse_armor	Netherite Horse Armor	1550000	1240000	yes	yes	nether	
 
-netherite_ingot	Netherite Ingot	120000	96000	yes	yes	ores	
+netherite_ingot	Netherite Ingot	1200000	960000	yes	yes	ores	
 
-netherite_leggings	Netherite Leggings	50000	40000	yes	yes	armor	
-netherite_nautilus_armor	Netherite Nautilus Armor	2500	2000	yes	yes	nether	
+netherite_leggings	Netherite Leggings	1710000	1368000	yes	yes	armor	
+netherite_nautilus_armor	Netherite Nautilus Armor	1502500	1202000	yes	yes	nether	
 
-netherite_pickaxe	Netherite Pickaxe	50000	40000	yes	yes	tools	
-netherite_scrap	Netherite Scrap	60000	48000	yes	yes	nether	
+netherite_pickaxe	Netherite Pickaxe	1540000	1232000	yes	yes	tools	
+netherite_scrap	Netherite Scrap	250000	200000	yes	yes	nether	
 
-netherite_shovel	Netherite Shovel	50000	40000	yes	yes	tools	
-netherite_spear	Netherite Spear	400000	320000	yes	yes	tools	
+netherite_shovel	Netherite Shovel	1540000	1232000	yes	yes	tools	
+netherite_spear	Netherite Spear	1200000	960000	yes	yes	tools	
 
-netherite_sword	Netherite Sword	50000	40000	yes	yes	tools	
+netherite_sword	Netherite Sword	1540000	1232000	yes	yes	tools	
 netherite_upgrade_smithing_template	Smithing Template	300000	211000	yes	yes	nether	
 
 netherrack	Netherrack	1000	800	yes	yes	nether	
@@ -2700,7 +2700,7 @@ stone_shovel	Stone Shovel	6000	210	yes	yes	tools
 
 stone_slab	Stone Slab	1200	5	yes	yes	blocks	
 
-stone_spear	Stone Spear	6000	4800	yes	yes	tools	
+stone_spear	Stone Spear	10	8	yes	yes	tools	
 
 stone_stairs	Stone Stairs	1200	10	yes	yes	blocks	
 
@@ -3186,7 +3186,7 @@ wooden_pickaxe	Wooden Pickaxe	2000	800	yes	yes	tools
 
 wooden_shovel	Wooden Shovel	2000	400	yes	yes	tools	
 
-wooden_spear	Wooden Spear	2000	1600	yes	yes	tools	
+wooden_spear	Wooden Spear	800	640	yes	yes	tools	
 
 wooden_sword	Wooden Sword	2000	500	yes	yes	tools	
 

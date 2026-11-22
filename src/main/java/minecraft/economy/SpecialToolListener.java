@@ -35,13 +35,14 @@ public final class SpecialToolListener implements Listener {
         if (!(event.getEntity() instanceof LivingEntity victim)) return;
 
         ItemStack weapon = player.getInventory().getItemInMainHand();
-        if (SpecialItems.kind(weapon) != SpecialItems.Kind.EFFECT_SWORD) return;
+        String ability = SpecialEnchantments.effectiveAbility(weapon);
+        if (SpecialEnchantments.family(ability) != SpecialEnchantments.Family.EFFECT) return;
 
-        PotionEffectType type = SpecialItems.effect(weapon);
-        int level = SpecialItems.effectLevel(weapon);
+        PotionEffectType type = SpecialEnchantments.effectType(ability);
+        int level = SpecialEnchantments.effectiveLevel(weapon);
         if (type == null || level <= 0) return;
 
-        int amplifier = Math.max(0, Math.min(3, level - 1));
+        int amplifier = Math.max(0, Math.min(9, level - 1));
         PotionEffect current = victim.getPotionEffect(type);
         if (current != null && current.getAmplifier() > amplifier) return;
         victim.addPotionEffect(new PotionEffect(type, 200, amplifier, true, true, true), true);
@@ -54,15 +55,19 @@ public final class SpecialToolListener implements Listener {
         if (player.isSneaking()) return;
 
         ItemStack tool = player.getInventory().getItemInMainHand();
-        SpecialItems.Kind kind = SpecialItems.kind(tool);
-        if (kind == null) return;
+        String ability = SpecialEnchantments.effectiveAbility(tool);
+        SpecialEnchantments.Family family = SpecialEnchantments.family(ability);
+        if (family == null) return;
 
+        int level = SpecialEnchantments.effectiveLevel(tool);
         Block origin = event.getBlock();
-        List<Block> extra = switch (kind) {
-            case AREA_MINER -> origin.isPreferredTool(tool) ? areaBlocks(tool, origin) : List.of();
-            case VEIN_MINER -> veinBlocks(tool, origin);
-            case TREE_MINER -> treeBlocks(tool, origin);
-            default -> List.of();
+        List<Block> extra = switch (family) {
+            case AREA -> origin.isPreferredTool(tool)
+                    ? areaBlocks(tool, origin, SpecialEnchantments.areaSize(level))
+                    : List.of();
+            case VEIN -> veinBlocks(tool, origin, SpecialEnchantments.veinLimit(level));
+            case TREE -> treeBlocks(tool, origin, SpecialEnchantments.treeLimit(level));
+            case EFFECT -> List.of();
         };
         if (extra.isEmpty()) return;
 
@@ -96,8 +101,7 @@ public final class SpecialToolListener implements Listener {
         return offsets;
     }
 
-    private static List<Block> areaBlocks(ItemStack tool, Block origin) {
-        int size = SpecialItems.areaSize(tool);
+    private static List<Block> areaBlocks(ItemStack tool, Block origin, int size) {
         if (size < 3) return List.of();
 
         List<Block> blocks = new ArrayList<>();
@@ -108,7 +112,7 @@ public final class SpecialToolListener implements Listener {
         return blocks;
     }
 
-    private static List<Block> veinBlocks(ItemStack tool, Block origin) {
+    private static List<Block> veinBlocks(ItemStack tool, Block origin, int limit) {
         Material target = origin.getType();
         if (!isOre(target)) return List.of();
 
@@ -118,7 +122,7 @@ public final class SpecialToolListener implements Listener {
         queue.add(origin);
         visited.add(origin.getBlockKey());
 
-        while (!queue.isEmpty() && blocks.size() < 64) {
+        while (!queue.isEmpty() && blocks.size() < limit) {
             Block current = queue.poll();
             for (int[] offset : NEIGHBORS) {
                 Block next = current.getRelative(offset[0], offset[1], offset[2]);
@@ -132,7 +136,7 @@ public final class SpecialToolListener implements Listener {
         return blocks;
     }
 
-    private static List<Block> treeBlocks(ItemStack tool, Block origin) {
+    private static List<Block> treeBlocks(ItemStack tool, Block origin, int limit) {
         Material target = origin.getType();
         if (!isLog(target)) return List.of();
 
@@ -142,7 +146,7 @@ public final class SpecialToolListener implements Listener {
         queue.add(origin);
         visited.add(origin.getBlockKey());
 
-        while (!queue.isEmpty() && blocks.size() < 128) {
+        while (!queue.isEmpty() && blocks.size() < limit) {
             Block current = queue.poll();
             for (int[] offset : NEIGHBORS) {
                 Block next = current.getRelative(offset[0], offset[1], offset[2]);
