@@ -1,0 +1,45 @@
+Issue 12 requirement verification (completed via issue 13 follow-up)
+====================================================================
+
+1. Special swords inflict their bound potion effect on hit
+   - SpecialItems.effectSword() creates a netherite sword with one random
+     non-instant potion effect at level 1-4 and stores it in persistent data.
+   - SpecialToolListener.onEntityDamage() applies that effect to the entity hit.
+   - AuctionAi keeps 10-30 effect swords live in the AI auction house.
+   - Harness: effect swords generated, level in 1-4, effect present; 35 distinct
+     effects reached in 120 generated swords.
+
+2. Special armour pieces each carry exactly one random effect
+   - SpecialItems.eternalArmor() creates helmet/chestplate/leggings/boots with one
+     random non-instant effect at level 1-4 (good or bad).
+   - SpecialItems.tickArmor() applies the stored effect while worn.
+   - AuctionAi keeps 10-30 effect armour pieces live in the AI auction house.
+   - Harness: armour generated, level in 1-4, effect present; 34 distinct effects
+     reached in 120 generated pieces.
+
+3. Anvil bypass for high-level books and enchantments
+   - AnvilBypassListener applies level 10-15 books and any enchantment level.
+   - Equal levels combine one higher: Protection 4 + 4 = Protection 5.
+   - Different levels keep the higher level: Unbreaking 2 + 3 = 3.
+   - Vanilla conflict and repair-cost limits are bypassed.
+   - Harness: protection 4+4=5, unbreaking 2+3=3, sharpness 15 applied,
+     mending 15 applied, protection book 10+10=11.
+
+4. Conflicting enchantments can coexist
+   - Infinity + Mending on a bow and Sharpness + Smite on a sword both merge.
+   - Harness: infinity + mending allowed=true, sharpness + smite allowed=true.
+
+5. No impossible single-level enchantments in the auction house
+   - High-enchant books no longer roll Mending/Infinity/Silk Touch etc.
+   - High-enchant gear keeps single-level enchantments at level 1.
+   - Existing invalid listings are removed and returned to the owner's claim box.
+   - Listing an invalid relic is blocked.
+   - Harness: 200 generated high-enchant books had no invalid single-level
+     enchantment; an intentionally invalid Mending 15 book was detected.
+
+Validation performed
+--------------------
+- ./gradlew --no-daemon clean build : BUILD SUCCESSFUL
+- .agent-work/tools/test-market.sh 1.21.4 232 issue13 : MarketHarness PASS,
+  failures=0 (full log in .agent-work/logs/issue13-paper-test.log,
+  report in .agent-work/outputs/issue13-market-report.txt)

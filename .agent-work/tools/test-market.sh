@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 # Build the plugin and run the MarketHarness integration test on a temporary Paper server.
-# Usage: .agent-work/tools/test-market.sh [paper-version] [paper-build]
+# Usage: .agent-work/tools/test-market.sh [paper-version] [paper-build] [label]
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 VERSION="${1:-1.21.4}"
 BUILD="${2:-232}"
+LABEL="${3:-issue7}"
 WORK="$ROOT/.agent-work/tmp/paper-test"
 HARNESS="$ROOT/.agent-work/tests/market-harness"
 OUT="$ROOT/.agent-work/outputs"
-LOG="$ROOT/.agent-work/logs/issue7-paper-test.log"
+LOG="$ROOT/.agent-work/logs/$LABEL-paper-test.log"
 
 SERVER_JAR="$WORK/paper-$VERSION-$BUILD.jar"
 if [[ ! -f "$SERVER_JAR" ]]; then
@@ -49,7 +50,7 @@ set -e
 REPORT="$WORK/server/plugins/MarketHarness/report.txt"
 mkdir -p "$OUT"
 if [[ -f "$REPORT" ]]; then
-    cp "$REPORT" "$OUT/issue7-market-report.txt"
+    cp "$REPORT" "$OUT/$LABEL-market-report.txt"
     cat "$REPORT"
 else
     echo "Harness report missing; server exited with $STATUS" >&2

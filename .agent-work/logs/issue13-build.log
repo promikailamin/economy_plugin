@@ -1,0 +1,54 @@
+Fetching distribution.
+Downloading https://services.gradle.org/distributions/gradle-9.9.1-bin.zip
+............10%.............20%.............30%.............40%.............50%.............60%.............70%............80%.............90%.............100%
+
+Welcome to Gradle 9.9.1!
+
+Here are the highlights of this release:
+ - Performance improvements for Kotlin DSL compilation
+ - Test filtering for non-method JUnit Platform tests
+ - Wrapper settings preserved on upgrade
+ - Predefined groups in the Problems API
+
+For more details see https://docs.gradle.org/9.9.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.9.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :clean UP-TO-DATE
+
+> Task :compileJava
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:388: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        lore.add("§7Stored enchantment: §d" + pretty(enchantment.getName()) + " " + level);
+                                                                ^
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:394: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        mark(meta, Kind.HIGH_ENCHANT_BOOK, "book_" + enchantment.getName() + "_" + level, value, rng);
+                                                                ^
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:395: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        meta.setDisplayName("§5§lAncient Tome of " + pretty(enchantment.getName()));
+                                                                       ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/economy_plugin/economy_plugin/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.9.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 17s
+4 actionable tasks: 3 executed, 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.9.1/userguide/configuration_cache_enabling.html
