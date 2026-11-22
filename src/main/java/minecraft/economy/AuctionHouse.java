@@ -202,6 +202,35 @@ public final class AuctionHouse {
     }
 
     /**
+     * Removes listings whose relic has a single-level enchantment forced above its vanilla
+     * maximum (for example Mending 15 or Infinity 12). Those items should never be created
+     * or remain in the auction house. Player items are moved to their collection box.
+     *
+     * @return how many listings were removed
+     */
+    public int removeInvalidSingleLevelEnchantListings() {
+        List<Listing> invalid = new ArrayList<>();
+        for (Listing l : listings.values()) {
+            if (SpecialItems.hasInvalidSingleLevelEnchant(l.item)) invalid.add(l);
+        }
+        int removed = 0;
+        for (Listing l : invalid) {
+            listings.remove(l.id);
+            if (!l.synthetic) {
+                addClaim(l.seller, l.item);
+                Player owner = Bukkit.getPlayer(l.seller);
+                if (owner != null) {
+                    owner.sendMessage(ChatColor.YELLOW
+                            + "Your auction listing was removed because it had an impossible "
+                            + "high-level single-level enchantment. Use /ah collect to get it back.");
+                }
+            }
+            removed++;
+        }
+        return removed;
+    }
+
+    /**
      * Trims excess synthetic listings so the AI market never grows past its configured
      * target. The oldest listings are removed first. Player listings are never touched.
      *
@@ -239,6 +268,11 @@ public final class AuctionHouse {
         }
         if (SellAxe.isSellAxe(hand)) {
             seller.sendMessage(ChatColor.RED + "Sell Axes can't be auctioned.");
+            return;
+        }
+        if (SpecialItems.hasInvalidSingleLevelEnchant(hand)) {
+            seller.sendMessage(ChatColor.RED
+                    + "This relic has an impossible single-level enchantment and can't be auctioned.");
             return;
         }
         if (SpecialItems.isKeepInventoryHelmet(hand) && hasActiveKeepInventoryHelmet()) {

@@ -1,0 +1,28 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.9.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:382: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        lore.add("§7Stored enchantment: §d" + pretty(enchantment.getName()) + " " + level);
+                                                                ^
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:388: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        mark(meta, Kind.HIGH_ENCHANT_BOOK, "book_" + enchantment.getName() + "_" + level, value, rng);
+                                                                ^
+/home/runner/work/economy_plugin/economy_plugin/src/main/java/minecraft/economy/SpecialItems.java:389: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+        meta.setDisplayName("§5§lAncient Tome of " + pretty(enchantment.getName()));
+                                                                       ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+
+[Incubating] Problems report is available at: file:///home/runner/work/economy_plugin/economy_plugin/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.9.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 8s
+1 actionable task: 1 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.9.1/userguide/configuration_cache_enabling.html

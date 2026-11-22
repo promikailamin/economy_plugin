@@ -24,8 +24,8 @@ import java.util.Set;
 public final class SpecialItems {
 
     public enum Kind {
-        AREA_MINER, VEIN_MINER, TREE_MINER, HIGH_ENCHANT_BOOK, HIGH_ENCHANT_GEAR, ETERNAL_ARMOR,
-        KEEP_INVENTORY_HELMET
+        AREA_MINER, VEIN_MINER, TREE_MINER, EFFECT_SWORD, HIGH_ENCHANT_BOOK, HIGH_ENCHANT_GEAR,
+        ETERNAL_ARMOR, KEEP_INVENTORY_HELMET
     }
 
     private enum ArmorSlot {
@@ -65,46 +65,39 @@ public final class SpecialItems {
     };
     private static final Enchantment[] BOOK_ENCHANTS = {
             Enchantment.SHARPNESS, Enchantment.PROTECTION, Enchantment.EFFICIENCY,
-            Enchantment.FORTUNE, Enchantment.SILK_TOUCH, Enchantment.UNBREAKING,
-            Enchantment.MENDING, Enchantment.LOOTING, Enchantment.POWER,
-            Enchantment.INFINITY, Enchantment.FEATHER_FALLING, Enchantment.THORNS,
+            Enchantment.FORTUNE, Enchantment.UNBREAKING, Enchantment.LOOTING,
+            Enchantment.POWER, Enchantment.FEATHER_FALLING, Enchantment.THORNS,
             Enchantment.RESPIRATION, Enchantment.SOUL_SPEED, Enchantment.SWIFT_SNEAK,
             Enchantment.DENSITY, Enchantment.BREACH, Enchantment.WIND_BURST
     };
 
-    private static final List<PotionEffectType> HELMET_GOOD = List.of(
-            PotionEffectType.NIGHT_VISION, PotionEffectType.WATER_BREATHING,
-            PotionEffectType.CONDUIT_POWER, PotionEffectType.HASTE);
-    private static final List<PotionEffectType> HELMET_BAD = List.of(
-            PotionEffectType.MINING_FATIGUE, PotionEffectType.BLINDNESS,
-            PotionEffectType.DARKNESS, PotionEffectType.NAUSEA);
-    private static final List<PotionEffectType> CHEST_GOOD = List.of(
-            PotionEffectType.RESISTANCE, PotionEffectType.REGENERATION,
-            PotionEffectType.ABSORPTION, PotionEffectType.HEALTH_BOOST,
-            PotionEffectType.FIRE_RESISTANCE);
-    private static final List<PotionEffectType> CHEST_BAD = List.of(
-            PotionEffectType.WEAKNESS, PotionEffectType.POISON,
-            PotionEffectType.HUNGER, PotionEffectType.UNLUCK);
-    private static final List<PotionEffectType> LEGGING_GOOD = List.of(
-            PotionEffectType.RESISTANCE, PotionEffectType.REGENERATION,
-            PotionEffectType.ABSORPTION, PotionEffectType.LUCK);
-    private static final List<PotionEffectType> LEGGING_BAD = List.of(
-            PotionEffectType.SLOWNESS, PotionEffectType.WEAKNESS,
-            PotionEffectType.UNLUCK, PotionEffectType.HUNGER);
-    private static final List<PotionEffectType> BOOT_GOOD = List.of(
-            PotionEffectType.SPEED, PotionEffectType.JUMP_BOOST,
-            PotionEffectType.SLOW_FALLING, PotionEffectType.DOLPHINS_GRACE);
-    private static final List<PotionEffectType> BOOT_BAD = List.of(
-            PotionEffectType.SLOWNESS, PotionEffectType.LEVITATION,
-            PotionEffectType.WEAKNESS, PotionEffectType.UNLUCK);
+    private static final Set<String> BAD_EFFECT_NAMES = Set.of(
+            "bad_omen", "blindness", "darkness", "glowing", "hunger", "infested",
+            "levitation", "mining_fatigue", "nausea", "oozing", "poison", "raid_omen",
+            "slowness", "trial_omen", "unluck", "weakness", "weaving", "wither",
+            "wind_charged");
 
-    private static final Set<PotionEffectType> BAD_EFFECTS = new HashSet<>();
+    private static final List<PotionEffectType> ALL_EFFECTS = new ArrayList<>();
+    private static final List<PotionEffectType> GOOD_EFFECTS = new ArrayList<>();
+    private static final List<PotionEffectType> BAD_EFFECTS = new ArrayList<>();
 
     static {
-        BAD_EFFECTS.addAll(HELMET_BAD);
-        BAD_EFFECTS.addAll(CHEST_BAD);
-        BAD_EFFECTS.addAll(LEGGING_BAD);
-        BAD_EFFECTS.addAll(BOOT_BAD);
+        for (PotionEffectType type : PotionEffectType.values()) {
+            if (type == null || type.isInstant()) continue;
+            String name = effectId(type);
+            if (name.equals("empty")) continue;
+            ALL_EFFECTS.add(type);
+            if (BAD_EFFECT_NAMES.contains(name)) BAD_EFFECTS.add(type);
+            else GOOD_EFFECTS.add(type);
+        }
+        if (GOOD_EFFECTS.isEmpty()) GOOD_EFFECTS.addAll(ALL_EFFECTS);
+        if (BAD_EFFECTS.isEmpty()) BAD_EFFECTS.addAll(ALL_EFFECTS);
+    }
+
+    private static String effectId(PotionEffectType type) {
+        String name = type.getName().toLowerCase(Locale.ROOT);
+        int colon = name.indexOf(':');
+        return colon >= 0 ? name.substring(colon + 1) : name;
     }
 
     private SpecialItems() {
@@ -154,8 +147,47 @@ public final class SpecialItems {
         return serial == null ? 0 : serial;
     }
 
+    /** The potion effect bound to an effect sword or eternal armour piece, or {@code null}. */
+    public static PotionEffectType effect(ItemStack item) {
+        if (!isSpecial(item)) return null;
+        String raw = item.getItemMeta().getPersistentDataContainer().get(key(EFFECT), PersistentDataType.STRING);
+        return effectByName(raw);
+    }
+
+    /** The bound potion effect level (1-4), or {@code 0} when the item has no effect. */
+    public static int effectLevel(ItemStack item) {
+        if (!isSpecial(item)) return 0;
+        Integer level = item.getItemMeta().getPersistentDataContainer().get(key(EFFECT_LEVEL), PersistentDataType.INTEGER);
+        return level == null ? 0 : level;
+    }
+
     public static boolean isKeepInventoryHelmet(ItemStack item) {
         return kind(item) == Kind.KEEP_INVENTORY_HELMET;
+    }
+
+    /**
+     * True when a relic has a single-level enchantment (Mending, Infinity, Silk Touch, ...)
+     * forced above its vanilla maximum. Those levels make no sense and should never be
+     * generated or remain listed in the auction house.
+     */
+    public static boolean hasInvalidSingleLevelEnchant(ItemStack item) {
+        Kind kind = kind(item);
+        if (kind != Kind.HIGH_ENCHANT_BOOK && kind != Kind.HIGH_ENCHANT_GEAR) return false;
+        ItemMeta meta = item.getItemMeta();
+        if (meta == null) return false;
+        if (meta instanceof EnchantmentStorageMeta storage) {
+            for (Map.Entry<Enchantment, Integer> entry : storage.getStoredEnchants().entrySet()) {
+                if (entry.getKey().getMaxLevel() <= 1 && entry.getValue() > entry.getKey().getMaxLevel()) {
+                    return true;
+                }
+            }
+        }
+        for (Map.Entry<Enchantment, Integer> entry : meta.getEnchants().entrySet()) {
+            if (entry.getKey().getMaxLevel() <= 1 && entry.getValue() > entry.getKey().getMaxLevel()) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -166,6 +198,7 @@ public final class SpecialItems {
         if (kind == null) return null;
         return switch (kind) {
             case ETERNAL_ARMOR -> "effect_armor";
+            case EFFECT_SWORD -> "effect_sword";
             case HIGH_ENCHANT_GEAR -> isArmor(item.getType()) ? "enchant_armor" : "super_tool";
             case HIGH_ENCHANT_BOOK -> "enchant_book";
             case AREA_MINER, VEIN_MINER, TREE_MINER -> "super_tool";
@@ -200,16 +233,17 @@ public final class SpecialItems {
             return keepInventoryHelmet(rng);
         }
         int roll = rng.nextInt(100);
-        if (roll < 18) return areaMiner(rng, 3, false);
-        if (roll < 30) return areaMiner(rng, 3, true);
-        if (roll < 42) return areaMiner(rng, 4, false);
-        if (roll < 50) return areaMiner(rng, 4, true);
-        if (roll < 58) return areaMiner(rng, 5, false);
-        if (roll < 63) return areaMiner(rng, 5, true);
-        if (roll < 72) return veinMiner(rng);
-        if (roll < 80) return treeMiner(rng);
-        if (roll < 87) return highEnchantBook(rng);
-        if (roll < 94) return highEnchantGear(rng);
+        if (roll < 17) return areaMiner(rng, 3, false);
+        if (roll < 28) return areaMiner(rng, 3, true);
+        if (roll < 39) return areaMiner(rng, 4, false);
+        if (roll < 46) return areaMiner(rng, 4, true);
+        if (roll < 54) return areaMiner(rng, 5, false);
+        if (roll < 59) return areaMiner(rng, 5, true);
+        if (roll < 68) return veinMiner(rng);
+        if (roll < 76) return treeMiner(rng);
+        if (roll < 82) return highEnchantBook(rng);
+        if (roll < 88) return highEnchantGear(rng);
+        if (roll < 94) return effectSword(rng);
         return eternalArmor(rng);
     }
 
@@ -303,12 +337,49 @@ public final class SpecialItems {
         return item;
     }
 
+    public static ItemStack effectSword(Random rng) {
+        ItemStack item = new ItemStack(Material.NETHERITE_SWORD);
+        ItemMeta meta = item.getItemMeta();
+        if (meta == null) return item;
+
+        PotionEffectType effect = ALL_EFFECTS.get(rng.nextInt(ALL_EFFECTS.size()));
+        int level = 1 + rng.nextInt(4);
+
+        meta.addEnchant(Enchantment.SHARPNESS, 6 + rng.nextInt(6), true);
+        meta.addEnchant(Enchantment.UNBREAKING, 6 + rng.nextInt(5), true);
+        meta.addEnchant(Enchantment.MENDING, 1, true);
+        meta.addEnchant(Enchantment.LOOTING, 3 + rng.nextInt(3), true);
+        meta.addEnchant(Enchantment.FIRE_ASPECT, 2, true);
+
+        long value = 12_000_000L + level * 4_000_000L + rng.nextInt(6_000_000);
+        List<String> lore = new ArrayList<>();
+        lore.add("§7On hit: " + effectLabel(effect) + " §f" + level);
+        lore.add("§7Strikes inflict the sword's bound effect.");
+        lore.add("§7The effect is bound to the blade.");
+        lore.add("§8-------------------------");
+        lore.add("§8Legendary relic • one of a limited supply");
+        lore.add("§5Relic value: §d" + Money.format(value));
+
+        String effectKey = effectId(effect);
+        mark(meta, Kind.EFFECT_SWORD, "sword_" + effectKey + "_" + level, value, rng);
+        PersistentDataContainer pdc = meta.getPersistentDataContainer();
+        pdc.set(key(EFFECT), PersistentDataType.STRING, effectKey);
+        pdc.set(key(EFFECT_LEVEL), PersistentDataType.INTEGER, level);
+        meta.setDisplayName("§c§lBlade of " + effectLabel(effect));
+        meta.setLore(lore);
+        item.setItemMeta(meta);
+        return item;
+    }
+
     public static ItemStack highEnchantBook(Random rng) {
         ItemStack item = new ItemStack(Material.ENCHANTED_BOOK);
         ItemMeta raw = item.getItemMeta();
         if (!(raw instanceof EnchantmentStorageMeta meta)) return item;
 
-        Enchantment enchantment = BOOK_ENCHANTS[rng.nextInt(BOOK_ENCHANTS.length)];
+        Enchantment enchantment;
+        do {
+            enchantment = BOOK_ENCHANTS[rng.nextInt(BOOK_ENCHANTS.length)];
+        } while (enchantment.getMaxLevel() <= 1);
         int level = 10 + rng.nextInt(6);
         meta.addStoredEnchant(enchantment, level, true);
 
@@ -346,7 +417,7 @@ public final class SpecialItems {
         long value = 4_000_000L + rng.nextInt(8_000_000);
 
         List<String> lore = new ArrayList<>();
-        lore.add("§7Enchantments: §d10-15 levels");
+        lore.add("§7Enchantments: §d10-15 levels §7(single-level stay 1)");
         lore.add("§7Forged with power no anvil can create.");
         lore.add("§8-------------------------");
         lore.add("§8Legendary relic • one of a limited supply");
@@ -401,7 +472,7 @@ public final class SpecialItems {
         if (meta == null) return item;
 
         boolean good = rng.nextDouble() < 0.72;
-        List<PotionEffectType> pool = effectPool(slot, good);
+        List<PotionEffectType> pool = effectPool(good);
         PotionEffectType effect = pool.get(rng.nextInt(pool.size()));
         int level = 1 + rng.nextInt(4);
 
@@ -413,16 +484,17 @@ public final class SpecialItems {
         lore.add("§7Eternal: §fnever loses durability");
         lore.add("§7While worn: " + effectLabel(effect) + " §f" + level);
         lore.add("§7Only one effect can exist on a piece.");
-        lore.add("§7The effect is bound to the " + slotName(slot) + " slot.");
+        lore.add("§7The effect can be any potion effect.");
         lore.add("§8-------------------------");
         lore.add("§8Legendary relic • one of a limited supply");
         lore.add("§5Relic value: §d" + Money.format(value));
 
+        String effectKey = effectId(effect);
         String id = "eternal_" + material.name().toLowerCase(Locale.ROOT) + "_"
-                + effect.getName() + "_" + level;
+                + effectKey + "_" + level;
         mark(meta, Kind.ETERNAL_ARMOR, id, value, rng);
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
-        pdc.set(key(EFFECT), PersistentDataType.STRING, effect.getName());
+        pdc.set(key(EFFECT), PersistentDataType.STRING, effectKey);
         pdc.set(key(EFFECT_LEVEL), PersistentDataType.INTEGER, level);
         meta.setDisplayName((good ? "§b§lEternal " : "§4§lCursed ")
                 + pretty(material.name()) + " §7of " + effectLabel(effect));
@@ -434,15 +506,11 @@ public final class SpecialItems {
     public static void tickArmor(Player player) {
         for (ItemStack piece : player.getInventory().getArmorContents()) {
             if (kind(piece) != Kind.ETERNAL_ARMOR) continue;
-            PersistentDataContainer pdc = piece.getItemMeta().getPersistentDataContainer();
-            String rawEffect = pdc.get(key(EFFECT), PersistentDataType.STRING);
-            Integer rawLevel = pdc.get(key(EFFECT_LEVEL), PersistentDataType.INTEGER);
-            if (rawEffect == null || rawLevel == null) continue;
+            PotionEffectType type = effect(piece);
+            int level = effectLevel(piece);
+            if (type == null || level <= 0) continue;
 
-            PotionEffectType type = effectByName(rawEffect);
-            if (type == null) continue;
-
-            int amplifier = Math.max(0, Math.min(3, rawLevel - 1));
+            int amplifier = Math.max(0, Math.min(3, level - 1));
             PotionEffect current = player.getPotionEffect(type);
             if (current != null && current.getAmplifier() >= amplifier && current.getDuration() > 60) continue;
             player.addPotionEffect(new PotionEffect(type, 120, amplifier, true, false, true), true);
@@ -454,27 +522,13 @@ public final class SpecialItems {
         PotionEffectType direct = PotionEffectType.getByName(raw);
         if (direct != null) return direct;
         for (PotionEffectType type : PotionEffectType.values()) {
-            if (type.getName().equalsIgnoreCase(raw)) return type;
+            if (type.getName().equalsIgnoreCase(raw) || effectId(type).equalsIgnoreCase(raw)) return type;
         }
         return null;
     }
 
-    private static List<PotionEffectType> effectPool(ArmorSlot slot, boolean good) {
-        return switch (slot) {
-            case HELMET -> good ? HELMET_GOOD : HELMET_BAD;
-            case CHESTPLATE -> good ? CHEST_GOOD : CHEST_BAD;
-            case LEGGINGS -> good ? LEGGING_GOOD : LEGGING_BAD;
-            case BOOTS -> good ? BOOT_GOOD : BOOT_BAD;
-        };
-    }
-
-    private static String slotName(ArmorSlot slot) {
-        return switch (slot) {
-            case HELMET -> "helmet";
-            case CHESTPLATE -> "chestplate";
-            case LEGGINGS -> "leggings";
-            case BOOTS -> "boots";
-        };
+    private static List<PotionEffectType> effectPool(boolean good) {
+        return good ? GOOD_EFFECTS : BAD_EFFECTS;
     }
 
     private static void applyHighEnchants(Random rng, ItemMeta meta, boolean armor) {
@@ -485,7 +539,8 @@ public final class SpecialItems {
             Enchantment enchantment = pool[rng.nextInt(pool.length)];
             int group = CONFLICTS.getOrDefault(enchantment, 0);
             if (group != 0 && !groups.add(group)) continue;
-            meta.addEnchant(enchantment, 10 + rng.nextInt(6), true);
+            int level = enchantment.getMaxLevel() <= 1 ? 1 : 10 + rng.nextInt(6);
+            meta.addEnchant(enchantment, level, true);
         }
     }
 
@@ -501,7 +556,7 @@ public final class SpecialItems {
     }
 
     private static String effectLabel(PotionEffectType type) {
-        String label = pretty(type.getName());
+        String label = pretty(effectId(type));
         return (BAD_EFFECTS.contains(type) ? "§c" : "§a") + label;
     }
 

@@ -1,6 +1,7 @@
 package marketharness;
 
 import minecraft.economy.AiItemFactory;
+import minecraft.economy.AnvilBypassListener;
 import minecraft.economy.AuctionAi;
 import minecraft.economy.AuctionHouse;
 import minecraft.economy.EconomyData;
@@ -11,7 +12,9 @@ import minecraft.economy.SpecialToolListener;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -54,16 +57,19 @@ public final class MarketHarness extends JavaPlugin {
         if (ai != null) {
             var relics = ai.activeRelicCounts();
             int effectArmor = relics.getOrDefault("effect_armor", 0);
+            int effectSwords = relics.getOrDefault("effect_sword", 0);
             int enchantArmor = relics.getOrDefault("enchant_armor", 0);
             int superTools = relics.getOrDefault("super_tool", 0);
             int enchantBooks = relics.getOrDefault("enchant_book", 0);
             int keepHelmets = relics.getOrDefault("keep_helmet", 0);
             report.append("effect_armor=").append(effectArmor)
+                    .append(" effect_swords=").append(effectSwords)
                     .append(" enchant_armor=").append(enchantArmor)
                     .append(" super_tools=").append(superTools)
                     .append(" enchant_books=").append(enchantBooks)
                     .append(" keep_helmets=").append(keepHelmets).append('\n');
             if (effectArmor < 10 || effectArmor > 30) failures++;
+            if (effectSwords < 10 || effectSwords > 30) failures++;
             if (enchantArmor < 10 || enchantArmor > 30) failures++;
             if (superTools < 10 || superTools > 30) failures++;
             if (enchantBooks < 20 || enchantBooks > 50) failures++;
@@ -197,6 +203,108 @@ public final class MarketHarness extends JavaPlugin {
         }
         report.append("generated 50 helmets, failures so far=").append(failures).append('\n');
 
+        report.append("\neffect relic checks\n");
+        Set<String> swordEffects = new HashSet<>();
+        Set<String> armorEffects = new HashSet<>();
+        for (int i = 0; i < 120; i++) {
+            ItemStack sword = SpecialItems.effectSword(rng);
+            if (SpecialItems.kind(sword) != SpecialItems.Kind.EFFECT_SWORD) failures++;
+            if (SpecialItems.effect(sword) == null) failures++;
+            int level = SpecialItems.effectLevel(sword);
+            if (level < 1 || level > 4) failures++;
+            if (SpecialItems.effect(sword) != null) swordEffects.add(SpecialItems.effect(sword).getName());
+
+            ItemStack armor = SpecialItems.eternalArmor(rng);
+            if (SpecialItems.kind(armor) != SpecialItems.Kind.ETERNAL_ARMOR) failures++;
+            if (SpecialItems.effect(armor) == null) failures++;
+            int armorLevel = SpecialItems.effectLevel(armor);
+            if (armorLevel < 1 || armorLevel > 4) failures++;
+            if (SpecialItems.effect(armor) != null) armorEffects.add(SpecialItems.effect(armor).getName());
+        }
+        if (swordEffects.size() < 10) failures++;
+        if (armorEffects.size() < 10) failures++;
+        report.append("sword effects=").append(swordEffects.size())
+                .append(" armor effects=").append(armorEffects.size()).append('\n');
+
+        report.append("\nhigh enchant book checks\n");
+        for (int i = 0; i < 200; i++) {
+            ItemStack book = SpecialItems.highEnchantBook(rng);
+            if (SpecialItems.hasInvalidSingleLevelEnchant(book)) {
+                failures++;
+                report.append("invalid single-level book: ").append(book).append('\n');
+            }
+        }
+        ItemStack badBook = SpecialItems.highEnchantBook(rng);
+        EnchantmentStorageMeta badBookMeta = (EnchantmentStorageMeta) badBook.getItemMeta();
+        badBookMeta.addStoredEnchant(Enchantment.MENDING, 15, true);
+        badBook.setItemMeta(badBookMeta);
+        if (!SpecialItems.hasInvalidSingleLevelEnchant(badBook)) {
+            failures++;
+            report.append("invalid single-level book was not detected\n");
+        }
+
+        report.append("\nanvil bypass checks\n");
+        ItemStack protA = new ItemStack(Material.DIAMOND_CHESTPLATE);
+        protA.addUnsafeEnchantment(Enchantment.PROTECTION, 4);
+        ItemStack protB = new ItemStack(Material.DIAMOND_CHESTPLATE);
+        protB.addUnsafeEnchantment(Enchantment.PROTECTION, 4);
+        ItemStack protMerged = AnvilBypassListener.merge(protA, protB);
+        int protLevel = protMerged == null ? -1 : protMerged.getEnchantmentLevel(Enchantment.PROTECTION);
+        if (protLevel != 5) failures++;
+        report.append("protection 4 + 4 = ").append(protLevel).append('\n');
+
+        ItemStack pick = new ItemStack(Material.DIAMOND_PICKAXE);
+        pick.addUnsafeEnchantment(Enchantment.UNBREAKING, 2);
+        ItemStack unbreakingBook = enchantedBook(Enchantment.UNBREAKING, 3);
+        ItemStack unbreakingMerged = AnvilBypassListener.merge(pick, unbreakingBook);
+        int unbreakingLevel = unbreakingMerged == null ? -1
+                : unbreakingMerged.getEnchantmentLevel(Enchantment.UNBREAKING);
+        if (unbreakingLevel != 3) failures++;
+        report.append("unbreaking 2 + 3 = ").append(unbreakingLevel).append('\n');
+
+        ItemStack sword = new ItemStack(Material.DIAMOND_SWORD);
+        ItemStack sharp15 = enchantedBook(Enchantment.SHARPNESS, 15);
+        ItemStack highMerged = AnvilBypassListener.merge(sword, sharp15);
+        int sharpLevel = highMerged == null ? -1 : highMerged.getEnchantmentLevel(Enchantment.SHARPNESS);
+        if (sharpLevel != 15) failures++;
+        report.append("sharpness book 15 applied = ").append(sharpLevel).append('\n');
+
+        ItemStack mending15 = enchantedBook(Enchantment.MENDING, 15);
+        ItemStack mendingMerged = AnvilBypassListener.merge(sword, mending15);
+        int mendingLevel = mendingMerged == null ? -1
+                : mendingMerged.getEnchantmentLevel(Enchantment.MENDING);
+        if (mendingLevel != 15) failures++;
+        report.append("mending book 15 applied = ").append(mendingLevel).append('\n');
+
+        ItemStack bow = new ItemStack(Material.BOW);
+        bow.addUnsafeEnchantment(Enchantment.INFINITY, 1);
+        ItemStack mending = enchantedBook(Enchantment.MENDING, 1);
+        ItemStack bowMerged = AnvilBypassListener.merge(bow, mending);
+        boolean bowOk = bowMerged != null
+                && bowMerged.containsEnchantment(Enchantment.INFINITY)
+                && bowMerged.containsEnchantment(Enchantment.MENDING);
+        if (!bowOk) failures++;
+        report.append("infinity + mending allowed=").append(bowOk).append('\n');
+
+        ItemStack smiteSword = new ItemStack(Material.DIAMOND_SWORD);
+        smiteSword.addUnsafeEnchantment(Enchantment.SHARPNESS, 5);
+        ItemStack smite = enchantedBook(Enchantment.SMITE, 5);
+        ItemStack smiteMerged = AnvilBypassListener.merge(smiteSword, smite);
+        boolean smiteOk = smiteMerged != null
+                && smiteMerged.containsEnchantment(Enchantment.SHARPNESS)
+                && smiteMerged.containsEnchantment(Enchantment.SMITE);
+        if (!smiteOk) failures++;
+        report.append("sharpness + smite allowed=").append(smiteOk).append('\n');
+
+        ItemStack protBooksA = enchantedBook(Enchantment.PROTECTION, 10);
+        ItemStack protBooksB = enchantedBook(Enchantment.PROTECTION, 10);
+        ItemStack protBooksMerged = AnvilBypassListener.merge(protBooksA, protBooksB);
+        int protBookLevel = protBooksMerged == null ? -1
+                : ((EnchantmentStorageMeta) protBooksMerged.getItemMeta())
+                        .getStoredEnchantLevel(Enchantment.PROTECTION);
+        if (protBookLevel != 11) failures++;
+        report.append("protection book 10 + 10 = ").append(protBookLevel).append('\n');
+
         report.append("\narea miner geometry checks\n");
         for (int size = 3; size <= 5; size++) {
             List<int[]> offsets = SpecialToolListener.areaOffsets(size);
@@ -309,5 +417,13 @@ public final class MarketHarness extends JavaPlugin {
             getLogger().severe("MarketHarness write failed: " + ex);
         }
         Bukkit.getScheduler().runTaskLater(this, Bukkit::shutdown, 20L * 3);
+    }
+
+    private static ItemStack enchantedBook(Enchantment enchantment, int level) {
+        ItemStack book = new ItemStack(Material.ENCHANTED_BOOK);
+        EnchantmentStorageMeta meta = (EnchantmentStorageMeta) book.getItemMeta();
+        meta.addStoredEnchant(enchantment, level, true);
+        book.setItemMeta(meta);
+        return book;
     }
 }

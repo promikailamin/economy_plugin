@@ -36,8 +36,9 @@ auction:
     seed: 1337
 
     # Special relics are unique, very expensive listings with abilities such as
-    # area mining, vein mining, tree felling, level 10-15 enchantments and
-    # eternal armour with a random slot-bound potion effect.
+    # area mining, vein mining, tree felling, level 10-15 enchantments, effect
+    # swords that inflict their bound non-instant potion effect on hit, and
+    # eternal armour with one random non-instant potion effect (level 1-4).
     special-relics-enabled: true
     # Maximum number of special relics the market keeps live at once. The
     # per-category minimums below are always honoured.
@@ -49,6 +50,8 @@ auction:
     special-counts:
       effect-armor-min: 10
       effect-armor-max: 30
+      effect-sword-min: 10
+      effect-sword-max: 30
       enchant-armor-min: 10
       enchant-armor-max: 30
       super-tools-min: 10

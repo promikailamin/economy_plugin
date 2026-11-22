@@ -69,6 +69,7 @@ public final class AuctionAi {
     private static final int BASE_CAPACITY_TOTAL = 85;
 
     private static final String RELIC_EFFECT_ARMOR = "effect_armor";
+    private static final String RELIC_EFFECT_SWORD = "effect_sword";
     private static final String RELIC_ENCHANT_ARMOR = "enchant_armor";
     private static final String RELIC_SUPER_TOOL = "super_tool";
     private static final String RELIC_ENCHANT_BOOK = "enchant_book";
@@ -96,6 +97,8 @@ public final class AuctionAi {
     private double keepInventoryHelmetChance = 0.02;
     private int effectArmorMin = 10;
     private int effectArmorMax = 30;
+    private int effectSwordMin = 10;
+    private int effectSwordMax = 30;
     private int enchantArmorMin = 10;
     private int enchantArmorMax = 30;
     private int superToolMin = 10;
@@ -184,11 +187,13 @@ public final class AuctionAi {
     private void normalizeMarket() {
         int trimmed = house.trimSyntheticListings(targetListings);
         int duplicateHelmets = house.enforceSingleKeepInventoryHelmet();
-        if (trimmed > 0 || duplicateHelmets > 0) {
+        int invalidEnchants = house.removeInvalidSingleLevelEnchantListings();
+        if (trimmed > 0 || duplicateHelmets > 0 || invalidEnchants > 0) {
             house.save();
             plugin.getLogger().info("Normalised auction market: removed " + trimmed
-                    + " excess AI listings and " + duplicateHelmets
-                    + " duplicate Keep Inventory Helmet listing(s).");
+                    + " excess AI listings, " + duplicateHelmets
+                    + " duplicate Keep Inventory Helmet listing(s) and " + invalidEnchants
+                    + " impossible single-level enchant listing(s).");
         }
     }
 
@@ -217,6 +222,8 @@ public final class AuctionAi {
                 cfg.getDouble("auction.ai.keep-inventory-helmet-chance", 0.02)));
         effectArmorMin = Math.max(0, cfg.getInt("auction.ai.special-counts.effect-armor-min", 10));
         effectArmorMax = Math.max(effectArmorMin, cfg.getInt("auction.ai.special-counts.effect-armor-max", 30));
+        effectSwordMin = Math.max(0, cfg.getInt("auction.ai.special-counts.effect-sword-min", 10));
+        effectSwordMax = Math.max(effectSwordMin, cfg.getInt("auction.ai.special-counts.effect-sword-max", 30));
         enchantArmorMin = Math.max(0, cfg.getInt("auction.ai.special-counts.enchant-armor-min", 10));
         enchantArmorMax = Math.max(enchantArmorMin, cfg.getInt("auction.ai.special-counts.enchant-armor-max", 30));
         superToolMin = Math.max(0, cfg.getInt("auction.ai.special-counts.super-tools-min", 10));
@@ -391,6 +398,7 @@ public final class AuctionAi {
         relicTargets.clear();
         if (!specialRelicsEnabled) return;
         relicTargets.put(RELIC_EFFECT_ARMOR, randomInRange(effectArmorMin, effectArmorMax));
+        relicTargets.put(RELIC_EFFECT_SWORD, randomInRange(effectSwordMin, effectSwordMax));
         relicTargets.put(RELIC_ENCHANT_ARMOR, randomInRange(enchantArmorMin, enchantArmorMax));
         relicTargets.put(RELIC_SUPER_TOOL, randomInRange(superToolMin, superToolMax));
         relicTargets.put(RELIC_ENCHANT_BOOK, randomInRange(enchantBookMin, enchantBookMax));
@@ -426,17 +434,19 @@ public final class AuctionAi {
         int active = 0;
         for (int count : counts.values()) active += count;
 
-        int minTotal = effectArmorMin + enchantArmorMin + superToolMin + enchantBookMin + keepHelmetMin;
+        int minTotal = effectArmorMin + effectSwordMin + enchantArmorMin + superToolMin
+                + enchantBookMin + keepHelmetMin;
         int cap = Math.max(maxSpecialRelics, minTotal);
         boolean belowMin = counts.getOrDefault(RELIC_EFFECT_ARMOR, 0) < effectArmorMin
+                || counts.getOrDefault(RELIC_EFFECT_SWORD, 0) < effectSwordMin
                 || counts.getOrDefault(RELIC_ENCHANT_ARMOR, 0) < enchantArmorMin
                 || counts.getOrDefault(RELIC_SUPER_TOOL, 0) < superToolMin
                 || counts.getOrDefault(RELIC_ENCHANT_BOOK, 0) < enchantBookMin
                 || counts.getOrDefault(RELIC_KEEP_HELMET, 0) < keepHelmetMin;
         if (active >= cap && !belowMin) return null;
 
-        for (String category : List.of(RELIC_EFFECT_ARMOR, RELIC_ENCHANT_ARMOR, RELIC_SUPER_TOOL,
-                RELIC_ENCHANT_BOOK, RELIC_KEEP_HELMET)) {
+        for (String category : List.of(RELIC_EFFECT_ARMOR, RELIC_EFFECT_SWORD, RELIC_ENCHANT_ARMOR,
+                RELIC_SUPER_TOOL, RELIC_ENCHANT_BOOK, RELIC_KEEP_HELMET)) {
             int target = relicTargets.getOrDefault(category, 0);
             if (counts.getOrDefault(category, 0) < target) return category;
         }
@@ -446,6 +456,7 @@ public final class AuctionAi {
     private void generateRelic(String category, long now) {
         var item = switch (category) {
             case RELIC_EFFECT_ARMOR -> SpecialItems.eternalArmor(rng);
+            case RELIC_EFFECT_SWORD -> SpecialItems.effectSword(rng);
             case RELIC_ENCHANT_ARMOR -> SpecialItems.highEnchantGear(rng, true);
             case RELIC_SUPER_TOOL -> SpecialItems.superTool(rng);
             case RELIC_ENCHANT_BOOK -> SpecialItems.highEnchantBook(rng);

@@ -4,12 +4,16 @@ import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Container;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -24,6 +28,24 @@ public final class SpecialToolListener implements Listener {
             {0, 1, 0}, {0, -1, 0},
             {0, 0, 1}, {0, 0, -1}
     };
+
+    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+    public void onEntityDamage(EntityDamageByEntityEvent event) {
+        if (!(event.getDamager() instanceof Player player)) return;
+        if (!(event.getEntity() instanceof LivingEntity victim)) return;
+
+        ItemStack weapon = player.getInventory().getItemInMainHand();
+        if (SpecialItems.kind(weapon) != SpecialItems.Kind.EFFECT_SWORD) return;
+
+        PotionEffectType type = SpecialItems.effect(weapon);
+        int level = SpecialItems.effectLevel(weapon);
+        if (type == null || level <= 0) return;
+
+        int amplifier = Math.max(0, Math.min(3, level - 1));
+        PotionEffect current = victim.getPotionEffect(type);
+        if (current != null && current.getAmplifier() > amplifier) return;
+        victim.addPotionEffect(new PotionEffect(type, 200, amplifier, true, true, true), true);
+    }
 
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
     public void onBlockBreak(BlockBreakEvent event) {
